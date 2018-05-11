@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+ul.activity-list {
+  padding-left: 0px;
+  margin-left: 0px;
+
+  list-style-type: none;
+
+  li.activity-list-item {
+    transition: all 0.3s ease 0s;
+    padding: 1 * $base-space;
+    background-color: white;
+    border: 1px solid $fields-border-color;
+    border-top: none;
+    &:hover {
+      background-color: rgba($brand-primary-color, 0.03);
+      cursor: pointer;
+      h4 {
+        text-decoration: underline;
+      }
+    }
+
+    &:first-child {
+      border-top-right-radius: 1 * $border-radius-base;
+      border-top-left-radius: 1 * $border-radius-base;
+      border-top: 1px solid $fields-border-color;
+    }
+    &:last-child {
+      border-bottom-right-radius: 1 * $border-radius-base;
+      border-bottom-left-radius: 1 * $border-radius-base;
+    }
+
+    h4 {
+      line-height: 3 * $base-space;
+      padding-top: 0 * $base-space;
+      margin: 0px;
+      color: $brand-primary;
+    }
+
+  }
+}
+.no-activities {
+
+  width: 100%;
+  padding: 2 * $base-space;
+  background-color: white;
+  text-align: center;
+
+  h2,h3 { font-weight: 200;
+  }
+  .large-light-icon {
+    color: $gray-light;
+    font-size: 80px;
+  }
+}

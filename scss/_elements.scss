@@ -1,0 +1,54 @@
+body {
+  padding-top: 40px;
+  background-color: $background-color;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* The hero image */
+.hero-image {
+    background-image: url("../img/topbackground.jpg");
+    height: 36 * $base-space;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-shadow: 0 0 2px #002740;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    padding: 16px;
+    //transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-logo {
+    background-image: url("../img/logo-square.svg");
+  width:182px;
+  height: 131px;
+  position: absolute;
+    top: -48px;
+  right: 30%;
+  z-index: 20000;
+}
+
+small {
+  color: $label-text-color;
+}
+
+
+footer {
+  .app-footer {
+    text-align: center;
+    margin-top: 5 * $base-space;
+    padding-top: 2 * $base-space;
+  }
+}

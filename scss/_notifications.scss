@@ -1,0 +1,26 @@
+/*Bootstrap notifications plugin customization*/
+
+.notifyjs-wrapper .notifyjs-bootstrap-base {
+  padding: 32px;
+  background-image: none;
+  width: 400px;
+  max-width: 100%;
+  border: none;
+  border-radius: 2px;
+}
+
+.notifyjs-bootstrap-success {
+  text-shadow: none;
+  color: $success-notification-text-color !important;
+  background-color: $success-notification-background-color !important;
+}
+
+.notifyjs-bootstrap-warn {
+  color: $warning-notification-text-color !important;
+  background-color: $warning-notification-background-color !important;
+}
+
+.notifyjs-bootstrap-error {
+  color: $danger-notification-text-color !important;
+  background-color: $danger-notification-background-color !important;
+}

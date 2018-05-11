@@ -1,0 +1,18 @@
+
+.display-data {
+  h1,h2,h3 {
+    margin-top: 1 * $base-space;
+    margin-bottom: 1* $base-space;
+  }
+  p {
+    line-height: 3 * $base-space;
+    &.label {
+      padding: 0px;
+      line-height: 2 * $base-space;
+      font-size: 100%;
+      font-weight: bold;
+      color: $text-color;
+    }
+
+  }
+}

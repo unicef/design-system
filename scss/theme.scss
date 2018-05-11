@@ -1,0 +1,20 @@
+﻿//Custom variables + Vendor customization
+@import "variables";
+
+//Vendors
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/@progress/kendo-theme-default/scss/all";
+//@import "../../node_modules/@progress/kendo-theme-material/scss/all";
+
+@import "elements";
+@import "texts";
+@import "navs";
+@import "buttons";
+@import "lists";
+@import "forms";
+@import "boxes";
+@import "utils";
+@import "display-data";
+@import "popups";
+@import "tables";
+@import "notifications";

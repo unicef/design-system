@@ -1,0 +1,65 @@
+//Navigation bar and tabs
+
+.navbar-default {
+  background: linear-gradient(to right, $brand-primary-color 10%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  border: 0px;
+  height: 40px;
+  min-height: 40px;
+  a.navbar-brand {
+    color: white;
+    padding: $base-space;
+    padding-left: 2 * $base-space;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-nav > li > a {
+    color: white;
+    padding: $base-space;
+    padding-left: 2 * $base-space;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav-tabs {
+  li.active {
+    > a {
+      border-bottom: 3px solid white;
+      &:hover {
+        background-color: white;
+        border-bottom: 3px solid white;
+      }
+    }
+  }
+  > li {
+    min-width: 120px;
+    text-align: center;
+    background-color: white;
+    margin-right: 1px;
+
+    a {
+      line-height: 24px;
+      padding: 8px;
+      margin-right: 0px;
+
+     &.disabled {
+        color: $gray-light;
+        background-color: $disabled-background-color;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
+.tab-content {
+  background-color: white;
+  padding: 2 * $base-space;
+  border-radius: $border-radius-base;
+  border-top-left-radius: 0px;
+}
