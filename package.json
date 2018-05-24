@@ -1,13 +1,13 @@
 {
   "name": "unicef-bootstrap",
   "version": "0.1.0",
-  "description": "Customized version of bootstrap with UNICEF branding",
+  "description": "Customized version of bootstrap for web applications",
   "main": "doc/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "UNICEF",
-  "license": "GNUv3",
+  "license": "GPL-3.0+",
   "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.1.1",
