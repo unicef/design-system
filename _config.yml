@@ -46,4 +46,4 @@ plugins:
    - vendor/gems/
    - vendor/ruby/
    - scss/
-   - dist/
+#   - dist/
