@@ -1,7 +1,7 @@
 {
-  "name": "unicef-bootstrap",
+  "name": "unicef-ds",
   "version": "0.1.0",
-  "description": "Customized version of bootstrap for web applications",
+  "description": "UNICEF design system based on bootstrap for creating our web applications",
   "main": "doc/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
