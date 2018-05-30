@@ -1,114 +1,38 @@
-//
-// UNICEF VARIABLES
-//
 
 //
-// COLORS
+//UNICEF BRAND COLORS
 //
-
-$brand-primary-color: #1CABE2; // UNICEF Blue
-$darker-brand-primary-color: darker($brand-primary-color, 10%);
-
-$text-color: #4A4A4A;
-$label-text-color: #808090;
-$fields-border-color: #D6D8DF;
-
-$success-color: #00833D; // Green
-$success-light-color: #80BD41;
-$success-background-color: #BBDA9D;
-
-$warning-color: #F26A21;
-$warning-light-color: #FFC20E;
-$warning-background-color: rgba(#FFDC83, 0.4);
-
-$danger-color: #E2231A;
-$danger-background-color: #F0B7B5;
-$danger-dark-color: #961A49;
-$background-color: #F7F7F9; // Body background color light grey
-
-$disabled-background-color: #E8E8E8;
-$disabled-text-color: #CCC;
-$transparent-color: rgba(#000,0.0); //used to override some properties
-
-// This disables the collapse in the nav bar.
-$grid-float-breakpoint: 0px;
+// These are the colors that are defined in the UNICEF brand book
 
 //
-// base unit of separation. Any padding, margin, line height... shall be multiplied by this unit
+// Overrides of bootstrap variables
 //
-$base-space: 8px;
+
+$body-bg: #F0F3F4;
+//$body-bg: gray(100);
 
 
-//
-// Overides - Bootstrap variables
-//
-$brand-primary: $brand-primary-color;
+$theme-colors: (
+  // overriding bootrap colors
+  "primary": #1CABE2,
+  //"secondary": ,
+  "success": #80BD41,
+  "danger": #E2231A,
+  "warning": #FFC20E,
+  //"info": ,
+  //"dark"
+  //custom colors
+  "success-dark": #00833D,
+  "warning-dark": #F26A21,
+  "alternate": #6A3674
+);
 
-$brand-success: $success-color;
-$brand-danger: $danger-color;
-$brand-warning: $warning-light-color;
-$gray-light: #9B9B9B;
-
-$line-height-base: 1.714; // 1.714*14 = 24px
-
-$grid-gutter-width: 2 * $base-space;
-$border-radius-base: 2px;
-
-//Typography
-$font-family-sans-serif: 'Roboto', sans-serif;
-
-//Forms
-$input-border: $fields-border-color;
-$form-group-margin-bottom: 2 * $base-space;
-$input-border-focus: $brand-primary-color;
-$cursor-disabled: default;
-
-//Tabs
-$nav-tabs-border-color: white;
-$nav-tabs-link-hover-border-color: $transparent-color;
-$nav-tabs-active-link-hover-bg: $darker-brand-primary-color;
-$nav-tabs-active-link-hover-color: $text-color;
-$nav-tabs-active-link-hover-border-color: $transparent-color;
+// Buttons variables
+$btn-border-radius: 2px;
+$btn-font-weight: 400;
+$btn-link-disabled-color: orange;
 
 
-//Alerts
-$alert-padding: 8px;
-$alert-success-text: $text-color;
-$alert-success-bg: $success-background-color;
-$alert-success-border: $transparent-color;
-
-$alert-warning-text: $text-color;
-$alert-warning-bg: $warning-background-color;
-$alert-warning-border: $transparent-color;
-
-$alert-danger-text: $text-color;
-$alert-danger-bg: $danger-background-color;
-$alert-danger-border: $transparent-color;
-
-//notifications
-$success-notification-text-color: $success-color;
-$success-notification-background-color: #BBDA9D;
-
-$warning-notification-text-color: $warning-color;
-$warning-notification-background-color: #FCDC83;
-
-$danger-notification-text-color: $danger-dark-color;
-$danger-notification-background-color: #F0B7B5;
-
-
-// Overrides kendo
-$accent: $brand-primary-color;
-
-$input-padding-y: 4px;
-$input-padding-x:  8px;
-// Line height used along with $font-size.
-$line-height: (24 / 14) !default;
-//$line-height-sm: 1.2 !default;
-//$line-height-lg: 1.5 !default;
-//$line-height-em: $line-height * 1em;
-
-$twbs-font-size-base: 1rem;
-
-$twbs-input-padding-x: 0.8 ;
-$twbs-input-padding-y: 0.8;
-$twbs-input-line-height: 1.7;
+//card variables
+$card-spacer-y: .75rem;
+$card-spacer-x: 1.25rem;

@@ -6,15 +6,18 @@
 //@import "../../node_modules/@progress/kendo-theme-default/scss/all";
 //@import "../../node_modules/@progress/kendo-theme-material/scss/all";
 
-@import "elements";
-@import "texts";
-@import "navs";
+// Filenames and structure is similar to bootstraps one
+// https://github.com/twbs/bootstrap/tree/v4-dev/scss
+
+//@import "type";
+//@import "navbar";
 @import "buttons";
-@import "lists";
-@import "forms";
-@import "boxes";
-@import "utils";
-@import "display-data";
-@import "popups";
-@import "tables";
-@import "notifications";
+@import "cards";
+//@import "lists";
+//@import "forms";
+//@import "boxes";
+//@import "utils";
+//@import "display-data";
+//@import "popups";
+//@import "tables";
+//@import "notifications";
