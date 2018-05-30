@@ -1,0 +1,24 @@
+//
+// Documentation SCSS
+//
+
+//
+// Docs vars
+//
+$doc-border-color: #DDD;
+$doc-base-space: 8px;
+//
+//
+body {
+  background-color: white;
+}
+
+div {
+  &.doc-example {
+    padding: 3 * $doc-base-space;
+    //background-color: #F0F0F5;
+    border-radius: 2px;
+    border: 1px solid $doc-border-color;
+    margin-bottom: 3 * $doc-base-space;
+  }
+}

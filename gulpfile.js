@@ -7,8 +7,7 @@ var plumber = require('gulp-plumber'); //Catch on error. By default watch task i
 
 //Docs https://www.npmjs.com/package/gulp-sass
 var paths = {}
-paths.scss = ["./scss/**/*.scss"];
-
+paths.scss = ["./scss/**/*.scss", "./assets/scss/**/*.scss"];
 // compile sass
 gulp.task('sass', function() {
   gulp.src(paths.scss)
