@@ -1,18 +1,19 @@
 # UNICEF Design System
 
-The goal to:
-  - Define a Common user interface across applications.
-  - Speed up the design time allowing the design team to focus on user needs rather on tiny interaction details.
-  - Speed up the development time by reusing the HTML and CSS
+The goal is to:
 
+  - Define a common user interface across applications.
+  - Speed up the design time allowing the design team to focus on user needs rather on tiny interaction details.
+  - Speed up the development time by reusing the HTML and CSS.
 
 ## Usage
 
 Include files in your HTML
 
+TODO test  https://www.jsdelivr.com/?
 
 
-### if you prefer, take advantage of SASS
+### Using SASS
 
 First, install the npm package
 
@@ -24,13 +25,24 @@ First, install the npm package
 Import unicef.scss
 
 ```
-  import ../node_modules/unicef-ds/scss/unicef
+@import "../node_modules/unicef-ds/scss/unicef"
 ```
 
 
 ## Documentation
 
-TODO
+
+## SCSS Overrides
+We have used bootstrap variables whenever possible. Custom created variables
+are defined in `scss/_variables.scss`
+
+
+## Leaner version.
+In order to make bootstrap version leaner, the following colors have been
+removed from `$theme-colors`: `secondary`,`info`,`light`,`dark`. This means
+that, for example, `<button class="btn btn-info">Info button</button>` will not
+work. You can activate them back in `_variables.scss`.
+
 
 ## Development
 
@@ -63,6 +75,7 @@ During development it will display
    gulp watch-sass
 
 ```
+
 Update docs
 
 
