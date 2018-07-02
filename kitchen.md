@@ -2,12 +2,14 @@
 layout: page
 title: "Kitchen Sink"
 ---
-In this kitchen sink you will find an example of how most commonly used
+In this kitchen sink you will find an example of most commonly used
 components look.
 
 # Colors
 We use the colors specified in our brand book as base. However, we have
 extended them for particular usages.
+
+
 
 ## Typography: Headers
 

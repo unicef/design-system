@@ -1,6 +1,15 @@
 body {
-  background-color: white; }
+  background-color: white;
+}
 
+.container > h1,
+.container > h2,
+.container > h3,
+.container > h4,
+.container > h5,
+.container > h6 {
+  margin-top: 3rem;
+}
 div.doc-example {
   padding: 24px;
   border-radius: 2px;
