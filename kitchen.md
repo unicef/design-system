@@ -5,7 +5,7 @@ title: "Kitchen Sink"
 In this kitchen sink you will find an example of most commonly used
 components look.
 
-# Colors
+## Colors
 We use the colors specified in our brand book as base. However, we have
 extended them for particular usages.
 
@@ -53,13 +53,10 @@ consequat.
 <h6>heading 6</h6>
 </div>
 
+{% highlight html %}
 
-**Usage guidelines**
+{% endhighlight %}
 
-  1. Follow a hierarchy. For example, under `h4`, there cannot be a `h3`.
-  2. Although, it is typical to use the brand color on headers, we use a black
-  color because UNICEF blue may be confused with a link. We are using UNICEF
-  blue for links.
 
 ## Alerts
 
@@ -82,10 +79,6 @@ consequat.
 
 
 </div>
-
-**Usage guidelines**
-
-  1. We use the traffic light metaphor.
 
 ## List groups
 
@@ -119,11 +112,10 @@ List group with a button:
 </ul>
 </div>
 
-**Usage Guidelines**
-
 # Buttons
 
 <div class="doc-example">
+
 <button class="btn btn-primary">PRIMARY</button>
 <button class="btn btn-outline-primary">PRIMARY</button>
 <button class="btn btn-outline-danger">DANGER</button>
@@ -134,21 +126,18 @@ List group with a button:
 <button class="btn btn-outline-primary" disabled>PRIMARY</button>
 <button class="btn btn-outline-danger" disabled>DANGER</button>
 <button class="btn btn-link" disabled>Link button</button>
+
+<br>
+<br>
+  <div class="input-group">
+    <input class="form-control py-2" type="search" placeholder="Example of input with search button" >
+    <span class="input-group-append">
+      <button class="btn btn-primary" type="button">
+        <i class="fa fa-search"></i> Search
+      </button>
+    </span>
+  </div>
 </div>
-
-
-#### Usage Guidelines ####
-
-1. Primary button is the one that allows the user to continue with the regular
-flow.
-2. Default buttons are those that allow the user to perform secondary
-actions such as Cancel go to previous step.
-3. Buttons are aligned on the left. Except in popups that are aligned on the right.
-4. The order of the buttons should be from left tor right: from least
-important action to primary/main action.
-5. Danger actions
-    1. Are exclusively reserved for destruction actions (such as delete an item).
-    2. Require to display a confirmation popup before performing the action or present an undo alternative after destroying the element.
 
 
 # Tabs
