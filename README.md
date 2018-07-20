@@ -1,88 +1,94 @@
 # UNICEF Design System
 
-The goal is to:
+The status of this project is **ALFA**. So, incompatible changes may appear.
+
+The goal of this project is to:
 
   - Define a common user interface across applications.
   - Speed up the design time allowing the design team to focus on user needs rather on tiny interaction details.
   - Speed up the development time by reusing the HTML and CSS.
 
+
+Designers and product managers, please refer to the Design Guidelines (TODO: add link).
+
+For developers, we provide a reference implementation based on [Bootstrap](http://getbootstrap.com).
+
+
 ## Usage
 
-Include files in your HTML
+Include files in your HTML:
 
-TODO test  https://www.jsdelivr.com/?
+//TODO test  https://www.jsdelivr.com/?
 
 
 ### Using SASS
 
+Bootstrap customization is based on [SASS](https://sass-lang.com), and therefore you can easily override the CSS classes for your particular project.
+
 First, install the npm package
 
 ```
- npm install unicef-ds
+ npm install unicef-design-system
 
 ```
 
-Import unicef.scss
+Import `unicef.scss` in your global scss file.
 
 ```
 @import "../node_modules/unicef-ds/scss/unicef"
 ```
 
+We have used bootstrap variables whenever possible. Custom created variables are defined in `scss/_variables.scss`
+
 
 ## Documentation
 
-
-## SCSS Overrides
-We have used bootstrap variables whenever possible. Custom created variables
-are defined in `scss/_variables.scss`
-
-
-## Leaner version.
+### Leaner version.
 In order to make bootstrap version leaner, the following colors have been
 removed from `$theme-colors`: `secondary`,`info`,`light`,`dark`. This means
 that, for example, `<button class="btn btn-info">Info button</button>` will not
 work. You can activate them back in `_variables.scss`.
 
 
-## Development
+### Development
 
-### Download
+#### Download
 
 Get source code from git repository
 
 ```
-git clone ...
-
+$ git clone https://github.com/unicef/unicef-design-system.git
 ```
 
 Install dependencies
 
 ```
-cd unicef-ds
-npm install
-
+$ cd unicef-design-system
+$ npm install
+$ bundle install
 ```
 
 ### Tasks
 
-Compile SASS
+To run the local server type
 ```
-   gulp sass
+$ bundle exec jekyll serve --livereload
+```
+Then browse to `http://localhost:4000/`
+
+To Compile SASS run:
+```
+$ gulp sass
 ```
 
-During development it will display
+To continuously compile SASS run
 ```
-   gulp watch-sass
+$ gulp watch-sass
 
 ```
 
-Update docs
-
-
-
-# Related projects
 
 
 # License
 
-GLPv3
+Distributerd under GLPv3
