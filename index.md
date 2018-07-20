@@ -8,13 +8,6 @@ layout: home
 <div class="jumbotron" style="">
   <h1 class="display-4">UNICEF Design System</h1>
   <p class="lead">for every child, a consistent design.</p>
-
-  <!--
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p> -->
 </div>
 
 <div class="container-fluid">
@@ -26,9 +19,9 @@ layout: home
         <img src="assets/images/designer-icon.svg" />
         </div>
         <div class="col">
-          <h5 class="card-title">For designers</h5>
+          <h5 class="card-title">For designers and product managers</h5>
           <p class="card-text">List of the specs of all controls.</p>
-          <a href="#" class="btn btn-outline-primary">Design Guidelines</a>
+          <a href="guidelines.html" class="btn btn-outline-primary">Design Guidelines</a>
           <ul class="list-unstyled my-4">
             <li>
               <a href="">Visual specifications (.sketch)</a>
@@ -53,8 +46,8 @@ layout: home
         <p class="card-text">
         We have created a reference implementation based on Bootstrap.
         </p>
-        <a href="kitchen/" class="btn btn-outline-primary">Docs & Live demo</a>
-        <a href="kitchen/" class="btn btn-link">GitHub</a>
+        <a href="kitchen.html" class="btn btn-outline-primary">Docs & Live demo</a>
+        <a href="http://github.com/unicef/unicef-design-system" class="btn btn-link">GitHub</a>
         </div>
       </div>
     </div>
