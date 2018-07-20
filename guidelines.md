@@ -113,15 +113,52 @@ Headings `h1` to `h6`.
   color because UNICEF blue may be confused with a link. We are using UNICEF
   blue for links.
 
-Recommended date format is `dd MMM YYYY`. For instance:
-
-```
-01 Feb 2018
-10 Mar 2020
-```
+Recommended date format is `dd MMM YYYY`. For instance: `01 Feb 2018` or `10 Mar 2020`.
 
 Never use the format `dd/mm/yyyy` or `mm/dd/yyyy`. A date such as
 `02/01/2020`, can be interpreted either as `01 Feb 2020` or `02 Jan 2020`.
+
+## Labeling
+
+Labels are the text that appear next to fields or within buttons. Define a good labeling is one of the most difficult tasks when defining a user interface and it should be conscientiously thought.
+
+1. Labels shall be univocal, that is, they must convey one single meaning to all users.
+2. Labels shall be short, the sorter, the better.
+3. Labels shall convey full meaning.
+4. Labels shall be consistent across the whole interface. For example, if "Delete" is used in one page, it should be used in all pages, avoiding the use of "Remove" or "Eliminate".
+
+Buttons perform actions, therefore, labels contained in buttons shall include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
+
+These are the standard labels any interface should use:
+
+| Label         | Action                      | Do not use              |
+| ------------- |:----------------------------|:------------------------|
+| Continue      | Go to next step             |    Next                 |
+| Delete        | Delete an existing item     | Remove, Eliminate       |
+| Edit          | Modify an existing item     | Modify, Change          |
+| Save          | Save into a system an item  |   Submit, Commit        |
+
+
+`TODO make a complete list of standard labels`
+
+
+## Forms
+
+Forms shall be designed the following way:
+
+1. Fields shall be ordered from more important to less important, leaving optional fields at the end.
+
+2. Related fields must be close to each other. For example, if residential address, zip code and country are requested, these must be close to each other as they are related.
+
+3. Form fields shall be ordered in a logic way and/or following most common conventions. For example, in a login page, the username is requested before the password.
+
+There are two ways of arranging fields in a form. The first one is in a linear way, that is, by displaying one field above the next one. The second way to arrange a form is by trying to maximize the number of fields visible in the screen, that is, one field next to other.
+
+`TODO: Add image of both types of forms.`
+
+Linear forms are recommended for tasks sporadically done or tasks generally performed by users new to the system. This layout it helps the user to sequentially fill the form.
+
+For repetitive tasks expected to be done by the same user, it is recommended to follow the second approach, that is, try to display as many elements in the screen as possible. It allows users to review more information/fields without scrolling.
 
 
 ## Buttons
@@ -142,25 +179,30 @@ important action to primary/main action.
   2. Require to display a confirmation popup before performing the action or
   present an undo alternative after destroying the element.
 
+## Modal windows (Popups)
 
-## Forms
+In general, the use of popups shall be rationalized as they are not friendly on mobile and tablet devices.
 
-Forms shall be designed the following way:
+`TODO provide alternatives that shall be used`
 
-1. Fields shall be ordered from more important to less important, leaving optional fields at the end.
+In case of using them, these shall not include flows within them. Popups shall be used either to display some additional information or to fill a short subform.
 
-2. Related fields must be close to each other. For example, if residential address, zip code and country are requested, these must be close to each other as they are related.
+Popups shall not be used to notify users about errors while filling a form or system errors. Use notifications, alerts and field errors for this purpose.
 
-3. Form fields shall be ordered in a logic way and/or following most common conventions. For example, in a login page, the username is requested before the password.
+## Tables
 
-There are two ways of arranging fields in a form. The first one is in a linear way, that is, by displaying one field above the next one. The second way to arrange a form is by trying to maximize the number of fields visible in the screen, that is, one field next to other.
+Tables fields should be organized following this pattern from left to right:
 
-//TODO: Add image of both types of forms.
+1. Id (only displayed if necessary).
+2. Most important information in the row.
+3. Least important information in the row.
+4. Action links.
 
-For repetitive tasks expected to be done by the same user, it is recommended to follow the second approach, that is, try to display as many elements in the screen as possible. It allows the user to review more information/fields without scrolling.
+`TODO provide an example`
 
-For tasks sporadically done or performed by new users, a linear form may suit better, because it helps the user to sequentially fill the form.
+In case selection of individual rows is provided, it should be displayed at the left side.
 
+`TODO example`
 
 ## Asynchronous communication
 
