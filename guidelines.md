@@ -9,7 +9,7 @@ title: Design Guidelines
 ## What are these guidelines?
 
 These guidelines establish a set of best practices and rules about how to
-design an internal site on UNICEF.
+design an internal web application for UNICEF.
 
 These guidelines are especially oriented to productivity web applications rather
 than communication web sites.  
@@ -25,31 +25,31 @@ Our design principles are the roots, the core, the foundation. All our design
 decisions are based on the following principles.
 
 
-#### 1. Lean design, for slow Internet connections
-Because UNICEF staff is working on many countries with slow Internet
+1. **Lean design, for slow Internet connections**.
+    Because UNICEF staff is working on many countries with slow Internet
 connections, every design has to be fast and nimble.
 
-#### 2. Design for all, no matter your tech savviness
+2. **Design for all, no matter your tech savviness**.
 Explicit and obvious design for all, because no matter how tech savvy you are,
 our apps shall be easy to use and understand. For example, we always display
 icons with labels, use the minimum amount of words that convey one single
 complete meaning, in case of doubt we prefer more words.
 
-#### 3. Accessible for all, regardless of disability
+3. **Accessible for all, regardless of disability**.
 Because in UNICEF every single person is important, design shall be accessible
 for all.
 
-#### 4. Design is as little design as possible
+4. **Design is as little design as possible**.
 Less, but better – because it concentrates on the essential aspects, and the
 apps are not burdened with non-essentials.
 
-#### 5. Consistent designs
+5. **Consistent designs**.
 In visual style, labeling, layouts and processes. Because we don’t reinvent the
 wheel in every project and users don’t need to learn new conventions for every
 tool. But we understand we use a very diverse set of technologies. A best effort
 shall be approached.
 
-#### 6. Made by UNICEF
+6. **Made by UNICEFS**.
 Because we love UNICEF, designs present UNICEF brand core values and principles,
 in a subtle and humble way.  
 
@@ -82,19 +82,22 @@ of a form.
 
 2. **Orange and yellow mean warning**: This color warns the user that there is
 something that he may need to pay attention. Something exceptional, something
-that is important for him to know.
+that is important for him to know, but does not stop him to continue advancing
+in the flow.
 
-3. **Red means Error or danger**: This color says the user that there is
+3. **Red means error or danger**: This color says the user that there is
 something that is preventing him to continue with the regular flow. For example,
 user forgot to fill a mandatory field.
 
-In general, because of the negative implications of the red color, we should try
+    Red also may indicate danger, because the user is a going to perform a
+    destructive action
+
+    In general, because of the negative implications of the red color, we should try
 to avoid using it in excess.
 
-
 <p class="alert alert-warning">
-We never use color as a unique cue in the interface as there may be colorblind
-users.   
+Not that we never use color as the unique cue in the interface to indicate the
+status/result, as there may be colorblind users.    
 </p>
 
 
@@ -104,7 +107,7 @@ For keeping the weight of the HTML low, we haven't defined a default typography
 other than the default font of the operating system the user is running. For
 example, in Windows 10 is `Segoe`.
 
-## Text
+## Headings
 
 Headings `h1` to `h6`.
 
@@ -120,23 +123,49 @@ Never use the format `dd/mm/yyyy` or `mm/dd/yyyy`. A date such as
 
 ## Labeling
 
-Labels are the text that appear next to fields or within buttons. Define a good labeling is one of the most difficult tasks when defining a user interface and it should be conscientiously thought.
+Labels are the texts that appear on the interface, typically next to form fields or within buttons.
+
+Define a good labeling is one of the most difficult tasks when designing a user interface and it should be conscientiously thought.
+
+The following rules are recommended
 
 1. Labels shall be univocal, that is, they must convey one single meaning to all users.
-2. Labels shall be short, the sorter, the better.
-3. Labels shall convey full meaning.
+
+2. Labels shall be short, the sorter, the better. For example, between the labels "Do you need help?", or a simply "Help", we would chose the latter. It conveys exactly the same meaning but in less words. The same with the following examples:
+
+    | Worse                                  | Better                      |
+    | -------------------------------------- |:----------------------------|
+    | Go to next step                        | Continue                    |
+    | Where to find more information         | More information            |
+    | Join our team                          | Jobs                        |
+
+
+
+3. Labels shall be as precise as possible. For example, the submit button in a form to request a vacation, instead of generic "Submit", a "Request vacation" would be preferred. Although, a bit longer, it helps the user to understand better what is the action he is performing.
+
 4. Labels shall be consistent across the whole interface. For example, if "Delete" is used in one page, it should be used in all pages, avoiding the use of "Remove" or "Eliminate".
 
-Buttons perform actions, therefore, labels contained in buttons shall include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
+5. Labels should have sentence case. For example, use "Request vacation" and do not use "Request **V**acation"**.
 
-These are the standard labels any interface should use:
+6. We do not use two dots after labels. Example:
 
-| Label         | Action                      | Do not use              |
-| ------------- |:----------------------------|:------------------------|
-| Continue      | Go to next step             |    Next                 |
-| Delete        | Delete an existing item     | Remove, Eliminate       |
-| Edit          | Modify an existing item     | Modify, Change          |
-| Save          | Save into a system an item  |   Submit, Commit        |
+
+    <div class="form-group col-4">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+
+7. Buttons perform actions, therefore, labels contained in buttons shall include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
+
+    These are the standard labels any interface should use:
+
+    | Label         | Action                      | Do not use              |
+    | ------------- |:----------------------------|:------------------------|
+    | Cancel        | Abandon current action      | Dismiss, Abandon        |
+    | Continue      | Go to next step             |    Next                 |
+    | Delete        | Delete an existing item     | Remove, Eliminate       |
+    | Edit          | Modify an existing item     | Modify, Change          |
+    | Save          | Save into a system an item  |   Submit, Commit        |
 
 
 `TODO make a complete list of standard labels`
@@ -148,17 +177,25 @@ Forms shall be designed the following way:
 
 1. Fields shall be ordered from more important to less important, leaving optional fields at the end.
 
-2. Related fields must be close to each other. For example, if residential address, zip code and country are requested, these must be close to each other as they are related.
+2. Related fields must be close to each other. For example, when residential address, zip code and country are requested, these must be close to each other as they are related.
 
 3. Form fields shall be ordered in a logic way and/or following most common conventions. For example, in a login page, the username is requested before the password.
 
-There are two ways of arranging fields in a form. The first one is in a linear way, that is, by displaying one field above the next one. The second way to arrange a form is by trying to maximize the number of fields visible in the screen, that is, one field next to other.
+4. The size of the fields should reflect the expected size of its contents.
+
+
+
+There are two ways of arranging fields in a form. The first one is in a linear way, with 1 column , that is, by displaying one field above the next one. The second way to arrange a form is by trying to maximize the number of fields visible in the screen, that is, one field next to other.
 
 `TODO: Add image of both types of forms.`
 
 Linear forms are recommended for tasks sporadically done or tasks generally performed by users new to the system. This layout it helps the user to sequentially fill the form.
 
-For repetitive tasks expected to be done by the same user, it is recommended to follow the second approach, that is, try to display as many elements in the screen as possible. It allows users to review more information/fields without scrolling.
+However, for repetitive tasks expected to be done by users recurrently in productivity tools, it is recommended to follow the second approach, that is, try to display as many elements in the screen as possible. It allows users to review more information/fields without scrolling.
+
+
+References
+  * [Designing more efficient forms](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)
 
 
 ## Buttons
@@ -198,11 +235,23 @@ Tables fields should be organized following this pattern from left to right:
 3. Least important information in the row.
 4. Action links.
 
+
 `TODO provide an example`
+
+<!-- <table class="table">
+<thead>
+<tr>
+  <th>hola</th>
+</tr>  
+</thead>
+<tbody>
+</tbody>
+</table>
+-->
 
 In case selection of individual rows is provided, it should be displayed at the left side.
 
-`TODO example`
+`TODO example of row with selection`
 
 ## Asynchronous communication
 
