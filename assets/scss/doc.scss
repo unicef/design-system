@@ -6,9 +6,9 @@
 // Docs vars
 //
 
-$doc-border-color: #DDD;
+$doc-border-color: #ddd;
 $doc-base-space: 8px;
-$doc-syntax-bg: #E0E0E0;
+$doc-syntax-bg: #f4f4f4;
 //
 //
 body {
@@ -46,6 +46,10 @@ div {
     border-radius: 2px;
     border: 1px solid $doc-border-color;
     margin-bottom: 3 * $doc-base-space;
+
+    + .highlight {
+      margin-top: -3 * $doc-base-space;
+    }
   }
 }
 

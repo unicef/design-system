@@ -19,13 +19,15 @@ body {
 
 .highlight {
   padding: 1em;
-  background-color: #E0E0E0; }
+  background-color: #f4f4f4; }
 
 div.doc-example {
   padding: 24px;
   border-radius: 2px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   margin-bottom: 24px; }
+  div.doc-example + .highlight {
+    margin-top: -24px; }
 
 .hll {
   background-color: #ffc; }

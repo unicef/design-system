@@ -16,16 +16,24 @@
 // Color system
 //
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #4A4A4A !default; //#212529 !default;
+//Unicef grays
+$unicef-background: #f4f4f4 !default;
+$unicef-placeholder: #e5e5e5 !default;
+$unicef-borders: #c9c9c9 !default;
+$unicef-lighter: #767676 !default;
+$unicef-default: #4a4a4a !default;
+
+
+$white:    #fff !default;    // bootstrap defaults
+$gray-100: $unicef-background !default; //#f8f9fa !default;
+$gray-200: #e5e5e5 !default; //#e9ecef !default;
+$gray-300: #c9c9c9 !default; //#dee2e6 !default;
+$gray-400: #767676 !default; //#ced4da !default;
+$gray-500: #4a4a4a !default; //#adb5bd !default;
+$gray-600: #4a4a4a !default; //#6c757d !default;
+$gray-700: #4a4a4a !default; //#495057 !default;
+$gray-800: #4a4a4a !default; //#343a40 !default;
+$gray-900: #4a4a4a !default; //#212529 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -47,32 +55,29 @@ $grays: map-merge(
 
 
 
-$unicef_blue:            #1CABE2 !default; //From brand book
-$unicef_dark_blue:       #374EA2 !default; //From brand book
-$unicef_purple:          #6A1E74 !default; //From brand book
-$unicef_dark_red:        #961A49 !default; //From brand book
-$unicef_light_red:       #E2231A !default; //From brand book (+ Traffic light color)
-$unicef_dark_orange:     #F26A21 !default; //From brand book
-$unicef_light_orange:    #FFAE0D !default; // Traffic light color
-$unicef_light_yellow:    #F8E71C !default; // Traffic light color
-$unicef_light_green:     #80BD41 !default; //From brand book (+ Traffic light color)
-$unicef_dark_green:      #00833D !default; //From brand book
+$unicef-blue:            #1CABE2 !default; //From brand book
+$unicef-dark-blue:       #374EA2 !default; //From brand book
+$unicef-purple:          #6A1E74 !default; //From brand book
+$unicef-dark-red:        #961A49 !default; //From brand book
+$unicef-red:             #E2231A !default; //From brand book
+$unicef-orange:          #F26A21 !default; //From brand book
+$unicef-yellow:          #FFC20E !default; //From brand block
+$unicef-green:           #80BD41 !default; //From brand book
+$unicef-dark-green:      #00833D !default; //From brand book
 
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
-    "unicef_blue":        $unicef_blue,
-    "unicef_dark_blue":   $unicef_dark_blue,
-    "unicef_purple":      $unicef_purple,
-    "unicef_light_red":   $unicef_light_red,
-    "unicef_dark_red":   $unicef_dark_red,
-    "unicef_dark_orange": $unicef_dark_orange,
-    "unicef_light_orange":$unicef_light_orange,
-    "unicef_light_yellow":$unicef_light_yellow,
-    "unicef_light_green": $unicef_light_green,
-    "unicef_dark_green":  $unicef_dark_green,
+    "unicef-blue":        $unicef-blue,
+    "unicef-dark-blue":   $unicef-dark-blue,
+    "unicef-purple":      $unicef-purple,
+    "unicef-red":         $unicef-red,
+    "unicef-dark-red":    $unicef-dark-red,
+    "unicef-orange":      $unicef-orange,
+    "unicef-green":       $unicef-green,
+    "unicef-dark-green":  $unicef-dark-green,
     "white":      $white,
     "gray":       $gray-600,
     "gray-dark":  $gray-800
@@ -80,34 +85,24 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $unicef_blue !default;
-$secondary:     $gray-600 !default;
-$success:       $unicef_light_green !default;
-$info:          $unicef_blue !default;
-$warning:       $unicef_light_orange !default;
-$danger:        $unicef_light_red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
-
 
 $theme-colors: () !default;
 
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    "primary":      $unicef-dark-blue,
+    "secondary":    $gray-600, //removed see unicef.scsss
+    "success":      $unicef-green,
+    "info":         $unicef-blue, //removed
+    "warning":      $unicef-yellow,
+    "danger":       $unicef-red,
+    "light":        $gray-100, // removed
+    "dark":         $gray-800, // removed
+    "unicef-blue":  $unicef-blue //added
   ),
   $theme-colors
 );
-
-
 
 
 // Set a specific jump point for requesting color jumps
@@ -423,7 +418,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 // UNICEF vars
 $btn-font-size:               0.875rem !default;
 $btn-transform:               uppercase !default;
-$btn-min-width:               120px !default;
+$btn-min-width:               88px !default;
 
 
 // Forms
@@ -955,7 +950,7 @@ $close-text-shadow:                 0 1px 0 $white !default;
 // Code
 
 $code-font-size:                    87.5% !default;
-$code-color:                        $unicef_dark_orange !default;
+$code-color:                        $unicef-orange !default;
 
 $kbd-padding-y:                     .2rem !default;
 $kbd-padding-x:                     .4rem !default;
