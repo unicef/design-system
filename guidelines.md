@@ -96,7 +96,7 @@ user forgot to fill a mandatory field.
 to avoid using it in excess.
 
 <p class="alert alert-warning">
-Not that we never use color as the unique cue in the interface to indicate the
+Note that we never use color as the unique cue in the interface to indicate the
 status/result, as there may be colorblind users.    
 </p>
 
