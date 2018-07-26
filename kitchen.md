@@ -54,7 +54,12 @@ consequat.
 </div>
 
 {% highlight html %}
-
+<h1>h1. heading 1</h1>
+<h2>h2. heading 2</h2>
+<h3>h3. heading 3</h3>
+<h4>h4. heading 4</h4>
+<h5>h5. heading 5</h5>
+<h6>h6. heading 6</h6>
 {% endhighlight %}
 
 
@@ -73,12 +78,12 @@ consequat.
   This is a danger alert. Check it out!
 </div>
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-warning" role="alert">
   This is a danger alert with <strong>Strong element</strong> and <a href="">this is a link</a>
 </div>
-
-
 </div>
+
+
 
 ## List groups
 
@@ -115,20 +120,29 @@ List group with a button:
 # Buttons
 
 <div class="doc-example">
+<h5>Normal</h5>
+<p>
+  <button class="btn btn-primary">PRIMARY</button>
+  <button class="btn btn-outline-primary">Default</button>
+  <button class="btn btn-outline-danger">DANGER</button>
+  <button class="btn btn-link">Link button</button>
+</p>
+<h5>Active</h5>
+<p>
+  <button class="btn btn-primary active">PRIMARY</button>
+  <button class="btn btn-outline-primary active">Default</button>
+  <button class="btn btn-outline-danger active">DANGER</button>
+  <button class="btn btn-link active">Link button</button>
+</p>
+<h5>Disabled</h5>
+<p>
+  <button class="btn btn-primary" disabled>PRIMARY</button>
+  <button class="btn btn-outline-primary" disabled>Default</button>
+  <button class="btn btn-outline-danger" disabled>DANGER</button>
+  <button class="btn btn-link" disabled>Link button</button>
+</p>
 
-<button class="btn btn-primary">PRIMARY</button>
-<button class="btn btn-outline-primary">PRIMARY</button>
-<button class="btn btn-outline-danger">DANGER</button>
-<button class="btn btn-link">Link button</button>
-<br>
-<br>
-<button class="btn btn-primary" disabled>PRIMARY</button>
-<button class="btn btn-outline-primary" disabled>PRIMARY</button>
-<button class="btn btn-outline-danger" disabled>DANGER</button>
-<button class="btn btn-link" disabled>Link button</button>
-
-<br>
-<br>
+<h5>Button with search</h5>
   <div class="input-group">
     <input class="form-control py-2" type="search" placeholder="Example of input with search button" >
     <span class="input-group-append">
