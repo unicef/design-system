@@ -54,12 +54,44 @@ consequat.
 </div>
 
 {% highlight html %}
-<h1>h1. heading 1</h1>
-<h2>h2. heading 2</h2>
-<h3>h3. heading 3</h3>
-<h4>h4. heading 4</h4>
-<h5>h5. heading 5</h5>
-<h6>h6. heading 6</h6>
+<h1>h1.Heading 1</h1>
+<p class="lead">
+Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+<p>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+id est laborum.
+</p>
+<h2>Heading 2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+
+<h3>Heading 3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+
+<h4>heading 4</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+
+<h5>heading 5</h5>
+
+<h6>heading 6</h6>
+
 {% endhighlight %}
 
 
@@ -79,10 +111,29 @@ consequat.
 </div>
 
 <div class="alert alert-warning" role="alert">
-  This is a danger alert with <strong>Strong element</strong> and <a href="">this is a link</a>
+  This is a danger alert with <strong>Strong element</strong> and
+  <a href="">this is a link</a>
 </div>
 </div>
 
+{% highlight html %}
+
+<div class="alert alert-success" role="alert">
+  This is a success alert. Check it out!
+</div>
+
+<div class="alert alert-warning" role="alert">
+  This is a warning alert. Check it out!
+</div>
+
+<div class="alert alert-danger" role="alert">
+  This is a danger alert. Check it out!
+</div>
+
+<div class="alert alert-warning" role="alert"> This is a danger alert with
+<strong>Strong element</strong> and <a href="">this is a link</a> </div>
+
+{% endhighlight %}
 
 
 ## List groups
@@ -118,39 +169,132 @@ List group with a button:
 </div>
 
 # Buttons
+We use 4 types of buttons. The `.btn` is common to all of them. Then we use:
+  + `.btn-primary` for the main button.
+  + `.btn-outline-primary`, for the default button.
+  + `.btn-outline-danger`, for the danger button.
+  + `.btn-link`, for the link button.
 
 <div class="doc-example">
-<h5>Normal</h5>
+<h5>Primary button</h5>
 <p>
-  <button class="btn btn-primary">PRIMARY</button>
-  <button class="btn btn-outline-primary">Default</button>
-  <button class="btn btn-outline-danger">DANGER</button>
-  <button class="btn btn-link">Link button</button>
+  <button class="btn btn-primary">Normal</button>
+  <button class="btn btn-primary active">Active</button>
+    <button class="btn btn-primary" disabled>Disabled</button>
+
 </p>
-<h5>Active</h5>
+<h5>Default button</h5>
 <p>
-  <button class="btn btn-primary active">PRIMARY</button>
-  <button class="btn btn-outline-primary active">Default</button>
-  <button class="btn btn-outline-danger active">DANGER</button>
-  <button class="btn btn-link active">Link button</button>
-</p>
-<h5>Disabled</h5>
-<p>
-  <button class="btn btn-primary" disabled>PRIMARY</button>
-  <button class="btn btn-outline-primary" disabled>Default</button>
-  <button class="btn btn-outline-danger" disabled>DANGER</button>
-  <button class="btn btn-link" disabled>Link button</button>
+<button class="btn btn-outline-primary">Normal</button>
+<button class="btn btn-outline-primary active">Active</button>
+<button class="btn btn-outline-primary" disabled>Disabled</button>
 </p>
 
-<h5>Button with search</h5>
+<h5>Danger button</h5>
+<p>
+  <button class="btn btn-outline-danger">Normal</button>
+  <button class="btn btn-outline-danger active">Active</button>
+  <button class="btn btn-outline-danger" disabled>Disabled</button>
+</p>
+
+<h5>Link button</h5>
+<p>
+<button class="btn btn-link active">Link button</button>
+<button class="btn btn-link">Normal</button>
+<button class="btn btn-link" disabled>Link button</button>
+</p>
+</div>
+
+Also, we have input + button:
+
+<div class="doc-example">
   <div class="input-group">
-    <input class="form-control py-2" type="search" placeholder="Example of input with search button" >
+    <input class="form-control py-2" type="search"
+      placeholder="Example of input with search button" >
     <span class="input-group-append">
       <button class="btn btn-primary" type="button">
         <i class="fa fa-search"></i> Search
       </button>
     </span>
   </div>
+</div>
+
+# Form controls
+
+
+<div class="doc-example">
+  <form class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="input-placeholder">Input with placeholder</label>
+        <input type="email" class="form-control" id="input-placeholder"
+          placeholder="This is the placeholder">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="input-value">Input with value</label>
+        <input type="email" class="form-control" id="input-value"
+          placeholder="This is the placeholder"
+          value="This is the value">
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="input-disabled">Input disabled</label>
+          <input type="email" class="form-control" id="input-disabled"
+          placeholder="This is the placeholder"
+          value="This is the value of the disabled field"
+          disabled>
+        </div>
+      </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="input-readonly">Input readonly</label>
+        <input type="email" class="form-control" id="input-readonly"
+        placeholder="This is the placeholder"
+        value="This is the value of the readonly field"
+        readonly>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+Mandatory Fields
+
+Mandatory fields use the class `.form-group.mandatory`
+
+<div class="doc-example">
+<form class="row">
+  <div class="col-md-4">
+    <div class="form-group mandatory">
+      <label for="input-placeholder">Input with placeholder</label>
+      <input type="email" class="form-control" id="input-placeholder"
+        placeholder="This is the placeholder">
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group mandatory">
+      <label for="input-value">Input with value</label>
+      <input type="email" class="form-control" id="input-value"
+        placeholder="This is the placeholder"
+        value="This is the value">
+    </div>
+  </div>
+  </form>
+</div>
+
+<div class="doc-example">
+  <form>
+    <div class="form-group">
+      <label for="input-placeholder">Input with placeholder</label>
+      <input type="email" class="form-control" id="input-placeholder" aria-describedby="emailHelp" placeholder="This is the placeholder">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+  </form>
 </div>
 
 
