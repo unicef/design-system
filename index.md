@@ -16,7 +16,7 @@ layout: home
       <div class="card-body">
       <div class="row">
         <div class="col-5">
-        <img src="assets/images/designer-icon.svg" />
+        <img class="img-fluid" src="assets/images/designer-icon.svg" />
         </div>
         <div class="col">
           <h5 class="card-title">For designers and product managers</h5>
@@ -39,7 +39,7 @@ layout: home
       <div class="card-body">
       <div class="row">
         <div class="col-5">
-        <img src="assets/images/developer-icon.svg" />
+        <img class="img-fluid" src="assets/images/developer-icon.svg" />
         </div>
         <div class="col">
         <h5 class="card-title">For developers</h5>
