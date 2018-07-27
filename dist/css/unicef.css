@@ -5824,6 +5824,15 @@ a.text-unicef-blue:hover, a.text-unicef-blue:focus {
 .card-body {
   padding: 1rem; }
 
+label em {
+  font-style: normal; }
+  label em:after {
+    content: ' *';
+    color: #E2231A; }
+
+input:required {
+  background-color: rgba(255, 194, 14, 0.15); }
+
 .tab-content {
   padding: 1px solid red; }
 

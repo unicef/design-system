@@ -66,6 +66,7 @@ $unicef-green:           #80BD41 !default; //From brand book
 $unicef-dark-green:      #00833D !default; //From brand book
 
 
+
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
@@ -419,7 +420,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 $btn-font-size:               0.875rem !default;
 $btn-transform:               uppercase !default;
 $btn-min-width:               88px !default;
-
+$mandatory-field-empty-bg:    rgba(theme-color("warning"),0.15) !default;
 
 // Forms
 

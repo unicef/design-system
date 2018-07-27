@@ -59,7 +59,7 @@ $theme-colors: map-remove($theme-colors, 'secondary', 'info','light','dark');
 @import "button";
 @import "card";
 //@import "lists";
-//@import "forms";
+@import "forms";
 //@import "boxes";
 //@import "utils";
 //@import "display-data";

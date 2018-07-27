@@ -1,0 +1,12 @@
+label {
+  em {
+    font-style: normal;
+    &:after {
+      content: ' *';
+        color: theme-color("danger");
+    }
+  }
+}
+input:required {
+  background-color: $mandatory-field-empty-bg;
+}
