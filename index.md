@@ -46,7 +46,7 @@ layout: home
         <p class="card-text">
         We have created a reference implementation based on Bootstrap.
         </p>
-        <a href="kitchen.html" class="btn btn-outline-primary">Docs & Live demo</a>
+        <a href="kitchen.html" class="btn btn-outline-primary">Developers docs</a>
         <a href="http://github.com/unicef/unicef-design-system" class="btn btn-link">GitHub</a>
         </div>
       </div>
