@@ -128,7 +128,7 @@ consequat.
 
 ## Alerts
 
-Alerts use the .alert class followed by the type of
+Alerts use the `.alert` class followed by the type of alert `alert-success`,`alert-warning`,`alert-danger`.
 
 <div class="doc-example">
   <div class="alert alert-success" role="alert">
