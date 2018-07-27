@@ -1,56 +1,87 @@
 ---
 layout: page
-title: "Kitchen Sink"
+title: "Developers docs"
 ---
-In this kitchen sink you will find an example of most commonly used
-components look.
 
-## Colors
-We use the colors specified in our brand book as base. However, we have
-extended them for particular usages.
+UNICEF has defined a visual design specification for our internal web
+applications. This specification follows our brand guidelines, takes into
+account accessibility and is rooted in a set of principles that are defined on
+__[design guidelines](guidelines)__.
+
+Additionally to those specs, UNICEF has created a reference implementation that tries to be as technology agnostic as possible, so it can be used with any modern dev framework such as React or Angular. One of the main goals of this implementation is to:
+- Speed up the development of our applications
+- Avoid the
+- Improve the quality of the interfaces with a well thought and designed framework.
+
+**This document is for developers** that have to implement the user
+interface of a UNICEF web application. Here you will find the technical documentation with examples of the HTML and CSS classes.
 
 
+This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Interent. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
 
-## Typography: Headers
+If you need to define or design a user interface for a UNICEF application you will need to
+understand how and when to use each of the elements defined in this document. To get that knowledge, please, read our __[design guidelines](guidelines)__.
+
+<!--
+
+TODO Define and Document this
+
+# Include it in your project
+
+There are 3 ways to include this framework in your project
+CDN CSS
+
+Local copy and use the CSS
+
+Local copy and use SCSS
+
+-->
+
+
+## Typography
+
+The default typography is the one defined by user's operating system. That way we don't need to download any font.
 
 <div class="doc-example">
-<h1>h1.Heading 1</h1>
-<p class="lead">
-Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-<p>
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-id est laborum.
-</p>
-<h2>Heading 2</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
+  <h1>h1. Heading 1</h1>
+  <p class="lead">
+  Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+  </p>
 
-<h3>Heading 3</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
+  <p>
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+  eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+  id est laborum.
+  </p>
 
-<h4>heading 4</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
+  <h2>Heading 2</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+  </p>
 
-<h5>heading 5</h5>
+  <h3>Heading 3</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+  </p>
 
-<h6>heading 6</h6>
+  <h4>heading 4</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+  </p>
+
+  <h5>heading 5</h5>
+
+  <h6>heading 6</h6>
 </div>
 
 {% highlight html %}
@@ -97,115 +128,82 @@ consequat.
 
 ## Alerts
 
+Alerts use the .alert class followed by the type of
+
 <div class="doc-example">
-<div class="alert alert-success" role="alert">
-  This is a success alert. Check it out!
-</div>
+  <div class="alert alert-success" role="alert">
+    This is a success alert. Check it out!
+  </div>
+  <div class="alert alert-warning" role="alert">
+    This is a warning alert. It is used to warn the user about something
+    he has to be aware of.
+  </div>
+  <div class="alert alert-danger" role="alert">
+    This is a danger alert. An error or something that blocks current flow happened!
+  </div>
 
-<div class="alert alert-warning" role="alert">
-  This is a warning alert. Check it out!
-</div>
-
-<div class="alert alert-danger" role="alert">
-  This is a danger alert. Check it out!
-</div>
-
-<div class="alert alert-warning" role="alert">
-  This is a danger alert with <strong>Strong element</strong> and
-  <a href="">this is a link</a>
-</div>
+  <div class="alert alert-warning" role="alert">
+    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
+  </div>
 </div>
 
 {% highlight html %}
 
-<div class="alert alert-success" role="alert">
-  This is a success alert. Check it out!
-</div>
+  <div class="alert alert-success" role="alert">
+    This is a success alert. Check it out!
+  </div>
+  <div class="alert alert-warning" role="alert">
+    This is a warning alert. It is used to warn the user about something
+    he has to be aware of.
+  </div>
+  <div class="alert alert-danger" role="alert">
+    This is a danger alert. An error or something that blocks current flow happened!
+  </div>
 
-<div class="alert alert-warning" role="alert">
-  This is a warning alert. Check it out!
-</div>
-
-<div class="alert alert-danger" role="alert">
-  This is a danger alert. Check it out!
-</div>
-
-<div class="alert alert-warning" role="alert"> This is a danger alert with
-<strong>Strong element</strong> and <a href="">this is a link</a> </div>
+  <div class="alert alert-warning" role="alert">
+    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
+  </div>
 
 {% endhighlight %}
 
 
-## List groups
-
-<div class="doc-example">
-<ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
-</div>
-
-List group with a button:
-<div class="doc-example">
-  <ul class="list-group">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">
-      <details>
-      <summary>Add an element</summary>
-      <div class="from-group p-t-3">
-      <label for="details-input">Add an element to the list</label>
-      <input class="form-control" id="details-input" name="details-input" type="text">
-      <button class="btn btn-primary">Add to list</button>
-      </div>
-</details>
-</li>
-</ul>
-</div>
-
 # Buttons
-We use 4 types of buttons. The `.btn` is common to all of them. Then we use:
+We use 4 types of buttons. The `.btn` class is common to all of them. Then we use:
   + `.btn-primary` for the main button.
   + `.btn-outline-primary`, for the default button.
   + `.btn-outline-danger`, for the danger button.
   + `.btn-link`, for the link button.
 
 <div class="doc-example">
-<h5>Primary button</h5>
-<p>
-  <button class="btn btn-primary">Normal</button>
-  <button class="btn btn-primary active">Active</button>
+  <h5>Primary button</h5>
+  <p>
+    <button class="btn btn-primary">Normal</button>
+    <button class="btn btn-primary active">Active</button>
     <button class="btn btn-primary" disabled>Disabled</button>
+  </p>
+  <h5>Default button</h5>
+  <p>
+    <button class="btn btn-outline-primary">Normal</button>
+    <button class="btn btn-outline-primary active">Active</button>
+    <button class="btn btn-outline-primary" disabled>Disabled</button>
+  </p>
+  <h5>Danger button</h5>
+  <p>
+    <button class="btn btn-outline-danger">Normal</button>
+    <button class="btn btn-outline-danger active">Active</button>
+    <button class="btn btn-outline-danger" disabled>Disabled</button>
+  </p>
 
-</p>
-<h5>Default button</h5>
-<p>
-<button class="btn btn-outline-primary">Normal</button>
-<button class="btn btn-outline-primary active">Active</button>
-<button class="btn btn-outline-primary" disabled>Disabled</button>
-</p>
-
-<h5>Danger button</h5>
-<p>
-  <button class="btn btn-outline-danger">Normal</button>
-  <button class="btn btn-outline-danger active">Active</button>
-  <button class="btn btn-outline-danger" disabled>Disabled</button>
-</p>
-
-<h5>Link button</h5>
-<p>
-<button class="btn btn-link active">Link button</button>
-<button class="btn btn-link">Normal</button>
-<button class="btn btn-link" disabled>Link button</button>
-</p>
+  <h5>Link button</h5>
+  <p>
+    <button class="btn btn-link active">Link button</button>
+    <button class="btn btn-link">Normal</button>
+    <button class="btn btn-link" disabled>Link button</button>
+  </p>
 </div>
 
-Also, we have input + button:
+
+Also, we have input + button group:
 
 <div class="doc-example">
   <div class="input-group">
@@ -219,19 +217,20 @@ Also, we have input + button:
   </div>
 </div>
 
+
+
 # Form controls
 
-
 <div class="doc-example">
-  <form class="row">
-    <div class="col-md-4">
+  <form>
+    <div class="col-md-6">
       <div class="form-group">
         <label for="input-placeholder">Input with placeholder</label>
         <input type="email" class="form-control" id="input-placeholder"
           placeholder="This is the placeholder">
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="form-group">
         <label for="input-value">Input with value</label>
         <input type="email" class="form-control" id="input-value"
@@ -239,7 +238,7 @@ Also, we have input + button:
           value="This is the value">
       </div>
     </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="form-group">
           <label for="input-disabled">Input disabled</label>
           <input type="email" class="form-control" id="input-disabled"
@@ -248,7 +247,7 @@ Also, we have input + button:
           disabled>
         </div>
       </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="form-group">
         <label for="input-readonly">Input readonly</label>
         <input type="email" class="form-control" id="input-readonly"
@@ -260,31 +259,29 @@ Also, we have input + button:
   </form>
 </div>
 
+## Required fields
 
-
-
-Mandatory Fields
-
-Mandatory fields use the class `.form-group.mandatory`
+Required fields are those that are mandatory to fill in order to submit a form.
+For required fields we mark `<label>` contents with an `<em>` and the field wiht the attribute `required`.
 
 <div class="doc-example">
-<form class="row">
+<form>
   <div class="col-md-4">
-    <div class="form-group mandatory">
-      <label for="input-placeholder">Input with placeholder</label>
+    <div class="form-group">
+      <label for="input-placeholder"><em>Input with placeholder</em></label>
       <input type="email" class="form-control" id="input-placeholder"
-        placeholder="This is the placeholder">
+        placeholder="This is the placeholder" required>
     </div>
   </div>
   <div class="col-md-4">
-    <div class="form-group mandatory">
-      <label for="input-value">Input with value</label>
+    <div class="form-group">
+      <label for="input-value"><em>Input with value</em></label>
       <input type="email" class="form-control" id="input-value"
         placeholder="This is the placeholder"
-        value="This is the value">
+        value="This is the value" required>
     </div>
-  </div>
-  </form>
+    </div>
+</form>
 </div>
 
 <div class="doc-example">
@@ -345,6 +342,37 @@ Mandatory fields use the class `.form-group.mandatory`
 </div>
 </div>
 
+## List groups
+
+<div class="doc-example">
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+</div>
+
+List group with a button:
+<div class="doc-example">
+  <ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">
+      <details>
+      <summary>Add an element</summary>
+      <div class="from-group p-t-3">
+      <label for="details-input">Add an element to the list</label>
+      <input class="form-control" id="details-input" name="details-input" type="text">
+      <button class="btn btn-primary">Add to list</button>
+      </div>
+</details>
+</li>
+</ul>
+</div>
 
 # Labels
 
@@ -358,8 +386,6 @@ Mandatory fields use the class `.form-group.mandatory`
 
 
 # Form fields
-
-
 <form>
   <div class="row">
     <div class="col-md-3">
