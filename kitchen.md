@@ -128,7 +128,7 @@ consequat.
 
 ## Alerts
 
-Alerts use the `.alert` class followed by the type of alert `alert-success`,`alert-warning`,`alert-danger`.
+Alerts use the `.alert` class followed by the type of alert `alert-success`, `alert-warning`, `alert-danger`.
 
 <div class="doc-example">
   <div class="alert alert-success" role="alert">
@@ -141,12 +141,7 @@ Alerts use the `.alert` class followed by the type of alert `alert-success`,`ale
   <div class="alert alert-danger" role="alert">
     This is a danger alert. An error or something that blocks current flow happened!
   </div>
-
-  <div class="alert alert-warning" role="alert">
-    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
-  </div>
 </div>
-
 {% highlight html %}
 
   <div class="alert alert-success" role="alert">
@@ -159,16 +154,26 @@ Alerts use the `.alert` class followed by the type of alert `alert-success`,`ale
   <div class="alert alert-danger" role="alert">
     This is a danger alert. An error or something that blocks current flow happened!
   </div>
+{% endhighlight %}
 
+
+Alerts support strong and links.
+
+<div class="doc-example">
   <div class="alert alert-warning" role="alert">
     This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
   </div>
+</div>
 
+{% highlight html %}
+  <div class="alert alert-warning" role="alert">
+    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
+  </div>
 {% endhighlight %}
 
 
 # Buttons
-We use 4 types of buttons. The `.btn` class is common to all of them. Then we use:
+There are 4 types of buttons. The `.btn` class is common to all of them:
   + `.btn-primary` for the main button.
   + `.btn-outline-primary`, for the default button.
   + `.btn-outline-danger`, for the danger button.
@@ -203,7 +208,7 @@ We use 4 types of buttons. The `.btn` class is common to all of them. Then we us
 </div>
 
 
-Also, we have input + button group:
+Also, it is possible to group an input with a button:
 
 <div class="doc-example">
   <div class="input-group">
@@ -218,82 +223,169 @@ Also, we have input + button group:
 </div>
 
 
+# Forms
 
-# Form controls
+Form fields have different status:
 
 <div class="doc-example">
   <form>
-    <div class="col-md-6">
-      <div class="form-group">
-        <label for="input-placeholder">Input with placeholder</label>
-        <input type="email" class="form-control" id="input-placeholder"
-          placeholder="This is the placeholder">
-      </div>
+    <div class="form-group col-md-6">
+      <label for="input-placeholder">Input with placeholder</label>
+      <input type="email" class="form-control" id="input-placeholder"
+        placeholder="This is the placeholder">
     </div>
-    <div class="col-md-6">
-      <div class="form-group">
-        <label for="input-value">Input with value</label>
-        <input type="email" class="form-control" id="input-value"
-          placeholder="This is the placeholder"
-          value="This is the value">
-      </div>
+    <div class="form-group col-md-6">
+      <label for="input-value">Input with value</label>
+      <input type="email" class="form-control" id="input-value"
+        placeholder="This is the placeholder"
+        value="This is the value">
     </div>
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="input-disabled">Input disabled</label>
-          <input type="email" class="form-control" id="input-disabled"
-          placeholder="This is the placeholder"
-          value="This is the value of the disabled field"
-          disabled>
-        </div>
-      </div>
-    <div class="col-md-6">
-      <div class="form-group">
-        <label for="input-readonly">Input readonly</label>
-        <input type="email" class="form-control" id="input-readonly"
+    <div class="form-group col-md-6">
+      <label for="input-disabled">Input disabled</label>
+      <input type="email" class="form-control" id="input-disabled"
+        placeholder="This is the placeholder"
+        value="This is the value of the disabled field"
+        disabled>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="input-readonly">Input readonly</label>
+      <input type="email" class="form-control" id="input-readonly"
         placeholder="This is the placeholder"
         value="This is the value of the readonly field"
         readonly>
-      </div>
     </div>
   </form>
 </div>
+
+Form elements can include short texts that provide important information to users.
+
+<div class="doc-example">
+  <form>
+    <div class="form-group">
+      <label for="input-placeholder-help">Your email</label>
+      <input type="email" class="form-control" id="input-placeholder-help" aria-describedby="emailHelp" placeholder="Example: john.doe@unicef.org">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="input-placeholder-help-up">Corporate email</label>
+      <small id="emailHelp-up" class="form-text text-muted">Domains like hotmail.com or gmail.com are not allowed.</small>
+      <input type="email" class="form-control" id="input-placeholder-help-up" aria-describedby="emailHelp-up" placeholder="Example: john.doe@unicef.org">
+    </div>
+  </form>
+</div>
+
+
+## Textareas
+
+To add a counter at the bottom of a field add the attributes `data-counter="true"` and  `maxlength="100"`, where 100 is the max number of characters. Add `data-autoresize="true"` to allow auto resize.
+
+<div class="doc-example">
+  <form class="row">
+    <div class="form-group col-4">
+      <label for="textarea-regular">Regular textarea</label>
+      <textarea rows="3" id="textarea-regular"
+        class="form-control"
+        placeholder="This is the placeholder">
+      </textarea>
+    </div>
+    <div class="form-group col-4">
+      <label for="textarea-counter">Textarea with counter</label>
+      <textarea id="textarea-counter"
+        rows="3"
+        class="form-control"
+        placeholder="Counter should decrease while typing"
+        data-counter="true"
+        maxlength="100"></textarea>
+      <small id="textarea-counter">100 characters left.</small>
+      </div>
+    <div class="form-group col-4">
+      <label for="textarea-autoresize">Textarea with autoresize</label>
+      <textarea rows="3" id="textarea-autoresize"
+        class="form-control"
+        placeholder="The number of lines shall grow with text."
+        data-autoresize="true"></textarea>
+    </div>
+  </form>
+</div>
+
+These two enhancements require Javascript.
 
 ## Required fields
 
 Required fields are those that are mandatory to fill in order to submit a form.
-For required fields we mark `<label>` contents with an `<em>` and the field wiht the attribute `required`.
-
-<div class="doc-example">
-<form>
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="input-placeholder"><em>Input with placeholder</em></label>
-      <input type="email" class="form-control" id="input-placeholder"
-        placeholder="This is the placeholder" required>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="input-value"><em>Input with value</em></label>
-      <input type="email" class="form-control" id="input-value"
-        placeholder="This is the placeholder"
-        value="This is the value" required>
-    </div>
-    </div>
-</form>
-</div>
+For required fields we mark `<label>` contents with an `<em>` and the form field (`<input`,  `select`, `textarea`,...) with the attribute `required`.
 
 <div class="doc-example">
   <form>
-    <div class="form-group">
-      <label for="input-placeholder">Input with placeholder</label>
-      <input type="email" class="form-control" id="input-placeholder" aria-describedby="emailHelp" placeholder="This is the placeholder">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="input-placeholder-required"><em>Input with placeholder</em></label>
+        <input type="email" class="form-control" id="input-placeholder-required"
+            placeholder="This is the placeholder" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="input-value-required"><em>Input with value</em></label>
+        <input type="email" class="form-control" id="input-value-required"
+          placeholder="This is the placeholder"
+          value="This is the value" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="textarea-required"><em>Textarea required</em></label>
+        <textarea rows="3" class="form-control"
+          placeholder="Required textarea" required></textarea>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="select-required"><em>Select required</em></label>
+        <select id="select-required" rows="3" class="form-control" required>
+        <option value="">Select...</option>
+        <option value="value1">Value 1</option>
+        <option value="value 1">Value 2</option>
+        </select>
+      </div>
+
     </div>
   </form>
 </div>
 
+## Errors in forms
+
+UNICEF's reference implementation uses [Bootstrap conventions to display errors in forms](https://getbootstrap.com/docs/4.1/components/forms/#validation) as base. We slightly customized the look and feel and we only use the `.is-invalid` class to provide visual feedback.
+
+Example the HTML and classes to display errors (no actual validation is performed)
+<div class="doc-example">
+  <form class="row">
+    <div class="form-group col-md-4">
+      <label for="input-with-error">Input with error</label>
+      <input type="email" class="form-control is-invalid" id="input-with-error"
+        placeholder="Placeholder"
+        value="&##$%^ ABCD">
+        <div class="invalid-feedback">
+          Only numbers and letters are allowed.
+        </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="select-with-error">Select with error</label>
+      <select class="form-control is-invalid" id="select-with-error">
+        <option value="">Select...</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        </select>
+        <div class="invalid-feedback">
+          Error message.
+        </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="input-with-error">Textarea with error</label>
+      <textarea rows="3" class="form-control is-invalid" maxlength="200"
+      placeholder="Placeholder text"></textarea>
+        <div class="invalid-feedback">
+          Error message.
+        </div>
+        <small class="input-with-error-counter">200 characters left</small>
+    </div>
+ </form>
+</div>
 
 # Tabs
 
@@ -345,13 +437,13 @@ For required fields we mark `<label>` contents with an `<em>` and the field wiht
 ## List groups
 
 <div class="doc-example">
-<ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+  <ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
 </div>
 
 List group with a button:
@@ -386,6 +478,7 @@ List group with a button:
 
 
 # Form fields
+
 <form>
   <div class="row">
     <div class="col-md-3">
@@ -409,8 +502,8 @@ List group with a button:
 
   <div class="col-md-3">
     <div class="form-group">
-      <label for="input3">Disabled field with value</label>
-      <input type="text" class="form-control" id="input3" placeholder="Placeholder" value="Value of the field" disabled>
+      <label for="input3b">Disabled field with value</label>
+      <input type="text" class="form-control" id="input3b" placeholder="Placeholder" value="Value of the field" disabled>
     </div>
   </div>
 </div>

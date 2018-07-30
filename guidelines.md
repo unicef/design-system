@@ -149,11 +149,12 @@ The following rules are recommended
 
 6. We do not use two dots after labels. Example:
 
-
+  <div class="doc-example">
     <div class="form-group col-4">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+  </div>
 
 7. Buttons perform actions, therefore, labels contained in buttons shall include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
 
@@ -183,16 +184,85 @@ Forms shall be designed the following way:
 
 4. The size of the fields should reflect the expected size of its contents.
 
+    <div class="doc-example">
+      <form>
+        <div class="form-group col-sm-10">
+        <p><span class="alert alert-danger">Don't</span></p>
+          <label for="year-long">Year</label>
+          <input id="year-long" class="form-control" type="number" placeholder="2018" />
+        </div>
+
+        <div class="form-group col-sm-3 col-md-2 col-xs-6 pt-4">
+        <p><span class="alert alert-success">Do</span></p>
+          <label for="year-ok">Year</label>
+          <input id="year-ok" class="form-control" type="number" placeholder="2018" />    
+        </div>
+      </form>
+    </div>
+
+5. Form elements always have a label.
+
+    <div class="doc-example">
+      <form>
+        <div class="form-group col-sm-3 col-md-2 col-xs-6">
+        <p><span class="alert alert-danger">Don't</span></p>
+          <input id="year-long-2" class="form-control" type="number" placeholder="Year" />
+        </div>
+
+        <div class="form-group col-sm-3 col-md-2 col-xs-6 pt-4">
+        <p><span class="alert alert-success">Do</span></p>
+          <label for="year-ok-2">Year</label>
+          <input id="year-ok-2" class="form-control" type="number" placeholder="2018" />    
+        </div>
+      </form>
+    </div>
 
 
-There are two ways of arranging fields in a form. The first one is in a linear way, with 1 column , that is, by displaying one field above the next one. The second way to arrange a form is by trying to maximize the number of fields visible in the screen, that is, one field next to other.
+   There may be a few exceptions in which a form element does not need a label. For example, a search box:
 
-`TODO: Add image of both types of forms.`
+   <div class="doc-example">
+     <div class="input-group">
+       <input class="form-control py-2" type="search"
+         placeholder="Example: John Doe" >
+       <span class="input-group-append">
+         <button class="btn btn-primary" type="button">
+           Search
+         </button>
+       </span>
+     </div>
+   </div>
 
-Linear forms are recommended for tasks sporadically done or tasks generally performed by users new to the system. This layout it helps the user to sequentially fill the form.
+## Forms Layout
+There are two ways of arranging fields in a form. The first one is in a linear way, with one field per line, that is, by displaying one field above the next one. The second way to arrange a form is the productivity tool form. In these kinds of forms the layout groups elements to maximize the number of fields visible in the screen.
 
-However, for repetitive tasks expected to be done by users recurrently in productivity tools, it is recommended to follow the second approach, that is, try to display as many elements in the screen as possible. It allows users to review more information/fields without scrolling.
+![Linear forms vs productivity forms](./assets/images/linear-vs-productivity.svg "Logo Title Text 1")
 
+Linear forms are recommended for tasks sporadically done, tasks generally performed by users new to the system or while creating a new item. This layout it helps the user to sequentially fill the form.
+
+However, for repetitive tasks expected to be done by users recurrently in productivity tools, it is recommended to follow the second approach, that is, try to display more elements in the screen. It allows users to analyze and edit more information without scrolling. These layouts are particularly useful for applications in which
+changes of value in interactive elements change values in results areas.
+
+
+**Horizontal forms are not recommended**. These forms place the labels are on the left of the field. Because of the distance between the label and the field are harder to fill for the user, also, these may have more problems with responsive design.
+
+<div class="doc-example">
+
+  <form>
+  <p><span class="alert alert-danger">Don't</span></p>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+    </div>
+  </form>
+</div>
 
 References
   * [Designing more efficient forms](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)
@@ -211,9 +281,9 @@ actions such as Cancel go to previous step.
 4. The order of the buttons should be from left tor right: from least
 important action to primary/main action.
 
-5. Danger actions
-  1. Are exclusively reserved for destruction actions (such as delete an item).
-  2. Require to display a confirmation popup before performing the action or
+5. Danger buttons.
+    1. Are exclusively reserved for destruction actions (such as delete an item).
+    2. Require to display a confirmation popup before performing the action or
   present an undo alternative after destroying the element.
 
 ## Modal windows (Popups)
