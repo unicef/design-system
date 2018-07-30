@@ -26,11 +26,11 @@ $unicef-default: #4a4a4a !default;
 
 $white:    #fff !default;    // bootstrap defaults
 $gray-100: $unicef-background !default; //#f8f9fa !default;
-$gray-200: #e5e5e5 !default; //#e9ecef !default;
+$gray-200: $unicef-borders !default; //#e9ecef !default;
 $gray-300: #c9c9c9 !default; //#dee2e6 !default;
 $gray-400: #767676 !default; //#ced4da !default;
 $gray-500: #4a4a4a !default; //#adb5bd !default;
-$gray-600: #4a4a4a !default; //#6c757d !default;
+$gray-600: $unicef-lighter !default; //#6c757d !default;
 $gray-700: #4a4a4a !default; //#495057 !default;
 $gray-800: #4a4a4a !default; //#343a40 !default;
 $gray-900: #4a4a4a !default; //#212529 !default;
@@ -81,7 +81,9 @@ $colors: map-merge(
     "unicef-dark-green":  $unicef-dark-green,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "empty-required-field-background": rgba($unicef-yellow, 0.15),
+    "filled-required-field-background": white
   ),
   $colors
 );
@@ -100,7 +102,6 @@ $theme-colors: map-merge(
     "danger":       $unicef-red,
     "light":        $gray-100, // removed
     "dark":         $gray-800, // removed
-    "unicef-blue":  $unicef-blue //added
   ),
   $theme-colors
 );
@@ -420,7 +421,9 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 $btn-font-size:               0.875rem !default;
 $btn-transform:               uppercase !default;
 $btn-min-width:               88px !default;
-$mandatory-field-empty-bg:    rgba(theme-color("warning"),0.15) !default;
+$required-field-empty-bg:     rgba(theme-color("warning"),0.15) !default;
+$required-field-filled-bg:    $white !default;
+
 
 // Forms
 

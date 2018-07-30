@@ -7,6 +7,8 @@ label {
     }
   }
 }
-input:required {
-  background-color: $mandatory-field-empty-bg;
+input:required,
+textarea:required,
+select:required {
+  background-color: color("empty-required-field-background");
 }
