@@ -268,23 +268,53 @@ References
   * [Designing more efficient forms](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)
 
 
+# Form validations
+
+Client side validation of form fields shall be done at field level:
+
+1. **After losing focus** if the field does not have an error when the field gets the focus. We avoid displaying the error before the user has finished and believes it is correct. Imaging filling you email account into a field that once you type the first letter tells you that it is not correct, you may think: Hey man! Let me finish first!
+
+2. **On every change (ie: key up)** if the field has an error when the field gets the focus. This approach informs the user the value is valid as soon as the error is solved.
+
+Error messages are displayed contextualized under the field that is causing that error. These messages shall include:
+
+  1. What went wrong and possibly why.
+  2. What is the next step the user should take to fix the error.
+
+And they should avoid using technical jargon and be as short and concise as possible.
+In case, we don't have space, we should try to focus on how to fix the error.
+
+
+`TODO: Define a set of standard errors.`
+
+
 ## Buttons
 
-1. Primary button is the one that allows the user to continue with the regular
-flow. It is the most visually prominent on the interface.
+We have the following types of buttons:
 
-2. Default buttons are those that allow the user to perform secondary
-actions such as Cancel go to previous step.
+<div class="doc-example">
+<button class="btn btn-primary">Primary button</button>
+<button class="btn btn-outline-primary">Default button</button>
+<button class="btn btn-outline-danger">Danger button</button>
+</div>
 
-3. Buttons are aligned on the left. Except in popups that are aligned on the right.
+**Primary buttons** allow the user to continue with the regular
+flow, typically has the save, continue, send actions. It is the most visually prominent on the interface.
 
-4. The order of the buttons should be from left tor right: from least
+**Default buttons** are those that allow the user to perform secondary
+actions such as cancel go to previous step.
+
+**Danger buttons** are exclusively reserved for destructive actions (such as delete an item). They require to display an undo notification (preferred) or to display a confirmation popup before performing the action.
+
+`TODO define how an undo notification looks`
+
+In a form buttons are aligned to the left. Except in popups that are aligned to the right.
+
+`TODO example`
+
+The order of the buttons should be from left tor right: from least
 important action to primary/main action.
 
-5. Danger buttons.
-    1. Are exclusively reserved for destruction actions (such as delete an item).
-    2. Require to display a confirmation popup before performing the action or
-  present an undo alternative after destroying the element.
 
 ## Modal windows (Popups)
 
@@ -326,3 +356,5 @@ In case selection of individual rows is provided, it should be displayed at the 
 ## Asynchronous communication
 
 Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
+
+`TODO expand this topic`
