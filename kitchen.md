@@ -296,7 +296,7 @@ To add a counter at the bottom of a field add the attributes `data-counter="true
         placeholder="Counter should decrease while typing"
         data-counter="true"
         maxlength="100"></textarea>
-      <small id="textarea-counter">100 characters left.</small>
+      
       </div>
     <div class="form-group col-4">
       <label for="textarea-autoresize">Textarea with autoresize</label>
@@ -387,6 +387,7 @@ Example the HTML and classes to display errors (no actual validation is performe
  </form>
 </div>
 
+
 # Tabs
 
 <nav>
@@ -408,6 +409,7 @@ Example the HTML and classes to display errors (no actual validation is performe
 
 
 # Cards
+
 <div class="doc-example">
 <div class="card-deck">
   <div class="card">
