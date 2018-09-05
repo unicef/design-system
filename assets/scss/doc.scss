@@ -9,8 +9,8 @@
 $doc-border-color: #ddd;
 $doc-base-space: 8px;
 $doc-syntax-bg: #f4f4f4;
-//
-//
+
+
 body {
   background-color: white;
 }
@@ -19,6 +19,7 @@ body {
 .container {
   max-width: 800px;
 }
+
 .container > h1,
 .container > h2,
 .container > h3,
@@ -29,10 +30,42 @@ body {
   margin-bottom: 1.5rem;
   font-weight: bold;
 }
-.container > p, .container > ul > li, .container > ol > li {
+
+.container > p,
+.container > ul > li,
+.container > ol > li {
   font-size: 1.3rem;
 }
 
+.doc.container {
+  table {
+    margin-bottom: 1rem;
+    width: 100%;
+    td,th {
+      border: 1px solid $doc-border-color;
+      padding: .25rem .5rem;
+    }
+  }
+}
+
+ul.doc-colors {
+  list-style-type: none;
+  li {
+    line-height: 32px;
+    vertical-align: middle;
+    border: 1px solid blue;
+  }
+
+  span {
+    border-radius: 16px;
+    margin-top: auto;
+    marin-bottom: auto;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
+
+}
 .highlight {
   padding:1em;
   background-color: $doc-syntax-bg;
@@ -52,6 +85,7 @@ div {
     }
   }
 }
+
 
 // stylelint-disable declaration-block-single-line-max-declarations
 
@@ -130,4 +164,8 @@ div {
   color: #009;
   content: "PM> ";
   user-select: none;
+}
+
+@media print {
+
 }

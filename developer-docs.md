@@ -1,5 +1,7 @@
 ---
 layout: page
+in-navbar: true
+id: developer-docs
 title: "Developers docs"
 ---
 
@@ -17,7 +19,7 @@ Additionally to those specs, UNICEF has created a reference implementation that 
 interface of a UNICEF web application. Here you will find the technical documentation with examples of the HTML and CSS classes.
 
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Interent. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
+This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Internet. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
 
 If you need to define or design a user interface for a UNICEF application you will need to
 understand how and when to use each of the elements defined in this document. To get that knowledge, please, read our __[design guidelines](guidelines)__.
@@ -296,7 +298,6 @@ To add a counter at the bottom of a field add the attributes `data-counter="true
         placeholder="Counter should decrease while typing"
         data-counter="true"
         maxlength="100"></textarea>
-      
       </div>
     <div class="form-group col-4">
       <label for="textarea-autoresize">Textarea with autoresize</label>

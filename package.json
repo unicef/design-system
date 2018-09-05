@@ -8,7 +8,8 @@
   },
   "author": "UNICEF",
   "license": "GPL-3.0+",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "bootstrap": "^4.1.1",
     "gulp": "^3.9.1",
@@ -19,6 +20,9 @@
     "gulp-sass": "^3.1.0",
     "gulp-serve": "^1.4.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "html-pdf": "^2.2.0",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.16"
   }
 }

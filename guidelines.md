@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
+id: guidelines
+in-navbar: true
 title: Design Guidelines
 ---
 
@@ -12,7 +14,11 @@ These guidelines establish a set of best practices and rules about how to
 design an internal web application for UNICEF.
 
 These guidelines are especially oriented to productivity web applications rather
-than communication web sites.  
+than communication web sites.
+
+Also, consider these guidelines as a live document. Although, principles rarely
+change, context, technology and tools do. To keep these guidelines useful,
+they need to evolve.
 
 ## Who is expected to use these guidelines?
 
@@ -49,43 +55,64 @@ wheel in every project and users don’t need to learn new conventions for every
 tool. But we understand we use a very diverse set of technologies. A best effort
 shall be approached.
 
-6. **Made by UNICEFS**.
+6. **Made by UNICEF**.
 Because we love UNICEF, designs present UNICEF brand core values and principles,
 in a subtle and humble way.  
 
-## Implementing this guidelines in your design
+
+## Implementing these guidelines in your design
 
 Within UNICEF there is a wide variety of projects, some are completely new, some
 depend on legacy systems, some just need a few tweaks, some are just platforms
 with an out of the box customization, etc. With this diversity, designers will
 not always be able to fully comply with this specification.
 
-However, we have defined some basic level of compliance that shall be considered
-as MANDATORY.
+`TODO However, we have defined some basic level of compliance that shall be considered
+as MANDATORY.`
+
+## Visual Specification
+
+We have created a Sketch document in which we define the visual specification of each component.
+
+<a class="btn btn-outline-primary" href="">Visual Specification .Sketch file</a>
+<a class="btn btn-outline-primary" href="">Visual Specification as PDF</a>
 
 
 ## Brand colors
 
-`TODO: image with the colors`
+In UNICEF brand book defines the following colors:
 
-Our brand main color is blue which is the color typically used with links. So,
-to avoid confusion, we only use the brand color for links and the main
-navigation bar.
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-dark-blue)">$unicef-dark-blue</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-purple)">$unicef-purple</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-red)">$unicef-red</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-dark-red)">$unicef-dark-red</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-orange)">$unicef-orange</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-green)">$unicef-green</div>
+<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-dark-green)">$unicef-dark-green</div>
+
+We use `$unicef-blue` mainly on header.
+
+Use the `$unicef-dark-blue` on the interface on elements with actions (buttons, links, etc).
 
 
 ## Traffic light colors
 We use the traffic light colors metaphor for indicating status or result.
 
-1. **Green color means success** : Some task was finished successfully. For
+1. <div class="p-3 mb-2 bg-success text-white">Success</div>
+    **Green color means success**: Some task was finished successfully. For
 example, display a notification after the user successfully saved the contents
 of a form.
 
-2. **Orange and yellow mean warning**: This color warns the user that there is
+
+2. <div class="p-3 mb-2 bg-warning text-dark">Warning</div>
+    **Orange and yellow mean warning**: This color warns the user that there is
 something that he may need to pay attention. Something exceptional, something
 that is important for him to know, but does not stop him to continue advancing
 in the flow.
 
-3. **Red means error or danger**: This color says the user that there is
+3. <div class="p-3 mb-2 bg-danger text-white">Danger</div>
+    **Red means error or danger**: This color says the user that there is
 something that is preventing him to continue with the regular flow. For example,
 user forgot to fill a mandatory field.
 
@@ -97,8 +124,11 @@ to avoid using it in excess.
 
 <p class="alert alert-warning">
 Note that we never use color as the unique cue in the interface to indicate the
-status/result, as there may be colorblind users.    
+status/result, as there may be colorblind users.
+
+<br><br>We use the color to reinforce the message, but the message itself should have complete meaning without any color.
 </p>
+
 
 
 ## Typography
@@ -106,6 +136,10 @@ status/result, as there may be colorblind users.
 For keeping the weight of the HTML low, we haven't defined a default typography
 other than the default font of the operating system the user is running. For
 example, in Windows 10 is `Segoe`.
+
+**References**
+
+ * [Using UI System Fonts In Web Design: A Quick Practical Guide](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/)
 
 ## Headings
 
@@ -116,18 +150,13 @@ Headings `h1` to `h6`.
   color because UNICEF blue may be confused with a link. We are using UNICEF
   blue for links.
 
-Recommended date format is `dd MMM YYYY`. For instance: `01 Feb 2018` or `10 Mar 2020`.
+## Text and labeling
 
-Never use the format `dd/mm/yyyy` or `mm/dd/yyyy`. A date such as
-`02/01/2020`, can be interpreted either as `01 Feb 2020` or `02 Jan 2020`.
+Labels are the texts that appear on the interface next to form fields or within buttons.
 
-## Labeling
+Define a good labeling is one of the most difficult tasks when designing a good user interface and it should be conscientiously thought.
 
-Labels are the texts that appear on the interface, typically next to form fields or within buttons.
-
-Define a good labeling is one of the most difficult tasks when designing a user interface and it should be conscientiously thought.
-
-The following rules are recommended
+The following rules are recommended.
 
 1. Labels shall be univocal, that is, they must convey one single meaning to all users.
 
@@ -145,7 +174,7 @@ The following rules are recommended
 
 4. Labels shall be consistent across the whole interface. For example, if "Delete" is used in one page, it should be used in all pages, avoiding the use of "Remove" or "Eliminate".
 
-5. Labels should have sentence case. For example, use "Request vacation" and do not use "Request **V**acation"**.
+5. Labels should have sentence case. For example, use "Request vacation" and do not use ~~"Request Vacation"~~.
 
 6. We do not use two dots after labels. Example:
 
@@ -162,15 +191,42 @@ The following rules are recommended
 
     | Label         | Action                      | Do not use              |
     | ------------- |:----------------------------|:------------------------|
+    | Add           | Create a new item           | Create, Build,          |
     | Cancel        | Abandon current action      | Dismiss, Abandon        |
-    | Continue      | Go to next step             |    Next                 |
-    | Delete        | Delete an existing item     | Remove, Eliminate       |
+    | Continue      | Go to next step             | Next, Following         |
+    | Delete        | Delete an existing item     | Remove, Eliminate, Suprime |
     | Edit          | Modify an existing item     | Modify, Change          |
-    | Save          | Save into a system an item  |   Submit, Commit        |
+    | Save          | Save into a system an item  | Submit, Commit          |
+
+    `TODO make a complete list of standard labels`
+
+    However there may be some exceptions as "New post"
+
+### Date format
+
+Recommended date format is `dd MMM YYYY`. For instance: `01 Feb 2018` or `10 Mar 2020`.
+
+Never use the format `dd/mm/yyyy` or `mm/dd/yyyy`. A date such as
+`02/01/2020`, can be interpreted either as `01 Feb 2020` or `02 Jan 2020`.
 
 
-`TODO make a complete list of standard labels`
+### Numbers and currencies format
 
+By default, we stick to English numbers. Separate thousands, millions, etc. with `,` and decimals with `.`. Example: `3.14159`, `1,200,000`.
+
+For currencies prepend the currency symbol to the number and use always two decimals. Example: `$123,456,789.00`, `€1,200.00`.
+
+You can skip decimals if they are not relevant (`$1,200`), but if you include them, always use two (~~`$1,200.3`~~).
+
+<p class="alert alert-warning">
+  Note: Applications with internationalization support may override this
+  recommendation.
+  <br><br>For example, in Spanish is more common to write one million euros as <code class="highlighter-rouge">1.000.000,00€</code>.
+</p>
+
+**References**
+
+  * [UI Text for Web parts - Sharepoint Documentation](https://docs.microsoft.com/en-us/sharepoint/dev/design/ui-text-for-web-parts)
 
 ## Forms
 
@@ -231,6 +287,27 @@ Forms shall be designed the following way:
        </span>
      </div>
    </div>
+
+6. Numerical input fields shall be aligned to the right (to ease reading)
+
+  <div class="doc-example">
+    <div class="row col-sm-4 col-xs-6">
+    <label for="number-left1">Number 1</label>
+      <input name="number-left1" class="form-control" type="number" value="11.34">
+    </div>
+    <label for=" number-left2">Number 2</label>
+    <div class="row col-sm-4 col-xs-6">
+      <input name="number-left2" class="form-control" type="number" value="11.34">
+    </div>
+  </div>
+
+7. Currency fields:
+  1. Shall not allow the user to introduce more than 2 decimals.
+  2. Shall not allow the user to introduce any character not allowed.
+  3. On blur, shall rewrite the contents to its
+
+`TODO improve description of currency fields behavior`
+
 
 ## Forms Layout
 There are two ways of arranging fields in a form. The first one is in a linear way, with one field per line, that is, by displaying one field above the next one. The second way to arrange a form is the productivity tool form. In these kinds of forms the layout groups elements to maximize the number of fields visible in the screen.
@@ -334,7 +411,9 @@ Tables fields should be organized following this pattern from left to right:
 2. Most important information in the row.
 3. Least important information in the row.
 4. Action links.
-
+5. Alignment
+  1. In general, columns are aligned to the left except last column that should be aligned to the right.
+  2. Numberical columns and dates shall be always aligned to the right (to ease reading).
 
 `TODO provide an example`
 
