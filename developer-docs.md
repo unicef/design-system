@@ -5,23 +5,23 @@ id: developer-docs
 title: "Developers docs"
 ---
 
-UNICEF has defined a visual design specification for our internal web
+UNICEF defined a visual design specification for its internal web
 applications. This specification follows our brand guidelines, takes into
-account accessibility and is rooted in a set of principles that are defined on
+account accessibility and is rooted in a set of usability principles that are defined on the
 __[design guidelines](guidelines)__.
 
-Additionally to those specs, UNICEF has created a reference implementation that tries to be as technology agnostic as possible, so it can be used with any modern dev framework such as React or Angular. One of the main goals of this implementation is to:
-- Speed up the development of our applications
-- Avoid the
+Additionally to those specs, UNICEF has created a reference implementation that tries to be as technology agnostic as possible, so it can be used with any modern dev framework such as React or Angular. One of the main goals of this reference implementation is to:
+
+- Speed up the development of our applications. By providing this reference, developers do not need to take care of the time consuming creation of basic elements such as buttons and all their statuses (focus, active, etc..). Instead they can focus on the functionality.
 - Improve the quality of the interfaces with a well thought and designed framework.
+- Because the core of this implementation is HTML and CSS it is almost ready to be used with any front end development framework such as Angular or React.
 
 **This document is for developers** that have to implement the user
 interface of a UNICEF web application. Here you will find the technical documentation with examples of the HTML and CSS classes.
 
+**This reference implementation is based on [bootstrap 4.0](https;//getbootstrap.com)**, one of the most popular and widely used frameworks on the Internet. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Internet. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
-
-If you need to define or design a user interface for a UNICEF application you will need to
+If you need to define or design a user interface for an internal application of UNICEF you will need to
 understand how and when to use each of the elements defined in this document. To get that knowledge, please, read our __[design guidelines](guidelines)__.
 
 <!--
@@ -42,7 +42,7 @@ Local copy and use SCSS
 
 ## Typography
 
-The default typography is the one defined by user's operating system. That way we don't need to download any font.
+The default typography is the one defined by the system. That way browsers do not need to download any font.
 
 <div class="doc-example">
   <h1>h1. Heading 1</h1>
@@ -126,6 +126,7 @@ consequat.
 <h6>heading 6</h6>
 
 {% endhighlight %}
+
 
 
 ## Alerts

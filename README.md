@@ -9,21 +9,37 @@ The goal of this project is to:
   - Speed up the development time by reusing the HTML and CSS.
 
 
-Designers and product managers, please refer to the Design Guidelines (TODO: add link).
+Designers, product managers and anyone that has to define the user interface of a web application we provide the following [design guidelines](https;//unicef.github.io/unicef-design-system/guidlines.html).
 
-For developers, we provide a reference implementation based on [Bootstrap](http://getbootstrap.com).
+For developers, we provide a reference implementation. [Documentation for developers can be found here](https;//unicef.github.io/unicef-design-system/guidlines.html)
+
+This reference implmentation is based on  based on [Bootstrap 4.1](http://getbootstrap.com).
 
 
 ## Usage
 
-Include files in your HTML:
+### With a CDN
 
-//TODO test  https://www.jsdelivr.com/?
+`TODO test  https://www.jsdelivr.com/?`
 
+### CSS
+
+```html
+<head>
+<!-- include this line within your head element -->
+<link rel="stylesheet" type="text/css" href="path/to/dist/css/unicef.css">
+</head>
+
+```
+
+If you need to use Javascript
+```html
+<script src="path/to/dist/js/unicef.js"></script>
+```
 
 ### Using SASS
 
-Bootstrap customization is based on [SASS](https://sass-lang.com), and therefore you can easily override the CSS classes for your particular project.
+This bootstrap customization is based on [SASS](https://sass-lang.com), and therefore you can easily override the CSS classes for your particular project.
 
 First, install the npm package
 
@@ -52,7 +68,7 @@ work. You can activate them back in `_variables.scss`.
 
 ### Development
 
-#### Download
+If you need to further develop this project
 
 Get source code from git repository
 
@@ -87,8 +103,10 @@ $ gulp watch-sass
 
 ```
 
+# Contribution
 
+Just clone the project and make a pull request.
 
 # License
 
-Distributerd under GLPv3
+Distributed under GLPv3.
