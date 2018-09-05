@@ -1,10 +1,17 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+#
+# Layout. Use page
 layout: page
+
+# Id is necessary for PDF conversion. It should be the same as the
+# name of the file.
+
 id: guidelines
+
+# Is it displayed on the navigation bar?
 in-navbar: true
+
+# Visible title.
 title: Design Guidelines
 ---
 
@@ -149,6 +156,10 @@ Headings `h1` to `h6`.
   2. Although, it is typical to use the brand color on headers, we use a black
   color because UNICEF blue may be confused with a link. We are using UNICEF
   blue for links.
+  3. Do not jump hierarchies. After `h1` there should be `h2`, but not `h3` or `h4`. This is important for text readers, as users can navigate through headings.
+  4. Only one `h1` per page. It shall be the title of the page.
+  5. Make your heading content: short, specific and clear.
+
 
 ## Text and labeling
 
@@ -306,6 +317,26 @@ Forms shall be designed the following way:
   2. Shall not allow the user to introduce any character not allowed.
   3. On blur, shall rewrite the contents to its
 
+8. Use readonly and disabled fields properly. A field that just displays information and user can never change it is a read only field (html attribute `readonly`). A field that the user cannot modify because of the current status of the form are `disabled`. Example:
+
+<div class="doc-example">
+  <p class="text-danger">You need admin permissions to edit the birthday. Please, request access to the admin.
+  </p>
+  <div class="row">
+    <div class="col-sm-4 col-xs-6">
+      <label for="date-disabled">Birthday</label>
+      <input name="date-disabled" class="form-control" type="text" value="05 Sep 1999" disabled>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+      <label for="date-readonly">Older than 18?</label>
+      <input name="date-readonly" class="form-control" type="text" value="Yes" readonly>
+    </div>
+  </div>
+</div>
+
+In the example above, the birthday field is disabled because user does not have permissions. However, Older than 18? field is read only, because it only displays information.
+
+
 `TODO improve description of currency fields behavior`
 
 
@@ -437,3 +468,13 @@ In case selection of individual rows is provided, it should be displayed at the 
 Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
 
 `TODO expand this topic`
+
+## Images
+
+Images should weight the least amount possible.
+
+1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
+
+2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
+
+3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image.
