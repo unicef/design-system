@@ -185,7 +185,7 @@ The following rules are recommended.
 
 4. Labels shall be consistent across the whole interface. For example, if "Delete" is used in one page, it should be used in all pages, avoiding the use of "Remove" or "Eliminate".
 
-5. Labels should have sentence case. For example, use "Request vacation" and do not use ~~"Request Vacation"~~.
+5. Labels should have sentence case. For example, use "Request vacation" and do not use "Request ~~V~~acation" (capital V in vacation).
 
 6. We do not use two dots after labels. Example:
 
@@ -215,10 +215,10 @@ The following rules are recommended.
 
 ### Date format
 
-Recommended date format is `dd MMM YYYY`. For instance: `01 Feb 2018` or `10 Mar 2020`.
+Recommended date format is `dd-MMM-YYYY`. For instance: `01-Feb-2018` or `10-Mar-2020`.
 
-Never use the format `dd/mm/yyyy` or `mm/dd/yyyy`. A date such as
-`02/01/2020`, can be interpreted either as `01 Feb 2020` or `02 Jan 2020`.
+**Never use the format `dd/mm/yyyy` or `mm/dd/yyyy** as it is confusing. For instance,
+`02/01/2020`, dependeing on the country it can be interpreted either as `01-Feb-2020` or `02-Jan-2020`.
 
 
 ### Numbers and currencies format
@@ -477,4 +477,4 @@ Images should weight the least amount possible.
 
 2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
 
-3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image.
+3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image. For decorative images, use an empty string `alt` attribute (`alt=""`).

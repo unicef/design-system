@@ -174,7 +174,7 @@ Alerts support strong and links.
 {% endhighlight %}
 
 
-# Buttons
+## Buttons
 There are 4 types of buttons. The `.btn` class is common to all of them:
   + `.btn-primary` for the main button.
   + `.btn-outline-primary`, for the default button.
@@ -224,8 +224,17 @@ Also, it is possible to group an input with a button:
   </div>
 </div>
 
+## Images
+Images should weight the least amount possible.
 
-# Forms
+1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
+
+2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
+
+3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image. For decorative images, use an empty string `alt` attribute (`alt=""`).
+
+
+## Forms
 
 Form fields have different status:
 
@@ -394,7 +403,7 @@ Example the HTML and classes to display errors (no actual validation is performe
 </div>
 
 
-# Tabs
+## Tabs
 
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -414,7 +423,7 @@ Example the HTML and classes to display errors (no actual validation is performe
 
 
 
-# Cards
+## Cards
 
 <div class="doc-example">
 <div class="card-deck">
@@ -474,7 +483,7 @@ List group with a button:
 </ul>
 </div>
 
-# Labels
+## Labels
 
 <span class="label label-default">Default</span>
 <span class="label label-primary">Primary</span>
@@ -485,7 +494,7 @@ List group with a button:
 
 
 
-# Form fields
+## Form fields
 
 <form>
   <div class="row">
@@ -597,7 +606,7 @@ List group with a button:
 </div>
 
 
-# Inline elements
+## Inline elements
 
 <div class="col-md-6">
   <div class="form-check form-check-inline">
