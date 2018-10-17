@@ -351,7 +351,7 @@ However, for repetitive tasks expected to be done by users recurrently in produc
 changes of value in interactive elements change values in results areas.
 
 
-**Horizontal forms are not recommended**. These forms place the labels are on the left of the field. Because of the distance between the label and the field are harder to fill for the user, also, these may have more problems with responsive design..
+**Horizontal forms are not recommended**. These forms place the labels are on the left of the field. Because of the distance between the label and the field are harder to fill for the user, also, these may have more problems with responsive design.
 
 <div class="doc-example">
 
