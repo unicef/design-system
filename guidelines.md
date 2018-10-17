@@ -471,7 +471,7 @@ Whenever the system is performing an action in background the user interface sha
 
 ## Images
 
-Images should weight the least amount possible.
+Images should weight the least amount possible..
 
 1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
 
