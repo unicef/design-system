@@ -10,19 +10,28 @@ applications. This specification follows our brand guidelines, takes into
 account accessibility and is rooted in a set of principles that are defined on
 __[design guidelines](guidelines)__.
 
-Additionally to those specs, UNICEF has created a reference implementation that tries to be as technology agnostic as possible, so it can be used with any modern dev framework such as React or Angular. One of the main goals of this implementation is to:
-- Speed up the development of our applications
-- Avoid the
+Additionally to those specs, UNICEF has created a technology agnostic reference
+implementation, so it can be used with any modern development framework such
+as React or Angular. One of the main goals of this implementation is to:
+- Speed up the development of our applications by providing developers with a
+  set of CSS classes that comply with usability, branding and accessibility best
+  practices.
 - Improve the quality of the interfaces with a well thought and designed framework.
 
 **This document is for developers** that have to implement the user
-interface of a UNICEF web application. Here you will find the technical documentation with examples of the HTML and CSS classes.
+interface of a UNICEF web application. Here you will find the technical
+documentation with examples of the HTML and CSS classes.
 
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Internet. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
+This implementation is based on [bootstrap 4.0](https;//getbootstrap.com),
+one of the most popular and widely used frameworks on the Internet. For brevity,
+we assume the reader is familiar with this framework, and has a good
+understanding of HTML as well as CSS.
 
-If you need to define or design a user interface for a UNICEF application you will need to
-understand how and when to use each of the elements defined in this document. To get that knowledge, please, read our __[design guidelines](guidelines)__.
+If you need to design a user interface for a UNICEF
+application you will need to understand how and when to use each of the
+elements described in this document. To get that knowledge,
+please, read our __[design guidelines](guidelines)__.
 
 <!--
 
