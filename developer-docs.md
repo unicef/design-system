@@ -43,8 +43,7 @@ Local copy and use SCSS
 ## Typography
 
 The default typography is the one defined by user's operating system. That way we don't need to download any font.
-
-<div class="doc-example">
+{% capture example %}
   <h1>h1. Heading 1</h1>
   <p class="lead">
   Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -84,48 +83,8 @@ The default typography is the one defined by user's operating system. That way w
   <h5>heading 5</h5>
 
   <h6>heading 6</h6>
-</div>
-
-{% highlight html %}
-<h1>h1.Heading 1</h1>
-<p class="lead">
-Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-<p>
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-id est laborum.
-</p>
-<h2>Heading 2</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-
-<h3>Heading 3</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-
-<h4>heading 4</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-
-<h5>heading 5</h5>
-
-<h6>heading 6</h6>
-
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Alerts
