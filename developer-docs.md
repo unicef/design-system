@@ -100,7 +100,7 @@ The default typography is the one defined by user's operating system. That way w
 
 Alerts use the `.alert` class followed by the type of alert `alert-success`, `alert-warning`, `alert-danger`.
 
-<div class="doc-example">
+{% capture example %}
   <div class="alert alert-success" role="alert">
     This is a success alert. Check it out!
   </div>
@@ -111,35 +111,17 @@ Alerts use the `.alert` class followed by the type of alert `alert-success`, `al
   <div class="alert alert-danger" role="alert">
     This is a danger alert. An error or something that blocks current flow happened!
   </div>
-</div>
-{% highlight html %}
-
-  <div class="alert alert-success" role="alert">
-    This is a success alert. Check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    This is a warning alert. It is used to warn the user about something
-    he has to be aware of.
-  </div>
-  <div class="alert alert-danger" role="alert">
-    This is a danger alert. An error or something that blocks current flow happened!
-  </div>
-{% endhighlight %}
-
+{% endcapture %}
+{% include example.html content=example %}
 
 Alerts support strong and links.
 
-<div class="doc-example">
+{% capture example %}
   <div class="alert alert-warning" role="alert">
     This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
   </div>
-</div>
-
-{% highlight html %}
-  <div class="alert alert-warning" role="alert">
-    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
-  </div>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Buttons
@@ -149,7 +131,7 @@ There are 4 types of buttons. The `.btn` class is common to all of them:
   + `.btn-outline-danger`, for the danger button.
   + `.btn-link`, for the link button.
 
-<div class="doc-example">
+{% capture example %}
   <h5>Primary button</h5>
   <p>
     <button class="btn btn-primary">Normal</button>
@@ -175,12 +157,14 @@ There are 4 types of buttons. The `.btn` class is common to all of them:
     <button class="btn btn-link">Normal</button>
     <button class="btn btn-link" disabled>Link button</button>
   </p>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 
 Also, it is possible to group an input with a button:
 
-<div class="doc-example">
+{% capture example %}
   <div class="input-group">
     <input class="form-control py-2" type="search"
       placeholder="Example of input with search button" >
@@ -190,7 +174,9 @@ Also, it is possible to group an input with a button:
       </button>
     </span>
   </div>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 ## Images
 Images should weight the least amount possible.
@@ -206,7 +192,7 @@ Images should weight the least amount possible.
 
 Form fields have different status:
 
-<div class="doc-example">
+{% capture example %}
   <form>
    <!-- on inputs/selects/textareas use the class .form-control -->
     <div class="form-group col-md-6">
@@ -239,11 +225,13 @@ Form fields have different status:
         readonly>
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 Form elements can include short texts that provide important information to users.
 
-<div class="doc-example">
+{% capture example %}
   <form>
     <div class="form-group">
       <label for="input-placeholder-help">Your email</label>
@@ -256,14 +244,15 @@ Form elements can include short texts that provide important information to user
       <input type="email" class="form-control" id="input-placeholder-help-up" aria-describedby="emailHelp-up" placeholder="Example: john.doe@unicef.org">
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Textareas
 
 To add a counter at the bottom of a field add the attributes `data-counter="true"` and  `maxlength="100"`, where 100 is the max number of characters. Add `data-autoresize="true"` to allow auto resize.
 
-<div class="doc-example">
+{% capture example %}
   <form class="row">
     <div class="form-group col-4">
       <label for="textarea-regular">Regular textarea</label>
@@ -289,16 +278,17 @@ To add a counter at the bottom of a field add the attributes `data-counter="true
         data-autoresize="true"></textarea>
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
 These two enhancements require Javascript.
 
 ## Required fields
 
 Required fields are those that are mandatory to fill in order to submit a form.
-For required fields we mark `<label>` contents with an `<em>` and the form field (`<input`,  `select`, `textarea`,...) with the attribute `required`.
+For required fields we mark `<label>` contents with an `<em>` and the form field (`input`,  `select`, `textarea`,...) with the attribute `required`.
 
-<div class="doc-example">
+{% capture example %}
   <form>
     <div class="row">
       <div class="form-group col-md-6">
@@ -328,14 +318,17 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
 
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 ## Errors in forms
 
 UNICEF's reference implementation uses [Bootstrap conventions to display errors in forms](https://getbootstrap.com/docs/4.1/components/forms/#validation) as base. We slightly customized the look and feel and we only use the `.is-invalid` class to provide visual feedback.
 
 Example the HTML and classes to display errors (no actual validation is performed)
-<div class="doc-example">
+
+{% capture example %}
   <form class="row">
     <div class="form-group col-md-4">
       <label for="input-with-error">Input with error</label>
@@ -368,26 +361,30 @@ Example the HTML and classes to display errors (no actual validation is performe
         <small class="input-with-error-counter">200 characters left</small>
     </div>
  </form>
-</div>
-
+{% endcapture %}
+{% include example.html content=example %}
 
 ## Tabs
 
-<nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+{% capture example %}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
   </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-  <h2>Contensts</h2>
+  <h2>Contents</h2>
   </div>
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel"   aria-labelledby="nav-contact-tab">...</div>
+  </div>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 
