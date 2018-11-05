@@ -5717,55 +5717,6 @@ a.text-danger:hover, a.text-danger:focus {
   text-transform: uppercase;
   min-width: 88px; }
 
-nav {
-  background-color: #1CABE2;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  height: 6rem; }
-  nav.navbar {
-    padding-right: 0rem; }
-    nav.navbar .navbar-brand {
-      color: #fff; }
-      nav.navbar .navbar-brand.navbar-line {
-        border-right: 1px solid #ffff;
-        padding-right: 1rem; }
-    nav.navbar .navbar-nav-scroll .navbar-nav {
-      color: #fff;
-      background-color: #374EA2;
-      border-top-left-radius: 100px;
-      border-bottom-left-radius: 100px;
-      padding: 0.5rem; }
-      nav.navbar .navbar-nav-scroll .navbar-nav .nav-item .badge {
-        background-color: white;
-        color: #374EA2;
-        border-radius: 20px;
-        margin-right: 0.5rem; }
-      nav.navbar .navbar-nav-scroll .navbar-nav .nav-item .fa {
-        padding-right: 0.5rem; }
-      nav.navbar .navbar-nav-scroll .navbar-nav.nav-link {
-        color: #fff;
-        display: block; }
-
-nav-tabs {
-  padding: 1.5rem 2rem 0rem 2rem;
-  font-size: 1.75rem;
-  font-family: Arial;
-  color: #4A4A4A;
-  line-height: 3rem;
-  text-align: center;
-  border-bottom-color: #c9c9c9; }
-  nav-tabs .nav-item.active {
-    border: none;
-    border-bottom: 0.5rem solid #1CABE2;
-    color: #0000; }
-  nav-tabs .nav-item:hover {
-    border: none;
-    border-bottom: 0.5rem solid #1CABE2;
-    color: #0000; }
-  nav-tabs .nav-item .nav-link {
-    border: none; }
-    nav-tabs .nav-item .nav-link:hover {
-      border: none; }
-
 .card-body {
   padding: 1rem; }
 
