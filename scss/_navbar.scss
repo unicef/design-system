@@ -1,0 +1,105 @@
+nav {
+  background-color: $unicef-blue;
+  font-family: $font-family-sans-serif;
+  height: 56px;;
+  &.navbar{
+    padding-right: 0rem;
+    .navbar-brand {
+      color: $white;
+      &.navbar-line{
+        border-right: 1px solid #ffff;
+        padding-right: 1rem;
+      } 
+    }
+    .navbar-nav-scroll{
+      color: $white;
+      .navbar-nav{
+        background-color: rgba(55, 78, 162, 0.6);
+        @include border-left-radius(80px); 
+        //line-height: ;
+        font-size: 14px;
+        padding : 6px 18px 2px 24px;
+        .nav-link{
+          color: $white;
+          display: block;
+        }
+      }
+   }
+  .nav-item {
+    .badge{
+      background-color: white;
+      color: $unicef-dark-blue;
+      @include border-radius(20px);
+      margin-right: 0.5rem;
+    }
+    .fa{
+      padding-right: 0.5rem;
+    }
+    .fa{
+      padding-left: 0.5rem;
+    }
+  }
+ }
+}
+.nav-tabs{
+  padding: 1.5rem 2rem 0rem 2rem;
+  font-size: 14px;
+  margin-top: 0rem;
+  font-family: Arial;
+  color: #0000 !important;
+  line-height: 24px;	
+  text-align: center;
+  border-bottom-color: $nav-tabs-border-color;
+  .nav-item{
+    color: #0000 !important;
+    &:active{
+      border: 1px solid $unicef-blue;
+      background-color: lightblue;
+      border-bottom: 4px solid $unicef-blue;
+      
+    }
+    &.active{
+      border:none;
+      border-bottom: 4px solid $unicef-blue;;
+    }
+    &:hover{
+      border:none;
+      border-bottom: 4px solid $unicef-blue;;
+    }
+    a{
+      color:black;
+    }
+    .nav-link{
+      border:none;
+      &:hover{
+        border:none;
+      } 
+    }
+    &.dropdown{
+      color: white;
+      background-color: inherit;
+      font-family: inherit;
+      &:hover{
+        border: 1px solid $unicef-blue;
+        background-color: lightblue;
+        border-bottom: 4px solid $unicef-blue;
+      }
+      &:active{
+        border: 1px solid $unicef-blue;
+        background-color: lightblue;
+        border-bottom: 4px solid $unicef-blue;
+      }
+      .dropdown-menu{
+        .dropdown-item{ 
+          background-color: #f9f9f9;
+          min-width: 160px;
+          z-index: 1;
+          &:hover{
+            color: $white;
+            background-color: $unicef-dark-blue;
+          } 
+        }
+      } 
+    }
+  }  
+}

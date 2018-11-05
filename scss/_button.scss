@@ -4,3 +4,68 @@
   text-transform: $btn-transform;
   min-width: $btn-min-width;
 }
+nav {
+  background-color: $unicef-blue;
+  font-family: $font-family-sans-serif;
+  height: 6rem;
+  &.navbar{
+    padding-right: 0rem;
+    .navbar-brand {
+      color: $white;
+      &.navbar-line{
+        border-right: 1px solid #ffff;
+        padding-right: 1rem;
+      } 
+    }
+    .navbar-nav-scroll{
+      .navbar-nav{
+        color: $white;
+        background-color: theme-color("primary");
+        @include border-left-radius(100px); 
+        padding: 0.5rem;
+        .nav-item {
+          .badge{
+              background-color: white;
+              color: $unicef-dark-blue;
+              @include border-radius(20px);
+              margin-right: 0.5rem;
+          }
+          .fa{
+            padding-right: 0.5rem;
+          }
+         }
+          &.nav-link{
+              color: $white;
+              display: block;
+        }
+      }
+   }
+ }
+}
+nav-tabs{
+  padding: 1.5rem 2rem 0rem 2rem;
+  font-size: 1.75rem;
+  font-family: Arial;
+  color:#4A4A4A;
+  line-height: 3rem;	
+  text-align: center;
+  border-bottom-color: $nav-tabs-border-color;
+  .nav-item{
+    &.active{
+      border:none;
+      border-bottom: 0.5rem solid $unicef-blue;
+      color: #0000;
+    }
+    &:hover{
+      border: none;
+      border-bottom: 0.5rem solid $unicef-blue;;
+      color: #0000;
+    }
+    .nav-link{
+      border:none;
+      &:hover{
+        border:none;
+      } 
+    }
+  }
+}

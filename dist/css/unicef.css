@@ -5717,6 +5717,55 @@ a.text-danger:hover, a.text-danger:focus {
   text-transform: uppercase;
   min-width: 88px; }
 
+nav {
+  background-color: #1CABE2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 6rem; }
+  nav.navbar {
+    padding-right: 0rem; }
+    nav.navbar .navbar-brand {
+      color: #fff; }
+      nav.navbar .navbar-brand.navbar-line {
+        border-right: 1px solid #ffff;
+        padding-right: 1rem; }
+    nav.navbar .navbar-nav-scroll .navbar-nav {
+      color: #fff;
+      background-color: #374EA2;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      padding: 0.5rem; }
+      nav.navbar .navbar-nav-scroll .navbar-nav .nav-item .badge {
+        background-color: white;
+        color: #374EA2;
+        border-radius: 20px;
+        margin-right: 0.5rem; }
+      nav.navbar .navbar-nav-scroll .navbar-nav .nav-item .fa {
+        padding-right: 0.5rem; }
+      nav.navbar .navbar-nav-scroll .navbar-nav.nav-link {
+        color: #fff;
+        display: block; }
+
+nav-tabs {
+  padding: 1.5rem 2rem 0rem 2rem;
+  font-size: 1.75rem;
+  font-family: Arial;
+  color: #4A4A4A;
+  line-height: 3rem;
+  text-align: center;
+  border-bottom-color: #c9c9c9; }
+  nav-tabs .nav-item.active {
+    border: none;
+    border-bottom: 0.5rem solid #1CABE2;
+    color: #0000; }
+  nav-tabs .nav-item:hover {
+    border: none;
+    border-bottom: 0.5rem solid #1CABE2;
+    color: #0000; }
+  nav-tabs .nav-item .nav-link {
+    border: none; }
+    nav-tabs .nav-item .nav-link:hover {
+      border: none; }
+
 .card-body {
   padding: 1rem; }
 
@@ -5736,5 +5785,84 @@ select:required {
 
 strong {
   color: #000; }
+
+nav {
+  background-color: #1CABE2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 56px; }
+  nav.navbar {
+    padding-right: 0rem; }
+    nav.navbar .navbar-brand {
+      color: #fff; }
+      nav.navbar .navbar-brand.navbar-line {
+        border-right: 1px solid #ffff;
+        padding-right: 1rem; }
+    nav.navbar .navbar-nav-scroll {
+      color: #fff; }
+      nav.navbar .navbar-nav-scroll .navbar-nav {
+        background-color: rgba(55, 78, 162, 0.6);
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        font-size: 14px;
+        padding: 6px 18px 2px 24px; }
+        nav.navbar .navbar-nav-scroll .navbar-nav .nav-link {
+          color: #fff;
+          display: block; }
+    nav.navbar .nav-item .badge {
+      background-color: white;
+      color: #374EA2;
+      border-radius: 20px;
+      margin-right: 0.5rem; }
+    nav.navbar .nav-item .fa {
+      padding-right: 0.5rem; }
+    nav.navbar .nav-item .fa {
+      padding-left: 0.5rem; }
+
+.nav-tabs {
+  padding: 1.5rem 2rem 0rem 2rem;
+  font-size: 14px;
+  margin-top: 0rem;
+  font-family: Arial;
+  color: #0000 !important;
+  line-height: 24px;
+  text-align: center;
+  border-bottom-color: #c9c9c9; }
+  .nav-tabs .nav-item {
+    color: #0000 !important; }
+    .nav-tabs .nav-item:active {
+      border: 1px solid #1CABE2;
+      background-color: lightblue;
+      border-bottom: 4px solid #1CABE2; }
+    .nav-tabs .nav-item.active {
+      border: none;
+      border-bottom: 4px solid #1CABE2; }
+    .nav-tabs .nav-item:hover {
+      border: none;
+      border-bottom: 4px solid #1CABE2; }
+    .nav-tabs .nav-item a {
+      color: black; }
+    .nav-tabs .nav-item .nav-link {
+      border: none; }
+      .nav-tabs .nav-item .nav-link:hover {
+        border: none; }
+    .nav-tabs .nav-item.dropdown {
+      color: white;
+      background-color: inherit;
+      font-family: inherit; }
+      .nav-tabs .nav-item.dropdown:hover {
+        border: 1px solid #1CABE2;
+        background-color: lightblue;
+        border-bottom: 4px solid #1CABE2; }
+      .nav-tabs .nav-item.dropdown:active {
+        border: 1px solid #1CABE2;
+        background-color: lightblue;
+        border-bottom: 4px solid #1CABE2; }
+      .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1; }
+        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+          color: #fff;
+          background-color: #374EA2; }
 
 /*# sourceMappingURL=unicef.css.map */

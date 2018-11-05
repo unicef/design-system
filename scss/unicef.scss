@@ -54,7 +54,6 @@ $theme-colors: map-remove($theme-colors, 'secondary', 'info','light','dark');
 // https://github.com/twbs/bootstrap/tree/v4-dev/scss
 
 //@import "type";
-//@import "navbar";
 @import "alert";
 @import "button";
 @import "card";
@@ -68,3 +67,4 @@ $theme-colors: map-remove($theme-colors, 'secondary', 'info','light','dark');
 @import "tab";
 @import "type";
 //@import "notifications";
+@import "navbar";
