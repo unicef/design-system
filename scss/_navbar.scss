@@ -1,9 +1,12 @@
 nav {
   background-color: $unicef-blue;
   font-family: $font-family-sans-serif;
-  height: 56px;;
+  height:56px;
   &.navbar{
+    font-size: 18px;	
+    line-height: 32px;
     padding-right: 0rem;
+    padding: 41px 0rem 42px 1rem;
     .navbar-brand {
       color: $white;
       &.navbar-line{
@@ -13,12 +16,14 @@ nav {
     }
     .navbar-nav-scroll{
       color: $white;
+      font-family: "Helvetica Neue";
       .navbar-nav{
         background-color: rgba(55, 78, 162, 0.6);
         @include border-left-radius(80px); 
         //line-height: ;
         font-size: 14px;
-        padding : 6px 18px 2px 24px;
+        line-height: 36px;
+        padding : 16px 16px 14px 32px;
         .nav-link{
           color: $white;
           display: block;
@@ -35,14 +40,11 @@ nav {
     .fa{
       padding-right: 0.5rem;
     }
-    .fa{
-      padding-left: 0.5rem;
-    }
   }
  }
 }
 .nav-tabs{
-  padding: 1.5rem 2rem 0rem 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   font-size: 14px;
   margin-top: 0rem;
   font-family: Arial;
@@ -68,6 +70,8 @@ nav {
     }
     a{
       color:black;
+      font-family: Arial;
+      font-size: 16px;
     }
     .nav-link{
       border:none;
@@ -76,9 +80,7 @@ nav {
       } 
     }
     &.dropdown{
-      color: white;
-      background-color: inherit;
-      font-family: inherit;
+      font-size: 16px;
       &:hover{
         border: 1px solid $unicef-blue;
         background-color: lightblue;
@@ -89,10 +91,22 @@ nav {
         background-color: lightblue;
         border-bottom: 4px solid $unicef-blue;
       }
+      &.show{
+        border: none;
+        .nav-link{
+        border: 1px solid $unicef-blue;
+        background-color: lightblue;
+        border-bottom: 4px solid $unicef-blue;
+        }
+      }
       .dropdown-menu{
+        padding: 8px 0px;
+        background-color: white;
         .dropdown-item{ 
-          background-color: #f9f9f9;
+          background-color: $white;
+          padding: 0px 24px;
           min-width: 160px;
+          line-height: 32px;
           z-index: 1;
           &:hover{
             color: $white;
@@ -102,4 +116,21 @@ nav {
       } 
     }
   }  
+}
+.skip
+{ 
+  display: block;
+  margin-top: -40px;
+  padding: 8px 15px;
+  &:focus{
+    margin-top:auto;
+    margin-bottom: 5px;
+    border: 1px dotted blue;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  &:active{
+    display: inline;
+   
+  }
 }

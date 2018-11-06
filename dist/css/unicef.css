@@ -5742,20 +5742,25 @@ nav {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 56px; }
   nav.navbar {
-    padding-right: 0rem; }
+    font-size: 18px;
+    line-height: 32px;
+    padding-right: 0rem;
+    padding: 41px 0rem 42px 1rem; }
     nav.navbar .navbar-brand {
       color: #fff; }
       nav.navbar .navbar-brand.navbar-line {
         border-right: 1px solid #ffff;
         padding-right: 1rem; }
     nav.navbar .navbar-nav-scroll {
-      color: #fff; }
+      color: #fff;
+      font-family: "Helvetica Neue"; }
       nav.navbar .navbar-nav-scroll .navbar-nav {
         background-color: rgba(55, 78, 162, 0.6);
         border-top-left-radius: 80px;
         border-bottom-left-radius: 80px;
         font-size: 14px;
-        padding: 6px 18px 2px 24px; }
+        line-height: 36px;
+        padding: 16px 16px 14px 32px; }
         nav.navbar .navbar-nav-scroll .navbar-nav .nav-link {
           color: #fff;
           display: block; }
@@ -5766,11 +5771,9 @@ nav {
       margin-right: 0.5rem; }
     nav.navbar .nav-item .fa {
       padding-right: 0.5rem; }
-    nav.navbar .nav-item .fa {
-      padding-left: 0.5rem; }
 
 .nav-tabs {
-  padding: 1.5rem 2rem 0rem 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   font-size: 14px;
   margin-top: 0rem;
   font-family: Arial;
@@ -5791,15 +5794,15 @@ nav {
       border: none;
       border-bottom: 4px solid #1CABE2; }
     .nav-tabs .nav-item a {
-      color: black; }
+      color: black;
+      font-family: Arial;
+      font-size: 16px; }
     .nav-tabs .nav-item .nav-link {
       border: none; }
       .nav-tabs .nav-item .nav-link:hover {
         border: none; }
     .nav-tabs .nav-item.dropdown {
-      color: white;
-      background-color: inherit;
-      font-family: inherit; }
+      font-size: 16px; }
       .nav-tabs .nav-item.dropdown:hover {
         border: 1px solid #1CABE2;
         background-color: lightblue;
@@ -5808,12 +5811,36 @@ nav {
         border: 1px solid #1CABE2;
         background-color: lightblue;
         border-bottom: 4px solid #1CABE2; }
-      .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
-        background-color: #f9f9f9;
-        min-width: 160px;
-        z-index: 1; }
-        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-          color: #fff;
-          background-color: #374EA2; }
+      .nav-tabs .nav-item.dropdown.show {
+        border: none; }
+        .nav-tabs .nav-item.dropdown.show .nav-link {
+          border: 1px solid #1CABE2;
+          background-color: lightblue;
+          border-bottom: 4px solid #1CABE2; }
+      .nav-tabs .nav-item.dropdown .dropdown-menu {
+        padding: 8px 0px;
+        background-color: white; }
+        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
+          background-color: #fff;
+          padding: 0px 24px;
+          min-width: 160px;
+          line-height: 32px;
+          z-index: 1; }
+          .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+            color: #fff;
+            background-color: #374EA2; }
+
+.skip {
+  display: block;
+  margin-top: -40px;
+  padding: 8px 15px; }
+  .skip:focus {
+    margin-top: auto;
+    margin-bottom: 5px;
+    border: 1px dotted blue;
+    display: inline-block;
+    text-decoration: underline; }
+  .skip:active {
+    display: inline; }
 
 /*# sourceMappingURL=unicef.css.map */
