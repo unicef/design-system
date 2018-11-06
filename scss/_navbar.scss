@@ -1,12 +1,9 @@
 nav {
   background-color: $unicef-blue;
   font-family: $font-family-sans-serif;
-  height:56px;
-  &.navbar{
-    font-size: 18px;	
-    line-height: 32px;
-    padding-right: 0rem;
-    padding: 41px 0rem 42px 1rem;
+  &.navbar{	
+    line-height: 2rem;
+    padding: 0rem 0rem 0rem 1rem;
     .navbar-brand {
       color: $white;
       &.navbar-line{
@@ -22,8 +19,8 @@ nav {
         @include border-left-radius(80px); 
         //line-height: ;
         font-size: 14px;
-        line-height: 36px;
-        padding : 16px 16px 14px 32px;
+        line-height: 2.25rem;
+        padding : 1rem 1rem 1rem 2rem;
         .nav-link{
           color: $white;
           display: block;
@@ -32,9 +29,9 @@ nav {
    }
   .nav-item {
     .badge{
-      background-color: white;
+      background-color: $body-bg;
       color: $unicef-dark-blue;
-      @include border-radius(20px);
+      @include border-radius(3rem);
       margin-right: 0.5rem;
     }
     .fa{
@@ -49,7 +46,7 @@ nav {
   margin-top: 0rem;
   font-family: Arial;
   color: #0000 !important;
-  line-height: 24px;	
+  line-height: 2rem;	
   text-align: center;
   border-bottom-color: $nav-tabs-border-color;
   .nav-item{
@@ -57,21 +54,21 @@ nav {
     &:active{
       border: 1px solid $unicef-blue;
       background-color: lightblue;
-      border-bottom: 4px solid $unicef-blue;
+      border-bottom: 0.25rem solid $unicef-blue;
       
     }
     &.active{
       border:none;
-      border-bottom: 4px solid $unicef-blue;;
+      border-bottom: 0.25rem solid $unicef-blue;
     }
     &:hover{
       border:none;
-      border-bottom: 4px solid $unicef-blue;;
+      border-bottom: 0.25rem solid $unicef-blue;
     }
     a{
-      color:black;
+      color: $black;
       font-family: Arial;
-      font-size: 16px;
+      font-size: 1rem;
     }
     .nav-link{
       border:none;
@@ -80,33 +77,35 @@ nav {
       } 
     }
     &.dropdown{
-      font-size: 16px;
+      font-size: 1rem;
       &:hover{
         border: 1px solid $unicef-blue;
         background-color: lightblue;
-        border-bottom: 4px solid $unicef-blue;
+        border-bottom: 0.25rem solid $unicef-blue;
       }
       &:active{
         border: 1px solid $unicef-blue;
         background-color: lightblue;
-        border-bottom: 4px solid $unicef-blue;
+        border-bottom: 0.25rem solid $unicef-blue;
       }
       &.show{
         border: none;
         .nav-link{
         border: 1px solid $unicef-blue;
         background-color: lightblue;
-        border-bottom: 4px solid $unicef-blue;
+        border-bottom: 0.25rem solid $unicef-blue;
         }
       }
       .dropdown-menu{
-        padding: 8px 0px;
-        background-color: white;
+        padding: 0.5rem 0rem;
+        background-color:$body-bg;
+        border-bottom-right-radius:$border-radius;
+        border-bottom-left-radius: $border-radius;
         .dropdown-item{ 
-          background-color: $white;
-          padding: 0px 24px;
+          background-color: $body-bg;
+          padding: 0rem 1.5rem;
           min-width: 160px;
-          line-height: 32px;
+          line-height: 2rem;
           z-index: 1;
           &:hover{
             color: $white;
@@ -125,7 +124,7 @@ nav {
   &:focus{
     margin-top:auto;
     margin-bottom: 5px;
-    border: 1px dotted blue;
+    border: 1px dotted $unicef-dark-blue;
     display: inline-block;
     text-decoration: underline;
   }

@@ -5739,13 +5739,10 @@ strong {
 
 nav {
   background-color: #1CABE2;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  height: 56px; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   nav.navbar {
-    font-size: 18px;
-    line-height: 32px;
-    padding-right: 0rem;
-    padding: 41px 0rem 42px 1rem; }
+    line-height: 2rem;
+    padding: 0rem 0rem 0rem 1rem; }
     nav.navbar .navbar-brand {
       color: #fff; }
       nav.navbar .navbar-brand.navbar-line {
@@ -5759,15 +5756,15 @@ nav {
         border-top-left-radius: 80px;
         border-bottom-left-radius: 80px;
         font-size: 14px;
-        line-height: 36px;
-        padding: 16px 16px 14px 32px; }
+        line-height: 2.25rem;
+        padding: 1rem 1rem 1rem 2rem; }
         nav.navbar .navbar-nav-scroll .navbar-nav .nav-link {
           color: #fff;
           display: block; }
     nav.navbar .nav-item .badge {
-      background-color: white;
+      background-color: #fff;
       color: #374EA2;
-      border-radius: 20px;
+      border-radius: 3rem;
       margin-right: 0.5rem; }
     nav.navbar .nav-item .fa {
       padding-right: 0.5rem; }
@@ -5778,7 +5775,7 @@ nav {
   margin-top: 0rem;
   font-family: Arial;
   color: #0000 !important;
-  line-height: 24px;
+  line-height: 2rem;
   text-align: center;
   border-bottom-color: #c9c9c9; }
   .nav-tabs .nav-item {
@@ -5786,45 +5783,47 @@ nav {
     .nav-tabs .nav-item:active {
       border: 1px solid #1CABE2;
       background-color: lightblue;
-      border-bottom: 4px solid #1CABE2; }
+      border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.active {
       border: none;
-      border-bottom: 4px solid #1CABE2; }
+      border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item:hover {
       border: none;
-      border-bottom: 4px solid #1CABE2; }
+      border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item a {
-      color: black;
+      color: #000;
       font-family: Arial;
-      font-size: 16px; }
+      font-size: 1rem; }
     .nav-tabs .nav-item .nav-link {
       border: none; }
       .nav-tabs .nav-item .nav-link:hover {
         border: none; }
     .nav-tabs .nav-item.dropdown {
-      font-size: 16px; }
+      font-size: 1rem; }
       .nav-tabs .nav-item.dropdown:hover {
         border: 1px solid #1CABE2;
         background-color: lightblue;
-        border-bottom: 4px solid #1CABE2; }
+        border-bottom: 0.25rem solid #1CABE2; }
       .nav-tabs .nav-item.dropdown:active {
         border: 1px solid #1CABE2;
         background-color: lightblue;
-        border-bottom: 4px solid #1CABE2; }
+        border-bottom: 0.25rem solid #1CABE2; }
       .nav-tabs .nav-item.dropdown.show {
         border: none; }
         .nav-tabs .nav-item.dropdown.show .nav-link {
           border: 1px solid #1CABE2;
           background-color: lightblue;
-          border-bottom: 4px solid #1CABE2; }
+          border-bottom: 0.25rem solid #1CABE2; }
       .nav-tabs .nav-item.dropdown .dropdown-menu {
-        padding: 8px 0px;
-        background-color: white; }
+        padding: 0.5rem 0rem;
+        background-color: #fff;
+        border-bottom-right-radius: 0.125rem;
+        border-bottom-left-radius: 0.125rem; }
         .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
           background-color: #fff;
-          padding: 0px 24px;
+          padding: 0rem 1.5rem;
           min-width: 160px;
-          line-height: 32px;
+          line-height: 2rem;
           z-index: 1; }
           .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
             color: #fff;
@@ -5837,7 +5836,7 @@ nav {
   .skip:focus {
     margin-top: auto;
     margin-bottom: 5px;
-    border: 1px dotted blue;
+    border: 1px dotted #374EA2;
     display: inline-block;
     text-decoration: underline; }
   .skip:active {
