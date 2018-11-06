@@ -8,8 +8,7 @@
   },
   "author": "UNICEF",
   "license": "GPL-3.0+",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.1.1",
     "gulp": "^3.9.1",
