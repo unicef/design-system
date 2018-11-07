@@ -6,7 +6,7 @@ nav {
     .navbar-brand {
       color: $white;
       &.navbar-line{
-        border-right: 1px solid #ffff;
+        border-right: 1px solid $white;
         padding-right: 1rem;
       }
     }
@@ -16,7 +16,6 @@ nav {
       .navbar-nav{
         background-color: rgba(55, 78, 162, 0.6);
         @include border-left-radius(80px);
-        //line-height: ;
         font-size: 14px;
         line-height: 1.5rem;
         padding: 0.5rem 0rem 0.25rem 2rem;
@@ -51,7 +50,7 @@ nav {
     color: $black ;
     &:active{
       border: 1px solid $unicef-blue;
-      background-color: lightblue;
+      background-color: $nav-tabs-link-active-bg;
       border-bottom: 0.25rem solid $unicef-blue;
     }
     &.active{
@@ -60,7 +59,7 @@ nav {
     }
     &:hover{
       border: 1px solid $unicef-blue;
-      background-color: lightblue;
+      background-color: $nav-tabs-link-active-bg;
       border-bottom: 0.25rem solid $unicef-blue;
     .nav-link{
       border:none;
@@ -71,31 +70,31 @@ nav {
     &.dropdown{
       &:hover{
         border: 1px solid $unicef-blue;
-        background-color: lightblue;
+        background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
       &:active{
         border: 1px solid $unicef-blue;
-        background-color: lightblue;
+        background-color:$nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
       &.show{
         border: none;
         .nav-link{
         border: 1px solid $unicef-blue;
-        background-color: lightblue;
+        background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
         }
       }
       .dropdown-menu{
-        padding: 0.5rem 0rem;
+        padding: $dropdown-padding-y 0rem;
         background-color:$body-bg;
         border-bottom-right-radius:$border-radius;
         border-bottom-left-radius: $border-radius;
         .dropdown-item{
           background-color: $body-bg;
-          padding: 0rem 1.5rem;
-          line-height: 2rem;
+          padding: 0rem $dropdown-padding-x;
+          line-height: $dropdown-line-height;
           &:hover{
             color: $white;
             background-color: $unicef-dark-blue;
@@ -105,7 +104,7 @@ nav {
     }
   }
   a{
-    color: black;
+    color: $black;
   }
   }
 }
@@ -113,11 +112,11 @@ nav {
 {
   display: block;
   margin-top: -40px;
-  padding: 8px 15px;
+  padding: 0.5rem 15px;
   &:focus{
     margin-top:auto;
     margin-bottom: 5px;
-    border: 1px dotted $unicef-dark-blue;
+    border: $link-focus-border;
     display: inline-block;
     text-decoration: underline;
   }
