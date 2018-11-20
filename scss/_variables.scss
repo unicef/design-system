@@ -65,7 +65,8 @@ $unicef-yellow:          #FFC20E !default; //From brand block
 $unicef-green:           #80BD41 !default; //From brand book
 $unicef-dark-green:      #00833D !default; //From brand book
 
-
+//links
+$unicef-link:            #3344DD !default;            
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -184,6 +185,9 @@ $link-color:                theme-color("primary") !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
+$link-active-color:         $unicef-red !default;
+$link-visited-color:        $unicef-purple !default;
+$link-focus-border:         1px dotted $unicef-link !default;
 
 // Paragraphs
 //
@@ -270,7 +274,7 @@ $font-family-base:            $font-family-sans-serif !default;
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-sm:                ($font-size-base * .75) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -388,6 +392,7 @@ $input-btn-border-width:      $border-width !default;
 $btn-padding-y:               .5rem !default; //orig: $input-btn-padding-y !default;
 $btn-padding-x:               1rem !default; //orig: $input-btn-padding-x !default;
 $btn-line-height:             1.5rem !default; //orig: $input-btn-line-height !default;
+$btn-min-width:               5.5rem !default;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
@@ -409,6 +414,13 @@ $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 $btn-block-spacing-y:         .5rem !default;
+
+//Button + Icons
+$btn-icon-padding:            $btn-padding-x !default;
+$btn-icon-margin-right:       0.25rem !default;
+
+//Mobile Buttons
+$mobile-btn-padding-y:        .75rem !default;      
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
@@ -592,8 +604,9 @@ $custom-file-text: (
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
 $form-feedback-valid-color:         theme-color("success") !default;
-$form-feedback-invalid-color:       theme-color("danger") !default;
-
+$form-feedback-invalid-color:       theme-color("danger") !default;     
+$form-error-border-bottom:          2px solid $unicef-dark-red;
+$form-error-background-color:       darken($unicef-dark-red, 80%) !default;
 
 // Dropdowns
 //
@@ -601,6 +614,7 @@ $form-feedback-invalid-color:       theme-color("danger") !default;
 
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
+$dropdown-item-padding-x:                1.5rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             rgba($black, .15) !default;
@@ -608,6 +622,7 @@ $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
+$dropdown-line-height:              2rem !default;
 
 $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
@@ -646,10 +661,10 @@ $nav-link-disabled-color:           $gray-600 !default;
 $nav-tabs-border-color:             $gray-300 !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
-$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-hover-border-color:  $unicef-blue !default;
 $nav-tabs-link-active-color:        $gray-700 !default;
-$nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-bg:           lightblue !default;
+$nav-tabs-link-active-border-color: $unicef-blue !default;
 
 $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
@@ -689,7 +704,7 @@ $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
-
+ 
 // Pagination
 
 $pagination-padding-y:              .5rem !default;
@@ -841,12 +856,13 @@ $modal-transition:                  transform .3s ease-out !default;
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding-y:                   .5rem !default;
-$alert-padding-x:                   .5rem !default;
+$alert-padding-y:                   .75rem !default;
+$alert-padding-x:                   1.25rem !default;
 $alert-margin-bottom:               1rem !default;
 $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                0.0rem !default; //orig: $border-width !default;
+$alert-line-height:                 $line-height-base;
 
 $alert-bg-level:                    -10 !default;
 $alert-border-level:                -9 !default;

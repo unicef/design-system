@@ -10,28 +10,19 @@ applications. This specification follows our brand guidelines, takes into
 account accessibility and is rooted in a set of principles that are defined on
 __[design guidelines](guidelines)__.
 
-Additionally to those specs, UNICEF has created a technology agnostic reference
-implementation, so it can be used with any modern development framework such
-as React or Angular. One of the main goals of this implementation is to:
-- Speed up the development of our applications by providing developers with a
-  set of CSS classes that comply with usability, branding and accessibility best
-  practices.
+Additionally to those specs, UNICEF has created a reference implementation that tries to be as technology agnostic as possible, so it can be used with any modern dev framework such as React or Angular. One of the main goals of this implementation is to:
+- Speed up the development of our applications
+- Avoid the
 - Improve the quality of the interfaces with a well thought and designed framework.
 
 **This document is for developers** that have to implement the user
-interface of a UNICEF web application. Here you will find the technical
-documentation with examples of the HTML and CSS classes.
+interface of a UNICEF web application. Here you will find the technical documentation with examples of the HTML and CSS classes.
 
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com),
-one of the most popular and widely used frameworks on the Internet. For brevity,
-we assume the reader is familiar with this framework, and has a good
-understanding of HTML as well as CSS.
+This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Internet. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
 
-If you need to design a user interface for a UNICEF
-application you will need to understand how and when to use each of the
-elements described in this document. To get that knowledge,
-please, read our __[design guidelines](guidelines)__.
+If you need to define or design a user interface for a UNICEF application you will need to
+understand how and when to use each of the elements defined in this document. To get that knowledge, please, read our __[design guidelines](guidelines)__.
 
 <!--
 
@@ -52,7 +43,8 @@ Local copy and use SCSS
 ## Typography
 
 The default typography is the one defined by user's operating system. That way we don't need to download any font.
-{% capture example %}
+
+<div class="doc-example">
   <h1>h1. Heading 1</h1>
   <p class="lead">
   Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -92,15 +84,55 @@ The default typography is the one defined by user's operating system. That way w
   <h5>heading 5</h5>
 
   <h6>heading 6</h6>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
+
+{% highlight html %}
+<h1>h1.Heading 1</h1>
+<p class="lead">
+Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+<p>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+id est laborum.
+</p>
+<h2>Heading 2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+
+<h3>Heading 3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+
+<h4>heading 4</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+</p>
+
+<h5>heading 5</h5>
+
+<h6>heading 6</h6>
+
+{% endhighlight %}
 
 
 ## Alerts
 
 Alerts use the `.alert` class followed by the type of alert `alert-success`, `alert-warning`, `alert-danger`.
 
-{% capture example %}
+<div class="doc-example">
   <div class="alert alert-success" role="alert">
     This is a success alert. Check it out!
   </div>
@@ -111,17 +143,35 @@ Alerts use the `.alert` class followed by the type of alert `alert-success`, `al
   <div class="alert alert-danger" role="alert">
     This is a danger alert. An error or something that blocks current flow happened!
   </div>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
+{% highlight html %}
+
+  <div class="alert alert-success" role="alert">
+    This is a success alert. Check it out!
+  </div>
+  <div class="alert alert-warning" role="alert">
+    This is a warning alert. It is used to warn the user about something
+    he has to be aware of.
+  </div>
+  <div class="alert alert-danger" role="alert">
+    This is a danger alert. An error or something that blocks current flow happened!
+  </div>
+{% endhighlight %}
+
 
 Alerts support strong and links.
 
-{% capture example %}
+<div class="doc-example">
   <div class="alert alert-warning" role="alert">
     This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
   </div>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
+
+{% highlight html %}
+  <div class="alert alert-warning" role="alert">
+    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
+  </div>
+{% endhighlight %}
 
 
 ## Buttons
@@ -131,7 +181,7 @@ There are 4 types of buttons. The `.btn` class is common to all of them:
   + `.btn-outline-danger`, for the danger button.
   + `.btn-link`, for the link button.
 
-{% capture example %}
+<div class="doc-example">
   <h5>Primary button</h5>
   <p>
     <button class="btn btn-primary">Normal</button>
@@ -157,14 +207,12 @@ There are 4 types of buttons. The `.btn` class is common to all of them:
     <button class="btn btn-link">Normal</button>
     <button class="btn btn-link" disabled>Link button</button>
   </p>
-{% endcapture %}
-{% include example.html content=example %}
-
+</div>
 
 
 Also, it is possible to group an input with a button:
 
-{% capture example %}
+<div class="doc-example">
   <div class="input-group">
     <input class="form-control py-2" type="search"
       placeholder="Example of input with search button" >
@@ -174,9 +222,42 @@ Also, it is possible to group an input with a button:
       </button>
     </span>
   </div>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
 
+
+## Navbar
+  <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none d-sm-none d-md-none d-lg-none " href="/" aria-label="Unicef">
+        <img class="img-fluid  d-sm-none d-md-none d-lg-none " alt="unicef-logo"  src="assets/images/unicef-logo.svg">
+    </a>
+    <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
+    <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+          <li class="nav-item dropdown">
+              <a class="nav-item nav-link  mr-md-2" data-toggle="dropdown" href="#"     role="button" aria-haspopup="true"
+                aria-expanded="false" >Libiya <i class="fas fa-angle-down"></i>
+            </a>
+          <div class="dropdown-menu ">
+                  <a class="dropdown-item" href="#">Menu Item</a>
+                  <a class="dropdown-item" href="#">Menu Item 2</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link  mr-md-2"><span class="badge">4</span>Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link mr-md-2"><i class="fa fa-inbox"></i>Item
+              With Icons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link  mr-md-2">
+              <img class="img-fluid" alt="unicef-logo" src="assets/images/avatar.png">
+              <i class="fas fa-angle-down"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
 
 ## Images
 Images should weight the least amount possible.
@@ -192,7 +273,7 @@ Images should weight the least amount possible.
 
 Form fields have different status:
 
-{% capture example %}
+<div class="doc-example">
   <form>
    <!-- on inputs/selects/textareas use the class .form-control -->
     <div class="form-group col-md-6">
@@ -225,13 +306,11 @@ Form fields have different status:
         readonly>
     </div>
   </form>
-{% endcapture %}
-{% include example.html content=example %}
-
+</div>
 
 Form elements can include short texts that provide important information to users.
 
-{% capture example %}
+<div class="doc-example">
   <form>
     <div class="form-group">
       <label for="input-placeholder-help">Your email</label>
@@ -244,15 +323,14 @@ Form elements can include short texts that provide important information to user
       <input type="email" class="form-control" id="input-placeholder-help-up" aria-describedby="emailHelp-up" placeholder="Example: john.doe@unicef.org">
     </div>
   </form>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
 
 
 ## Textareas
 
 To add a counter at the bottom of a field add the attributes `data-counter="true"` and  `maxlength="100"`, where 100 is the max number of characters. Add `data-autoresize="true"` to allow auto resize.
 
-{% capture example %}
+<div class="doc-example">
   <form class="row">
     <div class="form-group col-4">
       <label for="textarea-regular">Regular textarea</label>
@@ -278,17 +356,16 @@ To add a counter at the bottom of a field add the attributes `data-counter="true
         data-autoresize="true"></textarea>
     </div>
   </form>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
 
 These two enhancements require Javascript.
 
 ## Required fields
 
 Required fields are those that are mandatory to fill in order to submit a form.
-For required fields we mark `<label>` contents with an `<em>` and the form field (`input`,  `select`, `textarea`,...) with the attribute `required`.
+For required fields we mark `<label>` contents with an `<em>` and the form field (`<input`,  `select`, `textarea`,...) with the attribute `required`.
 
-{% capture example %}
+<div class="doc-example">
   <form>
     <div class="row">
       <div class="form-group col-md-6">
@@ -318,17 +395,14 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
 
     </div>
   </form>
-{% endcapture %}
-{% include example.html content=example %}
-
+</div>
 
 ## Errors in forms
 
 UNICEF's reference implementation uses [Bootstrap conventions to display errors in forms](https://getbootstrap.com/docs/4.1/components/forms/#validation) as base. We slightly customized the look and feel and we only use the `.is-invalid` class to provide visual feedback.
 
 Example the HTML and classes to display errors (no actual validation is performed)
-
-{% capture example %}
+<div class="doc-example">
   <form class="row">
     <div class="form-group col-md-4">
       <label for="input-with-error">Input with error</label>
@@ -361,32 +435,41 @@ Example the HTML and classes to display errors (no actual validation is performe
         <small class="input-with-error-counter">200 characters left</small>
     </div>
  </form>
-{% endcapture %}
-{% include example.html content=example %}
+</div>
+
 
 ## Tabs
-
-
-{% capture example %}
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+  <div class = "container-fluid">
+    <ul class="nav nav-tabs ">
+    <li class="nav-item active">
+    <a class="nav-link " href="#">SELECTED</a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="#">UNSELECTED</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">DISABLED</a>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">DROPDOWN <i class="fas fa-angle-down"></i></a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+        <a class="dropdown-item" href="#">Menu Item 2</a>
+        <a class="dropdown-item" href="#">Menu Item 3</a>
+    </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">ACTIVE DROPDOWN <i class="fas fa-angle-down"></i></a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item 3</a>
+        </div>
+    </li>
+    </ul>
   </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-  <h2>Contents</h2>
-  </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel"   aria-labelledby="nav-contact-tab">...</div>
-  </div>
-{% endcapture %}
-{% include example.html content=example %}
-
-
 
 ## Cards
 
@@ -601,8 +684,13 @@ List group with a button:
     <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
   </div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </form>
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
 

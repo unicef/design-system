@@ -1,26 +1,24 @@
 nav {
   background-color: $unicef-blue;
   font-family: $font-family-sans-serif;
-  &.navbar{	
-    line-height: 2rem;
+  &.navbar{
     padding: 0rem 0rem 0rem 1rem;
     .navbar-brand {
       color: $white;
       &.navbar-line{
-        border-right: 1px solid #ffff;
+        border-right: 1px solid $white;
         padding-right: 1rem;
-      } 
+      }
     }
     .navbar-nav-scroll{
       color: $white;
       font-family: "Helvetica Neue";
       .navbar-nav{
         background-color: rgba(55, 78, 162, 0.6);
-        @include border-left-radius(80px); 
-        //line-height: ;
+        @include border-left-radius(80px);
         font-size: 14px;
-        line-height: 2.25rem;
-        padding : 1rem 1rem 1rem 2rem;
+        line-height: 1.5rem;
+        padding: 0.5rem 0rem 0.25rem 2rem;
         .nav-link{
           color: $white;
           display: block;
@@ -42,94 +40,88 @@ nav {
 }
 .nav-tabs{
   padding: 0rem 2rem 0rem 2rem;
-  font-size: 14px;
   margin-top: 0rem;
   font-family: Arial;
-  color: #0000 !important;
-  line-height: 2rem;	
+  font-size: 14px !important;
+  line-height: 2rem;
   text-align: center;
   border-bottom-color: $nav-tabs-border-color;
   .nav-item{
-    color: #0000 !important;
+    color: $black ;
     &:active{
       border: 1px solid $unicef-blue;
-      background-color: lightblue;
+      background-color: $nav-tabs-link-active-bg;
       border-bottom: 0.25rem solid $unicef-blue;
-      
     }
     &.active{
       border:none;
       border-bottom: 0.25rem solid $unicef-blue;
     }
     &:hover{
-      border:none;
+      border: 1px solid $unicef-blue;
+      background-color: $nav-tabs-link-active-bg;
       border-bottom: 0.25rem solid $unicef-blue;
-    }
-    a{
-      color: $black;
-      font-family: Arial;
-      font-size: 1rem;
-    }
     .nav-link{
       border:none;
       &:hover{
         border:none;
-      } 
+      }
     }
     &.dropdown{
-      font-size: 1rem;
       &:hover{
         border: 1px solid $unicef-blue;
-        background-color: lightblue;
+        background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
       &:active{
         border: 1px solid $unicef-blue;
-        background-color: lightblue;
+        background-color:$nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
       &.show{
         border: none;
         .nav-link{
         border: 1px solid $unicef-blue;
-        background-color: lightblue;
+        background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
         }
       }
       .dropdown-menu{
-        padding: 0.5rem 0rem;
+        padding: $dropdown-padding-y 0rem;
         background-color:$body-bg;
         border-bottom-right-radius:$border-radius;
         border-bottom-left-radius: $border-radius;
-        .dropdown-item{ 
+        .dropdown-item{
           background-color: $body-bg;
-          padding: 0rem 1.5rem;
-          min-width: 160px;
-          line-height: 2rem;
-          z-index: 1;
+          padding: 0rem $dropdown-padding-x;
+          line-height: $dropdown-line-height;
           &:hover{
             color: $white;
             background-color: $unicef-dark-blue;
-          } 
+          }
         }
-      } 
+      }
     }
-  }  
+  }
+  a{
+    color: $black;
+  }
+  }
 }
 .skip
-{ 
+{
   display: block;
   margin-top: -40px;
-  padding: 8px 15px;
+  padding: 0.5rem 15px;
   &:focus{
     margin-top:auto;
     margin-bottom: 5px;
-    border: 1px dotted $unicef-dark-blue;
+    border: $link-focus-border;
     display: inline-block;
     text-decoration: underline;
   }
   &:active{
     display: inline;
-   
+
   }
-}
+  }

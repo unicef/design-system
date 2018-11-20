@@ -1262,7 +1262,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5; }
 
 .form-control-plaintext {
@@ -1294,7 +1294,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   border-radius: 0.125rem; }
 
@@ -1303,7 +1303,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(1.8125rem + 2px); }
+  height: calc(1.625rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
@@ -1814,7 +1814,7 @@ fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   border-radius: 0.125rem; }
 
@@ -2014,7 +2014,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #767676;
   white-space: nowrap; }
 
@@ -2343,7 +2343,7 @@ input[type="button"].btn-block {
     opacity: 0; }
 
 .custom-select-sm {
-  height: calc(1.8125rem + 2px);
+  height: calc(1.625rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
@@ -2507,7 +2507,7 @@ input[type="button"].btn-block {
     border-top-left-radius: 0.125rem;
     border-top-right-radius: 0.125rem; }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-      border-color: #c9c9c9 #c9c9c9 #c9c9c9; }
+      border-color: #1CABE2; }
     .nav-tabs .nav-link.disabled {
       color: #767676;
       background-color: transparent;
@@ -2515,8 +2515,8 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #4a4a4a;
-    background-color: #fff;
-    border-color: #c9c9c9 #c9c9c9 #fff; }
+    background-color: lightblue;
+    border-color: #1CABE2; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3082,7 +3082,7 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5; }
 
 .pagination-sm .page-item:first-child .page-link {
@@ -3163,7 +3163,7 @@ input[type="button"].btn-block {
 
 .alert {
   position: relative;
-  padding: 0.5rem 0.5rem;
+  padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 0rem solid transparent;
   border-radius: 0.125rem; }
@@ -3175,12 +3175,12 @@ input[type="button"].btn-block {
   font-weight: 700; }
 
 .alert-dismissible {
-  padding-right: 2.5rem; }
+  padding-right: 4rem; }
   .alert-dismissible .close {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.5rem 0.5rem;
+    padding: 0.75rem 1.25rem;
     color: inherit; }
 
 .alert-primary {
@@ -3512,7 +3512,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   opacity: 0; }
   .tooltip.show {
@@ -3597,7 +3597,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -5715,7 +5715,7 @@ a.text-danger:hover, a.text-danger:focus {
 .btn {
   font-size: 0.875rem;
   text-transform: uppercase;
-  min-width: 88px; }
+  min-width: 5.5rem; }
 
 .card-body {
   padding: 1rem; }
@@ -5741,12 +5741,11 @@ nav {
   background-color: #1CABE2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   nav.navbar {
-    line-height: 2rem;
     padding: 0rem 0rem 0rem 1rem; }
     nav.navbar .navbar-brand {
       color: #fff; }
       nav.navbar .navbar-brand.navbar-line {
-        border-right: 1px solid #ffff;
+        border-right: 1px solid #fff;
         padding-right: 1rem; }
     nav.navbar .navbar-nav-scroll {
       color: #fff;
@@ -5756,8 +5755,8 @@ nav {
         border-top-left-radius: 80px;
         border-bottom-left-radius: 80px;
         font-size: 14px;
-        line-height: 2.25rem;
-        padding: 1rem 1rem 1rem 2rem; }
+        line-height: 1.5rem;
+        padding: 0.5rem 0rem 0.25rem 2rem; }
         nav.navbar .navbar-nav-scroll .navbar-nav .nav-link {
           color: #fff;
           display: block; }
@@ -5771,15 +5770,14 @@ nav {
 
 .nav-tabs {
   padding: 0rem 2rem 0rem 2rem;
-  font-size: 14px;
   margin-top: 0rem;
   font-family: Arial;
-  color: #0000 !important;
+  font-size: 14px !important;
   line-height: 2rem;
   text-align: center;
   border-bottom-color: #c9c9c9; }
   .nav-tabs .nav-item {
-    color: #0000 !important; }
+    color: #000; }
     .nav-tabs .nav-item:active {
       border: 1px solid #1CABE2;
       background-color: lightblue;
@@ -5788,55 +5786,50 @@ nav {
       border: none;
       border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item:hover {
-      border: none;
+      border: 1px solid #1CABE2;
+      background-color: lightblue;
       border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item a {
-      color: #000;
-      font-family: Arial;
-      font-size: 1rem; }
-    .nav-tabs .nav-item .nav-link {
-      border: none; }
-      .nav-tabs .nav-item .nav-link:hover {
+      .nav-tabs .nav-item:hover .nav-link {
         border: none; }
-    .nav-tabs .nav-item.dropdown {
-      font-size: 1rem; }
-      .nav-tabs .nav-item.dropdown:hover {
+        .nav-tabs .nav-item:hover .nav-link:hover {
+          border: none; }
+      .nav-tabs .nav-item:hover.dropdown:hover {
         border: 1px solid #1CABE2;
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item.dropdown:active {
+      .nav-tabs .nav-item:hover.dropdown:active {
         border: 1px solid #1CABE2;
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item.dropdown.show {
+      .nav-tabs .nav-item:hover.dropdown.show {
         border: none; }
-        .nav-tabs .nav-item.dropdown.show .nav-link {
+        .nav-tabs .nav-item:hover.dropdown.show .nav-link {
           border: 1px solid #1CABE2;
           background-color: lightblue;
           border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item.dropdown .dropdown-menu {
+      .nav-tabs .nav-item:hover.dropdown .dropdown-menu {
         padding: 0.5rem 0rem;
         background-color: #fff;
         border-bottom-right-radius: 0.125rem;
         border-bottom-left-radius: 0.125rem; }
-        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
+        .nav-tabs .nav-item:hover.dropdown .dropdown-menu .dropdown-item {
           background-color: #fff;
           padding: 0rem 1.5rem;
-          min-width: 160px;
-          line-height: 2rem;
-          z-index: 1; }
-          .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+          line-height: 2rem; }
+          .nav-tabs .nav-item:hover.dropdown .dropdown-menu .dropdown-item:hover {
             color: #fff;
             background-color: #374EA2; }
+    .nav-tabs .nav-item a {
+      color: #000; }
 
 .skip {
   display: block;
   margin-top: -40px;
-  padding: 8px 15px; }
+  padding: 0.5rem 15px; }
   .skip:focus {
     margin-top: auto;
     margin-bottom: 5px;
-    border: 1px dotted #374EA2;
+    border: 1px dotted #3344DD;
     display: inline-block;
     text-decoration: underline; }
   .skip:active {
