@@ -7,7 +7,7 @@ layout: home
 
 <div class="jumbotron" style="">
   <h1 class="display-4">UNICEF Design System</h1>
-  <p class="lead">for every child, a consistent design.</p>
+  <p class="lead">Modern, consistent, user friendly and accessible user interface.</p>
 </div>
 
 <div class="container-fluid">

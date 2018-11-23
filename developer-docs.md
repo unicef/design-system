@@ -10,19 +10,28 @@ applications. This specification follows our brand guidelines, takes into
 account accessibility and is rooted in a set of principles that are defined on
 __[design guidelines](guidelines)__.
 
-Additionally to those specs, UNICEF has created a reference implementation that tries to be as technology agnostic as possible, so it can be used with any modern dev framework such as React or Angular. One of the main goals of this implementation is to:
-- Speed up the development of our applications
-- Avoid the
+Additionally to those specs, UNICEF has created a technology agnostic reference
+implementation, so it can be used with any modern development framework such
+as React or Angular. One of the main goals of this implementation is to:
+- Speed up the development of our applications by providing developers with a
+  set of CSS classes that comply with usability, branding and accessibility best
+  practices.
 - Improve the quality of the interfaces with a well thought and designed framework.
 
 **This document is for developers** that have to implement the user
-interface of a UNICEF web application. Here you will find the technical documentation with examples of the HTML and CSS classes.
+interface of a UNICEF web application. Here you will find the technical
+documentation with examples of the HTML and CSS classes.
 
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com), one of the most popular and widely used frameworks on the Internet. For brevity, we assume the reader is familiar with this framework, and has a good understanding of HTML as well as SCSS/CSS.
+This implementation is based on [bootstrap 4.0](https;//getbootstrap.com),
+one of the most popular and widely used frameworks on the Internet. For brevity,
+we assume the reader is familiar with this framework, and has a good
+understanding of HTML as well as CSS.
 
-If you need to define or design a user interface for a UNICEF application you will need to
-understand how and when to use each of the elements defined in this document. To get that knowledge, please, read our __[design guidelines](guidelines)__.
+If you need to design a user interface for a UNICEF
+application you will need to understand how and when to use each of the
+elements described in this document. To get that knowledge,
+please, read our __[design guidelines](guidelines)__.
 
 <!--
 
@@ -44,7 +53,7 @@ Local copy and use SCSS
 
 The default typography is the one defined by user's operating system. That way we don't need to download any font.
 
-<div class="doc-example">
+{% capture example %}
   <h1>h1. Heading 1</h1>
   <p class="lead">
   Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -84,55 +93,15 @@ The default typography is the one defined by user's operating system. That way w
   <h5>heading 5</h5>
 
   <h6>heading 6</h6>
-</div>
-
-{% highlight html %}
-<h1>h1.Heading 1</h1>
-<p class="lead">
-Lead paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-<p>
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-id est laborum.
-</p>
-<h2>Heading 2</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-
-<h3>Heading 3</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-
-<h4>heading 4</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-</p>
-
-<h5>heading 5</h5>
-
-<h6>heading 6</h6>
-
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Alerts
 
 Alerts use the `.alert` class followed by the type of alert `alert-success`, `alert-warning`, `alert-danger`.
 
-<div class="doc-example">
+{% capture example %}
   <div class="alert alert-success" role="alert">
     This is a success alert. Check it out!
   </div>
@@ -143,35 +112,17 @@ Alerts use the `.alert` class followed by the type of alert `alert-success`, `al
   <div class="alert alert-danger" role="alert">
     This is a danger alert. An error or something that blocks current flow happened!
   </div>
-</div>
-{% highlight html %}
-
-  <div class="alert alert-success" role="alert">
-    This is a success alert. Check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    This is a warning alert. It is used to warn the user about something
-    he has to be aware of.
-  </div>
-  <div class="alert alert-danger" role="alert">
-    This is a danger alert. An error or something that blocks current flow happened!
-  </div>
-{% endhighlight %}
-
+{% endcapture %}
+{% include example.html content=example %}
 
 Alerts support strong and links.
 
-<div class="doc-example">
+{% capture example %}
   <div class="alert alert-warning" role="alert">
     This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
   </div>
-</div>
-
-{% highlight html %}
-  <div class="alert alert-warning" role="alert">
-    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
-  </div>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Buttons
@@ -181,7 +132,7 @@ There are 4 types of buttons. The `.btn` class is common to all of them:
   + `.btn-outline-danger`, for the danger button.
   + `.btn-link`, for the link button.
 
-<div class="doc-example">
+{% capture example %}
   <h5>Primary button</h5>
   <p>
     <button class="btn btn-primary">Normal</button>
@@ -207,12 +158,14 @@ There are 4 types of buttons. The `.btn` class is common to all of them:
     <button class="btn btn-link">Normal</button>
     <button class="btn btn-link" disabled>Link button</button>
   </p>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 
 Also, it is possible to group an input with a button:
 
-<div class="doc-example">
+{% capture example %}
   <div class="input-group">
     <input class="form-control py-2" type="search"
       placeholder="Example of input with search button" >
@@ -222,20 +175,26 @@ Also, it is possible to group an input with a button:
       </button>
     </span>
   </div>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Navbar
-  <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-    <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none d-sm-none d-md-none d-lg-none " href="/" aria-label="Unicef">
-        <img class="img-fluid  d-sm-none d-md-none d-lg-none " alt="unicef-logo"  src="assets/images/unicef-logo.svg">
+
+{% capture example %}
+<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none
+      d-sm-none d-md-none d-lg-none " href="/" aria-label="Unicef">
+        <img class="img-fluid  d-sm-none d-md-none d-lg-none "
+        alt="unicef-logo"  src="assets/images/unicef-logo.svg">
     </a>
     <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
     <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
       <ul class="navbar-nav bd-navbar-nav flex-row">
           <li class="nav-item dropdown">
-              <a class="nav-item nav-link  mr-md-2" data-toggle="dropdown" href="#"     role="button" aria-haspopup="true"
-                aria-expanded="false" >Libiya <i class="fas fa-angle-down"></i>
+              <a class="nav-item nav-link  mr-md-2" data-toggle="dropdown"
+              href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Libya <i class="fas fa-angle-down"></i>
             </a>
           <div class="dropdown-menu ">
                   <a class="dropdown-item" href="#">Menu Item</a>
@@ -251,13 +210,45 @@ Also, it is possible to group an input with a button:
           </li>
           <li class="nav-item">
             <a class="nav-item nav-link  mr-md-2">
-              <img class="img-fluid" alt="unicef-logo" src="assets/images/avatar.png">
+              <img class="img-fluid" alt="" src="assets/images/avatar.png">
               <i class="fas fa-angle-down"></i>
             </a>
           </li>
       </ul>
     </div>
   </nav>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+## Tabs
+{% capture example %}
+  <div class = "container-fluid">
+    <ul class="nav nav-tabs ">
+      <li class="nav-item active">
+        <a class="nav-link " href="#">SELECTED</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">UNSELECTED</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link disabled" href="#">DISABLED</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">DROPDOWN <i class="fas fa-angle-down"></i></a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item 3</a>
+          </div>
+      </li>
+    </ul>
+  </div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
 
 ## Images
 Images should weight the least amount possible.
@@ -273,7 +264,7 @@ Images should weight the least amount possible.
 
 Form fields have different status:
 
-<div class="doc-example">
+{% capture example %}
   <form>
    <!-- on inputs/selects/textareas use the class .form-control -->
     <div class="form-group col-md-6">
@@ -306,11 +297,13 @@ Form fields have different status:
         readonly>
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 Form elements can include short texts that provide important information to users.
 
-<div class="doc-example">
+{% capture example %}
   <form>
     <div class="form-group">
       <label for="input-placeholder-help">Your email</label>
@@ -323,14 +316,15 @@ Form elements can include short texts that provide important information to user
       <input type="email" class="form-control" id="input-placeholder-help-up" aria-describedby="emailHelp-up" placeholder="Example: john.doe@unicef.org">
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 ## Textareas
 
 To add a counter at the bottom of a field add the attributes `data-counter="true"` and  `maxlength="100"`, where 100 is the max number of characters. Add `data-autoresize="true"` to allow auto resize.
 
-<div class="doc-example">
+{% capture example %}
   <form class="row">
     <div class="form-group col-4">
       <label for="textarea-regular">Regular textarea</label>
@@ -356,16 +350,17 @@ To add a counter at the bottom of a field add the attributes `data-counter="true
         data-autoresize="true"></textarea>
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
 These two enhancements require Javascript.
 
 ## Required fields
 
 Required fields are those that are mandatory to fill in order to submit a form.
-For required fields we mark `<label>` contents with an `<em>` and the form field (`<input`,  `select`, `textarea`,...) with the attribute `required`.
+For required fields we mark `<label>` contents with an `<em>` and the form field (`input`,  `select`, `textarea`,...) with the attribute `required`.
 
-<div class="doc-example">
+{% capture example %}
   <form>
     <div class="row">
       <div class="form-group col-md-6">
@@ -395,14 +390,17 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
 
     </div>
   </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 ## Errors in forms
 
 UNICEF's reference implementation uses [Bootstrap conventions to display errors in forms](https://getbootstrap.com/docs/4.1/components/forms/#validation) as base. We slightly customized the look and feel and we only use the `.is-invalid` class to provide visual feedback.
 
 Example the HTML and classes to display errors (no actual validation is performed)
-<div class="doc-example">
+
+{% capture example %}
   <form class="row">
     <div class="form-group col-md-4">
       <label for="input-with-error">Input with error</label>
@@ -435,41 +433,9 @@ Example the HTML and classes to display errors (no actual validation is performe
         <small class="input-with-error-counter">200 characters left</small>
     </div>
  </form>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
-
-## Tabs
-  <div class = "container-fluid">
-    <ul class="nav nav-tabs ">
-    <li class="nav-item active">
-    <a class="nav-link " href="#">SELECTED</a>
-    </li>
-    <li class="nav-item ">
-    <a class="nav-link " href="#">UNSELECTED</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#">DISABLED</a>
-    </li>
-    <li class="nav-item dropdown">
-    <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-        aria-expanded="false">DROPDOWN <i class="fas fa-angle-down"></i></a>
-    <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Menu Item- Long Title</a>
-        <a class="dropdown-item" href="#">Menu Item 2</a>
-        <a class="dropdown-item" href="#">Menu Item 3</a>
-    </div>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-            aria-expanded="false">ACTIVE DROPDOWN <i class="fas fa-angle-down"></i></a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
-            <a class="dropdown-item" href="#">Menu Item 2</a>
-            <a class="dropdown-item" href="#">Menu Item 3</a>
-        </div>
-    </li>
-    </ul>
-  </div>
 
 ## Cards
 
@@ -531,178 +497,10 @@ List group with a button:
 </ul>
 </div>
 
-## Labels
-
-<span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
- <span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span>
 
 
-
-## Form fields
-
-<form>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="form-group">
-        <label for="input1">Field with placeholder</label>
-        <input type="text" class="form-control" id="input1" placeholder="Placeholder">
-      </div>
-    </div>
-  <div class="col-md-3">
-    <div class="form-group">
-      <label for="input2"><em>Mandatory field</em></label>
-      <input type="text" class="form-control" id="input2" placeholder="Placeholder" value="This is the content">
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="form-group">
-      <label for="input3">Disabled field</label>
-        <input type="text" class="form-control" id="input3" placeholder="Placeholder" disabled>
-      </div>
-    </div>
-
-  <div class="col-md-3">
-    <div class="form-group">
-      <label for="input3b">Disabled field with value</label>
-      <input type="text" class="form-control" id="input3b" placeholder="Placeholder" value="Value of the field" disabled>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-3">
-    <div class="form-group">
-        <label for="input4">Password</label>
-        <input type="password" class="form-control" id="input4" placeholder="Password">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="form-group">
-      <label for="exampleInputFile">File input</label>
-      <input type="file" id="exampleInputFile">
-      <p class="help-block">Example block-level help text here.</p>
-    </div>
-
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-  </div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="form-group">
-      <label for="ta1">Example textarea</label>
-      <textarea class="form-control" id="ta1" rows="3"></textarea>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="form-group">
-      <label for="ta2">Disabled textarea</label>
-      <textarea class="form-control" id="ta2" disabled rows="3"> Lorem ipsum</textarea>
-    </div>
-  </div>
-</div>
-<p>Regular checkboxes:</p>
-<div class=row>
-  <div class="col-md-6">
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="cb100">
-      <label class="form-check-label" for="cb1">Example of regular checkbox</label>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="cb101" disabled>
-      <label class="form-check-label" for="cb101">Example disabled checkbox</label>
-    </div>
-  </div>
-</div>
-<p class="m-t-2">Checkboxes within a box make it easier for the user to click on them</p>
-<div class=row>
-  <div class="col-md-3">
-    <div class="form-check with-box">
-      <input type="checkbox" class="form-check-input" id="cb200">
-      <label class="form-check-label" for="cb200">Boxed checkbox</label>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="form-check with-box">
-      <input type="checkbox" class="form-check-input" disabled id="cb201">
-      <label class="form-check-label" for="c201">Boxed checkbox disabled</label>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="form-check with-box aligned-with-fields">
-      <input type="checkbox" class="form-check-input" id="cb202">
-      <label class="form-check-label" for="cb202">Boxed checkbox aligned with input</label>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="cb203">Password</label>
-      <input type="password" class="form-control" id="cb203" placeholder="Password">
-    </div>
-  </div>
-</div>
-
-
-## Inline elements
-
-<div class="col-md-6">
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-    <label class="form-check-label" for="inlineCheckbox1">1</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-    <label class="form-check-label" for="inlineCheckbox2">2</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-  </div>
-</div>
-
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-    <label class="form-check-label" for="inlineRadio1">1</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-    <label class="form-check-label" for="inlineRadio2">2</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-  </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</form>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-
-
-
-
-      <div class="row">
-        <div class="col-md-8">
-          <div class="form-group">
-            <label for=""><em>Specific Intervention Codes</em> <i class="glyphicon glyphicon-info-sign"></i></label>
-            <div class="box box-default m-b-0">
-              <ul class="m-b-0"><li ng-repeat="item in ListSelectedSIC">{{item}}</li></ul>
-            </div>
-            <button class="k-button k-bottom-link">Select codes</button>
-          </div>
-        </div>
+<!-- TODO Remove this from HERE --->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
