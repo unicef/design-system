@@ -107,7 +107,11 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-
+//Trafiiclight backgrounds
+$disabled-bg:       $unicef-background !default;
+$warning-bg:        #FFF3CF !default;
+$success-bg:        #E2F7CC !default;
+$danger-bg:         #FCE9E8 !default;
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
 
@@ -239,7 +243,7 @@ $grid-gutter-width:           16px !default;
 // Define common padding and border radius sizes and more.
 
 $line-height-lg:              1.5 !default;
-$line-height-sm:              1.5 !default;
+$line-height-sm:              1 !default;
 
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
@@ -278,10 +282,12 @@ $font-size-sm:                ($font-size-base * .75) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
+$font-line-height-sm:         1rem !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
@@ -291,6 +297,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
+$headings-margin-top:         ($spacer * 1.5) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
@@ -404,7 +411,7 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-semibold !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
