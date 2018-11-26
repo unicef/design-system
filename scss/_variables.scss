@@ -514,6 +514,15 @@ $input-group-addon-border-color:        $input-border-color !default;
 $input-mandatory-bg:                    #FFF9EF !default;
 $input-form-element-disabled-border:    1px dashed $gray-300 !default;
 
+$text-area-color:                               $input-color !default;
+$text-area-bg:                                  $input-bg !default;
+$text-area-border-color:                        $input-border-color !default;
+$text-area-border-radius:                       $input-border-radius !default;
+$text-area-mandatory-field-bg:                  $input-mandatory-bg !default;
+$textarea-characters-remaining-font-size:       $font-size-sm !default;
+$textarea-characters-remaining-font-size:       $label-color !default;
+$textarea-characters-remaining-line-height:     $font-line-height-sm !default;
+
 $custom-forms-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
 $custom-control-gutter:                 1.5rem !default;
