@@ -5731,17 +5731,21 @@ textarea:required,
 select:required {
   background-color: rgba(255, 194, 14, 0.15); }
 
-.form-group select {
-  border-radius: 0rem !important; }
+.form-group label {
+  font-weight: 100 !important;
+  color: #767676;
+  font-size: 0.875rem;
+  line-height: 1.5; }
 
-.form-group .form-control.input-disabled {
-  border: 1px dashed #c9c9c9;
-  background-color: #f4f4f4; }
-
-.form-group .form-control.is-invalid {
-  background-color: #FDF4F3;
-  border: 1px solid #c9c9c9;
-  border-bottom: 2px solid #E2231A; }
+.form-group .form-control {
+  font-weight: 100 !important; }
+  .form-group .form-control.input-disabled {
+    border: 1px dashed #c9c9c9;
+    background-color: #f4f4f4; }
+  .form-group .form-control.is-invalid {
+    background-color: #FDF4F3;
+    border: 1px solid #c9c9c9;
+    border-bottom: 2px solid #E2231A; }
 
 .tab-content {
   padding: 1px solid red; }

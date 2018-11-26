@@ -14,7 +14,14 @@ select:required {
 }
 
 .form-group{
+  label{
+    font-weight : 100 !important;
+    color: $label-color;
+    font-size: $label-font-size;
+    line-height: $label-line-height;
+  }
   .form-control{
+    font-weight : 100 !important;
     &.input-disabled{
       border: $input-form-element-disabled-border;
       background-color: $input-disabled-bg;
