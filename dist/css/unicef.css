@@ -1212,7 +1212,7 @@ pre {
   color: #4a4a4a;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #767676;
+  border: 1px solid #c9c9c9;
   border-radius: 0.125rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media screen and (prefers-reduced-motion: reduce) {
@@ -1231,7 +1231,7 @@ pre {
     color: #767676;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
-    background-color: #c9c9c9;
+    background-color: #f4f4f4;
     opacity: 1; }
 
 select.form-control:not([size]):not([multiple]) {
@@ -1263,7 +1263,7 @@ select.form-control:focus::-ms-value {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
   font-size: 0.75rem;
-  line-height: 1.5; }
+  line-height: 1; }
 
 .form-control-plaintext {
   display: block;
@@ -1295,7 +1295,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  line-height: 1.5;
+  line-height: 1;
   border-radius: 0.125rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
@@ -1303,7 +1303,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(1.625rem + 2px); }
+  height: calc(1.25rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
@@ -1575,7 +1575,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -1815,7 +1815,7 @@ fieldset:disabled a.btn {
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  line-height: 1.5;
+  line-height: 1;
   border-radius: 0.125rem; }
 
 .btn-block {
@@ -2202,7 +2202,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #c9c9c9;
-  border: 1px solid #767676;
+  border: 1px solid #c9c9c9;
   border-radius: 0.125rem; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -2318,11 +2318,11 @@ input[type="button"].btn-block {
   height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #4a4a4a;
+  color: #767676;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%234a4a4a' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
-  border: 1px solid #767676;
+  border: 1px solid #c9c9c9;
   border-radius: 0.125rem;
   appearance: none; }
   .custom-select:focus {
@@ -2343,7 +2343,7 @@ input[type="button"].btn-block {
     opacity: 0; }
 
 .custom-select-sm {
-  height: calc(1.625rem + 2px);
+  height: calc(1.25rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
@@ -2387,7 +2387,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #4a4a4a;
   background-color: #fff;
-  border: 1px solid #767676;
+  border: 1px solid #c9c9c9;
   border-radius: 0.125rem; }
   .custom-file-label::after {
     position: absolute;
@@ -2402,7 +2402,7 @@ input[type="button"].btn-block {
     color: #4a4a4a;
     content: "Browse";
     background-color: #c9c9c9;
-    border-left: 1px solid #767676;
+    border-left: 1px solid #c9c9c9;
     border-radius: 0 0.125rem 0.125rem 0; }
 
 .custom-range {
@@ -3083,7 +3083,7 @@ input[type="button"].btn-block {
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  line-height: 1.5; }
+  line-height: 1; }
 
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.125rem;
@@ -5731,6 +5731,18 @@ textarea:required,
 select:required {
   background-color: rgba(255, 194, 14, 0.15); }
 
+.form-group select {
+  border-radius: 0rem !important; }
+
+.form-group .form-control.input-disabled {
+  border: 1px dashed #c9c9c9;
+  background-color: #f4f4f4; }
+
+.form-group .form-control.is-invalid {
+  background-color: #FDF4F3;
+  border: 1px solid #c9c9c9;
+  border-bottom: 2px solid #E2231A; }
+
 .tab-content {
   padding: 1px solid red; }
 
@@ -5814,7 +5826,7 @@ nav {
         border-bottom-left-radius: 0.125rem; }
         .nav-tabs .nav-item:hover.dropdown .dropdown-menu .dropdown-item {
           background-color: #fff;
-          padding: 0rem 1.5rem;
+          padding: 0rem 0.5rem;
           line-height: 2rem; }
           .nav-tabs .nav-item:hover.dropdown .dropdown-menu .dropdown-item:hover {
             color: #fff;

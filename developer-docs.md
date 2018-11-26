@@ -281,7 +281,7 @@ Form fields have different status:
     <!-- mark with the attribute disabled, disabled fields -->
     <div class="form-group col-md-6">
       <label for="input-disabled">Input disabled</label>
-      <input type="email" class="form-control" id="input-disabled"
+      <input type="email" class="form-control input-disabled" id="input-disabled"
         placeholder="This is the placeholder"
         value="This is the value of the disabled field"
         disabled>

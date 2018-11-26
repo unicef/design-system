@@ -12,3 +12,17 @@ textarea:required,
 select:required {
   background-color: color("empty-required-field-background");
 }
+
+.form-group{
+  .form-control{
+    &.input-disabled{
+      border: $input-form-element-disabled-border;
+      background-color: $input-disabled-bg;
+    }
+    &.is-invalid{
+      background-color: $form-error-background-color;
+      border: 1px solid $input-border-color;
+      border-bottom: $form-error-border-bottom;
+    }
+  }
+}

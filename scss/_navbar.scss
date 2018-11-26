@@ -93,7 +93,7 @@ nav {
         border-bottom-left-radius: $border-radius;
         .dropdown-item{
           background-color: $body-bg;
-          padding: 0rem $dropdown-padding-x;
+          padding: 0rem $dropdown-padding-y;
           line-height: $dropdown-line-height;
           &:hover{
             color: $white;

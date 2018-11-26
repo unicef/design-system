@@ -464,7 +464,7 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-line-height-lg:                  $input-btn-line-height-lg !default;
 
 $input-bg:                              $white !default;
-$input-disabled-bg:                     $unicef-borders !default;
+$input-disabled-bg:                     $unicef-background !default;
 
 $input-color:                           $gray-700 !default;
 $input-border-color:                    $gray-300 !default;
@@ -626,8 +626,8 @@ $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
 $form-feedback-valid-color:         theme-color("success") !default;
 $form-feedback-invalid-color:       theme-color("danger") !default;     
-$form-error-border-bottom:          2px solid $unicef-dark-red;
-$form-error-background-color:       darken($unicef-dark-red, 80%) !default;
+$form-error-border-bottom:          2px solid $unicef-red;
+$form-error-background-color:       #FDF4F3!default;
 
 // Dropdowns
 //
