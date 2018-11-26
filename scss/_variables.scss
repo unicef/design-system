@@ -447,6 +447,9 @@ $required-field-filled-bg:    $white !default;
 // Forms
 
 $label-margin-bottom:                   .5rem !default;
+$label-font-size:                       0.875rem !default;
+$label-line-height:                     $line-height-base !default;
+$label-color:                           $gray-400 !default;
 
 $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;

@@ -376,7 +376,7 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
       </div>
       <div class="form-group col-md-6">
         <label for="textarea-required"><em>Textarea required</em></label>
-        <textarea rows="3" class="form-control"
+       <textarea rows="3" class="form-control"
           placeholder="Required textarea" required></textarea>
       </div>
       <div class="form-group col-md-6">
