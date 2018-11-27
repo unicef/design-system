@@ -48,19 +48,10 @@ nav {
   border-bottom-color: $nav-tabs-border-color;
   .nav-item{
     color: $black ;
-    &:active{
-      border: 1px solid $unicef-blue;
-      background-color: $nav-tabs-link-active-bg;
-      border-bottom: 0.25rem solid $unicef-blue;
-    }
     &.active{
       border:none;
       border-bottom: 0.25rem solid $unicef-blue;
     }
-    &:hover{
-      border: 1px solid $unicef-blue;
-      background-color: $nav-tabs-link-active-bg;
-      border-bottom: 0.25rem solid $unicef-blue;
     .nav-link{
       border:none;
       &:hover{
@@ -93,7 +84,6 @@ nav {
         border-bottom-left-radius: $border-radius;
         .dropdown-item{
           background-color: $body-bg;
-          padding: 0rem $dropdown-padding-y;
           line-height: $dropdown-line-height;
           &:hover{
             color: $white;
@@ -105,7 +95,6 @@ nav {
   }
   a{
     color: $black;
-  }
   }
 }
 .skip

@@ -5737,6 +5737,35 @@ select:required {
   font-size: 0.875rem;
   line-height: 1.5; }
 
+.form-group .select-wrapper {
+  position: relative; }
+  .form-group .select-wrapper select {
+    /* Here's the code we need */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; }
+    .form-group .select-wrapper select::-ms-expand {
+      display: none; }
+    .form-group .select-wrapper select.form-control {
+      font-weight: 100 !important; }
+      .form-group .select-wrapper select.form-control.input-disabled {
+        border: 1px dashed #c9c9c9;
+        background-color: #f4f4f4; }
+      .form-group .select-wrapper select.form-control.is-invalid {
+        background-color: #FDF4F3;
+        border: 1px solid #c9c9c9;
+        border-bottom: 2px solid #E2231A; }
+  .form-group .select-wrapper:after {
+    content: "⋎";
+    font-family: 'Font Awesome\ 5 Free';
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    color: #434B67;
+    pointer-events: none; }
+
 .form-group .form-control {
   font-weight: 100 !important; }
   .form-group .form-control.input-disabled {
@@ -5746,6 +5775,8 @@ select:required {
     background-color: #FDF4F3;
     border: 1px solid #c9c9c9;
     border-bottom: 2px solid #E2231A; }
+  .form-group .form-control.readonly {
+    border: 1px solid #f4f4f4; }
 
 .tab-content {
   padding: 1px solid red; }
@@ -5794,49 +5825,40 @@ nav {
   border-bottom-color: #c9c9c9; }
   .nav-tabs .nav-item {
     color: #000; }
-    .nav-tabs .nav-item:active {
-      border: 1px solid #1CABE2;
-      background-color: lightblue;
-      border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.active {
       border: none;
       border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item:hover {
+    .nav-tabs .nav-item .nav-link {
+      border: none; }
+      .nav-tabs .nav-item .nav-link:hover {
+        border: none; }
+    .nav-tabs .nav-item.dropdown:hover {
       border: 1px solid #1CABE2;
       background-color: lightblue;
       border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item:hover .nav-link {
-        border: none; }
-        .nav-tabs .nav-item:hover .nav-link:hover {
-          border: none; }
-      .nav-tabs .nav-item:hover.dropdown:hover {
+    .nav-tabs .nav-item.dropdown:active {
+      border: 1px solid #1CABE2;
+      background-color: lightblue;
+      border-bottom: 0.25rem solid #1CABE2; }
+    .nav-tabs .nav-item.dropdown.show {
+      border: none; }
+      .nav-tabs .nav-item.dropdown.show .nav-link {
         border: 1px solid #1CABE2;
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item:hover.dropdown:active {
-        border: 1px solid #1CABE2;
-        background-color: lightblue;
-        border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item:hover.dropdown.show {
-        border: none; }
-        .nav-tabs .nav-item:hover.dropdown.show .nav-link {
-          border: 1px solid #1CABE2;
-          background-color: lightblue;
-          border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item:hover.dropdown .dropdown-menu {
-        padding: 0.5rem 0rem;
+    .nav-tabs .nav-item.dropdown .dropdown-menu {
+      padding: 0.5rem 0rem;
+      background-color: #fff;
+      border-bottom-right-radius: 0.125rem;
+      border-bottom-left-radius: 0.125rem; }
+      .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
         background-color: #fff;
-        border-bottom-right-radius: 0.125rem;
-        border-bottom-left-radius: 0.125rem; }
-        .nav-tabs .nav-item:hover.dropdown .dropdown-menu .dropdown-item {
-          background-color: #fff;
-          padding: 0rem 0.5rem;
-          line-height: 2rem; }
-          .nav-tabs .nav-item:hover.dropdown .dropdown-menu .dropdown-item:hover {
-            color: #fff;
-            background-color: #374EA2; }
-    .nav-tabs .nav-item a {
-      color: #000; }
+        line-height: 2rem; }
+        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+          color: #fff;
+          background-color: #374EA2; }
+  .nav-tabs a {
+    color: #000; }
 
 .skip {
   display: block;

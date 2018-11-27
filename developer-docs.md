@@ -291,7 +291,7 @@ Form fields have different status:
 
     <div class="form-group col-md-6">
       <label for="input-readonly">Input readonly</label>
-      <input type="email" class="form-control" id="input-readonly"
+      <input type="email" class="form-control readonly" id="input-readonly"
         placeholder="This is the placeholder"
         value="This is the value of the readonly field"
         readonly>
@@ -381,11 +381,13 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
       </div>
       <div class="form-group col-md-6">
         <label for="select-required"><em>Select required</em></label>
+        <div class="select-wrapper">
         <select id="select-required" rows="3" class="form-control" required>
-        <option value="">Select...</option>
+        <option value="">Select</option>
         <option value="value1">Value 1</option>
         <option value="value 1">Value 2</option>
         </select>
+        </div>
       </div>
 
     </div>
@@ -413,12 +415,14 @@ Example the HTML and classes to display errors (no actual validation is performe
     </div>
     <div class="form-group col-md-4">
       <label for="select-with-error">Select with error</label>
-      <select class="form-control is-invalid" id="select-with-error">
-        <option value="">Select...</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+      <div class="select-wrapper">
+        <select class="form-control is-invalid" > 
+          <option value="">Select</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
         </select>
+      </div>
         <div class="invalid-feedback">
           Error message.
         </div>

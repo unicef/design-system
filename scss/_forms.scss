@@ -20,6 +20,41 @@ select:required {
     font-size: $label-font-size;
     line-height: $label-line-height;
   }
+  .select-wrapper {
+    position: relative;	
+    select {
+      /* Here's the code we need */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
+        appearance: none;
+      &::-ms-expand {
+        display: none;
+      }
+      &.form-control{
+        font-weight : 100 !important;
+        &.input-disabled{
+          border: $input-form-element-disabled-border;
+          background-color: $input-disabled-bg;
+        }
+        &.is-invalid{
+          background-color: $form-error-background-color;
+          border: 1px solid $input-border-color;
+          border-bottom: $form-error-border-bottom;
+        }
+      }
+    }
+    &:after {
+      content:"⋎";
+      font-family: 'Font Awesome\ 5 Free';
+      position: absolute;
+      top: 6px;
+      right: 20px;
+      color: #434B67;
+      pointer-events: none;
+    }
+  }
   .form-control{
     font-weight : 100 !important;
     &.input-disabled{
@@ -30,6 +65,9 @@ select:required {
       background-color: $form-error-background-color;
       border: 1px solid $input-border-color;
       border-bottom: $form-error-border-bottom;
+    }
+    &.readonly{
+      border: 1px solid $input-disabled-bg;
     }
   }
 }
