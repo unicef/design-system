@@ -5804,17 +5804,17 @@ nav {
       .nav-tabs .nav-item .nav-link:hover {
         border: none; }
     .nav-tabs .nav-item.dropdown:hover {
-      border: 1px solid #1CABE2;
+      border: none;
       background-color: lightblue;
       border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.dropdown:active {
-      border: 1px solid #1CABE2;
+      border: none;
       background-color: lightblue;
       border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.dropdown.show {
       border: none; }
       .nav-tabs .nav-item.dropdown.show .nav-link {
-        border: 1px solid #1CABE2;
+        border: none;
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.dropdown .dropdown-menu {

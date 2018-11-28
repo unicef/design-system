@@ -60,21 +60,21 @@ nav {
     }
     &.dropdown{
       &:hover{
-        border: 1px solid $unicef-blue;
-        background-color: $nav-tabs-link-active-bg;
+        border:none;
+        background-color:$nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
       &:active{
-        border: 1px solid $unicef-blue;
+        border:none;
         background-color:$nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
       &.show{
         border: none;
         .nav-link{
-        border: 1px solid $unicef-blue;
-        background-color: $nav-tabs-link-active-bg;
-        border-bottom: 0.25rem solid $unicef-blue;
+          border:none;
+          background-color:$nav-tabs-link-active-bg;
+          border-bottom: 0.25rem solid $unicef-blue;
         }
       }
       .dropdown-menu{
