@@ -5732,42 +5732,13 @@ select:required {
   background-color: rgba(255, 194, 14, 0.15); }
 
 .form-group label {
-  font-weight: 100 !important;
   color: #767676;
   font-size: 0.875rem;
-  line-height: 1.5; }
-
-.form-group .select-wrapper {
-  position: relative; }
-  .form-group .select-wrapper select {
-    /* Here's the code we need */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none; }
-    .form-group .select-wrapper select::-ms-expand {
-      display: none; }
-    .form-group .select-wrapper select.form-control {
-      font-weight: 100 !important; }
-      .form-group .select-wrapper select.form-control.input-disabled {
-        border: 1px dashed #c9c9c9;
-        background-color: #f4f4f4; }
-      .form-group .select-wrapper select.form-control.is-invalid {
-        background-color: #FDF4F3;
-        border: 1px solid #c9c9c9;
-        border-bottom: 2px solid #E2231A; }
-  .form-group .select-wrapper:after {
-    content: "⋎";
-    font-family: 'Font Awesome\ 5 Free';
-    position: absolute;
-    top: 6px;
-    right: 20px;
-    color: #434B67;
-    pointer-events: none; }
+  line-height: 1.5;
+  margin-bottom: 0rem; }
 
 .form-group .form-control {
-  font-weight: 100 !important; }
+  padding: 0.5rem 0.5rem; }
   .form-group .form-control.input-disabled {
     border: 1px dashed #c9c9c9;
     background-color: #f4f4f4; }
