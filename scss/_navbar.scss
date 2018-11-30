@@ -1,106 +1,120 @@
 nav {
   background-color: $unicef-blue;
-  font-family: $font-family-sans-serif;
-  &.navbar{
+
+  &.navbar {
     padding: 0rem 0rem 0rem 1rem;
+
     .navbar-brand {
       color: $white;
-      &.navbar-line{
+
+      &.navbar-line {
         border-right: 1px solid $white;
         padding-right: 1rem;
       }
     }
-    .navbar-nav-scroll{
+    .navbar-nav-scroll {
       color: $white;
-      font-family: "Helvetica Neue";
-      .navbar-nav{
+
+      .navbar-nav {
         background-color: rgba(55, 78, 162, 0.6);
         @include border-left-radius(80px);
         font-size: 14px;
         line-height: 1.5rem;
         padding: 0.5rem 0rem 0.25rem 2rem;
+
         .nav-link{
           color: $white;
           display: block;
         }
       }
-   }
-  .nav-item {
-    .badge{
-      background-color: $body-bg;
-      width: 1.25rem;
-      height: 1.25rem;
-      padding: 5px;
-      color: $unicef-dark-blue;
-      @include border-radius(3rem);
-      margin-right: 0.5rem;
     }
-    .fa{
-      background-color: $body-bg;
-      width: 1.25rem;
-      height: 1rem;
-      padding: 0rem 1rem 0rem 0.125rem;
-      color: $unicef-dark-blue;
-      @include border-radius(3rem);
-      margin-right: 0.5rem;
+
+    .nav-item {
+      .badge {
+        background-color: $body-bg;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 5px;
+        color: $unicef-dark-blue;
+        @include border-radius(3rem);
+        margin-right: 0.5rem;
+      }
+
+      .fa {
+        background-color: $body-bg;
+        width: 1.25rem;
+        height: 1rem;
+        padding: 0rem 1rem 0rem 0.125rem;
+        color: $unicef-dark-blue;
+        @include border-radius(3rem);
+        margin-right: 0.5rem;
+      }
     }
   }
- }
- a{
-  text-decoration-line: none;
+  a {
+    text-decoration-line: none;
+  }
 }
-}
-.nav-tabs{
+.nav-tabs {
   padding: 0rem 2rem 0rem 2rem;
   margin-top: 0rem;
-  font-family: Arial;
   font-size: 14px !important;
   line-height: 2rem;
   text-align: center;
   border-bottom-color: $nav-tabs-border-color;
-  .nav-item{
+
+  .nav-item {
     color: $black ;
-    &.active{
+
+    &.active {
       border:none;
       border-bottom: 0.25rem solid $unicef-blue;
     }
-    .nav-link{
+    .nav-link {
       border:none;
-      &:hover{
+
+      &:hover {
         border:none;
       }
     }
-    &.dropdown{
-      &:hover{
+
+    &.dropdown {
+
+      &:hover {
         border:none;
-        background-color:$nav-tabs-link-active-bg;
+        background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
-      &:active{
+
+      &:active {
         border:none;
-        background-color:$nav-tabs-link-active-bg;
+        background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
-      &.show{
+
+      &.show {
         border: none;
         .nav-link{
           border:none;
-          background-color:$nav-tabs-link-active-bg;
+          background-color: $nav-tabs-link-active-bg;
           border-bottom: 0.25rem solid $unicef-blue;
         }
       }
-      .dropdown-menu{
+
+      .dropdown-menu {
         padding-top: $dropdown-padding-y;
         margin-top: 0rem;
         border: $dropdown-border;
-        background-color:$body-bg;
-        border-bottom-right-radius:$border-radius;
+        background-color: $body-bg;
+        border-bottom-right-radius: $border-radius;
         border-bottom-left-radius: $border-radius;
         box-shadow: $dropdown-box-shadow;
+
         .dropdown-item{
           background-color: $body-bg;
           line-height: $dropdown-line-height;
           padding: 0.5rem 1rem;
+
           &:hover{
             color: $white;
             background-color: $unicef-dark-blue;
@@ -109,17 +123,18 @@ nav {
       }
     }
   }
-  a{
+
+  a {
     color: $black;
     text-decoration-line: none;
   }
 }
 
-.skip
-{
+.skip {
   display: block;
   margin-top: -40px;
   padding: 0.5rem 15px;
+
   &:focus{
     margin-top:auto;
     margin-bottom: 5px;
@@ -127,8 +142,8 @@ nav {
     display: inline-block;
     text-decoration: underline;
   }
+
   &:active{
     display: inline;
-
   }
-  }
+}
