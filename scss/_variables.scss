@@ -640,12 +640,13 @@ $dropdown-padding-y:                .5rem !default;
 $dropdown-item-padding-x:                1.5rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-bg:                       $white !default;
-$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-border-color:             $unicef-borders !default;
+$dropdown-border:                   1px solid $dropdown-border-color !default;
 $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-200 !default;
-$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
-$dropdown-line-height:              2rem !default;
+$dropdown-box-shadow:               0 0.125rem 0.625rem 0 rgba(0,0,0,0.30) !default;
+$dropdown-line-height:              1.5rem !default;
 
 $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;

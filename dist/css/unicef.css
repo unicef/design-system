@@ -1886,7 +1886,7 @@ input[type="button"].btn-block {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #c9c9c9;
   border-radius: 0.125rem; }
 
 .dropdown-menu-right {
@@ -5829,13 +5829,17 @@ nav {
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.dropdown .dropdown-menu {
-      padding: 0.5rem 0rem;
+      padding-top: 0.5rem;
+      margin-top: 0rem;
+      border: 1px solid #c9c9c9;
       background-color: #fff;
       border-bottom-right-radius: 0.125rem;
-      border-bottom-left-radius: 0.125rem; }
+      border-bottom-left-radius: 0.125rem;
+      box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
       .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
         background-color: #fff;
-        line-height: 2rem; }
+        line-height: 1.5rem;
+        padding: 0.5rem 1rem; }
         .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
           color: #fff;
           background-color: #374EA2; }
