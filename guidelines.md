@@ -74,9 +74,6 @@ depend on legacy systems, some just need a few tweaks, some are just platforms
 with an out of the box customization, etc. With this diversity, designers will
 not always be able to fully comply with this specification.
 
-`TODO However, we have defined some basic level of compliance that shall be considered
-as MANDATORY.`
-
 ## Visual Specification
 
 We have created a Sketch document in which we define the visual specification of each component.
@@ -89,18 +86,20 @@ We have created a Sketch document in which we define the visual specification of
 
 In UNICEF brand book defines the following colors:
 
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-dark-blue)">$unicef-dark-blue</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-purple)">$unicef-purple</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-red)">$unicef-red</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-dark-red)">$unicef-dark-red</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-orange)">$unicef-orange</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-green)">$unicef-green</div>
-<div class="p-3 mb-2 text-white" style="background-color: var(--unicef-dark-green)">$unicef-dark-green</div>
+<div class="row">
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-blue)">$unicef-dark-blue</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-purple)">$unicef-purple</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-red)">$unicef-red</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-red)">$unicef-dark-red</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-orange)">$unicef-orange</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-green)">$unicef-green</div>
+  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-green)">$unicef-dark-green</div>
+</div>
 
 We use `$unicef-blue` mainly on header.
 
-Use the `$unicef-dark-blue` on the interface on elements with actions (buttons, links, etc).
+Typically we use the `$unicef-dark-blue` on elements with actions.
 
 
 ## Traffic light colors
@@ -232,7 +231,7 @@ In order to keep consistency on the meaning of most common actions, the icon sha
 | ------------------------------------------|:----------------------------|:------------------------|
 | <i class="fas fa-pencil-alt"></i>         | Edit                        | A pencil                
 | <i class="fas fa-times"></i>              | Close                       | An X                
-| <i class="fas fa-trash-alt"></i>          | Delete                      | An X                
+| <i class="fas fa-trash-alt"></i>          | Delete                      | An trash can                
 | <i class="fas fa-print"></i>              | Print                       | A printer                
 | <i class="fas fa-upload"></i>             | Upload                      | An arrow exiting from a hard disk                
 | <i class="fas fa-download"></i>           | Download                    | An arrow going to a hard disk.                
@@ -343,21 +342,21 @@ Forms shall be designed the following way:
 
 6. Numerical input fields shall be aligned to the right (to ease reading)
 
-  <div class="doc-example">
-    <div class="row col-sm-4 col-xs-6">
-    <label for="number-left1">Number 1</label>
-      <input name="number-left1" class="form-control" type="number" value="11.34">
+    <div class="doc-example">
+      <div class="row col-sm-4 col-xs-6">
+        <label for="number-left1">Number 1</label>
+        <input name="number-left1" class="form-control" type="number" value="11.34">
+      </div>
+      <div class="row col-sm-4 col-xs-6">
+        <label for=" number-left2">Number 2</label>  
+        <input name="number-left2" class="form-control" type="number" value="11.34">
+      </div>
     </div>
-    <label for=" number-left2">Number 2</label>
-    <div class="row col-sm-4 col-xs-6">
-      <input name="number-left2" class="form-control" type="number" value="11.34">
-    </div>
-  </div>
 
 7. Currency fields:
-  1. Shall not allow the user to introduce more than 2 decimals.
-  2. Shall not allow the user to introduce any character not allowed.
-  3. On blur, shall rewrite the contents to its
+    1. Shall not allow the user to introduce more than 2 decimals.
+    2. Shall not allow the user to introduce any character not allowed.
+    3. On blur, shall rewrite the contents to its
 
 8. Use readonly and disabled fields properly. A field that just displays information and user can never change it is a read only field (html attribute `readonly`). A field that the user cannot modify because of the current status of the form are `disabled`. Example:
 
@@ -510,13 +509,3 @@ In case selection of individual rows is provided, it should be displayed at the 
 Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
 
 `TODO expand this topic`
-
-## Images
-
-Images should weight the least amount possible..
-
-1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
-
-2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
-
-3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image. For decorative images, use an empty string `alt` attribute (`alt=""`).
