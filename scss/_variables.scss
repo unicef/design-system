@@ -511,7 +511,7 @@ $form-group-margin-bottom:              1rem !default;
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
 $input-group-addon-border-color:        $input-border-color !default;
-$input-mandatory-bg:                    #FFF9EF !default;
+$input-mandatory-bg:                    theme-color-level("warning",-10) !default;
 $input-form-element-disabled-border:    1px dashed $gray-300 !default;
 
 $text-area-color:                               $input-color !default;
@@ -625,9 +625,9 @@ $custom-file-text: (
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
 $form-feedback-valid-color:         theme-color("success") !default;
-$form-feedback-invalid-color:       theme-color("danger") !default;     
+$form-feedback-invalid-color:       theme-color("danger") !default;
 $form-error-border-bottom:          2px solid $unicef-red;
-$form-error-background-color:       #FDF4F3!default;
+$form-error-background-color:       theme-color-level('danger',-12) !default;
 
 // Dropdowns
 //
