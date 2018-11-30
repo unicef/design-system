@@ -239,9 +239,9 @@ Also, it is possible to group an input with a button:
           <a class="nav-link disabled" href="#">DISABLED</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">DROPDOWN <i class="fas fa-angle-down"></i></a>
-          <div class="dropdown-menu">
+        <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">DROPDOWN </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Menu Item- Long Title</a>
             <a class="dropdown-item" href="#">Menu Item 2</a>
             <a class="dropdown-item" href="#">Menu Item 3</a>
