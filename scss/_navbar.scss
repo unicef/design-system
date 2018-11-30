@@ -46,6 +46,9 @@ nav {
     }
   }
  }
+ a{
+  text-decoration-line: none;
+}
 }
 .nav-tabs{
   padding: 0rem 2rem 0rem 2rem;
@@ -104,8 +107,10 @@ nav {
   }
   a{
     color: $black;
+    text-decoration-line: none;
   }
 }
+
 .skip
 {
   display: block;

@@ -137,12 +137,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #374EA2;
-  text-decoration: none;
+  color: #3344DD;
+  text-decoration: underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #243369;
+    color: #1c2aa8;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -1791,10 +1791,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #374EA2;
+  color: #3344DD;
   background-color: transparent; }
   .btn-link:hover {
-    color: #243369;
+    color: #1c2aa8;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -3029,12 +3029,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #374EA2;
+  color: #3344DD;
   background-color: #fff;
   border: 1px solid #c9c9c9; }
   .page-link:hover {
     z-index: 2;
-    color: #243369;
+    color: #1c2aa8;
     text-decoration: none;
     background-color: #c9c9c9;
     border-color: #c9c9c9; }
@@ -5794,6 +5794,8 @@ nav {
       color: #374EA2;
       border-radius: 3rem;
       margin-right: 0.5rem; }
+  nav a {
+    text-decoration-line: none; }
 
 .nav-tabs {
   padding: 0rem 2rem 0rem 2rem;
@@ -5838,7 +5840,8 @@ nav {
           color: #fff;
           background-color: #374EA2; }
   .nav-tabs a {
-    color: #000; }
+    color: #000;
+    text-decoration-line: none; }
 
 .skip {
   display: block;
