@@ -192,11 +192,11 @@ Also, it is possible to group an input with a button:
     <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
       <ul class="navbar-nav bd-navbar-nav flex-row">
           <li class="nav-item dropdown">
-              <a class="nav-item nav-link  mr-md-2" data-toggle="dropdown"
-              href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Libya <i class="fas fa-angle-down"></i>
+              <a class="nav-item nav-link  mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"  data-toggle="dropdown"
+              href="#" role="button"  aria-haspopup="true"
+                aria-expanded="false">Libya
             </a>
-          <div class="dropdown-menu ">
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" >
                   <a class="dropdown-item" href="#">Menu Item</a>
                   <a class="dropdown-item" href="#">Menu Item 2</a>
               </div>
@@ -208,11 +208,15 @@ Also, it is possible to group an input with a button:
             <a class="nav-item nav-link mr-md-2"><i class="fa fa-inbox"></i>Item
               With Icons</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link  mr-md-2">
-              <img class="img-fluid" alt="" src="assets/images/avatar.png">
-              <i class="fas fa-angle-down"></i>
+           <li class="nav-item dropdown">
+              <a class="nav-item nav-link  mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"  data-toggle="dropdown"
+              href="#" role="button"  aria-haspopup="true"
+                aria-expanded="false"> <img class="img-fluid" alt="" src="assets/images/avatar.png">
             </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" >
+                  <a class="dropdown-item" href="#">Menu Item</a>
+                  <a class="dropdown-item" href="#">Menu Item 2</a>
+              </div>
           </li>
       </ul>
     </div>

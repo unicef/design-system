@@ -5780,11 +5780,20 @@ nav {
           display: block; }
     nav.navbar .nav-item .badge {
       background-color: #fff;
+      width: 1.25rem;
+      height: 1.25rem;
+      padding: 5px;
       color: #374EA2;
       border-radius: 3rem;
       margin-right: 0.5rem; }
     nav.navbar .nav-item .fa {
-      padding-right: 0.5rem; }
+      background-color: #fff;
+      width: 1.25rem;
+      height: 1rem;
+      padding: 0rem 1rem 0rem 0.125rem;
+      color: #374EA2;
+      border-radius: 3rem;
+      margin-right: 0.5rem; }
 
 .nav-tabs {
   padding: 0rem 2rem 0rem 2rem;
