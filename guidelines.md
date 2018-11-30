@@ -202,16 +202,58 @@ The following rules are recommended.
 
     | Label         | Action                      | Do not use              |
     | ------------- |:----------------------------|:------------------------|
-    | Add           | Create a new item           | Create, Build,          |
-    | Cancel        | Abandon current action      | Dismiss, Abandon        |
-    | Continue      | Go to next step             | Next, Following         |
-    | Delete        | Delete an existing item     | Remove, Eliminate, Suprime |
-    | Edit          | Modify an existing item     | Modify, Change          |
-    | Save          | Save into a system an item  | Submit, Commit          |
+    | Add           | Create a new item           | Create, Build,          
+    | Cancel        | Abandon current action      | Dismiss, Abandon        
+    | Continue      | Go to next step             | Next, Following         
+    | Delete        | Delete an existing item     | Remove, Eliminate, Suprime
+    | Edit          | Modify an existing item     | Modify, Change          
+    | Save          | Save into a system an item  | Submit, Commit          
+    | Upload        | Load a file from local computer or other system    | Import         
+    | Download      | Save to a local computer    | Export                     
+    | Print         | Print current page or section | Export                     
 
-    `TODO make a complete list of standard labels`
 
     However there may be some exceptions as "New post"
+
+<div class="alert alert-success">
+<strong><i class="fas fa-recycle"></i> Sustainability guideline:</strong>, in order to minimize paper usage, whenever
+possible define a <strong>download</strong> action instead of a print action.
+</div>
+
+## Icons
+
+In general, icons shall always be accompanied with a label. Exceptionally, a tooltip is allowed.
+
+A recommended icon set is **[FontAwesome 5.x free](https://fontawesome.com/)**.
+
+In order to keep consistency on the meaning of most common actions, the icon shall be
+
+| Icon                                      | Action                      | Icon description        
+| ------------------------------------------|:----------------------------|:------------------------|
+| <i class="fas fa-pencil-alt"></i>         | Edit                        | A pencil                
+| <i class="fas fa-times"></i>              | Close                       | An X                
+| <i class="fas fa-trash-alt"></i>          | Delete                      | An X                
+| <i class="fas fa-print"></i>              | Print                       | A printer                
+| <i class="fas fa-upload"></i>             | Upload                      | An arrow exiting from a hard disk                
+| <i class="fas fa-download"></i>           | Download                    | An arrow going to a hard disk.                
+| <i class="fas fa-search"></i>             | Search                      | A magnifier                
+
+
+The following icons are not recommended to be used
+
+| <i class="fas fa-save"></i>         | Save                        |  A floppy drive is something from the past                       |
+
+## Images
+
+Images should weight the least amount possible. We work on environments on which the Internet is still not reliable.
+So, minimizing the use and size of images is a must.
+
+1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
+
+2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
+
+3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image. For decorative images, use an empty string `alt` attribute (`alt=""`).
+
 
 ### Date format
 
