@@ -507,6 +507,7 @@ List group with a button:
 
 ## Tables
 
+{% capture example %}
 <table class="table">
   <thead>
     <tr>
@@ -533,6 +534,8 @@ List group with a button:
     </tr>
   </tbody>
 </table>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 
