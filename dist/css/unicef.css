@@ -5750,25 +5750,25 @@ select:required {
   .form-group .form-control.readonly {
     border: 1px solid #f4f4f4; }
 
-.doc.container table {
+.table {
   border: 1px solid #c9c9c9; }
-  .doc.container table th {
+  .table th {
     color: #767676;
     font-size: 0.75rem;
     line-height: 1rem;
-    border: none !important;
-    border-bottom: 1px solid #c9c9c9 !important;
-    padding: 1rem 1rem !important; }
-  .doc.container table td {
-    border: none !important;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    padding: 1rem 1rem; }
+  .table td {
+    border: none;
     color: #000;
     line-height: 1.5rem;
-    border-bottom: 1px solid #c9c9c9 !important;
-    padding: 1rem 1rem !important;
+    border-bottom: 1px solid #c9c9c9;
+    padding: 1rem 1rem;
     vertical-align: middle; }
-    .doc.container table td:nth-child(3) {
+    .table td:nth-child(3) {
       text-align: right; }
-  .doc.container table a {
+  .table a {
     text-decoration-line: none; }
 
 .tab-content {
