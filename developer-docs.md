@@ -505,6 +505,35 @@ List group with a button:
 </ul>
 </div>
 
+## Tables
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Main Element</th>
+      <th scope="col">Date</th>
+      <th scope="col">Amount(USD)</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr>
+      <td> <a href="#">Text is a link</a></td>
+      <td>29-May-2018</td>
+      <td>$23.33</td>
+    </tr>
+    <tr>
+      <td  ><a href="#">This is another link. Vertically align cells to the middle</a></td>
+      <td>12-Aug-2017</td>
+      <td class>$99.44</td>
+    </tr>
+    <tr>
+      <td><a href="#">Text is left-aligned</a></td>
+      <td>29-May-2018</td>
+      <td>$1,223.00</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 <!-- TODO Remove this from HERE --->

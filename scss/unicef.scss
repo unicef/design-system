@@ -63,7 +63,7 @@ $theme-colors: map-remove($theme-colors, 'secondary', 'info','light','dark');
 //@import "utils";
 //@import "display-data";
 //@import "popups";
-//@import "tables";
+@import "tables";
 @import "tab";
 @import "type";
 //@import "notifications";

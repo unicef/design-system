@@ -1,0 +1,30 @@
+.doc {
+    &.container {
+        table {
+            border: $table-border;
+            th {
+                color: $table-head-color;
+                font-size: $table-head-font-size;	
+                line-height: $table-head-line-height;
+                border: none !important;
+                border-bottom: 1px solid $unicef-borders !important;
+                padding: 1rem 1rem !important;
+            }
+            td {
+                border: none !important;
+                color: $black;
+                line-height: $table-line-height;
+                border-bottom: 1px solid $unicef-borders !important;
+                padding: 1rem 1rem !important;
+                vertical-align: middle;
+                &:nth-child(3) {
+                    text-align: right;
+                }
+            }
+            a {
+                text-decoration-line: $link-in-table-decoration;
+            }
+        }
+        
+    }
+}
