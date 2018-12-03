@@ -5783,37 +5783,55 @@ nav {
     padding: 0rem 0rem 0rem 1rem; }
     nav.navbar .navbar-brand {
       color: #fff; }
-      nav.navbar .navbar-brand.navbar-line {
-        border-right: 1px solid #fff;
-        padding-right: 1rem; }
-    nav.navbar .navbar-nav-scroll {
-      color: #fff; }
-      nav.navbar .navbar-nav-scroll .navbar-nav {
-        background-color: rgba(55, 78, 162, 0.6);
-        border-top-left-radius: 80px;
-        border-bottom-left-radius: 80px;
-        font-size: 14px;
-        line-height: 1.5rem;
-        padding: 0.5rem 0rem 0.25rem 2rem; }
-        nav.navbar .navbar-nav-scroll .navbar-nav .nav-link {
-          color: #fff;
-          display: block; }
-    nav.navbar .nav-item .badge {
+    nav.navbar .navbar-line {
+      border-right: 1px solid #fff;
+      padding-right: 1rem; }
+    nav.navbar .navbar-name {
+      padding: 1rem 0rem 1rem 0.5rem;
+      line-height: 1.5rem; }
+  nav .navbar-nav-scroll {
+    color: #fff; }
+    nav .navbar-nav-scroll .navbar-nav {
+      background-color: rgba(55, 78, 162, 0.6);
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      font-size: 14px;
+      line-height: 1.5rem;
+      padding: 0.5rem 0rem 0.25rem 2rem; }
+      nav .navbar-nav-scroll .navbar-nav .nav-link {
+        color: #fff;
+        display: block; }
+  nav .nav-item .dropdown-menu {
+    padding-top: 0.5rem;
+    margin-top: 0rem;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
+    nav .nav-item .dropdown-menu .dropdown-item {
       background-color: #fff;
-      width: 1.25rem;
-      height: 1.25rem;
-      padding: 5px;
-      color: #374EA2;
-      border-radius: 3rem;
-      margin-right: 0.5rem; }
-    nav.navbar .nav-item .fa {
-      background-color: #fff;
-      width: 1.25rem;
-      height: 1rem;
-      padding: 0rem 1rem 0rem 0.125rem;
-      color: #374EA2;
-      border-radius: 3rem;
-      margin-right: 0.5rem; }
+      line-height: 1.5rem;
+      padding: 0.5rem 1rem; }
+      nav .nav-item .dropdown-menu .dropdown-item:hover {
+        color: #fff;
+        background-color: #374EA2; }
+  nav .nav-item .badge {
+    background-color: #fff;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 5px;
+    color: #374EA2;
+    border-radius: 3rem;
+    margin-right: 0.5rem; }
+  nav .nav-item .fa {
+    background-color: #fff;
+    width: 1.25rem;
+    height: 1rem;
+    padding: 0rem 1rem 0rem 0.125rem;
+    color: #374EA2;
+    border-radius: 3rem;
+    margin-right: 0.5rem; }
   nav a {
     text-decoration-line: none; }
 

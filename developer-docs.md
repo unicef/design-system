@@ -180,9 +180,48 @@ Also, it is possible to group an input with a button:
 
 
 ## Navbar
-
 {% capture example %}
 <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none d-sm-none d-md-none d-lg-block " href="/" aria-label="Unicef">
+        <img class="img-fluid  d-md-none d-lg-block " alt="unicef-logo"  src="assets/images/unicef-logo.svg">
+    </a>
+    <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Unicef Desin System</a>
+</nav>
+{% endcapture %}
+{% include example.html content=example %}
+{% capture example %}
+<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none
+      d-sm-none d-md-none d-lg-none " href="/" aria-label="Unicef">
+        <img class="img-fluid  d-sm-none d-md-none d-lg-none "
+        alt="unicef-logo"  src="assets/images/unicef-logo.svg">
+    </a>
+    <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
+    <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+          <li class="nav-item dropdown">
+              <a class="nav-item nav-link  mr-md-2" 
+              href="#" role="button">Libya
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link  mr-md-2"><span class="badge">4</span>Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link mr-md-2"><i class="fa fa-inbox"></i>Item
+              With Icons</a>
+          </li>
+           <li class="nav-item dropdown">
+              <a class="nav-item nav-link  mr-md-2" > <img class="img-fluid" alt="" src="assets/images/avatar.png">
+            </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+{% endcapture %}
+{% include example.html content=example %}
+{% capture example %}
+ <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
     <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none
       d-sm-none d-md-none d-lg-none " href="/" aria-label="Unicef">
         <img class="img-fluid  d-sm-none d-md-none d-lg-none "
@@ -221,9 +260,37 @@ Also, it is possible to group an input with a button:
       </ul>
     </div>
   </nav>
+    <ul class="nav nav-tabs ">
+      <li class="nav-item active">
+        <a class="nav-link " href="#">SELECTED</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">UNSELECTED</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link disabled" href="#">DISABLED</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">DROPDOWN </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item 3</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">ACTIVE DROPDOWN </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item 3</a>
+          </div>
+      </li>
+    </ul>
 {% endcapture %}
 {% include example.html content=example %}
-
 
 ## Tabs
 {% capture example %}
