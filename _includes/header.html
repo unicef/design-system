@@ -10,18 +10,26 @@
         <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Unicef Design System</a>
     </nav>
   </header>
-  
-    <ul class="nav nav-tabs ">
-      <li class="nav-item dropdown">
-      <a class="nav-link " href="index.html">Home</a>
+
+    <ul class="nav nav-tabs">
+        {%- if (page.url == '/') or (page.url == '/index.html') -%}
+        {%- assign is_active = 'active' -%}
+        {%- endif -%}
+      <li class="nav-item {{is_active}}">
+        <a class="nav-link " href="index.html">Home</a>
       </li>
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.in-navbar -%}
-          <li class="nav-item dropdown ">
-            <a class="nav-link" role="button" href=".{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- assign is_active = '' -%}
+          {%- if (page.url == my_page.url -%}
+            {%- assign is_active = 'active' -%}
+          {%- endif -%}
+          <!-- {{ page.url}} | my_page {{my_page.url}} -->
+          <li class="nav-item {{ is_active }}">
+            <a class="nav-link " role="button" href=".{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           </li>
-  
+
           {%- endif -%}
         {%- endfor -%}
       </ul>
