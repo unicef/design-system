@@ -12204,20 +12204,6 @@ return jQuery;
 
 //Mandatory fields
 
-/*export function backgroundColorForRequiredFields() {
-    document.addEventListener('DOMContentLoaded', function() {
-   document.querySelector('[required]').addListener('change', () => {
-     console.log("hola");
-   });
-}, false);
-}*/
-/**
- * UNICEF Javascript
- */
-
-
-
-
 /**
  * Set background color for input, selects and textareas.
  *
@@ -12271,10 +12257,9 @@ document.querySelectorAll('textarea[data-autoresize]').forEach( textarea => {
 });
 
 
-//
-// Textarea counter
-//
-
+/**
+ * Textarea counter
+ */
 HTMLTextAreaElement.prototype.counter = function() {
   return this.maxLength - this.textLength;
 }
@@ -12296,3 +12281,7 @@ document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
     document.getElementById(counterId).innerHTML = event.target.counter() + " characters left";
   }, false);
 });
+
+//# sourceMappingURL=unicef.js.map
+
+//# sourceMappingURL=unicef-bundle.js.map

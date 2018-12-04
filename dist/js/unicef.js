@@ -1,9 +1,4 @@
-/**
- * UNICEF Javascript
- */
-
-
-
+//Mandatory fields
 
 /**
  * Set background color for input, selects and textareas.
@@ -58,10 +53,9 @@ document.querySelectorAll('textarea[data-autoresize]').forEach( textarea => {
 });
 
 
-//
-// Textarea counter
-//
-
+/**
+ * Textarea counter
+ */
 HTMLTextAreaElement.prototype.counter = function() {
   return this.maxLength - this.textLength;
 }
@@ -83,3 +77,5 @@ document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
     document.getElementById(counterId).innerHTML = event.target.counter() + " characters left";
   }, false);
 });
+
+//# sourceMappingURL=unicef.js.map
