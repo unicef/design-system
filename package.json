@@ -1,10 +1,14 @@
 {
-  "name": "unicef-ds",
-  "version": "0.1.0",
+  "name": "@unicef/design-system",
+  "version": "0.3.0",
   "description": "UNICEF design system based on bootstrap for creating our web applications",
-  "main": "doc/index.html",
+  "main": "dist/js/unicef-bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/unicef/unicef-design-system.git"
   },
   "author": "UNICEF",
   "license": "GPL-3.0+",
