@@ -182,9 +182,8 @@ Also, it is possible to group an input with a button:
 ## Navbar
 {% capture example %}
 <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none d-sm-none 
-    d-md-none d-lg-block" href="/" aria-label="Unicef">
-    <img class="img-fluid  d-md-none d-lg-block" alt="unicef-logo" 
+  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
+    <img class="img-fluid" alt="unicef-logo" 
       src="assets/images/unicef-logo.svg">
   </a>
   <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Application Name</a>
@@ -193,9 +192,8 @@ Also, it is possible to group an input with a button:
 {% include example.html content=example %}
 {% capture example %}
 <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none
-    d-sm-none d-md-none d-lg-none" href="/" aria-label="Unicef">
-    <img class="img-fluid d-sm-none d-md-none d-lg-none"
+  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
+    <img class="img-fluid"
       alt="unicef-logo" src="assets/images/unicef-logo.svg">
   </a>
   <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
@@ -227,9 +225,8 @@ Also, it is possible to group an input with a button:
 {% include example.html content=example %}
 {% capture example %}
 <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-xs-none
-    d-sm-none d-md-none d-lg-none" href="/" aria-label="Unicef">
-    <img class="img-fluid d-sm-none d-md-none d-lg-none"
+  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
+    <img class="img-fluid"
       alt="unicef-logo"  src="assets/images/unicef-logo.svg">
   </a>
   <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
