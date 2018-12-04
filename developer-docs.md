@@ -187,7 +187,7 @@ Also, it is possible to group an input with a button:
     <img class="img-fluid  d-md-none d-lg-block" alt="unicef-logo" 
       src="assets/images/unicef-logo.svg">
   </a>
-  <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Unicef Desin System</a>
+  <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Application Name</a>
 </nav>
 {% endcapture %}
 {% include example.html content=example %}
