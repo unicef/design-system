@@ -1,12 +1,19 @@
 
 .table {
   border: $table-border;
+
+  thead {
+
+    th {
+      border-bottom: 1px solid $unicef-borders;
+    }
+  }
+
   th {
     color: $table-head-color;
     font-size: $table-head-font-size;
     line-height: $table-head-line-height;
     border: none;
-    border-bottom: 1px solid $unicef-borders;
     padding: 1rem 1rem;
   }
 

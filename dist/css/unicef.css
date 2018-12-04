@@ -5752,12 +5752,13 @@ select:required {
 
 .table {
   border: 1px solid #c9c9c9; }
+  .table thead th {
+    border-bottom: 1px solid #c9c9c9; }
   .table th {
     color: #767676;
     font-size: 0.75rem;
     line-height: 1rem;
     border: none;
-    border-bottom: 1px solid #c9c9c9;
     padding: 1rem 1rem; }
   .table td {
     border: none;

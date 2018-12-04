@@ -4,6 +4,13 @@ var uglify = require("gulp-uglify");
 var sourcemaps = require('gulp-sourcemaps');
 var serve = require('gulp-serve');
 var plumber = require('gulp-plumber'); //Catch on error. By default watch task is
+const minify = require('gulp-minify');
+
+gulp.task('compress', function() {
+  gulp.src(['js/*.js'])
+    .pipe(minify())
+    .pipe(gulp.dest('dist'))
+});
 
 //Docs https://www.npmjs.com/package/gulp-sass
 var paths = {}
