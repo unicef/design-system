@@ -3,13 +3,18 @@ var sass = require("gulp-sass");
 var uglify = require("gulp-uglify");
 var sourcemaps = require('gulp-sourcemaps');
 var serve = require('gulp-serve');
+var concat = require('gulp-concat');
 var plumber = require('gulp-plumber'); //Catch on error. By default watch task is
 const minify = require('gulp-minify');
+var jquery = './node_modules/jquery/dist/jquery.slim.js';
+var popper = './node_modules/popper.js/dist/umd/popper.min.js';
+var bootstrap = './node_modules/bootstrap/dist/js/bootstrap.js';
 
 gulp.task('compress', function() {
-  gulp.src(['js/*.js'])
+  gulp.src([ jquery, popper, bootstrap, 'js/*.js'])
+    .pipe(concat('unicef-bundle.js'))
     .pipe(minify())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('./dist/js'))
 });
 
 //Docs https://www.npmjs.com/package/gulp-sass
