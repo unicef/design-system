@@ -91,19 +91,16 @@ nav {
 
   .nav-item {
     color: $black ;
-
+    border-bottom: 0.25rem solid transparent;
+    margin-bottom: -2px;
     &.active {
-      border:none;
       border-bottom: 0.25rem solid $unicef-blue;
     }
-    .nav-link {
+    &:hover {
       border:none;
-
-      &:hover {
-        border:none;
-      }
+      background-color: $nav-tabs-link-active-bg;
+      border-bottom: 0.25rem solid $unicef-blue;
     }
-
     &.dropdown {
 
       &:hover {

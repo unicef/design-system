@@ -5845,14 +5845,15 @@ nav {
   text-align: center;
   border-bottom-color: #c9c9c9; }
   .nav-tabs .nav-item {
-    color: #000; }
+    color: #000;
+    border-bottom: 0.25rem solid transparent;
+    margin-bottom: -2px; }
     .nav-tabs .nav-item.active {
-      border: none;
       border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item .nav-link {
-      border: none; }
-      .nav-tabs .nav-item .nav-link:hover {
-        border: none; }
+    .nav-tabs .nav-item:hover {
+      border: none;
+      background-color: lightblue;
+      border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.dropdown:hover {
       border: none;
       background-color: lightblue;
