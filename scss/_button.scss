@@ -5,4 +5,15 @@
   min-width: $btn-min-width;
   text-decoration-line: none;
   -webkit-text-decoration-line: none;
+
+  &.btn-link {
+
+    &:focus {
+      margin-top:auto;
+      margin-bottom: 5px;
+      border: $link-focus-border;
+      display: inline-block;
+      text-decoration: underline;
+    }
+  }
 }

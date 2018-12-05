@@ -5718,6 +5718,12 @@ a.text-danger:hover, a.text-danger:focus {
   min-width: 5.5rem;
   text-decoration-line: none;
   -webkit-text-decoration-line: none; }
+  .btn.btn-link:focus {
+    margin-top: auto;
+    margin-bottom: 5px;
+    border: 1px dotted #3344DD;
+    display: inline-block;
+    text-decoration: underline; }
 
 .card-body {
   padding: 1rem; }
