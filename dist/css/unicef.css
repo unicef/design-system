@@ -5898,10 +5898,33 @@ nav {
     text-decoration-line: none;
     -webkit-text-decoration-line: none; }
 
+.skip-to-main {
+  position: absolute;
+  top: auto;
+  width: auto;
+  padding: 0.5rem 1rem;
+  height: auto; }
+  .skip-to-main:focus {
+    border: 1px dotted #3344DD;
+    background-color: white;
+    text-decoration: underline;
+    margin: 10px 33%;
+    text-align: center;
+    font-size: 1rem;
+    z-index: 999; }
+  .skip-to-main:active {
+    border: 1px dotted #3344DD;
+    background-color: white;
+    text-decoration: underline;
+    margin-top: 10px 33%;
+    text-align: center;
+    font-size: 1rem;
+    z-index: 999; }
+
 .skip {
   display: block;
   margin-top: -40px;
-  padding: 0.5rem 15px; }
+  padding: 0.5rem 1rem; }
   .skip:focus {
     margin-top: auto;
     margin-bottom: 5px;

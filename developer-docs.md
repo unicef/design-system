@@ -181,6 +181,7 @@ Also, it is possible to group an input with a button:
 
 ## Navbar
 {% capture example %}
+<a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
 <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
     <img class="img-fluid" alt="unicef-logo" 
@@ -191,6 +192,7 @@ Also, it is possible to group an input with a button:
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
+<a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
 <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
     <img class="img-fluid"
@@ -224,6 +226,7 @@ Also, it is possible to group an input with a button:
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
+<a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
 <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
     <img class="img-fluid"

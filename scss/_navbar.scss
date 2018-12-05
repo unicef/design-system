@@ -160,10 +160,39 @@ nav {
   }
 }
 
+
+.skip-to-main {
+  position:absolute;
+  top: auto;
+  width: auto;
+  padding: 0.5rem 1rem;
+  height: auto;
+
+  &:focus{
+    border: $link-focus-border;
+    background-color: white;
+    text-decoration: underline;
+    margin: 10px 33%;
+    text-align:center;
+    font-size:1rem;
+    z-index:999;
+  }
+
+  &:active{
+    border: $link-focus-border;
+    background-color: white;
+    text-decoration: underline;
+    margin-top: 10px 33%;
+    text-align:center;
+    font-size:1rem;
+    z-index:999;
+  }
+}
+
 .skip {
   display: block;
   margin-top: -40px;
-  padding: 0.5rem 15px;
+  padding: 0.5rem 1rem;
 
   &:focus{
     margin-top:auto;
@@ -177,3 +206,4 @@ nav {
     display: inline;
   }
 }
+ 
