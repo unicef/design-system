@@ -181,7 +181,7 @@ Also, it is possible to group an input with a button:
 
 ## Navbar
 {% capture example %}
-<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+<nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
     <img class="img-fluid" alt="unicef-logo" 
       src="assets/images/unicef-logo.svg">
@@ -191,7 +191,7 @@ Also, it is possible to group an input with a button:
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
-<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+<nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
     <img class="img-fluid"
       alt="unicef-logo" src="assets/images/unicef-logo.svg">
@@ -224,7 +224,7 @@ Also, it is possible to group an input with a button:
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
-<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+<nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
     <img class="img-fluid"
       alt="unicef-logo"  src="assets/images/unicef-logo.svg">
