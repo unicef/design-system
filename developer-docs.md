@@ -374,7 +374,6 @@ Form fields have different status:
     </div>
     <!-- mark with the attribute readonly, fields that
     are read only -->
-
     <div class="form-group col-md-6">
       <label for="input-readonly">Input readonly</label>
       <input type="email" class="form-control readonly" id="input-readonly"

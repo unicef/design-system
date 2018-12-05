@@ -31,7 +31,8 @@ select:required {
       border-bottom: $form-error-border-bottom;
     }
     &.readonly{
-      border: 1px solid $input-disabled-bg;
+      border: none;
+      background-color: $white;
     }
   }
 }

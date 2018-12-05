@@ -5755,7 +5755,8 @@ select:required {
     border: 1px solid #c9c9c9;
     border-bottom: 2px solid #E2231A; }
   .form-group .form-control.readonly {
-    border: 1px solid #f4f4f4; }
+    border: none;
+    background-color: #fff; }
 
 .table {
   border: 1px solid #c9c9c9; }
