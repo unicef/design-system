@@ -5716,7 +5716,8 @@ a.text-danger:hover, a.text-danger:focus {
   font-size: 0.875rem;
   text-transform: uppercase;
   min-width: 5.5rem;
-  text-decoration: none; }
+  text-decoration-line: none;
+  -webkit-text-decoration-line: none; }
 
 .card-body {
   padding: 1rem; }
@@ -5770,7 +5771,8 @@ select:required {
     .table td:nth-child(3) {
       text-align: right; }
   .table a {
-    text-decoration-line: none; }
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none; }
 
 .tab-content {
   padding: 1px solid red; }
@@ -5835,7 +5837,8 @@ nav {
     border-radius: 3rem;
     margin-right: 0.5rem; }
   nav a {
-    text-decoration-line: none; }
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none; }
 
 .nav-tabs {
   padding: 0rem 2rem 0rem 1em;
@@ -5885,7 +5888,8 @@ nav {
           background-color: #374EA2; }
   .nav-tabs a {
     color: #000;
-    text-decoration-line: none; }
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none; }
 
 .skip {
   display: block;

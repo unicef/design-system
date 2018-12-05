@@ -31,5 +31,6 @@
 
   a {
     text-decoration-line: $link-in-table-decoration;
+    -webkit-text-decoration-line: none;
   }
 }

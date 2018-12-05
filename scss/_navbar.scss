@@ -79,6 +79,7 @@ nav {
     }
   a {
     text-decoration-line: none;
+    -webkit-text-decoration-line: none;
   }
 }
 .nav-tabs {
@@ -149,6 +150,7 @@ nav {
   a {
     color: $black;
     text-decoration-line: none;
+    -webkit-text-decoration-line: none;
   }
 }
 
