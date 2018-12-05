@@ -82,6 +82,7 @@ nav {
     -webkit-text-decoration-line: none;
   }
 }
+
 .nav-tabs {
   padding: 0rem 2rem 0rem 1em;
   margin-top: 0rem;
@@ -97,21 +98,26 @@ nav {
     &.active {
       border-bottom: 0.25rem solid $unicef-blue;
     }
+
     &:hover {
-      border:none;
+      border: none;
       background-color: $nav-tabs-link-active-bg;
       border-bottom: 0.25rem solid $unicef-blue;
     }
+
+    .nav-link {
+      border: none;
+    }
+
     &.dropdown {
 
       &:hover {
-        border:none;
         background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
 
       &:active {
-        border:none;
+        border: none;
         background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }

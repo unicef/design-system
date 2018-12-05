@@ -5857,8 +5857,9 @@ nav {
       border: none;
       background-color: lightblue;
       border-bottom: 0.25rem solid #1CABE2; }
+    .nav-tabs .nav-item .nav-link {
+      border: none; }
     .nav-tabs .nav-item.dropdown:hover {
-      border: none;
       background-color: lightblue;
       border-bottom: 0.25rem solid #1CABE2; }
     .nav-tabs .nav-item.dropdown:active {
