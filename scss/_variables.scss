@@ -782,6 +782,10 @@ $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-bg:                           $white !default;
 
+$card-title-line-height:            2rem !default;
+$card-text-line-height:             1.5rem !default;
+$card-border:                       $card-border-width solid $unicef-borders !default;
+
 $card-img-overlay-padding:          1.25rem !default;
 
 $card-group-margin:                 ($grid-gutter-width / 2) !default;
