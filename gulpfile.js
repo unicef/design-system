@@ -6,7 +6,7 @@ var serve = require('gulp-serve');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber'); //Catch on error. By default watch task is
 var minify = require('gulp-minify');
-
+var minifyCss = require('gulp-minify-css');
 
 // Setting variables
 var jquery = './node_modules/jquery/dist/jquery.slim.js';
@@ -16,6 +16,7 @@ var bootstrap = './node_modules/bootstrap/dist/js/bootstrap.js';
 //Docs https://www.npmjs.com/package/gulp-sass
 var paths = {}
 paths.scss = ["./scss/**/*.scss", "./assets/scss/**/*.scss"];
+minify.css = ["./dist/css/*.css"]
 paths.js = ['js/*.js'];
 
 paths.jsBundle = [
@@ -53,6 +54,14 @@ gulp.task('scss', function() {
   .pipe(sass())
   .pipe(sourcemaps.write("./"))
   .pipe(gulp.dest("./dist/css"));
+});
+
+// minify css
+gulp.task('minify-css', function() {
+  gulp.src(minify.css)
+  .pipe(plumber()) //By default task ends if there is an error. This avoids it.
+  .pipe(minifyCss())
+  .pipe(gulp.dest("./dist/minify-css"));
 });
 
 // watch-sass
