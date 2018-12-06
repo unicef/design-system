@@ -5844,7 +5844,8 @@ strong {
   color: #000; }
 
 nav {
-  background-color: #1CABE2; }
+  background-color: #1CABE2;
+  display: block; }
   nav.navbar {
     padding: 0rem 0rem 0rem 1rem; }
     nav.navbar .navbar-brand {
@@ -5903,57 +5904,72 @@ nav {
     text-decoration-line: none;
     -webkit-text-decoration-line: none; }
 
-.nav-tabs {
-  padding: 0rem 2rem 0rem 1em;
-  margin-top: 0rem;
-  font-size: 14px !important;
-  line-height: 2rem;
-  text-align: center;
-  border-bottom-color: #c9c9c9; }
-  .nav-tabs .nav-item {
-    color: #000;
-    border-bottom: 0.25rem solid transparent;
-    margin-bottom: -2px; }
-    .nav-tabs .nav-item.active {
-      border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item:hover {
-      border: none;
-      background-color: lightblue;
-      border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item .nav-link {
-      border: none; }
-    .nav-tabs .nav-item.dropdown:hover {
-      background-color: lightblue;
-      border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item.dropdown:active {
-      border: none;
-      background-color: lightblue;
-      border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item.dropdown.show {
-      border: none; }
-      .nav-tabs .nav-item.dropdown.show .nav-link {
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: block; } }
+
+@media only screen and (max-width: 600px) {
+  .nav-tabs {
+    border: 1px solid grey; } }
+
+@media only screen and (max-width: 600px) {
+  .navitem.active {
+    border: none;
+    border-bottom: none; } }
+
+@media only screen and (min-width: 600px) {
+  .nav-tabs {
+    padding: 0rem 2rem 0rem 1em;
+    margin-top: 0rem;
+    font-size: 14px !important;
+    line-height: 2rem;
+    border-bottom-color: #c9c9c9;
+    list-style-type: none; }
+    .nav-tabs .nav-item {
+      color: #000;
+      border-bottom: 0.25rem solid transparent;
+      margin-bottom: -2px; }
+      .nav-tabs .nav-item.active {
+        border-bottom: 0.25rem solid #1CABE2; }
+      .nav-tabs .nav-item:hover {
         border: none;
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
-    .nav-tabs .nav-item.dropdown .dropdown-menu {
-      padding-top: 0.5rem;
-      margin-top: 0rem;
-      border: 1px solid #c9c9c9;
-      background-color: #fff;
-      border-bottom-right-radius: 0.125rem;
-      border-bottom-left-radius: 0.125rem;
-      box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
-      .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
+      .nav-tabs .nav-item .nav-link {
+        border: none; }
+      .nav-tabs .nav-item.dropdown:hover {
+        background-color: lightblue;
+        border-bottom: 0.25rem solid #1CABE2; }
+      .nav-tabs .nav-item.dropdown:active {
+        border: none;
+        background-color: lightblue;
+        border-bottom: 0.25rem solid #1CABE2; }
+      .nav-tabs .nav-item.dropdown.show {
+        border: none; }
+        .nav-tabs .nav-item.dropdown.show .nav-link {
+          border: none;
+          background-color: lightblue;
+          border-bottom: 0.25rem solid #1CABE2; }
+      .nav-tabs .nav-item.dropdown .dropdown-menu {
+        padding-top: 0.5rem;
+        margin-top: 0rem;
+        border: 1px solid #c9c9c9;
         background-color: #fff;
-        line-height: 1.5rem;
-        padding: 0.5rem 1rem; }
-        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-          color: #fff;
-          background-color: #374EA2; }
-  .nav-tabs a {
-    color: #000;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none; }
+        border-bottom-right-radius: 0.125rem;
+        border-bottom-left-radius: 0.125rem;
+        box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
+        .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item {
+          background-color: #fff;
+          line-height: 1.5rem;
+          padding: 0.5rem 1rem; }
+          .nav-tabs .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+            color: #fff;
+            background-color: #374EA2; } }
+
+a {
+  color: #000;
+  text-decoration-line: none;
+  -webkit-text-decoration-line: none; }
 
 .skip-to-main {
   position: absolute;

@@ -1,6 +1,6 @@
 nav {
   background-color: $unicef-blue;
- 
+  display:block;
   &.navbar {
     padding: 0rem 0rem 0rem 1rem;
 
@@ -83,82 +83,98 @@ nav {
   }
 }
 
-.nav-tabs {
-  padding: 0rem 2rem 0rem 1em;
-  margin-top: 0rem;
-  font-size: 14px !important;
-  line-height: 2rem;
-  text-align: center;
-  border-bottom-color: $nav-tabs-border-color;
-
-  .nav-item {
-    color: $black ;
-    border-bottom: 0.25rem solid transparent;
-    margin-bottom: -2px;
-    &.active {
-      border-bottom: 0.25rem solid $unicef-blue;
-    }
-
-    &:hover {
-      border: none;
-      background-color: $nav-tabs-link-active-bg;
-      border-bottom: 0.25rem solid $unicef-blue;
-    }
-
-    .nav-link {
-      border: none;
-    }
-
-    &.dropdown {
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: block;
+  } 
+} 
+@media only screen and (max-width: 600px) {
+  .nav-tabs {
+    border: 1px solid grey;
+  } 
+} 
+@media only screen and (max-width: 600px) {
+  .navitem.active{
+    border:none;
+    border-bottom: none;
+  }
+} 
+@media only screen and (min-width: 600px) {
+  .nav-tabs {
+    padding: 0rem 2rem 0rem 1em;
+    margin-top: 0rem;
+    font-size: 14px !important;
+    line-height: 2rem;
+    border-bottom-color: $nav-tabs-border-color;
+    list-style-type: none;
+    .nav-item {
+      color: $black ;
+      border-bottom: 0.25rem solid transparent;
+      margin-bottom: -2px;
+      &.active {
+        border-bottom: 0.25rem solid $unicef-blue;
+      }
 
       &:hover {
-        background-color: $nav-tabs-link-active-bg;
-        border-bottom: 0.25rem solid $unicef-blue;
-      }
-
-      &:active {
         border: none;
         background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
       }
 
-      &.show {
+      .nav-link {
         border: none;
-        .nav-link{
-          border:none;
+      }
+
+      &.dropdown {
+
+        &:hover {
           background-color: $nav-tabs-link-active-bg;
           border-bottom: 0.25rem solid $unicef-blue;
         }
-      }
-      .dropdown-menu {
-        padding-top: $dropdown-padding-y;
-        margin-top: 0rem;
-        border: $dropdown-border;
-        background-color: $body-bg;
-        border-bottom-right-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-        box-shadow: $dropdown-box-shadow;
 
-        .dropdown-item{
+        &:active {
+          border: none;
+          background-color: $nav-tabs-link-active-bg;
+          border-bottom: 0.25rem solid $unicef-blue;
+        }
+
+        &.show {
+          border: none;
+          .nav-link{
+            border:none;
+            background-color: $nav-tabs-link-active-bg;
+            border-bottom: 0.25rem solid $unicef-blue;
+          }
+        }
+        .dropdown-menu {
+          padding-top: $dropdown-padding-y;
+          margin-top: 0rem;
+          border: $dropdown-border;
           background-color: $body-bg;
-          line-height: $dropdown-line-height;
-          padding: 0.5rem 1rem;
+          border-bottom-right-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+          box-shadow: $dropdown-box-shadow;
 
-          &:hover{
-            color: $white;
-            background-color: $unicef-dark-blue;
+          .dropdown-item{
+            background-color: $body-bg;
+            line-height: $dropdown-line-height;
+            padding: 0.5rem 1rem;
+
+            &:hover{
+              color: $white;
+              background-color: $unicef-dark-blue;
+            }
           }
         }
       }
     }
   }
-
+}
   a {
     color: $black;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
   }
-}
 
 
 .skip-to-main {
