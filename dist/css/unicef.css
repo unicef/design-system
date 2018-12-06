@@ -3221,17 +3221,17 @@ input[type="button"].btn-block {
 
 @keyframes progress-bar-stripes {
   from {
-    background-position: 1rem 0; }
+    background-position: 0.5rem 0; }
   to {
     background-position: 0 0; } }
 
 .progress {
   display: flex;
-  height: 1rem;
+  height: 0.5rem;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #c9c9c9;
-  border-radius: 0.125rem; }
+  border-radius: 2rem; }
 
 .progress-bar {
   display: flex;
@@ -3248,7 +3248,7 @@ input[type="button"].btn-block {
 
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: 1rem 1rem; }
+  background-size: 0.5rem 0.5rem; }
 
 .progress-bar-animated {
   animation: progress-bar-stripes 1s linear infinite; }
@@ -3714,6 +3714,40 @@ button.close {
 .popover-body {
   padding: 0.5rem 0.75rem;
   color: #4a4a4a; }
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0.5rem 0; }
+  to {
+    background-position: 0 0; } }
+
+.progress {
+  display: flex;
+  height: 0.5rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #c9c9c9;
+  border-radius: 2rem; }
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #374EA2;
+  transition: width 0.6s ease; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .progress-bar {
+      transition: none; } }
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 0.5rem 0.5rem; }
+
+.progress-bar-animated {
+  animation: progress-bar-stripes 1s linear infinite; }
 
 .align-baseline {
   vertical-align: baseline !important; }
@@ -5769,6 +5803,16 @@ select:required {
   .form-group .form-control.readonly {
     border: none;
     background-color: #fff; }
+
+.progress {
+  height: 0.5rem;
+  border-radius: 2rem; }
+
+.progress-min-max {
+  color: #767676;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-bottom: 0.75rem; }
 
 .table {
   border: 1px solid #c9c9c9; }

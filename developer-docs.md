@@ -623,7 +623,8 @@ List group with a button:
 This control recieves two real numbers max_value and current_value.               
 Default width = 100% of container width.
 {% capture example %}
-<p>Fully empty (current_value <= 0)</p>
+
+<h6>Fully empty (current_value <= 0)</h6>
 <div class="progress">
   <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -632,7 +633,7 @@ Default width = 100% of container width.
 <span class="progress-min-max">100%</span>
 </div>
 
-<p>Filled</p>
+<h6>Filled</h6>
 <div class="progress">
   <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
