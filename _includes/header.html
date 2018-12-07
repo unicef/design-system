@@ -3,83 +3,47 @@
 
 <header>
   <a class="skip" href="#" tabindex="0">Skip Navigation</a>
-  <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
-    <a class="navbar-brand navbar-line mr-0 mr-md-2" href="/" aria-label="Unicef">
+  <nav class="navbar navbar-expand-md flex-md-row bd-navbar">
+    <a class="navbar-brand navbar-line mr-0" href="/" aria-label="Unicef">
       <img class="img-fluid d-none d-md-block d-lg-block" alt=""  src="assets/images/unicef-logo.svg">
     </a>
-    <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">UNICEF Design System <small><sup class="badge badge-danger">alfa</sup></small></a>
-    <a class="ml-auto d-none d-md-block d-lg-block p-2" href="https://github.com/unicef/unicef-design-system/tree/dev/customize-css"><i class="fab fa-github"></i> Github</a>
+    <a class="navbar-brand mt-2 mb-2 mt-md-none mb-lg-none ml-3" href="/">UNICEF Design System <small><sup class="badge badge-danger">alfa</sup></small></a>
+    <ul class="navbar-nav rounded-left ml-auto p-2 d-none d-md-block">
+				<li class="nav-item ml-3">
+            <a class="ml-auto p-2 d-none d-md-block" href="https://github.com/unicef/unicef-design-system/tree/dev/customize-css"><i class="fab fa-github"></i> Github</a>
+				</li>			
+			</ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
   </nav>
+<div class="collapse navbar-collapse d-md-block"  id="navbarSupportedContent">
+  <ul class="nav nav-tabs">
+    {%- if (page.url == '/') or (page.url == '/index.html') -%}
+    {%- assign is_active = 'active' -%}
+    {%- endif -%}
+      <li class="nav-item {{is_active}}">
+        <a class="nav-link " href="index.html">Home</a>
+      </li>
+      {%- for path in page_paths -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if my_page.in-navbar -%}
+      {%- assign is_active = '' -%}
+      {%- if (page.url == my_page.url -%}
+      {%- assign is_active = 'active' -%}
+      {%- endif -%}
+      <!-- {{ page.url}} | my_page {{my_page.url}} -->
+      <li class="nav-item {{ is_active }}">
+        <a class="nav-link " role="button" href=".{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      </li>
+    {%- endif -%}
+    {%- endfor -%}
+    <li class="nav-item">
+        <a class=" ml-auto pl-3 p-2 d-block d-md-none d-lg-none" href="https://github.com/unicef/unicef-design-system/tree/dev/customize-css"><i class="fab fa-github"></i> Github</a>
+    </li>
+  </ul>
+</div>
 </header>
-
-        {%- if (page.url == '/') or (page.url == '/index.html') -%}
-        {%- assign is_active = 'active' -%}
-        {%- endif -%}
-        <div class="topnav" id="myTopnav">
-          <div class="nav nav-tabs">
-          <li class="nav-item {{is_active}}">
-            <a class="nav-link " href="index.html">Home</a>
-          </li>
-          {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.in-navbar -%}
-          {%- assign is_active = '' -%}
-          {%- if (page.url == my_page.url -%}
-          {%- assign is_active = 'active' -%}
-          {%- endif -%}
-          <!-- {{ page.url}} | my_page {{my_page.url}} -->
-          <li class="nav-item {{ is_active }}">
-            <a class="nav-link " role="button" href=".{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          </li>
-        {%- endif -%}
-        {%- endfor -%}
-    </a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-    </div>
-  </div>
-
-
-
-  <style>
-      .topnav {
-        overflow: hidden;
-        color: black;
-      }
-      .topnav a {
-        float: left;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-      }
-      .topnav .icon {
-        display: none;
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav a {display: none;}
-        .topnav a.icon {
-          float: left;
-          display: block;
-        }
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-          padding: 1rem 1rem;
-        }
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-      }
-      </style>
 <!--
 <header role="banner">
 

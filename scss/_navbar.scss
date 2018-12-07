@@ -77,12 +77,25 @@ nav {
         margin-right: 0.5rem;
       }
     }
+}
+nav {
   a {
     text-decoration-line: none;
+    color: white;
     -webkit-text-decoration-line: none;
   }
+  a:hover {
+    color: white;
+  }
 }
-
+.navbar-nav {
+  background-color: rgba(55, 78, 162, 0.6);
+  color: $white;
+  &.rounded-left {
+    border-top-left-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+}
 @media only screen and (max-width: 600px) {
   .nav {
     display: block;
@@ -91,6 +104,11 @@ nav {
 @media only screen and (max-width: 600px) {
   .nav-tabs {
     border: 1px solid grey;
+    a {
+      color: black;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+    }
   } 
 } 
 @media only screen and (max-width: 600px) {
@@ -168,14 +186,14 @@ nav {
         }
       }
     }
+    a {
+      color: black;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+    }
   }
 }
-  a {
-    color: $black;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
-  }
-
+  
 
 .skip-to-main {
   position:absolute;
