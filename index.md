@@ -13,19 +13,19 @@ layout: home
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-6 text-center">
-      <img class="img-fluid" alt="" src="assets/images/designer-icon.svg" />
-      <h2 class="card-title">For designers and product managers</h2>
-      <p class="card-text">List of the specs of all controls.</p>
+      <img class="img-fluid" alt="" style="max-height: 200px" src="assets/images/designer-icon.svg" />
+      <h3>For designers and product managers</h3>
+      <p>List of the specs of all controls.</p>
       <a href="guidelines.html" class="btn btn-outline-primary">Design Guidelines</a>
     </div>
     <div class="col-sm-6 text-center" >
 
-          <img class="img-fluid" alt="" src="assets/images/developer-icon.svg" />
+          <img class="img-fluid" alt="" style="max-height: 200px" src="assets/images/developer-icon.svg" />
 
 
-          <h2 class="card-title">For developers</h2>
-          <p class="card-text">
-            We have created a reference implementation based on Bootstrap.
+          <h3>For developers</h3>
+          <p>
+            A reference implementation of the visual spec.
           </p>
           <a href="developer-docs.html" class="btn btn-outline-primary">Developers docs</a>
           <a href="http://github.com/unicef/unicef-design-system" class="btn btn-link">GitHub</a>
