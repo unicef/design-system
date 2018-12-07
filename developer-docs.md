@@ -620,27 +620,46 @@ List group with a button:
 
 ## Progress Bar
 
-This control recieves two real numbers max_value and current_value.               
-Default width = 100% of container width.
+Indicates the status of completeness of a process.
+
+There are different background colors available (`.bg-success`, `.bg-warning`, etc..)
+
+Please, notice the accessibility attributes `role`, `aria-valuenow`,
+`aria-valuemin` and `aria-valuemax`.
+
 {% capture example %}
+  <h6>Empty</h6>
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width: 0%"
+      role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  <div class="d-flex justify-content-between">
+    <span class="progress-min-max">0%</span>
+    <span class="progress-min-max">100%</span>
+  </div>
 
-<h6>Fully empty (current_value <= 0)</h6>
-<div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="d-flex justify-content-between">
-<span class="progress-min-max">0%</span>
-<span class="progress-min-max">100%</span>
-</div>
+  <h6>Filled</h6>
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width: 75%"
+    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <span class="progress-min-max">0%</span>
+    <span class="progress-min-max">100%</span>
+  </div>
 
-<h6>Filled</h6>
-<div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="d-flex justify-content-between">
-<span class="progress-min-max">0%</span>
-<span class="progress-min-max">100%</span>
-</div>
+  <h6>Stripped</h6>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped" style="width: 75%"
+    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <span class="progress-min-max">0%</span>
+    <span class="progress-min-max">100%</span>
+  </div>
+
 
 {% endcapture %}
 {% include example.html content=example %}
+
+For more information [see bootstrap docs](https://getbootstrap.com/docs/4.0/components/progress/)
