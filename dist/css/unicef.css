@@ -5843,71 +5843,101 @@ select:required {
 strong {
   color: #000; }
 
+/*nav {
+  background-color: $unicef-blue;
+  display:block;
+  &.navbar {
+    padding: 0rem 0rem 0rem 1rem;
+
+    .navbar-brand {
+      color: $white;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .navbar-line {
+          border-right: 1px solid $white;
+          padding-right: 1rem;
+        }
+      } 
+      .navbar-name{
+        padding: 1rem 0rem 1rem 0.5rem;
+        line-height: 1.5rem;
+      }
+    }
+    .navbar-nav-scroll {
+      color: $white;
+
+      .navbar-nav {
+        background-color: rgba(55, 78, 162, 0.6);
+        @include border-left-radius(80px);
+        font-size: 14px;
+        line-height: 1.5rem;
+        padding: 0.5rem 0rem 0rem 2rem;
+
+        .nav-link{
+          color: $white;
+          display: block;
+        }
+      }
+    }
+
+    .nav-item {
+      .dropdown-menu {
+        padding-top: $dropdown-padding-y;
+        margin-top: 0rem;
+        border: $dropdown-border;
+        background-color: $body-bg;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        box-shadow: $dropdown-box-shadow;
+
+        .dropdown-item{
+          background-color: $body-bg;
+          line-height: $dropdown-line-height;
+          padding: 0.5rem 1rem;
+
+          &:hover{
+            color: $white;
+            background-color: $unicef-dark-blue;
+          }
+        }
+      }
+      .badge {
+        background-color: $body-bg;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 5px;
+        color: $unicef-dark-blue;
+        @include border-radius(3rem);
+        margin-right: 0.5rem;
+      }
+
+      .fa {
+        background-color: $body-bg;
+        width: 1.25rem;
+        height: 1rem;
+        padding: 0rem 1rem 0rem 0.125rem;
+        color: $unicef-dark-blue;
+        @include border-radius(3rem);
+        margin-right: 0.5rem;
+      }
+    }
+}*/
 nav {
-  background-color: #1CABE2;
-  display: block; }
-  nav.navbar {
-    padding: 0rem 0rem 0rem 1rem; }
-    nav.navbar .navbar-brand {
-      color: #fff; }
-    @media only screen and (min-width: 768px) {
-      nav.navbar .navbar-line {
-        border-right: 1px solid #fff;
-        padding-right: 1rem; } }
-    nav.navbar .navbar-name {
-      padding: 1rem 0rem 1rem 0.5rem;
-      line-height: 1.5rem; }
-  nav .navbar-nav-scroll {
+  background-color: #1CABE2; }
+  nav a {
+    text-decoration-line: none;
+    color: #fff;
+    -webkit-text-decoration-line: none; }
+  nav a:hover {
     color: #fff; }
-    nav .navbar-nav-scroll .navbar-nav {
-      background-color: rgba(55, 78, 162, 0.6);
-      border-top-left-radius: 80px;
-      border-bottom-left-radius: 80px;
-      font-size: 14px;
-      line-height: 1.5rem;
-      padding: 0.5rem 0rem 0rem 2rem; }
-      nav .navbar-nav-scroll .navbar-nav .nav-link {
-        color: #fff;
-        display: block; }
-  nav .nav-item .dropdown-menu {
-    padding-top: 0.5rem;
-    margin-top: 0rem;
-    border: 1px solid #c9c9c9;
-    background-color: #fff;
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
-    box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
-    nav .nav-item .dropdown-menu .dropdown-item {
-      background-color: #fff;
-      line-height: 1.5rem;
-      padding: 0.5rem 1rem; }
-      nav .nav-item .dropdown-menu .dropdown-item:hover {
-        color: #fff;
-        background-color: #374EA2; }
-  nav .nav-item .badge {
-    background-color: #fff;
-    width: 1.25rem;
-    height: 1.25rem;
-    padding: 5px;
-    color: #374EA2;
-    border-radius: 3rem;
-    margin-right: 0.5rem; }
-  nav .nav-item .fa {
-    background-color: #fff;
-    width: 1.25rem;
-    height: 1rem;
-    padding: 0rem 1rem 0rem 0.125rem;
-    color: #374EA2;
-    border-radius: 3rem;
-    margin-right: 0.5rem; }
+  @media only screen and (min-width: 768px) {
+    nav .navbar-line {
+      border-right: 1px solid #fff;
+      padding-right: 1rem; } }
 
-nav a {
-  text-decoration-line: none;
-  color: white;
-  -webkit-text-decoration-line: none; }
-
-nav a:hover {
-  color: white; }
+.navbar {
+  padding: 0 0 0 1rem; }
 
 .navbar-nav {
   background-color: rgba(55, 78, 162, 0.6);
@@ -5916,11 +5946,11 @@ nav a:hover {
     border-top-left-radius: 2rem !important;
     border-bottom-left-radius: 2rem !important; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav {
     display: block; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav-tabs {
     border: 1px solid grey; }
     .nav-tabs a {
@@ -5928,12 +5958,12 @@ nav a:hover {
       text-decoration-line: none;
       -webkit-text-decoration-line: none; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navitem.active {
     border: none;
     border-bottom: none; } }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .nav-tabs {
     padding: 0rem 2rem 0rem 1em;
     margin-top: 0rem;
@@ -5985,29 +6015,6 @@ nav a:hover {
       color: black;
       text-decoration-line: none;
       -webkit-text-decoration-line: none; } }
-
-.skip-to-main {
-  position: absolute;
-  top: auto;
-  width: auto;
-  padding: 0.5rem 1rem;
-  height: auto; }
-  .skip-to-main:focus {
-    border: 1px dotted #3344DD;
-    background-color: white;
-    text-decoration: underline;
-    margin: 10px 33%;
-    text-align: center;
-    font-size: 1rem;
-    z-index: 999; }
-  .skip-to-main:active {
-    border: 1px dotted #3344DD;
-    background-color: white;
-    text-decoration: underline;
-    margin-top: 10px 33%;
-    text-align: center;
-    font-size: 1rem;
-    z-index: 999; }
 
 .skip {
   display: block;
