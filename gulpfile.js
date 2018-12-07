@@ -16,9 +16,7 @@ var bootstrap = './node_modules/bootstrap/dist/js/bootstrap.js';
 //Docs https://www.npmjs.com/package/gulp-sass
 var paths = {}
 paths.scss = ["./scss/**/*.scss", "./assets/scss/**/*.scss"];
-minify.css = ["./dist/css/*.css"]
 paths.js = ['js/*.js'];
-
 paths.jsBundle = [
     './node_modules/jquery/dist/jquery.slim.js',
     './node_modules/popper.js/dist/umd/popper.min.js',
@@ -45,23 +43,15 @@ gulp.task('js-bundle', function() {
   compressJs(paths.jsBundle, 'unicef-bundle.js');
 });
 
-
 // compile sass
 gulp.task('scss', function() {
   gulp.src(paths.scss)
   .pipe(plumber()) //By default task ends if there is an error. This avoids it.
   .pipe(sourcemaps.init())
   .pipe(sass())
+  .pipe(minifyCss())
   .pipe(sourcemaps.write("./"))
   .pipe(gulp.dest("./dist/css"));
-});
-
-// minify css
-gulp.task('minify-css', function() {
-  gulp.src(minify.css)
-  .pipe(plumber()) //By default task ends if there is an error. This avoids it.
-  .pipe(minifyCss())
-  .pipe(gulp.dest("./dist/minify-css"));
 });
 
 // watch-sass
