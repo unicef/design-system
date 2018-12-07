@@ -8,7 +8,7 @@ title: "Developers docs"
 UNICEF has defined a visual design specification for our internal web
 applications. This specification follows our brand guidelines, takes into
 account accessibility and is rooted in a set of principles that are defined on
-__[design guidelines](guidelines)__.
+__[design guidelines](design-guidelines)__.
 
 Additionally to those specs, UNICEF has created a technology agnostic reference
 implementation, so it can be used with any modern development framework such
@@ -31,7 +31,7 @@ understanding of HTML as well as CSS.
 If you need to design a user interface for a UNICEF
 application you will need to understand how and when to use each of the
 elements described in this document. To get that knowledge,
-please, read our __[design guidelines](guidelines)__.
+please, read our __[design guidelines](design-guidelines)__.
 
 <!--
 

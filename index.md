@@ -16,7 +16,7 @@ layout: home
       <img class="img-fluid" alt="" style="max-height: 200px" src="assets/images/designer-icon.svg" />
       <h3>For designers and product managers</h3>
       <p>List of the specs of all controls.</p>
-      <a href="guidelines.html" class="btn btn-outline-primary">Design Guidelines</a>
+      <a href="design-guidelines.html" class="btn btn-outline-primary">Design Guidelines</a>
     </div>
     <div class="col-sm-6 text-center" >
 
