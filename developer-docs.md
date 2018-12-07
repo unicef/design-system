@@ -99,7 +99,8 @@ The default typography is the one defined by user's operating system. That way w
 
 ## Alerts
 
-Alerts use the `.alert` class followed by the type of alert `alert-success`, `alert-warning`, `alert-danger`.
+Alerts use the `.alert` class followed by the type of alert `.alert-success`,
+`.alert-warning`, `.alert-danger`.
 
 {% capture example %}
   <div class="alert alert-success" role="alert">
@@ -184,7 +185,7 @@ Also, it is possible to group an input with a button:
 <a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
 <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
-    <img class="img-fluid" alt="unicef-logo" 
+    <img class="img-fluid" alt="unicef-logo"
       src="assets/images/unicef-logo.svg">
   </a>
   <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Application Name</a>
@@ -236,7 +237,7 @@ Also, it is possible to group an input with a button:
   <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item dropdown">
-        <a class="nav-item nav-link  mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink" 
+        <a class="nav-item nav-link  mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"
           data-toggle="dropdown" href="#" role="button"  
           aria-haspopup="true" aria-expanded="false">Libya
         </a>
@@ -257,7 +258,7 @@ Also, it is possible to group an input with a button:
       </li>
       <li class="nav-item dropdown">
         <a class="nav-item nav-link mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"
-          data-toggle="dropdown" href="#" role="button" aria-haspopup="true" 
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
           aria-expanded="false">
           <img class="img-fluid" alt="" src="assets/images/avatar.png">
         </a>
@@ -280,9 +281,9 @@ Also, it is possible to group an input with a button:
     <a class="nav-link disabled" href="#">DISABLED</a>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" 
-      data-toggle="dropdown" href="#" role="button" 
-      aria-haspopup="true" aria-expanded="false">DROPDOWN 
+    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+      data-toggle="dropdown" href="#" role="button"
+      aria-haspopup="true" aria-expanded="false">DROPDOWN
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
       <a class="dropdown-item" href="#">Menu Item- Long Title</a>
@@ -319,9 +320,9 @@ Also, it is possible to group an input with a button:
       <a class="nav-link disabled" href="#">DISABLED</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" 
+      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
         data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-        aria-expanded="false">DROPDOWN 
+        aria-expanded="false">DROPDOWN
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="#">Menu Item- Long Title</a>
