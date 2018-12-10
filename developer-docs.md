@@ -274,8 +274,8 @@ Also, it is possible to group an input with a button:
   <li class="nav-item">
     <a class="nav-link" href="#">UNSELECTED</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">DISABLED</a>
+  <li class="nav-item disabled">
+    <a class="nav-link" href="#">DISABLED</a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" 
@@ -307,14 +307,14 @@ Also, it is possible to group an input with a button:
 {% capture example %}
 <div class = "container-fluid">
   <ul class="nav nav-tabs">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">SELECTED</a>
+    <li class="nav-item ">
+      <a class="nav-link active" href="#">SELECTED</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">UNSELECTED</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">DISABLED</a>
+    <li class="nav-item disabled">
+      <a class="nav-link" href="#">DISABLED</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" 

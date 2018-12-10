@@ -266,8 +266,7 @@
       &.active {
         border-bottom: 0.25rem solid $unicef-blue;
       }
-
-      &:hover {
+      &:hover:not(.disabled) {
         border: none;
         background-color: $nav-tabs-link-active-bg;
         border-bottom: 0.25rem solid $unicef-blue;
@@ -278,18 +277,6 @@
       }
 
       &.dropdown {
-
-        &:hover {
-          background-color: $nav-tabs-link-active-bg;
-          border-bottom: 0.25rem solid $unicef-blue;
-        }
-
-        &:active {
-          border: none;
-          background-color: $nav-tabs-link-active-bg;
-          border-bottom: 0.25rem solid $unicef-blue;
-        }
-
         &.show {
           border: none;
           .nav-link{

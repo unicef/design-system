@@ -6066,19 +6066,12 @@ strong {
       margin-bottom: -2px; }
       .nav-tabs .nav-item.active {
         border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item:hover {
+      .nav-tabs .nav-item:hover:not(.disabled) {
         border: none;
         background-color: lightblue;
         border-bottom: 0.25rem solid #1CABE2; }
       .nav-tabs .nav-item .nav-link {
         border: none; }
-      .nav-tabs .nav-item.dropdown:hover {
-        background-color: lightblue;
-        border-bottom: 0.25rem solid #1CABE2; }
-      .nav-tabs .nav-item.dropdown:active {
-        border: none;
-        background-color: lightblue;
-        border-bottom: 0.25rem solid #1CABE2; }
       .nav-tabs .nav-item.dropdown.show {
         border: none; }
         .nav-tabs .nav-item.dropdown.show .nav-link {
