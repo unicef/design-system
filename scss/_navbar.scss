@@ -1,84 +1,3 @@
-/*nav {
-  background-color: $unicef-blue;
-  display:block;
-  &.navbar {
-    padding: 0rem 0rem 0rem 1rem;
-
-    .navbar-brand {
-      color: $white;
-      }
-
-      @media only screen and (min-width: 768px) {
-        .navbar-line {
-          border-right: 1px solid $white;
-          padding-right: 1rem;
-        }
-      } 
-      .navbar-name{
-        padding: 1rem 0rem 1rem 0.5rem;
-        line-height: 1.5rem;
-      }
-    }
-    .navbar-nav-scroll {
-      color: $white;
-
-      .navbar-nav {
-        background-color: rgba(55, 78, 162, 0.6);
-        @include border-left-radius(80px);
-        font-size: 14px;
-        line-height: 1.5rem;
-        padding: 0.5rem 0rem 0rem 2rem;
-
-        .nav-link{
-          color: $white;
-          display: block;
-        }
-      }
-    }
-
-    .nav-item {
-      .dropdown-menu {
-        padding-top: $dropdown-padding-y;
-        margin-top: 0rem;
-        border: $dropdown-border;
-        background-color: $body-bg;
-        border-bottom-right-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-        box-shadow: $dropdown-box-shadow;
-
-        .dropdown-item{
-          background-color: $body-bg;
-          line-height: $dropdown-line-height;
-          padding: 0.5rem 1rem;
-
-          &:hover{
-            color: $white;
-            background-color: $unicef-dark-blue;
-          }
-        }
-      }
-      .badge {
-        background-color: $body-bg;
-        width: 1.25rem;
-        height: 1.25rem;
-        padding: 5px;
-        color: $unicef-dark-blue;
-        @include border-radius(3rem);
-        margin-right: 0.5rem;
-      }
-
-      .fa {
-        background-color: $body-bg;
-        width: 1.25rem;
-        height: 1rem;
-        padding: 0rem 1rem 0rem 0.125rem;
-        color: $unicef-dark-blue;
-        @include border-radius(3rem);
-        margin-right: 0.5rem;
-      }
-    }
-}*/
-
 //Nav bar
 nav {
   background-color: $unicef-blue;
@@ -97,7 +16,7 @@ nav {
     padding-right: 1rem;
   }
 } 
-@media only screen and (min-width: 768px) {
+
   .navbar-nav {
     a:hover {
       text-decoration-line: underline;
@@ -125,11 +44,14 @@ nav {
       }
     }
   }
-}
+
 @media only screen and (max-width: 768px) {
   .navbar-nav {
     padding: 0rem 0rem 0rem 0rem;
     background-color: $white;
+    .nav-item {
+      border-bottom: 1px solid;
+    }
     .nav-link {
       display: block;
       padding: 2rem 0rem 0rem 0rem;
@@ -167,7 +89,9 @@ nav {
     }
     a:hover {
       color: black;
-      border: 1px solid black;
+      background-color: $nav-tabs-link-active-bg;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
     }
   }
 } 
@@ -230,18 +154,34 @@ nav {
 @media only screen and (max-width: 768px) {
   .nav-tabs {
     border: 1px solid grey;
+    .dropdown-menu {
+      padding-top: $dropdown-padding-y;
+      margin-top: 0rem;
+      border: $dropdown-border;
+      background-color: $body-bg;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      box-shadow: $dropdown-box-shadow;
+
+      .dropdown-item{
+        background-color: $body-bg;
+        line-height: $dropdown-line-height;
+        padding: 0.5rem 1rem;
+        text-decoration-line: none;
+        -webkit-text-decoration-line: none;
+
+        &:hover{
+          color: $white;
+          background-color: $unicef-dark-blue;
+        }
+      }
+    }
     a {
       color: black;
       text-decoration-line: none;
       -webkit-text-decoration-line: none;
     }
   } 
-} 
-@media only screen and (max-width: 768px) {
-  .navitem.active{
-    border:none;
-    border-bottom: none;
-  }
 } 
 
 @media only screen and (min-width: 768px) {

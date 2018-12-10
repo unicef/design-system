@@ -199,14 +199,17 @@ Also, it is possible to group an input with a button:
     </button>
     <div class="collapse navbar-collapse"  id="navbarSupportedContent1">
       <ul class="navbar-nav rounded-left flex-row d-md-flex p-md-1 pl-md-4 ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false" >Libiya <i class="fas fa-angle-down"></i></a>
-          <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Menu Item</a>
-              <a class="dropdown-item" href="#">Menu Item 2</a>
-          </div>
-        </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle p-2 pl-3 pl-md-0 mr-md-2" id="navbarDropdownMenuLink"  
+        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Libiya
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+        </div>
+      </li>	
         <li class="nav-item">
             <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#"><span class="badge">4</span>Notifications</a>
         </li>
@@ -216,16 +219,16 @@ Also, it is possible to group an input with a button:
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false" >
-            <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
-            <i class="fas fa-angle-down"></i>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="#">Menu Item</a>
-              <a class="dropdown-item" href="#">Menu Item 2</a>
-          </div>
-        </li>	
+        <a class="nav-link dropdown-toggle p-2 pl-3 pl-md-0 mr-md-2" id="navbarDropdownMenuLink"  
+      data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+      aria-expanded="false">
+          <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+        </div>
+      </li>		
       </ul>
     </div> 
   </nav>
@@ -243,13 +246,16 @@ Also, it is possible to group an input with a button:
   <div class="collapse navbar-collapse"  id="navbarSupportedContent2">
     <ul class="navbar-nav rounded-left flex-row d-md-flex p-md-1 pl-md-4 ml-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-        aria-expanded="false" >Libiya <i class="fas fa-angle-down"></i></a>
-        <div class="dropdown-menu">
+        <a class="nav-link dropdown-toggle p-2 pl-3 pl-md-0 mr-md-2" id="navbarDropdownMenuLink"  
+      data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+      aria-expanded="false">
+        Libiya
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Menu Item</a>
             <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
-      </li>
+      </li>			
       <li class="nav-item">
           <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#"><span class="badge ">4</span>Notifications</a>
       </li>
@@ -258,13 +264,18 @@ Also, it is possible to group an input with a button:
           <i class="fa fa-inbox" title="Inbox"></i>Item With Icons
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle p-2 pl-3 pl-md-0 mr-md-2" id="navbarDropdownMenuLink"  
+        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">
           <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
-          <i class="fas fa-angle-down"></i>
         </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+        </div>
       </li>			
-      </ul>
+    </ul>
   </div> 
 </nav>
 <ul class="nav nav-tabs">
@@ -307,8 +318,8 @@ Also, it is possible to group an input with a button:
 {% capture example %}
 <div class = "container-fluid">
   <ul class="nav nav-tabs">
-    <li class="nav-item ">
-      <a class="nav-link active" href="#">SELECTED</a>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">SELECTED</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">UNSELECTED</a>
