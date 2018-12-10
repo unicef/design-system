@@ -208,10 +208,10 @@ Also, it is possible to group an input with a button:
           </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2"><span class="badge ">4</span>Notifications</a>
+            <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#"><span class="badge">4</span>Notifications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2">
+          <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#">
             <i class="fa fa-inbox" title="Inbox"></i>Item With Icons
           </a>
         </li>
@@ -251,15 +251,15 @@ Also, it is possible to group an input with a button:
         </div>
       </li>
       <li class="nav-item">
-          <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2"><span class="badge ">4</span>Notifications</a>
+          <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#"><span class="badge ">4</span>Notifications</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2">
+        <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#">
           <i class="fa fa-inbox" title="Inbox"></i>Item With Icons
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2">
+        <a class="nav-link p-2 pl-3 pl-md-0 mr-md-2" href="#">
           <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
           <i class="fas fa-angle-down"></i>
         </a>
