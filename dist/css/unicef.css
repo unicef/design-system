@@ -5834,7 +5834,7 @@ select:required {
     border-bottom: 1px solid #c9c9c9;
     padding: 1rem 1rem;
     vertical-align: middle; }
-    .table td:nth-child(3) {
+    .table td:last-child {
       text-align: right; }
   .table a {
     text-decoration-line: none;

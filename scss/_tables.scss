@@ -24,7 +24,7 @@
     border-bottom: 1px solid $unicef-borders;
     padding: 1rem 1rem;
     vertical-align: middle;
-    &:nth-child(3) {
+    &:last-child{
         text-align: right;
     }
   }
