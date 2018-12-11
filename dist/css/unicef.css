@@ -5873,6 +5873,14 @@ nav {
       color: #fff;
       background-color: #374EA2; }
 
+@media (min-width: 767.98px) and (max-width: 992.98px) {
+  .navbar-brand {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .navbar-nav .nav-link {
+    padding-left: 0;
+    margin-right: 0.5rem; } }
+
 @media only screen and (min-width: 992px) {
   .navbar-line {
     border-right: 1px solid #fff;
@@ -5886,7 +5894,7 @@ nav {
       border-bottom: 1px solid; }
     .navbar-nav .nav-link {
       display: block;
-      padding: 2rem 0rem 0rem 0rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
       border: 1px solid transparent; }
       .navbar-nav .nav-link .badge {
         background-color: #000;
@@ -5922,19 +5930,23 @@ nav {
     padding: 0 0 0 1rem; }
   .navbar-nav {
     background-color: rgba(55, 78, 162, 0.6);
-    color: #fff; }
-    .navbar-nav .nav-link .badge {
-      background-color: #fff;
-      padding: 4px 6px;
-      color: #374EA2;
-      border-radius: 4rem;
-      margin-right: 0.5rem; }
-    .navbar-nav .nav-link .fa {
-      background-color: #fff;
-      padding: 4px 6px;
-      color: #374EA2;
-      border-radius: 3rem;
-      margin-right: 0.5rem; }
+    color: #fff;
+    padding: 0.25rem 0.25rem 0.25rem 1rem; }
+    .navbar-nav .nav-link {
+      padding-left: 0;
+      margin-right: 0; }
+      .navbar-nav .nav-link .badge {
+        background-color: #fff;
+        padding: 4px 6px;
+        color: #374EA2;
+        border-radius: 4rem;
+        margin-right: 0.5rem; }
+      .navbar-nav .nav-link .fa {
+        background-color: #fff;
+        padding: 4px 6px;
+        color: #374EA2;
+        border-radius: 3rem;
+        margin-right: 0.5rem; }
     .navbar-nav.rounded-left {
       border-top-left-radius: 2rem !important;
       border-bottom-left-radius: 2rem !important; } }
@@ -5944,6 +5956,9 @@ nav {
     display: block; }
   .navbar {
     padding: 0 0 0 0rem; }
+  .navbar-brand {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
   .navbar-nav {
     display: block;
     border: 1px solid grey; }

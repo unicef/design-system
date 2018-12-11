@@ -38,7 +38,20 @@ nav {
       }
     }
   }
+  @media (min-width: 767.98px) and (max-width: 992.98px) { 
+    .navbar-brand {
 
+      margin-top: 0;
+      margin-bottom:0;
+    }
+    .navbar-nav {
+
+      .nav-link {
+        padding-left: 0;
+        margin-right: 0.5rem;
+      }
+    }
+   }
   @media only screen and (min-width: 992px) {
     .navbar-line {
       border-right: 1px solid $white;
@@ -55,7 +68,7 @@ nav {
     }
     .nav-link {
       display: block;
-      padding: 2rem 0rem 0rem 0rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
       border: 1px solid transparent;
       .badge {
         background-color: $black;
@@ -103,7 +116,10 @@ nav {
   .navbar-nav {
   background-color: rgba(55, 78, 162, 0.6);
   color: $white;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
     .nav-link {
+      padding-left: 0;
+      margin-right: 0;
       .badge {
         background-color: $body-bg;
         padding: 4px 6px;
@@ -132,6 +148,10 @@ nav {
   }
   .navbar {
     padding: 0 0 0 0rem;
+  }
+  .navbar-brand {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .navbar-nav {
     display: block;
