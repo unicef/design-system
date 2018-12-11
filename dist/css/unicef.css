@@ -5852,11 +5852,6 @@ nav {
   nav a:hover {
     color: #fff; }
 
-@media only screen and (min-width: 992px) {
-  .navbar-line {
-    border-right: 1px solid #fff;
-    padding-right: 1rem; } }
-
 .navbar-nav a:hover {
   text-decoration-line: underline; }
 
@@ -5877,6 +5872,11 @@ nav {
     .navbar-nav .dropdown-menu .dropdown-item:hover {
       color: #fff;
       background-color: #374EA2; }
+
+@media only screen and (min-width: 992px) {
+  .navbar-line {
+    border-right: 1px solid #fff;
+    padding-right: 1rem; } }
 
 @media only screen and (max-width: 767.98px) {
   .navbar-nav {
@@ -5917,15 +5917,9 @@ nav {
       text-decoration-line: none;
       -webkit-text-decoration-line: none; } }
 
-@media only screen and (max-width: 767.98px) {
-  .navbar {
-    padding: 0 0 0 0rem; } }
-
 @media only screen and (min-width: 767.98px) {
   .navbar {
-    padding: 0 0 0 1rem; } }
-
-@media only screen and (min-width: 767.98px) {
+    padding: 0 0 0 1rem; }
   .navbar-nav {
     background-color: rgba(55, 78, 162, 0.6);
     color: #fff; }
@@ -5947,9 +5941,9 @@ nav {
 
 @media only screen and (max-width: 767.98px) {
   .nav {
-    display: block; } }
-
-@media only screen and (max-width: 767.98px) {
+    display: block; }
+  .navbar {
+    padding: 0 0 0 0rem; }
   .navbar-nav {
     display: block;
     border: 1px solid grey; }
