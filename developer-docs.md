@@ -182,16 +182,9 @@ Also, it is possible to group an input with a button:
 
 ## Navbar
 {% capture example %}
-<<<<<<< HEAD
-<a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
-<nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
-    <img class="img-fluid" alt="unicef-logo"
-=======
 <nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line my-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
-    <img class="img-fluid" alt="unicef-logo" 
->>>>>>> dev/bug
+    <img class="img-fluid" alt="unicef-logo"
       src="assets/images/unicef-logo.svg">
   </a>
   <a class="navbar-brand ml-2" href="/">Application Name</a>
@@ -217,7 +210,7 @@ Also, it is possible to group an input with a button:
             <a class="dropdown-item" href="#">Menu Item</a>
             <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
-      </li>	
+      </li>
         <li class="nav-item">
             <a class="nav-link" href="#"><span class="badge">4</span>Notifications</a>
         </li>
@@ -238,7 +231,7 @@ Also, it is possible to group an input with a button:
         </div>
       </li>		
       </ul>
-    </div> 
+    </div>
   </nav>
 
 {% endcapture %}
@@ -254,16 +247,10 @@ Also, it is possible to group an input with a button:
   <div class="collapse navbar-collapse"  id="navbarSupportedContent2">
     <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto">
       <li class="nav-item dropdown">
-<<<<<<< HEAD
-        <a class="nav-item nav-link  mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"
-          data-toggle="dropdown" href="#" role="button"  
-          aria-haspopup="true" aria-expanded="false">Libya
-=======
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
       data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
       aria-expanded="false">
         Libiya
->>>>>>> dev/bug
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Menu Item</a>
@@ -279,17 +266,10 @@ Also, it is possible to group an input with a button:
         </a>
       </li>
       <li class="nav-item dropdown">
-<<<<<<< HEAD
-        <a class="nav-item nav-link mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"
-          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">
-          <img class="img-fluid" alt="" src="assets/images/avatar.png">
-=======
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
         data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
         aria-expanded="false">
           <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
->>>>>>> dev/bug
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Menu Item</a>
@@ -297,7 +277,7 @@ Also, it is possible to group an input with a button:
         </div>
       </li>			
     </ul>
-  </div> 
+  </div>
 </nav>
 <ul class="nav nav-tabs">
   <li class="nav-item active">
@@ -668,7 +648,6 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
     <span class="progress-min-max">100%</span>
   </div>
 
-<<<<<<< HEAD
   <h6>Filled</h6>
   <div class="progress">
     <div class="progress-bar bg-success" style="width: 75%"
@@ -689,25 +668,6 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
     <span class="progress-min-max">100%</span>
   </div>
 
-=======
-<h6>Fully empty (current_value <= 0)</h6>
-<div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="d-flex justify-content-between">
-  <span class="progress-min-max">0%</span>
-  <span class="progress-min-max">100%</span>
-</div>
-
-<h6>Filled</h6>
-<div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="d-flex justify-content-between">
-  <span class="progress-min-max">0%</span>
-  <span class="progress-min-max">100%</span>
-</div>
->>>>>>> dev/bug
 
 {% endcapture %}
 {% include example.html content=example %}
