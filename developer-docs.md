@@ -203,7 +203,7 @@ Also, it is possible to group an input with a button:
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
         data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
         aria-expanded="false">
-        Libiya
+        Libya
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Menu Item</a>
@@ -249,7 +249,7 @@ Also, it is possible to group an input with a button:
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
       data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
       aria-expanded="false">
-        Libiya
+        Libya
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Menu Item</a>
