@@ -182,93 +182,122 @@ Also, it is possible to group an input with a button:
 
 ## Navbar
 {% capture example %}
+<<<<<<< HEAD
 <a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
 <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
     <img class="img-fluid" alt="unicef-logo"
+=======
+<nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand navbar-line my-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
+    <img class="img-fluid" alt="unicef-logo" 
+>>>>>>> dev/bug
       src="assets/images/unicef-logo.svg">
   </a>
-  <a class="navbar-brand navbar-name mr-0 mr-md-5" href="/">Application Name</a>
+  <a class="navbar-brand ml-2" href="/">Application Name</a>
 </nav>
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
-<a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
-<nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
-    <img class="img-fluid"
-      alt="unicef-logo" src="assets/images/unicef-logo.svg">
-  </a>
-  <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
-  <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item dropdown">
-        <a class="nav-item nav-link mr-md-2" href="#" role="button">Libya
+
+  <nav class="navbar navbar-expand-md flex-md-row bd-navbar">
+    <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse"  id="navbarSupportedContent1">
+      <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
+        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Libiya
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-item nav-link mr-md-2">
-          <span class="badge">4</span>Notifications
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+        </div>
+      </li>	
+        <li class="nav-item">
+            <a class="nav-link" href="#"><span class="badge">4</span>Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-inbox" title="Inbox"></i>Item With Icons
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
+      data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+      aria-expanded="false">
+          <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-item nav-link mr-md-2">
-          <i class="fa fa-inbox"></i>Item With Icons
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-item nav-link mr-md-2">
-          <img class="img-fluid" alt="" src="assets/images/avatar.png">
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+        </div>
+      </li>		
+      </ul>
+    </div> 
+  </nav>
+
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
-<a class="skip-to-main" href="#" tabindex="0">Skip Navigation</a>
-<nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand navbar-line mr-0 mr-md-2 d-none" href="/" aria-label="Unicef">
-    <img class="img-fluid"
-      alt="unicef-logo"  src="assets/images/unicef-logo.svg">
-  </a>
-  <a class="navbar-brand mr-0 mr-md-5" href="/">Application Name</a>
-  <div class="navbar-nav-scroll flex-row ml-md-auto d-none d-md-flex">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
+<nav class="navbar navbar-expand-md flex-md-row bd-navbar">
+  <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    <i class="fas fa-bars"></i>
+    </span>
+  </button>
+  <div class="collapse navbar-collapse"  id="navbarSupportedContent2">
+    <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto">
       <li class="nav-item dropdown">
+<<<<<<< HEAD
         <a class="nav-item nav-link  mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"
           data-toggle="dropdown" href="#" role="button"  
           aria-haspopup="true" aria-expanded="false">Libya
+=======
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
+      data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+      aria-expanded="false">
+        Libiya
+>>>>>>> dev/bug
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Menu Item</a>
-          <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
+      </li>			
+      <li class="nav-item">
+          <a class="nav-link" href="#"><span class="badge ">4</span>Notifications</a>
       </li>
       <li class="nav-item">
-        <a class="nav-item nav-link mr-md-2">
-          <span class="badge">4</span>Notifications
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-item nav-link mr-md-2">
-          <i class="fa fa-inbox"></i>Item With Icons
+        <a class="nav-link" href="#">
+          <i class="fa fa-inbox" title="Inbox"></i>Item With Icons
         </a>
       </li>
       <li class="nav-item dropdown">
+<<<<<<< HEAD
         <a class="nav-item nav-link mr-md-2 dropdown-toggle" id="navbarDropdownMenuLink"
           data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
           aria-expanded="false">
           <img class="img-fluid" alt="" src="assets/images/avatar.png">
+=======
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
+        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">
+          <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
+>>>>>>> dev/bug
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Menu Item</a>
-          <a class="dropdown-item" href="#">Menu Item 2</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
-      </li>
+      </li>			
     </ul>
-  </div>
+  </div> 
 </nav>
 <ul class="nav nav-tabs">
   <li class="nav-item active">
@@ -277,8 +306,8 @@ Also, it is possible to group an input with a button:
   <li class="nav-item">
     <a class="nav-link" href="#">UNSELECTED</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">DISABLED</a>
+  <li class="nav-item disabled">
+    <a class="nav-link" href="#">DISABLED</a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
@@ -316,8 +345,8 @@ Also, it is possible to group an input with a button:
     <li class="nav-item">
       <a class="nav-link" href="#">UNSELECTED</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">DISABLED</a>
+    <li class="nav-item disabled">
+      <a class="nav-link" href="#">DISABLED</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
@@ -639,6 +668,7 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
     <span class="progress-min-max">100%</span>
   </div>
 
+<<<<<<< HEAD
   <h6>Filled</h6>
   <div class="progress">
     <div class="progress-bar bg-success" style="width: 75%"
@@ -659,6 +689,25 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
     <span class="progress-min-max">100%</span>
   </div>
 
+=======
+<h6>Fully empty (current_value <= 0)</h6>
+<div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="d-flex justify-content-between">
+  <span class="progress-min-max">0%</span>
+  <span class="progress-min-max">100%</span>
+</div>
+
+<h6>Filled</h6>
+<div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="d-flex justify-content-between">
+  <span class="progress-min-max">0%</span>
+  <span class="progress-min-max">100%</span>
+</div>
+>>>>>>> dev/bug
 
 {% endcapture %}
 {% include example.html content=example %}

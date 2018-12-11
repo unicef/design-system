@@ -1,194 +1,269 @@
+//Nav bar
 nav {
   background-color: $unicef-blue;
- 
-  &.navbar {
-    padding: 0rem 0rem 0rem 1rem;
-
-    .navbar-brand {
-      color: $white;
-      }
-
-      @media only screen and (min-width: 768px) {
-        .navbar-line {
-          border-right: 1px solid $white;
-          padding-right: 1rem;
-        }
-      } 
-      .navbar-name{
-        padding: 1rem 0rem 1rem 0.5rem;
-        line-height: 1.5rem;
-      }
+    a {
+    text-decoration-line: none;
+    color: $white;
+    -webkit-text-decoration-line: none;
     }
-    .navbar-nav-scroll {
+    a:hover {
       color: $white;
-
-      .navbar-nav {
-        background-color: rgba(55, 78, 162, 0.6);
-        @include border-left-radius(80px);
-        font-size: 14px;
-        line-height: 1.5rem;
-        padding: 0.5rem 0rem 0rem 2rem;
-
-        .nav-link{
-          color: $white;
-          display: block;
-        }
-      }
     }
+  }
 
-    .nav-item {
-      .dropdown-menu {
-        padding-top: $dropdown-padding-y;
-        margin-top: 0rem;
-        border: $dropdown-border;
+  .navbar-nav {
+    a:hover {
+      text-decoration-line: underline;
+    }
+    .dropdown-menu {
+      padding-top: $dropdown-padding-y;
+      margin-top: 0rem;
+      border: $dropdown-border;
+      background-color: $body-bg;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      box-shadow: $dropdown-box-shadow;
+
+      .dropdown-item{
         background-color: $body-bg;
-        border-bottom-right-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-        box-shadow: $dropdown-box-shadow;
+        line-height: $dropdown-line-height;
+        padding: 0.5rem 1rem;
+        text-decoration-line: none;
+        -webkit-text-decoration-line: none;
 
-        .dropdown-item{
-          background-color: $body-bg;
-          line-height: $dropdown-line-height;
-          padding: 0.5rem 1rem;
-
-          &:hover{
-            color: $white;
-            background-color: $unicef-dark-blue;
-          }
+        &:hover{
+          color: $white;
+          background-color: $unicef-dark-blue;
         }
       }
+    }
+  }
+  @media (min-width: 767.98px) and (max-width: 992.98px) { 
+    .navbar-brand {
+
+      margin-top: 0;
+      margin-bottom:0;
+    }
+    .navbar-nav {
+
+      .nav-link {
+        padding-left: 0;
+        margin-right: 0.5rem;
+      }
+    }
+   }
+  @media only screen and (min-width: 992px) {
+    .navbar-line {
+      border-right: 1px solid $white;
+      padding-right: 1rem;
+    }
+  } 
+
+@media only screen and (max-width: 767.98px) {
+  .navbar-nav {
+    padding: 0rem 0rem 0rem 0rem;
+    background-color: $white;
+    .nav-item {
+      border-bottom: 1px solid;
+    }
+    .nav-link {
+      display: block;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      border: 1px solid transparent;
+      .badge {
+        background-color: $black;
+        padding: 4px 6px;
+        color: $white;
+        @include border-radius(4rem);
+        margin-right: 0.5rem;
+      }
+
+      .fa {
+        background-color: black;
+        padding: 4px 6px;
+        color:  $white;
+        @include border-radius(3rem);
+        margin-right: 0.5rem;
+      }
+    }
+    .dropdown-menu {
+      border: none;
+      border-bottom: 1px solid black;
+      .dropdown-item {
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid black; 
+        }
+      }
+   }
+    a {
+      color: black;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+    }
+    a:hover {
+      color: black;
+      background-color: $nav-tabs-link-active-bg;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+    }
+  }
+} 
+@media only screen and (min-width: 767.98px) {
+  .navbar {
+    padding: 0 0 0 1rem;
+  }
+  .navbar-nav {
+  background-color: rgba(55, 78, 162, 0.6);
+  color: $white;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+    .nav-link {
+      padding-left: 0;
+      margin-right: 0;
       .badge {
         background-color: $body-bg;
-        width: 1.25rem;
-        height: 1.25rem;
-        padding: 5px;
+        padding: 4px 6px;
         color: $unicef-dark-blue;
-        @include border-radius(3rem);
+        @include border-radius(4rem);
         margin-right: 0.5rem;
       }
 
       .fa {
         background-color: $body-bg;
-        width: 1.25rem;
-        height: 1rem;
-        padding: 0rem 1rem 0rem 0.125rem;
+        padding: 4px 6px;
         color: $unicef-dark-blue;
         @include border-radius(3rem);
         margin-right: 0.5rem;
       }
     }
-  a {
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
+    &.rounded-left {
+      border-top-left-radius: 2rem !important;
+      border-bottom-left-radius: 2rem !important;
+    }
   }
 }
-
-.nav-tabs {
-  padding: 0rem 2rem 0rem 1em;
-  margin-top: 0rem;
-  font-size: 14px !important;
-  line-height: 2rem;
-  text-align: center;
-  border-bottom-color: $nav-tabs-border-color;
-
-  .nav-item {
-    color: $black ;
-    border-bottom: 0.25rem solid transparent;
-    margin-bottom: -2px;
-    &.active {
-      border-bottom: 0.25rem solid $unicef-blue;
+@media only screen and (max-width: 767.98px) {
+  .nav {
+    display: block;
+  }
+  .navbar {
+    padding: 0 0 0 0rem;
+  }
+  .navbar-brand {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-nav {
+    display: block;
+    border: 1px solid grey;
+    a {
+      color: black;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
     }
+  } 
+} 
 
-    &:hover {
-      border: none;
-      background-color: $nav-tabs-link-active-bg;
-      border-bottom: 0.25rem solid $unicef-blue;
-    }
+//Nav tabs
 
-    .nav-link {
-      border: none;
-    }
+@media only screen and (max-width: 767.98px) {
+  .nav-tabs {
+    border: 1px solid grey;
+    .dropdown-menu {
+      padding-top: $dropdown-padding-y;
+      margin-top: 0rem;
+      border: $dropdown-border;
+      background-color: $body-bg;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      box-shadow: $dropdown-box-shadow;
 
-    &.dropdown {
+      .dropdown-item{
+        background-color: $body-bg;
+        line-height: $dropdown-line-height;
+        padding: 0.5rem 1rem;
+        text-decoration-line: none;
+        -webkit-text-decoration-line: none;
 
-      &:hover {
-        background-color: $nav-tabs-link-active-bg;
-        border-bottom: 0.25rem solid $unicef-blue;
-      }
-
-      &:active {
-        border: none;
-        background-color: $nav-tabs-link-active-bg;
-        border-bottom: 0.25rem solid $unicef-blue;
-      }
-
-      &.show {
-        border: none;
-        .nav-link{
-          border:none;
-          background-color: $nav-tabs-link-active-bg;
-          border-bottom: 0.25rem solid $unicef-blue;
+        &:hover{
+          color: $white;
+          background-color: $unicef-dark-blue;
         }
       }
-      .dropdown-menu {
-        padding-top: $dropdown-padding-y;
-        margin-top: 0rem;
-        border: $dropdown-border;
-        background-color: $body-bg;
-        border-bottom-right-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-        box-shadow: $dropdown-box-shadow;
+    }
+    a {
+      color: black;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+    }
+  } 
+} 
 
-        .dropdown-item{
+@media only screen and (min-width: 767.98px) {
+  .nav-tabs {
+    padding: 0rem 2rem 0rem 1em;
+    margin-top: 0rem;
+    font-size: 14px !important;
+    line-height: 2rem;
+    border-bottom-color: $nav-tabs-border-color;
+    list-style-type: none;
+    .nav-item {
+      color: $black ;
+      border-bottom: 0.25rem solid transparent;
+      margin-bottom: -2px;
+      &.active {
+        border-bottom: 0.25rem solid $unicef-blue;
+      }
+      &:hover:not(.disabled) {
+        border: none;
+        background-color: $nav-tabs-link-active-bg;
+        border-bottom: 0.25rem solid $unicef-blue;
+      }
+
+      .nav-link {
+        border: none;
+      }
+
+      &.dropdown {
+        &.show {
+          border: none;
+          .nav-link{
+            border:none;
+            background-color: $nav-tabs-link-active-bg;
+            border-bottom: 0.25rem solid $unicef-blue;
+          }
+        }
+        .dropdown-menu {
+          padding-top: $dropdown-padding-y;
+          margin-top: 0rem;
+          border: $dropdown-border;
           background-color: $body-bg;
-          line-height: $dropdown-line-height;
-          padding: 0.5rem 1rem;
+          border-bottom-right-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+          box-shadow: $dropdown-box-shadow;
 
-          &:hover{
-            color: $white;
-            background-color: $unicef-dark-blue;
+          .dropdown-item{
+            background-color: $body-bg;
+            line-height: $dropdown-line-height;
+            padding: 0.5rem 1rem;
+
+            &:hover{
+              color: $white;
+              background-color: $unicef-dark-blue;
+            }
           }
         }
       }
     }
-  }
-
-  a {
-    color: $black;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
-  }
-}
-
-
-.skip-to-main {
-  position:absolute;
-  top: auto;
-  width: auto;
-  padding: 0.5rem 1rem;
-  height: auto;
-
-  &:focus{
-    border: $link-focus-border;
-    background-color: white;
-    text-decoration: underline;
-    margin: 10px 33%;
-    text-align:center;
-    font-size:1rem;
-    z-index:999;
-  }
-
-  &:active{
-    border: $link-focus-border;
-    background-color: white;
-    text-decoration: underline;
-    margin-top: 10px 33%;
-    text-align:center;
-    font-size:1rem;
-    z-index:999;
+    a {
+      color: black;
+      text-decoration-line: none;
+      -webkit-text-decoration-line: none;
+    }
   }
 }
 
+//Skip Navigation
 .skip {
   display: block;
   margin-top: -40px;
