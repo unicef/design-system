@@ -5805,6 +5805,7 @@ select:required {
     border-bottom: 2px solid #E2231A; }
   .form-group .form-control.readonly {
     border: none;
+    border-bottom: 2px dashed #c9c9c9;
     background-color: #fff; }
 
 .progress {
