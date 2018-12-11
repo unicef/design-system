@@ -5839,6 +5839,8 @@ select:required {
   .table a {
     text-decoration-line: none;
     -webkit-text-decoration-line: none; }
+  .table a:hover {
+    text-decoration-line: underline; }
 
 .tab-content {
   padding: 1px solid red; }
