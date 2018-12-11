@@ -458,7 +458,7 @@ $label-font-size:                       0.875rem !default;
 $label-line-height:                     1.5rem!default;
 $label-color:                           $gray-500 !default;
 
-$input-padding-y:                       $input-btn-padding-y !default;
+$input-padding-y:                       $input-btn-padding-y-lg !default;
 $input-padding-x:                       $input-btn-padding-x !default;
 $input-line-height:                     $input-btn-line-height !default;
 
@@ -493,7 +493,7 @@ $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
 
-$input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
+$input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y-lg * 2) !default;
 $input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
 
 $input-height-inner-sm:                 ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;

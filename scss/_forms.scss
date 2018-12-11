@@ -19,8 +19,14 @@ select:required {
     line-height: $label-line-height;
     margin-bottom: 0rem;
     }
+
+  select {
+    &.form-control:not([size]):not([multiple]) {
+      height: $input-height;
+    }
+  }
   .form-control{
-    padding: $input-padding-y-lg $input-padding-x-sm;
+    padding: $input-padding-y $input-padding-x-sm;
     &.input-disabled{
       border: $input-form-element-disabled-border;
       background-color: $input-disabled-bg;
