@@ -638,8 +638,8 @@ Default width = 100% of container width.
   <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <div class="d-flex justify-content-between">
-<span class="progress-min-max">0%</span>
-<span class="progress-min-max">100%</span>
+  <span class="progress-min-max">0%</span>
+  <span class="progress-min-max">100%</span>
 </div>
 
 <h6>Filled</h6>
@@ -647,8 +647,8 @@ Default width = 100% of container width.
   <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <div class="d-flex justify-content-between">
-<span class="progress-min-max">0%</span>
-<span class="progress-min-max">100%</span>
+  <span class="progress-min-max">0%</span>
+  <span class="progress-min-max">100%</span>
 </div>
 
 {% endcapture %}

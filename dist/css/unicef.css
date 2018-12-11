@@ -5878,7 +5878,7 @@ nav {
       color: #fff;
       background-color: #374EA2; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .navbar-nav {
     padding: 0rem 0rem 0rem 0rem;
     background-color: #fff; }
@@ -5917,15 +5917,15 @@ nav {
       text-decoration-line: none;
       -webkit-text-decoration-line: none; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .navbar {
     padding: 0 0 0 0rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
   .navbar {
     padding: 0 0 0 1rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
   .navbar-nav {
     background-color: rgba(55, 78, 162, 0.6);
     color: #fff; }
@@ -5945,11 +5945,11 @@ nav {
       border-top-left-radius: 2rem !important;
       border-bottom-left-radius: 2rem !important; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .nav {
     display: block; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .navbar-nav {
     display: block;
     border: 1px solid grey; }
@@ -5958,7 +5958,7 @@ nav {
       text-decoration-line: none;
       -webkit-text-decoration-line: none; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .nav-tabs {
     border: 1px solid grey; }
     .nav-tabs .dropdown-menu {
@@ -5983,7 +5983,7 @@ nav {
       text-decoration-line: none;
       -webkit-text-decoration-line: none; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
   .nav-tabs {
     padding: 0rem 2rem 0rem 1em;
     margin-top: 0rem;
