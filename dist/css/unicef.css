@@ -5887,7 +5887,9 @@ nav {
 @media only screen and (min-width: 992px) {
   .navbar-line {
     border-right: 1px solid #fff;
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  .navbar-brand {
+    padding-left: 0.5rem; } }
 
 @media only screen and (max-width: 767.98px) {
   .navbar-nav {
@@ -5930,7 +5932,7 @@ nav {
 
 @media only screen and (min-width: 767.98px) {
   .navbar {
-    padding: 0 0 0 1rem; }
+    padding: 0 0 0 0.5rem; }
   .navbar-nav {
     background-color: rgba(55, 78, 162, 0.6);
     color: #fff;
