@@ -1,11 +1,11 @@
 
 .table {
   border: $table-border;
-
+  
   thead {
-
+   
     th {
-      border-bottom: 1px solid $unicef-borders;
+      border-bottom: $table-border;
     }
   }
 
@@ -21,7 +21,7 @@
     border: none;
     color: $black;
     line-height: $table-line-height;
-    border-bottom: 1px solid $unicef-borders;
+    border-bottom: $table-border;
     padding: 1rem 1rem;
     vertical-align: middle;
     &:last-child{
