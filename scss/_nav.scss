@@ -1,0 +1,63 @@
+//Nav
+
+
+
+
+//Nav tabs
+
+.nav-tabs {
+    padding: 0rem 2rem 0rem 1em;
+    margin-top: 0rem;
+    line-height: 2rem;
+    list-style-type: none;
+
+    .nav-item {
+      color: $black ;
+      margin-bottom: -2px;
+    }
+    .nav-link {
+
+        border-top: none;
+        border-right: none;
+        border-bottom: 0.25rem solid transparent;
+
+        &.active {
+            background-color: transparent;
+            color: $black;
+            border-bottom: 0.25rem solid $unicef-blue;
+        }
+    }
+    a {
+    color: $black;
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+    }
+    
+}
+@media only screen and (min-width: 767.98px) {
+    .nav-link {
+
+        border-left: none;
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .nav-tabs {
+        
+        border-bottom: none;
+      .nav-item {
+        border-bottom: 1px solid $unicef-borders;
+      }
+      .nav-link {
+       
+        &.active {   
+          border-bottom: none; 
+          border-left: 0.25rem solid $unicef-blue;
+          &:hover {
+            border-right: 0.25rem solid $unicef-blue;
+        }
+        }
+        
+      }
+    } 
+} 
+  

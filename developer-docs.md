@@ -183,7 +183,7 @@ Also, it is possible to group an input with a button:
 ## Navigation Bar
 
 {% capture example %}
-<nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar">
+<nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar p-0">
   <a class="navbar-brand navbar-line my-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
     <img class="img-fluid" alt="unicef-logo"
       src="assets/images/unicef-logo.svg">
@@ -196,13 +196,13 @@ Also, it is possible to group an input with a button:
 
 {% include example.html content=example %}
 {% capture example %}
-  <nav class="navbar navbar-expand-md flex-md-row bd-navbar">
+  <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
     <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse"  id="navbarSupportedContent1">
-      <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto">
+      <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto p-0">
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
         data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -240,7 +240,7 @@ Also, it is possible to group an input with a button:
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
-<nav class="navbar navbar-expand-md flex-md-row bd-navbar">
+<nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
   <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon">
@@ -248,7 +248,7 @@ Also, it is possible to group an input with a button:
     </span>
   </button>
   <div class="collapse navbar-collapse"  id="navbarSupportedContent2">
-    <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto">
+    <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto p-0">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
       data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -282,7 +282,7 @@ Also, it is possible to group an input with a button:
     </ul>
   </div>
 </nav>
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs p-0">
   <li class="nav-item">
     <a class="nav-link active" href="#">SELECTED</a>
   </li>
