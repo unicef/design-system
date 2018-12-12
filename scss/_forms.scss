@@ -30,6 +30,7 @@ select:required {
     &.input-disabled{
       border: $input-form-element-disabled-border;
       background-color: $input-disabled-bg;
+      cursor: auto;
     }
     &.is-invalid{
       background-color: $form-error-background-color;

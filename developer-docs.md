@@ -283,14 +283,14 @@ Also, it is possible to group an input with a button:
   </div>
 </nav>
 <ul class="nav nav-tabs">
-  <li class="nav-item active">
-    <a class="nav-link " href="#">SELECTED</a>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">SELECTED</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">UNSELECTED</a>
   </li>
   <li class="nav-item disabled">
-    <a class="nav-link" href="#">DISABLED</a>
+    <a class="nav-link disabled" href="#">DISABLED</a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
@@ -340,28 +340,55 @@ the links in your main menu.
 ## Tabs
 {% capture example %}
 <div class = "container-fluid">
-  <ul class="nav nav-tabs">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">SELECTED</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">UNSELECTED</a>
-    </li>
-    <li class="nav-item disabled">
-      <a class="nav-link" href="#">DISABLED</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
-        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-        aria-expanded="false">DROPDOWN
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Menu Item - Long Title</a>
-        <a class="dropdown-item" href="#">Menu Item 2</a>
-        <a class="dropdown-item" href="#">Menu Item 3</a>
-      </div>
-    </li>
-  </ul>
+  <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">SELECTED</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">UNSELECTED</a>
+        </li>
+        <li class="nav-item disabled">
+            <a class="nav-link disabled">DISABLED</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="true" aria-expanded="false">DROPDOWN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item 3</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">ACTIVE DROPDOWN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item 3</a>
+            </div>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. 
+                Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. 
+                Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. 
+                Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. 
+                Occaecat sit eu exercitation irure Lorem incididunt nostrud.
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex. 
+                Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do. 
+                Aliquip ex eiusmod voluptate exercitation cillum id incididunt elit sunt. 
+                Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation duis deserunt. 
+                Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco ea tempor duis.
+            </div>
+    </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}

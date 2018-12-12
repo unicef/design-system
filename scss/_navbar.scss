@@ -10,7 +10,7 @@ nav {
       color: $white;
     }
   }
-
+  @media only screen and (min-width: 767.98px) {
   .navbar-nav {
     a:hover {
       text-decoration-line: underline;
@@ -38,6 +38,7 @@ nav {
       }
     }
   }
+}
   @media (min-width: 767.98px) and (max-width: 992.98px) { 
     .navbar-brand {
 
@@ -67,7 +68,7 @@ nav {
     padding: 0rem 0rem 0rem 0rem;
     background-color: $white;
     .nav-item {
-      border-bottom: 1px solid;
+      border-bottom: 1px solid $unicef-borders;
     }
     .nav-link {
       display: block;
@@ -91,11 +92,13 @@ nav {
     }
     .dropdown-menu {
       border: none;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $unicef-borders;
       .dropdown-item {
         border: 1px solid transparent;
         &:hover {
-          border: 1px solid black; 
+          border: 1px solid $unicef-borders; 
+          color: $white;
+          background-color: $unicef-dark-blue;
         }
       }
    }
@@ -158,7 +161,7 @@ nav {
   }
   .navbar-nav {
     display: block;
-    border: 1px solid grey;
+    border: $dropdown-border;
     a {
       color: black;
       text-decoration-line: none;
@@ -171,18 +174,27 @@ nav {
 
 @media only screen and (max-width: 767.98px) {
   .nav-tabs {
-    border: 1px solid grey;
+    border: 1px solid $unicef-borders;
+    .nav-item {
+      border-bottom: 1px solid $unicef-borders;
+    }
+    .nav-link {
+     
+      &.active {
+        background-color: transparent;
+        color: $black;
+        border-left: 0.25rem solid $unicef-blue;
+        border-right: 0.25rem solid $unicef-blue;
+      }
+    }
     .dropdown-menu {
       padding-top: $dropdown-padding-y;
       margin-top: 0rem;
       border: $dropdown-border;
-      background-color: $body-bg;
       border-bottom-right-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-      box-shadow: $dropdown-box-shadow;
 
       .dropdown-item{
-        background-color: $body-bg;
         line-height: $dropdown-line-height;
         padding: 0.5rem 1rem;
         text-decoration-line: none;
@@ -210,21 +222,33 @@ nav {
     line-height: 2rem;
     border-bottom-color: $nav-tabs-border-color;
     list-style-type: none;
+
     .nav-item {
       color: $black ;
-      border-bottom: 0.25rem solid transparent;
       margin-bottom: -2px;
-      &.active {
-        border-bottom: 0.25rem solid $unicef-blue;
-      }
-      &:hover:not(.disabled) {
-        border: none;
-        background-color: $nav-tabs-link-active-bg;
-        border-bottom: 0.25rem solid $unicef-blue;
-      }
 
       .nav-link {
-        border: none;
+
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 0.25rem solid transparent;
+
+        &.active {
+          background-color: transparent;
+          color: $black;
+          border-bottom: 0.25rem solid $unicef-blue !important;
+        }
+
+        &.disabled {
+          cursor: auto;
+        }
+
+        &:hover:not(.disabled) {
+          border: none;
+          background-color: $nav-tabs-link-active-bg;
+          border-bottom: 0.25rem solid $unicef-blue;
+        }
       }
 
       &.dropdown {
