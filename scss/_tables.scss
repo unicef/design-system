@@ -1,9 +1,7 @@
 
 .table {
   border: $table-border;
-  
   thead {
-   
     th {
       border-bottom: $table-border;
     }
@@ -18,11 +16,7 @@
   }
 
   td {
-    border: none;
-    color: $black;
-    line-height: $table-line-height;
-    border-bottom: $table-border;
-    padding: 1rem 1rem;
+    font-size: $table-cell-font-size;
     vertical-align: middle;
     &:last-child{
         text-align: right;

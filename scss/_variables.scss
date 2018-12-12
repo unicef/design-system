@@ -343,10 +343,11 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:          .75rem 1rem !default;
 $table-cell-padding-sm:       .3rem !default;
+$table-cell-font-size:        .875rem !default; //added by UNICEF
 
-$table-bg:                    transparent !default;
+$table-bg:                    white !default;
 $table-accent-bg:             rgba($black, .05) !default;
 $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
