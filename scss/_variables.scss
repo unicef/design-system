@@ -356,15 +356,15 @@ $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
-$table-border-color:          rgba($black, .125)  !default;
-$table-border:                1px solid $table-border-color !default;
+$table-border-color:          $gray-200  !default;
+$table-border:                1px solid $gray-200 !default;
 $table-line-height:           1.5rem !default;
 
 $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-400 !default;
 $table-head-font-size:        0.75rem !default;
 $table-head-line-height:      1rem !default;
-$table-head-border-bottom:    1px solid $table-border-color !important;
+$table-head-border-bottom:    1px solid $table-border-color !default;
 
 $table-dark-bg:               $gray-900 !default;
 $table-dark-accent-bg:        rgba($white, .05) !default;
@@ -777,14 +777,14 @@ $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $gray-200 !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-bg:                           $white !default;
 
 $card-title-line-height:            2rem !default;
 $card-text-line-height:             1.5rem !default;
-$card-border:                       $card-border-width solid rgba($black, .125)  !default;
+$card-border:                       $card-border-width solid $gray-200 !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
