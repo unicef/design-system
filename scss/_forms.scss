@@ -38,6 +38,7 @@ select:required {
     }
     &.readonly{
       border: none;
+      border-bottom: 2px dashed $input-border-color;
       background-color: $white;
     }
   }

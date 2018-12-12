@@ -1,11 +1,11 @@
 
 .table {
   border: $table-border;
-
+  
   thead {
-
+   
     th {
-      border-bottom: 1px solid $unicef-borders;
+      border-bottom: $table-border;
     }
   }
 
@@ -21,10 +21,10 @@
     border: none;
     color: $black;
     line-height: $table-line-height;
-    border-bottom: 1px solid $unicef-borders;
+    border-bottom: $table-border;
     padding: 1rem 1rem;
     vertical-align: middle;
-    &:nth-child(3) {
+    &:last-child{
         text-align: right;
     }
   }
@@ -32,5 +32,8 @@
   a {
     text-decoration-line: $link-in-table-decoration;
     -webkit-text-decoration-line: none;
+  }
+  a:hover {
+    text-decoration-line: underline;
   }
 }

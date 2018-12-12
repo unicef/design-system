@@ -1041,12 +1041,12 @@ pre {
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #c9c9c9; }
+    border-top: 1px solid rgba(0, 0, 0, 0.125); }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #c9c9c9; }
+    border-bottom: 2px solid rgba(0, 0, 0, 0.125); }
   .table tbody + tbody {
-    border-top: 2px solid #c9c9c9; }
+    border-top: 2px solid rgba(0, 0, 0, 0.125); }
   .table .table {
     background-color: #fff; }
 
@@ -1055,10 +1055,10 @@ pre {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid #c9c9c9; }
+  border: 1px solid rgba(0, 0, 0, 0.125); }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #c9c9c9; }
+    border: 1px solid rgba(0, 0, 0, 0.125); }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -1138,7 +1138,7 @@ pre {
 .table .thead-light th {
   color: #767676;
   background-color: #c9c9c9;
-  border-color: #c9c9c9; }
+  border-color: rgba(0, 0, 0, 0.125); }
 
 .table-dark {
   color: #fff;
@@ -5729,10 +5729,10 @@ a.text-danger:hover, a.text-danger:focus {
     .table-dark td,
     .table-dark thead th,
     .table-dark tbody + tbody {
-      border-color: #c9c9c9; }
+      border-color: rgba(0, 0, 0, 0.125); }
   .table .thead-dark th {
     color: inherit;
-    border-color: #c9c9c9; } }
+    border-color: rgba(0, 0, 0, 0.125); } }
 
 .alert-primary {
   color: inherit; }
@@ -5765,7 +5765,7 @@ a.text-danger:hover, a.text-danger:focus {
 .card-title {
   font-size: 1rem;
   line-height: 2rem;
-  border-bottom: 1px solid #c9c9c9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding: 0 1rem 0.5rem 1rem; }
 
 .card-text {
@@ -5805,6 +5805,7 @@ select:required {
     border-bottom: 2px solid #E2231A; }
   .form-group .form-control.readonly {
     border: none;
+    border-bottom: 2px dashed #c9c9c9;
     background-color: #fff; }
 
 .progress {
@@ -5818,9 +5819,9 @@ select:required {
   padding-bottom: 0.75rem; }
 
 .table {
-  border: 1px solid #c9c9c9; }
+  border: 1px solid rgba(0, 0, 0, 0.125); }
   .table thead th {
-    border-bottom: 1px solid #c9c9c9; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .table th {
     color: #767676;
     font-size: 0.75rem;
@@ -5831,14 +5832,16 @@ select:required {
     border: none;
     color: #000;
     line-height: 1.5rem;
-    border-bottom: 1px solid #c9c9c9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     padding: 1rem 1rem;
     vertical-align: middle; }
-    .table td:nth-child(3) {
+    .table td:last-child {
       text-align: right; }
   .table a {
     text-decoration-line: none;
     -webkit-text-decoration-line: none; }
+  .table a:hover {
+    text-decoration-line: underline; }
 
 .tab-content {
   padding: 1px solid red; }
@@ -5887,7 +5890,9 @@ nav {
 @media only screen and (min-width: 992px) {
   .navbar-line {
     border-right: 1px solid #fff;
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  .navbar-brand {
+    padding-left: 0.5rem; } }
 
 @media only screen and (max-width: 767.98px) {
   .navbar-nav {
@@ -5930,7 +5935,7 @@ nav {
 
 @media only screen and (min-width: 767.98px) {
   .navbar {
-    padding: 0 0 0 1rem; }
+    padding: 0 0 0 0.5rem; }
   .navbar-nav {
     background-color: rgba(55, 78, 162, 0.6);
     color: #fff;

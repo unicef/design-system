@@ -356,15 +356,15 @@ $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
-$table-border-color:          $gray-300 !default;
+$table-border-color:          rgba($black, .125)  !default;
 $table-border:                1px solid $table-border-color !default;
-$table-line-height:            1.5rem !default;
+$table-line-height:           1.5rem !default;
 
 $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-400 !default;
 $table-head-font-size:        0.75rem !default;
 $table-head-line-height:      1rem !default;
-$table-head-border-bottom:    1px solid $unicef-borders !important;
+$table-head-border-bottom:    1px solid $table-border-color !important;
 
 $table-dark-bg:               $gray-900 !default;
 $table-dark-accent-bg:        rgba($white, .05) !default;
@@ -784,7 +784,7 @@ $card-bg:                           $white !default;
 
 $card-title-line-height:            2rem !default;
 $card-text-line-height:             1.5rem !default;
-$card-border:                       $card-border-width solid $unicef-borders !default;
+$card-border:                       $card-border-width solid rgba($black, .125)  !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
