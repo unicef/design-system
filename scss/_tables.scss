@@ -30,10 +30,11 @@
   }
 
   a {
-    text-decoration-line: $link-in-table-decoration;
-    -webkit-text-decoration-line: none;
+    text-decoration: $link-in-table-decoration;
+    &:hover {
+      text-decoration-line: underline;
+      -webkit-text-decoration-line: underline;
+    }
   }
-  a:hover {
-    text-decoration-line: underline;
-  }
+
 }
