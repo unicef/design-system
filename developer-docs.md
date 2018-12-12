@@ -180,7 +180,8 @@ Also, it is possible to group an input with a button:
 {% include example.html content=example %}
 
 
-## Navbar
+## Navigation Bar
+
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar">
   <a class="navbar-brand navbar-line my-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
@@ -190,9 +191,11 @@ Also, it is possible to group an input with a button:
   <a class="navbar-brand ml-2" href="/">Application Name</a>
 </nav>
 {% endcapture %}
+
+
+
 {% include example.html content=example %}
 {% capture example %}
-
   <nav class="navbar navbar-expand-md flex-md-row bd-navbar">
     <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
@@ -216,7 +219,7 @@ Also, it is possible to group an input with a button:
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fa fa-inbox" title="Inbox"></i>Item With Icons
+            <i class="fa fa-inbox" title="Inbox"></i>Item with Icon
           </a>
         </li>
         <li class="nav-item dropdown">
@@ -315,6 +318,25 @@ Also, it is possible to group an input with a button:
 {% endcapture %}
 {% include example.html content=example %}
 
+### Accessibility
+
+To [support skip navigation](https://webaim.org/techniques/skipnav/), always add the `.skip` navigation before the navigation bar pointing to the element in which the content starts.
+
+Adding this helps users that browse the web with keyboards, allowing them to skip all
+the links in your main menu.
+
+```html
+<a class="skip" href="#contents" tabindex="0">Skip Navigation</a>
+<!-- navbar  goes here--->
+<nav class="navbar navbar-expand-md flex-md-row bd-navbar">
+  ....
+</nav>
+
+<!-- your contents start here -->
+<div id="contents">
+</div>
+```
+
 ## Tabs
 {% capture example %}
 <div class = "container-fluid">
@@ -334,7 +356,7 @@ Also, it is possible to group an input with a button:
         aria-expanded="false">DROPDOWN
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Menu Item- Long Title</a>
+        <a class="dropdown-item" href="#">Menu Item - Long Title</a>
         <a class="dropdown-item" href="#">Menu Item 2</a>
         <a class="dropdown-item" href="#">Menu Item 3</a>
       </div>
