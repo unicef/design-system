@@ -120,7 +120,9 @@ Alerts support strong and links.
 
 {% capture example %}
   <div class="alert alert-warning" role="alert">
-    This alert displays how it looks a warning alert with a <strong>strong element</strong> and <a href="">a link</a>.
+    This alert displays how it looks a warning alert with a 
+    <strong>strong element</strong> and
+    <a href="">a link</a>.
   </div>
 {% endcapture %}
 {% include example.html content=example %}
@@ -184,11 +186,12 @@ Also, it is possible to group an input with a button:
 
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar p-0">
-  <a class="navbar-brand navbar-line my-2 d-none d-md-block d-lg-block" href="/" aria-label="Unicef">
+  <a class="navbar-brand navbar-line d-none d-md-block d-lg-block my-2 ml-3" 
+    href="/" aria-label="Unicef">
     <img class="img-fluid" alt="unicef-logo"
       src="assets/images/unicef-logo.svg">
   </a>
-  <a class="navbar-brand ml-2" href="/">Application Name</a>
+  <a class="navbar-brand" href="/">Application Name</a>
 </nav>
 {% endcapture %}
 
@@ -196,72 +199,80 @@ Also, it is possible to group an input with a button:
 
 {% include example.html content=example %}
 {% capture example %}
-  <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
-    <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-    </button>
-    <div class="collapse navbar-collapse"  id="navbarSupportedContent1">
-      <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto p-0">
-       <li class="nav-item dropdown">
+<nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
+  <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" 
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse"  id="navbarSupportedContent1">
+    <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto p-1 pl-3">
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
-        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-        aria-expanded="false">
-        Libya
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          Libya
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Menu Item</a>
-            <a class="dropdown-item" href="#">Menu Item 2</a>
+          <a class="dropdown-item" href="#">Menu Item</a>
+          <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
       </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge">4</span>Notifications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-inbox" title="Inbox"></i>Item with Icon
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
-      data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-      aria-expanded="false">
-          <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
+      <li class="nav-item">
+          <a class="nav-link" href="#"><span class="badge">4</span>Notifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-inbox" title="Inbox"></i>Item with Icon
         </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Menu Item</a>
-            <a class="dropdown-item" href="#">Menu Item 2</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          <img class="img-fluid" alt="unicef-logo" title="Profile" 
+            src="assets/images/avatar.png">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" 
+          aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Menu Item</a>
+          <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
       </li>		
-      </ul>
-    </div>
-  </nav>
+    </ul>
+  </div>
+</nav>
 
 {% endcapture %}
 {% include example.html content=example %}
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
   <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" 
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon">
-    <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </span>
   </button>
   <div class="collapse navbar-collapse"  id="navbarSupportedContent2">
-    <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto p-0">
+    <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto p-1">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
-      data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-      aria-expanded="false">
-        Libya
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          Libya
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Menu Item</a>
-            <a class="dropdown-item" href="#">Menu Item 2</a>
+          <a class="dropdown-item" href="#">Menu Item</a>
+          <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
       </li>			
       <li class="nav-item">
-          <a class="nav-link" href="#"><span class="badge ">4</span>Notifications</a>
+        <a class="nav-link" href="#">
+          <span class="badge ">4</span>Notifications
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
@@ -270,19 +281,21 @@ Also, it is possible to group an input with a button:
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
-        data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-        aria-expanded="false">
-          <img class="img-fluid" alt="unicef-logo" title="Profile" src="assets/images/avatar.png">
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          <img class="img-fluid" alt="unicef-logo" title="Profile" 
+            src="assets/images/avatar.png">
         </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Menu Item</a>
-            <a class="dropdown-item" href="#">Menu Item 2</a>
+        <div class="dropdown-menu dropdown-menu-right" 
+          aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Menu Item</a>
+          <a class="dropdown-item" href="#">Menu Item 2</a>
         </div>
       </li>			
     </ul>
   </div>
 </nav>
-<ul class="nav nav-tabs p-0">
+<ul class="nav nav-tabs p-0 bg-white">
   <li class="nav-item">
     <a class="nav-link active" href="#">SELECTED</a>
   </li>
@@ -304,9 +317,9 @@ Also, it is possible to group an input with a button:
     </div>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
+    <a class="nav-link disabled dropdown-toggle" id="navbarDropdownMenuLink"  
       data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-      aria-expanded="false">ACTIVE DROPDOWN
+      aria-expanded="false">DISABLED DROPDOWN
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
       <a class="dropdown-item" href="#">Menu Item- Long Title</a>
@@ -463,13 +476,19 @@ Form elements can include short texts that provide important information to user
   <form>
     <div class="form-group">
       <label for="input-placeholder-help">Your email</label>
-      <input type="email" class="form-control" id="input-placeholder-help" aria-describedby="emailHelp" placeholder="Example: john.doe@unicef.org">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="email" class="form-control" id="input-placeholder-help" 
+        aria-describedby="emailHelp" placeholder="Example: john.doe@unicef.org">
+      <small id="emailHelp" class="form-text text-muted">
+        We'll never share your email with anyone else.
+      </small>
     </div>
     <div class="form-group">
       <label for="input-placeholder-help-up">Corporate email</label>
-      <small id="emailHelp-up" class="form-text text-muted">Domains like hotmail.com or gmail.com are not allowed.</small>
-      <input type="email" class="form-control" id="input-placeholder-help-up" aria-describedby="emailHelp-up" placeholder="Example: john.doe@unicef.org">
+      <small id="emailHelp-up" class="form-text text-muted">
+        Domains like hotmail.com or gmail.com are not allowed.
+      </small>
+      <input type="email" class="form-control" id="input-placeholder-help-up"
+        aria-describedby="emailHelp-up" placeholder="Example: john.doe@unicef.org">
     </div>
   </form>
 {% endcapture %}
@@ -604,22 +623,35 @@ Example the HTML and classes to display errors (no actual validation is performe
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text">This is a longer card with supporting text below 
+        as a natural lead-in to additional content. 
+        This content is a little bit longer.
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text">This card has supporting text below 
+        as a natural lead-in to additional content.
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below
+        as a natural lead-in to additional content. This card has even longer 
+        content than the first to show that equal height action.</p>
+      <p class="card-text">
+        small class="text-muted">Last updated 3 mins ago</small>
+      </p>
     </div>
   </div>
 </div>
@@ -646,15 +678,15 @@ List group with a button:
     <li class="list-group-item">Porta ac consectetur ac</li>
     <li class="list-group-item">
       <details>
-      <summary>Add an element</summary>
-      <div class="from-group p-t-3">
-      <label for="details-input">Add an element to the list</label>
-      <input class="form-control" id="details-input" name="details-input" type="text">
-      <button class="btn btn-primary">Add to list</button>
-      </div>
-</details>
-</li>
-</ul>
+        <summary>Add an element</summary>
+        <div class="from-group p-t-3">
+        <label for="details-input">Add an element to the list</label>
+        <input class="form-control" id="details-input" name="details-input" type="text">
+        <button class="btn btn-primary">Add to list</button>
+        </div>
+      </details>
+    </li>
+  </ul>
 </div>
 
 ## Tables
@@ -670,17 +702,23 @@ List group with a button:
   </thead>
   <tbody >
     <tr>
-      <td><a href="#">Text is a link</a></td>
+      <td>
+        <a href="#">Text is a link</a>
+      </td>
       <td>29-May-2018</td>
       <td>$23.33</td>
     </tr>
     <tr>
-      <td><a href="#">This is another link. Vertically align cells to the middle</a></td>
+      <td>
+        <a href="#">This is another link. Vertically align cells to the middle</a>
+      </td>
       <td>12-Aug-2017</td>
       <td class>$99.44</td>
     </tr>
     <tr>
-      <td><a href="#">Text is left-aligned</a></td>
+      <td>
+        <a href="#">Text is left-aligned</a>
+      </td>
       <td>29-May-2018</td>
       <td>$1,223.00</td>
     </tr>
@@ -702,8 +740,9 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
   <h6>Empty</h6>
   <div class="progress">
     <div class="progress-bar bg-success" style="width: 0%"
-      role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
     </div>
+  </div>
   <div class="d-flex justify-content-between">
     <span class="progress-min-max">0%</span>
     <span class="progress-min-max">100%</span>
@@ -712,7 +751,8 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
   <h6>Filled</h6>
   <div class="progress">
     <div class="progress-bar bg-success" style="width: 75%"
-    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    </div>
   </div>
   <div class="d-flex justify-content-between">
     <span class="progress-min-max">0%</span>
@@ -722,7 +762,8 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
   <h6>Stripped</h6>
   <div class="progress">
     <div class="progress-bar progress-bar-striped" style="width: 75%"
-    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    </div>
   </div>
   <div class="d-flex justify-content-between">
     <span class="progress-min-max">0%</span>
