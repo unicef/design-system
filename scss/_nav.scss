@@ -1,70 +1,65 @@
-//Nav
-
-
-
-
 //Nav tabs
-
 .nav-tabs {
-    padding: 0rem 2rem 0rem 1em;
-    margin-top: 0rem;
-    line-height: 2rem;
-    list-style-type: none;
+  padding: 0rem 2rem 0rem 1em;
+  margin-top: 0rem;
+  line-height: 2rem;
+  list-style-type: none;
 
-    .nav-item {
-      color: $black ;
-      margin-bottom: -2px;
+  .nav-item {
+    color: $black ;
+    margin-bottom: -2px;
+  }
+
+  .nav-link {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.25rem solid transparent;
+
+    &.active {
+      border:none;
+      background-color: transparent;
+      color: $black;
+      border-bottom: 0.25rem solid $unicef-blue;
     }
-    .nav-link {
+  }
 
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-bottom: 0.25rem solid transparent;
-
-        &.active {
-            border:none;
-            background-color: transparent;
-            color: $black;
-            border-bottom: 0.25rem solid $unicef-blue;
-        }
-    }
-    a {
+  a {
     color: $black;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
-    }
-    
-}
-@media only screen and (min-width: 767.98px) {
-    .nav-tabs {
-        .nav-link {
+  }
 
-            &:hover:not(.disabled) {
-                background-color: $nav-tabs-link-active-bg;
-                border-bottom: 0.25rem solid $unicef-blue;
-                }
-        }
-    }
 }
-@media only screen and (max-width: 767.98px) {
-    .nav-tabs {
-        
-        border-bottom: none;
-      .nav-item {
-        border-bottom: 1px solid $unicef-borders;
+// for tablet and desktop
+@include media-breakpoint-up(sm) {
+  .nav-tabs {
+    .nav-link {
+      &:hover:not(.disabled) {
+        background-color: $nav-tabs-link-active-bg;
+        border-bottom: 0.25rem solid $unicef-blue;
       }
-      .nav-link {
-       
-        &.active {   
-          border: none; 
-          border-left: 0.25rem solid $unicef-blue;
-          &:hover {
-            border-right: 0.25rem solid $unicef-blue;
+    }
+  }
+}
+// for mobile
+@include media-breakpoint-down(sm) {
+  .nav-tabs {
+    border-bottom: none;
+
+    .nav-item {
+      border-bottom: 1px solid $unicef-borders;
+    }
+
+    .nav-link {
+      &.active {
+        border: none;
+        border-left: 0.25rem solid $unicef-blue;
+
+        &:hover {
+          border-right: 0.25rem solid $unicef-blue;
         }
-        }
-        
       }
-    } 
-} 
-  
+    }
+  }
+}
