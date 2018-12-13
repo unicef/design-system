@@ -363,7 +363,7 @@ the links in your main menu.
       </div>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+      <a class="nav-link disabled dropdown-toggle" id="navbarDropdownMenuLink"
         data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
         aria-expanded="false">Menu disabled
       </a>
