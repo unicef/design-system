@@ -340,12 +340,14 @@ the links in your main menu.
 ## Tabs
 {% capture example %}
 <div class = "container-fluid">
-  <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+  <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" selected="true">Tab 1</a>
+     <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1" 
+      role="tab" aria-controls="tab-1" aria-selected="true">Tab 1</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Tab 2</a>
+      <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2" 
+      role="tab" aria-controls="tab-2" aria-selected="false">Tab 2</a>
     </li>
     <li class="nav-item disabled">
       <a class="nav-link disabled" href="#">Disabled</a>
@@ -372,9 +374,9 @@ the links in your main menu.
       </div>
     </li>
   </ul>
-  <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade" id="pills-home" role="tabpanel"
-    aria-labelledby="pills-home-tab">
+  <div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade active show" id="tab-1" role="tabpanel"
+    aria-labelledby="tab-1-tab">
     Consequat occaecat ullamco amet non eiusmod nostrud dolore
     irure incididunt est duis anim sunt officia.
     Fugiat velit proident aliquip nisi incididunt nostrud exercitation
@@ -386,14 +388,18 @@ the links in your main menu.
     excepteur quis.
     Occaecat sit eu exercitation irure Lorem incididunt nostrud.
   </div>
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-      aria-labelledby="pills-profile-tab">
-      Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex.
-      Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do.
-      Aliquip ex eiusmod voluptate exercitation cillum id incididunt elit sunt.
-      Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation duis deserunt.
-      Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco ea tempor duis.
-    </div>
+  <div class="tab-pane fade" id="tab-2" role="tabpanel"
+    aria-labelledby="tab-2-tab">
+    Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit 
+    commodo mollit ex.
+    Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do.
+
+    Aliquip ex eiusmod voluptate exercitation cillum id incididunt elit sunt.
+    Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation 
+    duis deserunt.
+    Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco 
+    ea tempor duis.
+  </div>
   </div>
 </div>
 {% endcapture %}
