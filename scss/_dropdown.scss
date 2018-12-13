@@ -16,7 +16,10 @@
 
       &:hover{
         color: $white;
+        border: none;
         background-color: $unicef-dark-blue;
+        text-decoration-line: none;
+        -webkit-text-decoration-line: none;
       }
     }
   }

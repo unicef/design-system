@@ -348,7 +348,7 @@ the links in your main menu.
             <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">UNSELECTED</a>
         </li>
         <li class="nav-item disabled">
-            <a class="nav-link disabled">DISABLED</a>
+            <a class="nav-link disabled" href="#">DISABLED</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"

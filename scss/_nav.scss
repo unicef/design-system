@@ -19,9 +19,11 @@
 
         border-top: none;
         border-right: none;
+        border-left: none;
         border-bottom: 0.25rem solid transparent;
 
         &.active {
+            border:none;
             background-color: transparent;
             color: $black;
             border-bottom: 0.25rem solid $unicef-blue;
@@ -35,9 +37,14 @@
     
 }
 @media only screen and (min-width: 767.98px) {
-    .nav-link {
+    .nav-tabs {
+        .nav-link {
 
-        border-left: none;
+            &:hover:not(.disabled) {
+                background-color: $nav-tabs-link-active-bg;
+                border-bottom: 0.25rem solid $unicef-blue;
+                }
+        }
     }
 }
 @media only screen and (max-width: 767.98px) {
@@ -50,7 +57,7 @@
       .nav-link {
        
         &.active {   
-          border-bottom: none; 
+          border: none; 
           border-left: 0.25rem solid $unicef-blue;
           &:hover {
             border-right: 0.25rem solid $unicef-blue;
