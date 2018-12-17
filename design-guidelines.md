@@ -377,9 +377,9 @@ Forms shall be designed the following way:
 
 In the example above, the birthday field is disabled because user does not have permissions. However, Older than 18? field is read only, because it only displays information.
 
-
+<!--
 `TODO improve description of currency fields behavior`
-
+-->
 
 ## Forms Layout
 There are two ways of arranging fields in a form. The first one is in a linear way, with one field per line, that is, by displaying one field above the next one. The second way to arrange a form is the productivity tool form. In these kinds of forms the layout groups elements to maximize the number of fields visible in the screen.
@@ -433,9 +433,9 @@ Error messages are displayed contextualized under the field that is causing that
 And they should avoid using technical jargon and be as short and concise as possible.
 In case, we don't have space, we should try to focus on how to fix the error.
 
-
+<!--
 `TODO: Define a set of standard errors.`
-
+-->
 
 ## Buttons
 
@@ -455,11 +455,15 @@ actions such as cancel go to previous step.
 
 **Danger buttons** are exclusively reserved for destructive actions (such as delete an item). They require to display an undo notification (preferred) or to display a confirmation popup before performing the action.
 
+<!--
 `TODO define how an undo notification looks`
+-->
 
 In a form buttons are aligned to the left. Except in popups that are aligned to the right.
 
+<!--
 `TODO example`
+-->
 
 The order of the buttons should be from left tor right: from least
 important action to primary/main action.
@@ -469,7 +473,9 @@ important action to primary/main action.
 
 In general, the use of popups shall be rationalized as they are not friendly on mobile and tablet devices.
 
+<!--
 `TODO provide alternatives that shall be used`
+-->
 
 In case of using them, these shall not include flows within them. Popups shall be used either to display some additional information or to fill a short subform.
 
@@ -487,7 +493,9 @@ Tables fields should be organized following this pattern from left to right:
   1. In general, columns are aligned to the left except last column that should be aligned to the right.
   2. Numberical columns and dates shall be always aligned to the right (to ease reading).
 
+<!--
 `TODO provide an example`
+-->
 
 <!-- <table class="table">
 <thead>
@@ -502,10 +510,18 @@ Tables fields should be organized following this pattern from left to right:
 
 In case selection of individual rows is provided, it should be displayed at the left side.
 
+<!--
+
 `TODO example of row with selection`
+
+-->
 
 ## Asynchronous communication
 
 Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
 
+<!--
+
 `TODO expand this topic`
+
+-->
