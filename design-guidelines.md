@@ -74,12 +74,14 @@ depend on legacy systems, some just need a few tweaks, some are just platforms
 with an out of the box customization, etc. With this diversity, designers will
 not always be able to fully comply with this specification.
 
-## Visual Specification
+## Download Visual Specification
 
-We have created a Sketch document in which we define the visual specification of each component.
+We have created a [Sketch](https://www.sketchapp.com/) document that
+contains the visual specification of each component. You can use this
+file as [library for your designs](https://sketchapp.com/docs/libraries/).
 
-<a class="btn btn-outline-primary" href="">Visual Specification .Sketch file</a>
-<a class="btn btn-outline-primary" href="">Visual Specification as PDF</a>
+<a class="btn btn-outline-primary" href="./assets/UNICEF-Designy-system.pdf">Download Visual Specification (.Sketch)</a>
+<a class="btn btn-outline-primary" href="./assets/UNICEF-Designy-system.pdf">Visual Specification (.PDF)</a>
 
 
 ## Brand colors
