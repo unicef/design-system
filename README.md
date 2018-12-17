@@ -12,10 +12,10 @@ The goal of this project is to:
 
 Designers, product managers and anyone that has to define the user interface
 of a web application we provide the following
-[design guidelines](https;//unicef.github.io/unicef-design-system/design-guidelines.html).
+[design guidelines](https;//unicef.github.io/design-system/design-guidelines.html).
 
 For developers, we provide a reference implementation.
-[Documentation for developers can be found here](https;//unicef.github.io/unicef-design-system/developer-docs.html)
+[Documentation for developers can be found here](https;//unicef.github.io/design-system/developer-docs.html)
 
 This reference implementation is based on  based on [Bootstrap 4.1](http://getbootstrap.com).
 
@@ -54,7 +54,7 @@ First, install the npm package
 Import `unicef.scss` in your global scss file.
 
 ```
-@import "../node_modules/@unicef/scss/unicef"
+@import "../node_modules/@unicef/design-system/scss/unicef"
 ```
 
 We have used bootstrap variables whenever possible. Custom created variables are defined in `scss/_variables.scss`
@@ -74,13 +74,13 @@ We use [jekyll](https://jekyllrb.com/) for generating the documentation and [gul
 Get source code from git repository
 
 ```
-$ git clone https://github.com/unicef/unicef-design-system.git
+$ git clone https://github.com/unicef/design-system.git
 ```
 
 Install dependencies
 
 ```bash
-$ cd unicef-design-system
+$ cd design-system
 $ npm install
 $ bundle install
 ```
