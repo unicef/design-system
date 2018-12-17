@@ -27,6 +27,7 @@
           aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
+
       <div class="collapse navbar-collapse"  id="navbarSupportedContent">
         <ul class="navbar-nav rounded-left flex-row d-md-flex ml-auto">
           <li class="nav-item dropdown">
@@ -37,11 +38,11 @@
               role="button"
               aria-haspopup="true"
               aria-expanded="false">
-            Dropdown
+            Navbar Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-            <a class="dropdown-item" href="#">Menu Item</a>
-            <a class="dropdown-item" href="#">Menu Item 2</a>
+            <a class="dropdown-item" href="#">Menu Item a</a>
+            <a class="dropdown-item" href="#">Menu Item b</a>
           </div>
         </li>
         <li class="nav-item">
@@ -65,36 +66,40 @@
             <a class="dropdown-item" href="#">User Profile menu item 2</a>
           </div>
         </li>
+        <!-- Displayed only on screens smaller than 1024 -->
         <li class="nav-item active d-block d-md-none">
-          <a class="nav-link " href="#">Selected</a>
+          <a class="nav-link active" href="#">Menu item 1</a>
         </li>
         <li class="nav-item d-block d-md-none">
-          <a class="nav-link" href="#">Unselected</a>
+          <a class="nav-link" href="#">Menu item 2</a>
         </li>
         <li class="nav-item disabled d-block d-md-none">
-          <a class="nav-link" href="#">Disabled</a>
+          <a class="nav-link disabled" href="#">Menu Disabled</a>
         </li>
         <li class="nav-item dropdown d-block d-md-none">
           <a class="nav-link dropdown-toggle"
-            id="navbarDropdownMenuLink" data-toggle="dropdown"
+            id="menu-dropdown" data-toggle="dropdown"
             href="#" role="button"
-          aria-haspopup="true" aria-expanded="false">Dropdown
+            aria-haspopup="true"
+            aria-expanded="false">Menu with dropdown
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu" aria-labelledby="menu-dropdown">
           <a class="dropdown-item" href="#">Menu Item - Long Title</a>
           <a class="dropdown-item" href="#">Menu Item 2</a>
           <a class="dropdown-item" href="#">Menu Item 3</a>
         </div>
       </li>
+      <!-- End of mobile only -->
   </ul>
 </div>
 </nav>
+<!-- Menu this has to be repeated -->
 <ul class="nav nav-tabs d-none d-md-flex bg-white">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Selected</a>
+    <a class="nav-link active" href="#">Menu item 1</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Unselected</a>
+    <a class="nav-link" href="#">Menu item 2</a>
   </li>
   <li class="nav-item disabled">
     <a class="nav-link disabled" href="#">Disabled</a>
@@ -102,7 +107,7 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
     data-toggle="dropdown" href="#" role="button"
-    aria-haspopup="true" aria-expanded="false">Dropdown
+    aria-haspopup="true" aria-expanded="false">Menu dropdown
   </a>
   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
     <a class="dropdown-item" href="#">Menu Item - Long Title</a>
