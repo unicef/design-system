@@ -1,6 +1,6 @@
 {
   "name": "unicef-design-system",
-  "version": "0.3.0",
+  "version": "0.0.1",
   "description": "UNICEF design system based on bootstrap for creating our web applications",
   "main": "dist/js/unicef-bundle.js",
   "scripts": {
