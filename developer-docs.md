@@ -50,7 +50,7 @@ Local copy and use SCSS
 ## Example
 
 This is an example of a full page.
-### [Full page example](sample1.html)
+### [Full page example](./sample1.html)
 
 ## Typography
 
