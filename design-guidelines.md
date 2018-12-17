@@ -80,8 +80,13 @@ We have created a [Sketch](https://www.sketchapp.com/) document that
 contains the visual specification of each component. You can use this
 file as [library for your designs](https://sketchapp.com/docs/libraries/).
 
-<a class="btn btn-outline-primary" href="./assets/UNICEF-Designy-system.pdf">Download Visual Specification (.Sketch)</a>
-<a class="btn btn-outline-primary" href="./assets/UNICEF-Designy-system.pdf">Visual Specification (.PDF)</a>
+<a class="btn btn-primary" href="./assets/UNICEF-Design-system.sketch">
+  <span class="fa fa-download"></span> Download Visual Specification (.Sketch)</a>
+<br>
+<br>
+
+<a class="btn btn-primary" href="./assets/UNICEF-Design-system.pdf">
+  <span class="fa fa-download"></span> Download Visual Specification (.PDF)</a>
 
 
 ## Brand colors
