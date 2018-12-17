@@ -28,6 +28,6 @@ layout: home
             A reference implementation of the visual spec.
           </p>
           <a href="developer-docs.html" class="btn btn-outline-primary">Developers docs</a>
-          <a href="http://github.com/unicef/unicef-design-system" class="btn btn-link">GitHub</a>
+          <a href="{{site.repository}}" class="btn btn-link">GitHub</a>
   </div>
 </div><!-- jumbotron -->
