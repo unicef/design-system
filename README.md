@@ -26,17 +26,17 @@ This reference implementation is based on  based on [Bootstrap 4.1](http://getbo
 
 For the CSS:
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@unicef/design-system@latest/dist/css/unicef.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@unicef/design-system/dist/css/unicef.css">
 ```
 
 If you need to include the JavaScript, you have two options. The first one, a
 minified javascript bundle file that includes all bootstrap JavaScript (bootstrap, popper, jquery). You need this if you require dropdowns, tabs, etc.
 ```html
 <!-- All js bundled -->
-<script src="https://cdn.jsdelivr.net/npm/@unicef/design-system@latest/dist/js/unicef-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@unicef/design-syste/dist/js/unicef-bundle.min.js"></script>
 
 <!-- only the scripts that were created by UNICEF (no requirement)-->
-<script src="https://cdn.jsdelivr.net/npm/@unicef/design-system@latest/dist/js/unicef.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@unicef/design-system/dist/js/unicef.min.js"></script>
 ```
 
 

@@ -28,7 +28,7 @@ function compressJs(paths, destinationFileName) {
       .pipe(plumber()) //By default task ends if there is an error. This avoids it.
       .pipe(sourcemaps.init())
       .pipe(concat(destinationFileName))
-      .pipe(minify())
+      .pipe(minify({ext: { min:'.min.js'}}))
       .pipe(sourcemaps.write("./"))
       .pipe(gulp.dest('./dist/js'))
 }

@@ -1,4 +1,6 @@
-//Mandatory fields
+//
+// Mandatory fields
+//
 
 /**
  * Set background color for input, selects and textareas.
@@ -89,4 +91,5 @@ function myFunction() {
       x.className = "topnav";
   }
 }
+
 //# sourceMappingURL=unicef.js.map
