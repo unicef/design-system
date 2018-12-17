@@ -94,14 +94,14 @@ file as [library for your designs](https://sketchapp.com/docs/libraries/).
 In UNICEF brand book defines the following colors:
 
 <div class="row">
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-blue)">$unicef-dark-blue</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-purple)">$unicef-purple</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-red)">$unicef-red</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-red)">$unicef-dark-red</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-orange)">$unicef-orange</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-green)">$unicef-green</div>
-  <div class="col-sm-4 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-green)">$unicef-dark-green</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-blue)">$unicef-dark-blue</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-purple)">$unicef-purple</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-red)">$unicef-red</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-red)">$unicef-dark-red</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-orange)">$unicef-orange</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-green)">$unicef-green</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-green)">$unicef-dark-green</div>
 </div>
 
 We use `$unicef-blue` mainly on header.
