@@ -33,24 +33,57 @@ application you will need to understand how and when to use each of the
 elements described in this document. To get that knowledge,
 please, read our __[design guidelines](design-guidelines)__.
 
-<!--
 
-TODO Define and Document this
 
-# Include it in your project
-
-There are 3 ways to include this framework in your project
-CDN CSS
-
-Local copy and use the CSS
-
-Local copy and use SCSS
-
--->
 ## Example
 
 This is an example of a full page.
 ### [Full page example](./sample1.html)
+
+
+## Getting started
+
+In order to use the UNICEF's UI in your project you can reference a CDN or download using npm.
+
+### With CDN
+CDNs can offer a performance benefit by hosting on servers spread across the globe. This also offers an advantage that if the visitor to your webpage has already downloaded a copy of the files from the same CDN, it won't have to be re-downloaded.
+
+For the CSS:
+```html
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@unicef/design-system/dist/css/unicef.css">
+```
+
+If you need to include the JavaScript, you have two options. The first one, a
+minified javascript bundle file that includes all bootstrap JavaScript (bootstrap, popper, jquery). You need this if you require dropdowns, tabs, etc.
+
+```html
+<!-- All js bundled -->
+<script src="https://cdn.jsdelivr.net/npm/@unicef/design-syste/dist/js/unicef-bundle.min.js"></script>
+
+<!-- only the scripts that were created by UNICEF (no requirement)-->
+<script src="https://cdn.jsdelivr.net/npm/@unicef/design-system/dist/js/unicef.min.js"></script>
+```
+
+### Using npm
+
+This bootstrap customization is based on [SASS](https://sass-lang.com), and therefore you can easily override the CSS classes for your particular project.
+
+First, install the npm package
+
+```
+ npm install @unicef/design-system
+
+```
+
+Import `unicef.scss` in your global `scss` file. For example:
+
+```css
+/* you may need to change the path to the node_modules dir */
+@import "../node_modules/@unicef/design-system/scss/unicef"
+```
+
+We have used bootstrap variables whenever possible. Custom created variables are defined in `scss/_variables.scss`.
+
 
 ## Typography
 
