@@ -47,7 +47,10 @@ Local copy and use the CSS
 Local copy and use SCSS
 
 -->
+## Example
 
+This is an example of a full page.
+### [Full page example](sample1.html)
 
 ## Typography
 
@@ -120,7 +123,7 @@ Alerts support strong and links.
 
 {% capture example %}
   <div class="alert alert-warning" role="alert">
-    This alert displays how it looks a warning alert with a 
+    This alert displays how it looks a warning alert with a
     <strong>strong element</strong> and
     <a href="">a link</a>.
   </div>
@@ -186,7 +189,7 @@ Also, it is possible to group an input with a button:
 
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-column flex-md-row bd-navbar p-0">
-  <a class="navbar-brand navbar-line d-none d-md-block d-lg-block my-2 ml-3" 
+  <a class="navbar-brand navbar-line d-none d-md-block d-lg-block my-2 ml-3"
     href="/" aria-label="Unicef">
     <img class="img-fluid" alt="unicef-logo"
       src="assets/images/unicef-logo.svg">
@@ -201,8 +204,8 @@ Also, it is possible to group an input with a button:
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
   <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" 
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
   </button>
@@ -231,10 +234,10 @@ Also, it is possible to group an input with a button:
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
           data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
           aria-expanded="false">
-          <img class="img-fluid" alt="unicef-logo" title="Profile" 
+          <img class="img-fluid" alt="unicef-logo" title="Profile"
             src="assets/images/avatar.png">
         </a>
-        <div class="dropdown-menu dropdown-menu-right" 
+        <div class="dropdown-menu dropdown-menu-right"
           aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Menu Item</a>
           <a class="dropdown-item" href="#">Menu Item 2</a>
@@ -249,8 +252,8 @@ Also, it is possible to group an input with a button:
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
   <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" 
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon">
       <i class="fas fa-bars"></i>
@@ -283,10 +286,10 @@ Also, it is possible to group an input with a button:
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"  
           data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
           aria-expanded="false">
-          <img class="img-fluid" alt="unicef-logo" title="Profile" 
+          <img class="img-fluid" alt="unicef-logo" title="Profile"
             src="assets/images/avatar.png">
         </a>
-        <div class="dropdown-menu dropdown-menu-right" 
+        <div class="dropdown-menu dropdown-menu-right"
           aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Menu Item</a>
           <a class="dropdown-item" href="#">Menu Item 2</a>
@@ -355,11 +358,11 @@ the links in your main menu.
 <div class = "container-fluid">
   <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
     <li class="nav-item">
-     <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1" 
+     <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1"
       role="tab" aria-controls="tab-1" aria-selected="true">Tab 1</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2" 
+      <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2"
       role="tab" aria-controls="tab-2" aria-selected="false">Tab 2</a>
     </li>
     <li class="nav-item disabled">
@@ -403,14 +406,14 @@ the links in your main menu.
   </div>
   <div class="tab-pane fade" id="tab-2" role="tabpanel"
     aria-labelledby="tab-2-tab">
-    Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit 
+    Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit
     commodo mollit ex.
     Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do.
 
     Aliquip ex eiusmod voluptate exercitation cillum id incididunt elit sunt.
-    Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation 
+    Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation
     duis deserunt.
-    Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco 
+    Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco
     ea tempor duis.
   </div>
   </div>
@@ -476,7 +479,7 @@ Form elements can include short texts that provide important information to user
   <form>
     <div class="form-group">
       <label for="input-placeholder-help">Your email</label>
-      <input type="email" class="form-control" id="input-placeholder-help" 
+      <input type="email" class="form-control" id="input-placeholder-help"
         aria-describedby="emailHelp" placeholder="Example: john.doe@unicef.org">
       <small id="emailHelp" class="form-text text-muted">
         We'll never share your email with anyone else.
@@ -623,8 +626,8 @@ Example the HTML and classes to display errors (no actual validation is performe
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below 
-        as a natural lead-in to additional content. 
+      <p class="card-text">This is a longer card with supporting text below
+        as a natural lead-in to additional content.
         This content is a little bit longer.
       </p>
       <p class="card-text">
@@ -635,7 +638,7 @@ Example the HTML and classes to display errors (no actual validation is performe
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below 
+      <p class="card-text">This card has supporting text below
         as a natural lead-in to additional content.
       </p>
       <p class="card-text">
@@ -647,7 +650,7 @@ Example the HTML and classes to display errors (no actual validation is performe
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below
-        as a natural lead-in to additional content. This card has even longer 
+        as a natural lead-in to additional content. This card has even longer
         content than the first to show that equal height action.</p>
       <p class="card-text">
         small class="text-muted">Last updated 3 mins ago</small>
