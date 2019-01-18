@@ -129,7 +129,7 @@ in the flow.
 something that is preventing him to continue with the regular flow. For example,
 user forgot to fill a mandatory field.
 
-    Red also may indicate danger, because the user is a going to perform a
+    Red also may indicate danger, because the user is going to perform a
     destructive action
 
     In general, because of the negative implications of the red color, we should try
@@ -247,7 +247,7 @@ In order to keep consistency on the meaning of most common actions, the icon sha
 
 The following icons are not recommended to be used
 
-| <i class="fas fa-save"></i>         | Save                        |  A floppy drive is something from the past                       |
+| <i class="fas fa-save"></i>         | Save                        |  A floppy disks are something from the past                       |
 
 ## Images
 
@@ -266,7 +266,7 @@ So, minimizing the use and size of images is a must.
 Recommended date format is `dd-MMM-YYYY`. For instance: `01-Feb-2018` or `10-Mar-2020`.
 
 **Never use the format `dd/mm/yyyy` or `mm/dd/yyyy** as it is confusing. For instance,
-`02/01/2020`, dependeing on the country it can be interpreted either as `01-Feb-2020` or `02-Jan-2020`.
+`02/01/2020`, depending on the country it can be interpreted either as `01-Feb-2020` or `02-Jan-2020`.
 
 
 ### Numbers and currencies format
@@ -280,7 +280,7 @@ You can skip decimals if they are not relevant (`$1,200`), but if you include th
 <p class="alert alert-warning">
   Note: Applications with internationalization support may override this
   recommendation.
-  <br><br>For example, in Spanish is more common to write one million euros as <code class="highlighter-rouge">1.000.000,00€</code>.
+  <br><br>For example, in Spanish/Spain is more common to write one million euros as <code class="highlighter-rouge">1.000.000,00€</code> (using dot separator for miles and comma for decimals).
 </p>
 
 **References**
@@ -352,18 +352,13 @@ Forms shall be designed the following way:
     <div class="doc-example">
       <div class="row col-sm-4 col-xs-6">
         <label for="number-left1">Number 1</label>
-        <input name="number-left1" class="form-control" type="number" value="11.34">
+        <input name="number-left1" class="form-control text-right" type="number" value="11.34">
       </div>
-      <div class="row col-sm-4 col-xs-6">
-        <label for=" number-left2">Number 2</label>  
-        <input name="number-left2" class="form-control" type="number" value="11.34">
-      </div>
-    </div>
+   </div>
 
 7. Currency fields:
     1. Shall not allow the user to introduce more than 2 decimals.
-    2. Shall not allow the user to introduce any character not allowed.
-    3. On blur, shall rewrite the contents to its
+    2. Shall not allow the user to introduce any character not permitted.
 
 8. Use readonly and disabled fields properly. A field that just displays information and user can never change it is a read only field (html attribute `readonly`). A field that the user cannot modify because of the current status of the form are `disabled`. Example:
 
