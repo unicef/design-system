@@ -224,6 +224,50 @@ The following rules are recommended.
 possible define a <strong>download</strong> action instead of a print action.
 </div>
 
+## Alerts
+
+Sometimes you need to recall user attention. Use alerts for that.
+
+Alerts shall be used ONLY to display information that is extremely important for the user to to be aware of. 
+
+Alerts are designed to stand out in the interface, don't overuse them. If everything stands out, nothing stands out.
+
+Regular information text shall not be displayed within an alert.
+
+We have the following classes of alerts. They follow the Traffic light principle.
+
+* __Success alerts__. Use these alerts to indicate a positive, successfull outcome.
+    For example, after adding or updating an item. 
+
+    <div class="alert alert-success">
+      Personal information successfully updated.
+    </div>
+
+* ___Warning alerts__. use them to notify the user about situations that is not blocking but that may affect the outcome or he needs to be aware of. Use these one for informational purposes.
+
+    <div class="alert alert-warning">
+    This personal information is only accessible by emergency crisis personnel (OPSCEN). 
+    </div>  
+
+  
+* __Danger alert__. Use these alerts for errors and in situations in which the user cannot continue. For example:
+  <div class="alert alert-danger">
+    You don't have permissions to view the personal details. 
+
+    If you are part of the emergency crisis personnel. Please, contact your local focal point. 
+  </div>
+
+Alerts can be dismissable. Use them when user needs to interact with the current page, and once read, they no longer have relevance. For example, after successfully updating an item.
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  Your profile was successfully updated.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
 ## Icons
 
 In general, icons shall always be accompanied with a label. Exceptionally, a tooltip is allowed.
@@ -284,6 +328,7 @@ You can skip decimals if they are not relevant (`$1,200`), but if you include th
 **References**
 
   * [UI Text for Web parts - Sharepoint Documentation](https://docs.microsoft.com/en-us/sharepoint/dev/design/ui-text-for-web-parts)
+
 
 ## Forms
 
