@@ -23,7 +23,7 @@ interface of a UNICEF web application. Here you will find the technical
 documentation with examples of the HTML and CSS classes.
 
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com),
+This implementation is based on [bootstrap 4.x](https;//getbootstrap.com),
 one of the most popular and widely used frameworks on the Internet. For brevity,
 we assume the reader is familiar with this framework, and has a good
 understanding of HTML as well as CSS.
@@ -72,7 +72,6 @@ First, install the npm package
 
 ```
  npm install @unicef/design-system
-
 ```
 
 Import `unicef.scss` in your global `scss` file. For example:

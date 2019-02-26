@@ -500,6 +500,7 @@ actions such as cancel go to previous step.
 
 **Danger buttons** are exclusively reserved for destructive actions (such as delete an item). They require to display an undo notification (preferred) or to display a confirmation popup before performing the action.
 
+
 <!--
 `TODO define how an undo notification looks`
 -->
@@ -513,6 +514,41 @@ In a form buttons are aligned to the left. Except in popups that are aligned to 
 The order of the buttons should be from left tor right: from least
 important action to primary/main action.
 
+
+### Avoid disabled buttons
+
+In general, avoid using disabled buttons. In particular, never use them inform to indicate that there are some fields missing. 
+
+
+<div class="doc-example"> 
+  <p><span class="alert alert-danger">Don't</span></p>
+  <form>
+   <div class="row">
+      <div class="form-group col-md-6">
+        <label for="user-required"><em>Email</em></label>
+        <input type="text" class="form-control" id="user-required"
+            placeholder="Example: email@unicef.org" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="password-required"><em>Password</em></label>
+        <input type="password" class="form-control" id="password-required"
+            placeholder="" required>
+      </div>
+    </div>
+     <div class="row col-md-12">    
+        <button class="btn btn-primary" disabled>Login</button>
+     </div>
+  </form>
+</div>
+
+If in a particular situation you need to display a disabled button, always add a short explanation text next to it.
+
+**References** 
+
+* [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/)
+* [Disabled buttons don't have to suck](https://medium.com/@DanielKoster/disabled-buttons-dont-have-to-suck-6dcd22b16b6)
 
 ## Modal windows (Popups)
 
