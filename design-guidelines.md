@@ -12,16 +12,14 @@ id: guidelines
 in-navbar: true
 
 # Visible title.
-title: Design Guidelines
+title: UX/UI design guidelines
 ---
 
 ## What are these guidelines?
 
-These guidelines establish a set of best practices and rules about how to
-design an internal web application for UNICEF.
+These user experience/user interface (UX/UI) guidelines establish a set of best practices and rules to design an web application for [UNICEF](https://unicef.org).
 
-These guidelines are especially oriented to productivity web applications rather
-than communication web sites.
+These guidelines are rooted in general usability and user interface fundalmentals, however they are primarily thought to be applied in productivity and enterprise web applications, that is, those that typically display large amount of information and are full of complex forms.
 
 Also, consider these guidelines as a live document. Although, principles rarely
 change, context, technology and tools do. To keep these guidelines useful,
@@ -30,7 +28,7 @@ they need to evolve.
 ## Who is expected to use these guidelines?
 
 Anyone who has to define the user interface of a digital web application within
-or for UNICEF, typically a user experience designer and/or product owners.
+or for UNICEF, typically a user experience designer a business product owners, but depending on the project it may also be the business analyst or the developer.  
 
 ## Principles
 
