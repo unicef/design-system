@@ -526,6 +526,8 @@ In case of using them, these shall not include flows within them. Popups shall b
 
 Popups shall not be used to notify users about errors while filling a form or system errors. Use notifications, alerts and field errors for this purpose.
 
+
+
 ## Tables
 
 Tables fields should be organized following this pattern from left to right:
@@ -561,6 +563,7 @@ In case selection of individual rows is provided, it should be displayed at the 
 
 -->
 
+
 ## Asynchronous communication
 
 Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
@@ -570,3 +573,33 @@ Whenever the system is performing an action in background the user interface sha
 `TODO expand this topic`
 
 -->
+
+
+## Progress bars
+
+Progress bars to visually indicate the current status of a process. 
+
+<div class="doc-example">
+<h6>Budget</h6>
+<p>Allocated funds: $87,500 (75%)</p>
+  <div class="progress" title="87500, (75%)">
+    <div class="progress-bar bg-success" style="width: 75%"
+      role="progressbar" aria-valuenow="87500.00" aria-valuemin="0.00" aria-valuemax="125000.00">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <span class="progress-min-max">$0.00</span>
+    <span class="progress-min-max">$125,000.00</span>
+  </div>
+</div>
+
+Values under the bar can be skipped if user only needs to have a rough understanding of the status.
+
+<div class="doc-example">
+<h6>Completed tasks</h6>
+  <div class="progress" title="75% of the tasks completed">
+    <div class="progress-bar bg-success" style="width: 75%"
+      role="progressbar" aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">
+    </div>
+  </div>
+</div>  

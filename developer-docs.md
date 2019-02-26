@@ -784,27 +784,25 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
     <span class="progress-min-max">100%</span>
   </div>
 
-  <h6>Filled</h6>
-  <div class="progress">
-    <div class="progress-bar bg-success" style="width: 75%"
+   <h6>Without numbers</h6>
+  <div class="progress mb-3">
+    <div class="progress-bar bg-success" style="width: 50%"
       role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
+  
+  <h6>Filled</h6>
+  <p>Allocated funds: $87,500 (75%)</p>
+  <div class="progress" title="87500, (75%)">
+    <div class="progress-bar bg-success" style="width: 75%"
+      role="progressbar" aria-valuenow="87500.00" aria-valuemin="0.00" aria-valuemax="125000.00">
+    </div>
+  </div>
   <div class="d-flex justify-content-between">
-    <span class="progress-min-max">0%</span>
-    <span class="progress-min-max">100%</span>
+    <span class="progress-min-max">$0.00</span>
+    <span class="progress-min-max">$125,000.00</span>
   </div>
 
-  <h6>Stripped</h6>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped" style="width: 75%"
-      role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-    </div>
-  </div>
-  <div class="d-flex justify-content-between">
-    <span class="progress-min-max">0%</span>
-    <span class="progress-min-max">100%</span>
-  </div>
 
 
 {% endcapture %}
