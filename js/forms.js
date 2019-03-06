@@ -1,6 +1,16 @@
 //Mandatory fields
 
 /**
+ * Polyfill. 
+ * IE and Edge do not support NodeList.forEach
+ * This fixes it.
+ */ 
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
+
+/**
  * Set background color for input, selects and textareas.
  *
  * Requires two color CSS variables to be defined
