@@ -64,7 +64,7 @@ document.querySelectorAll('textarea[data-autoresize]').forEach( textarea => {
  * Textarea counter
  */
 HTMLTextAreaElement.prototype.counter = function() {
-  return this.maxLength - this.textLength;
+  return this.maxLength - this.value.length;
 }
 
 document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
@@ -80,7 +80,6 @@ document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
     textarea.parentNode.insertBefore(counter, textarea.nextSibling);
   }
   textarea.addEventListener("input", (event) => {
-    console.log(counterId);
     document.getElementById(counterId).innerHTML = event.target.counter() + " characters left";
   }, false);
 });
