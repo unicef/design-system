@@ -9,6 +9,7 @@ var plumber = require('gulp-plumber'); //Catch on error. By default watch task i
 var minify = require('gulp-minify');
 var minifyCss = require('gulp-minify-css');
 var svgo = require('gulp-svgo');
+var babel = require('gulp-babel')
 
 // Path settings
 var paths = {}
@@ -23,19 +24,32 @@ paths.jsBundle = [
 paths.svg = ["./assets/images/**/*.svg"];
 paths.all = paths.scss.concat(paths.js).concat(paths.svg);
 
-function compressJs(paths, destinationFileName) {
-    gulp.src(paths)
+function compressJs(paths, destinationFileName, useBabel = false) {
+  if (useBabel) {
+    return gulp.src(paths)
+      .pipe(plumber()) //By default task ends if there is an error. This avoids it.
+      .pipe(sourcemaps.init())
+      .pipe(babel({
+        presets: ['@babel/env']
+      }))
+      .pipe(concat(destinationFileName))
+      .pipe(minify({ext: { min:'.min.js'}}))
+      .pipe(sourcemaps.write("./"))
+      .pipe(gulp.dest('./dist/js'))
+    }
+    return gulp.src(paths)
       .pipe(plumber()) //By default task ends if there is an error. This avoids it.
       .pipe(sourcemaps.init())
       .pipe(concat(destinationFileName))
       .pipe(minify({ext: { min:'.min.js'}}))
       .pipe(sourcemaps.write("./"))
-      .pipe(gulp.dest('./dist/js'))
+      .pipe(gulp.dest('./dist/js')) 
 }
 
 // create one single file for ONLY the internal js of this pacakge (no vendors)
 gulp.task('js', function() {
-  compressJs(paths.js,'unicef.js');
+  compressJs(paths.js,'unicef.js', true)
+  
 });
 
 // bundle all js into one single file inclugin all vendor js (bootstrap, popper, etc..)

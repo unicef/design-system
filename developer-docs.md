@@ -2,13 +2,13 @@
 layout: page
 in-navbar: true
 id: developer-docs
-title: "Developers docs"
+title: "Developer documentation"
 ---
 
 UNICEF has defined a visual design specification for our internal web
 applications. This specification follows our brand guidelines, takes into
-account accessibility and is rooted in a set of principles that are defined on
-__[design guidelines](design-guidelines)__.
+account accessibility and is rooted in a set of principles that are defined on our
+__[UX/UI design guidelines](design-guidelines)__.
 
 Additionally to those specs, UNICEF has created a technology agnostic reference
 implementation, so it can be used with any modern development framework such
@@ -23,7 +23,7 @@ interface of a UNICEF web application. Here you will find the technical
 documentation with examples of the HTML and CSS classes.
 
 
-This implementation is based on [bootstrap 4.0](https;//getbootstrap.com),
+This implementation is based on [bootstrap 4.x](https;//getbootstrap.com),
 one of the most popular and widely used frameworks on the Internet. For brevity,
 we assume the reader is familiar with this framework, and has a good
 understanding of HTML as well as CSS.
@@ -31,7 +31,7 @@ understanding of HTML as well as CSS.
 If you need to design a user interface for a UNICEF
 application you will need to understand how and when to use each of the
 elements described in this document. To get that knowledge,
-please, read our __[design guidelines](design-guidelines)__.
+please, read our __[UX/UI design guidelines](design-guidelines)__.
 
 
 
@@ -72,7 +72,6 @@ First, install the npm package
 
 ```
  npm install @unicef/design-system
-
 ```
 
 Import `unicef.scss` in your global `scss` file. For example:
@@ -784,27 +783,25 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
     <span class="progress-min-max">100%</span>
   </div>
 
-  <h6>Filled</h6>
-  <div class="progress">
-    <div class="progress-bar bg-success" style="width: 75%"
+   <h6>Without numbers</h6>
+  <div class="progress mb-3">
+    <div class="progress-bar bg-success" style="width: 50%"
       role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
+  
+  <h6>Filled</h6>
+  <p>Allocated funds: $87,500 (75%)</p>
+  <div class="progress" title="87500, (75%)">
+    <div class="progress-bar bg-success" style="width: 75%"
+      role="progressbar" aria-valuenow="87500.00" aria-valuemin="0.00" aria-valuemax="125000.00">
+    </div>
+  </div>
   <div class="d-flex justify-content-between">
-    <span class="progress-min-max">0%</span>
-    <span class="progress-min-max">100%</span>
+    <span class="progress-min-max">$0.00</span>
+    <span class="progress-min-max">$125,000.00</span>
   </div>
 
-  <h6>Stripped</h6>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped" style="width: 75%"
-      role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-    </div>
-  </div>
-  <div class="d-flex justify-content-between">
-    <span class="progress-min-max">0%</span>
-    <span class="progress-min-max">100%</span>
-  </div>
 
 
 {% endcapture %}

@@ -19,8 +19,8 @@ title: UNICEF Design system
 description: >- # this means to ignore newlines until "baseurl:"
   UNICEF's design system for creating our web applications.
 
-baseurl: "/design-system" # production
-#baseurl: "/" # for development
+#baseurl: "/design-system" # production
+baseurl: "/" # for development
 
 url: "http://unicef.github.io/design-system" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: unicef

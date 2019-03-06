@@ -1,6 +1,16 @@
 //Mandatory fields
 
 /**
+ * Polyfill. 
+ * IE and Edge do not support NodeList.forEach
+ * This fixes it.
+ */ 
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
+
+/**
  * Set background color for input, selects and textareas.
  *
  * Requires two color CSS variables to be defined
@@ -36,8 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 }, false);
 
-
-
 /**
   * Textarea autoresize
   *
@@ -52,12 +60,11 @@ document.querySelectorAll('textarea[data-autoresize]').forEach( textarea => {
     event.target.style.height = (event.target.scrollHeight) + 'px';}, false);
 });
 
-
 /**
  * Textarea counter
  */
 HTMLTextAreaElement.prototype.counter = function() {
-  return this.maxLength - this.textLength;
+  return this.maxLength - this.value.length;
 }
 
 document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
@@ -73,7 +80,6 @@ document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
     textarea.parentNode.insertBefore(counter, textarea.nextSibling);
   }
   textarea.addEventListener("input", (event) => {
-    console.log(counterId);
     document.getElementById(counterId).innerHTML = event.target.counter() + " characters left";
   }, false);
 });
