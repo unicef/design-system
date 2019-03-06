@@ -1,4 +1,3 @@
-
 .btn {
   font-size: $btn-font-size;
   text-transform: $btn-transform;
@@ -10,7 +9,6 @@
 
     &:focus {
       margin-top:auto;
-      margin-bottom: 5px;
       border: $link-focus-border;
       display: inline-block;
       text-decoration: underline;

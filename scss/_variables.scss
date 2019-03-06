@@ -442,7 +442,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 // UNICEF vars
 $btn-font-size:               0.875rem !default;
-$btn-transform:               uppercase !default;
+$btn-transform:               none !default;
 $btn-min-width:               88px !default;
 $required-field-empty-bg:     rgba(theme-color("warning"),0.15) !default;
 $required-field-filled-bg:    $white !default;

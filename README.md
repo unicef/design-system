@@ -12,7 +12,7 @@ The goal of this project is to:
 
 Designers, product managers and anyone that has to define the user interface
 of a web application we provide the following
-[design guidelines](https;//unicef.github.io/design-system/design-guidelines.html).
+[UX/UI design guidelines](https;//unicef.github.io/design-system/design-guidelines.html).
 
 For developers, we provide a reference implementation.
 [Documentation for developers can be found here](https;//unicef.github.io/design-system/developer-docs.html)
@@ -94,7 +94,7 @@ $ bundle install
 
 To run the local server
 ```
-$ bundle exec jekyll serve --livereload
+$ bundle exec jekyll serve --livereload --config config.dev.yml
 ```
 Then browse to `http://localhost:4000/`
 

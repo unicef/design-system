@@ -12,16 +12,14 @@ id: guidelines
 in-navbar: true
 
 # Visible title.
-title: Design Guidelines
+title: UX/UI design guidelines
 ---
 
 ## What are these guidelines?
 
-These guidelines establish a set of best practices and rules about how to
-design an internal web application for UNICEF.
+These user experience/user interface (UX/UI) guidelines establish a set of best practices and rules to design an web application for [UNICEF](https://unicef.org).
 
-These guidelines are especially oriented to productivity web applications rather
-than communication web sites.
+These guidelines are rooted in general usability and user interface fundalmentals, however they are primarily thought to be applied in productivity and enterprise web applications, that is, those that typically display large amount of information and are full of complex forms.
 
 Also, consider these guidelines as a live document. Although, principles rarely
 change, context, technology and tools do. To keep these guidelines useful,
@@ -30,7 +28,7 @@ they need to evolve.
 ## Who is expected to use these guidelines?
 
 Anyone who has to define the user interface of a digital web application within
-or for UNICEF, typically a user experience designer and/or product owners.
+or for UNICEF, typically a user experience designer a business product owners, but depending on the project it may also be the business analyst or the developer.  
 
 ## Principles
 
@@ -226,6 +224,50 @@ The following rules are recommended.
 possible define a <strong>download</strong> action instead of a print action.
 </div>
 
+## Alerts
+
+Sometimes you need to recall user attention. Use alerts for that.
+
+Alerts shall be used ONLY to display information that is extremely important for the user to to be aware of. 
+
+Alerts are designed to stand out in the interface, don't overuse them. If everything stands out, nothing stands out.
+
+Regular information text shall not be displayed within an alert.
+
+We have the following classes of alerts. They follow the Traffic light principle.
+
+* __Success alerts__. Use these alerts to indicate a positive, successfull outcome.
+    For example, after adding or updating an item. 
+
+    <div class="alert alert-success">
+      Personal information successfully updated.
+    </div>
+
+* ___Warning alerts__. use them to notify the user about situations that is not blocking but that may affect the outcome or he needs to be aware of. Use these one for informational purposes.
+
+    <div class="alert alert-warning">
+    This personal information is only accessible by emergency crisis personnel (OPSCEN). 
+    </div>  
+
+  
+* __Danger alert__. Use these alerts for errors and in situations in which the user cannot continue. For example:
+  <div class="alert alert-danger">
+    You don't have permissions to view the personal details. 
+
+    If you are part of the emergency crisis personnel. Please, contact your local focal point. 
+  </div>
+
+Alerts can be dismissable. Use them when user needs to interact with the current page, and once read, they no longer have relevance. For example, after successfully updating an item.
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  Your profile was successfully updated.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
 ## Icons
 
 In general, icons shall always be accompanied with a label. Exceptionally, a tooltip is allowed.
@@ -286,6 +328,7 @@ You can skip decimals if they are not relevant (`$1,200`), but if you include th
 **References**
 
   * [UI Text for Web parts - Sharepoint Documentation](https://docs.microsoft.com/en-us/sharepoint/dev/design/ui-text-for-web-parts)
+
 
 ## Forms
 
@@ -457,6 +500,7 @@ actions such as cancel go to previous step.
 
 **Danger buttons** are exclusively reserved for destructive actions (such as delete an item). They require to display an undo notification (preferred) or to display a confirmation popup before performing the action.
 
+
 <!--
 `TODO define how an undo notification looks`
 -->
@@ -471,6 +515,41 @@ The order of the buttons should be from left tor right: from least
 important action to primary/main action.
 
 
+### Avoid disabled buttons
+
+In general, avoid using disabled buttons. In particular, never use them inform to indicate that there are some fields missing. 
+
+
+<div class="doc-example"> 
+  <p><span class="alert alert-danger">Don't</span></p>
+  <form>
+   <div class="row">
+      <div class="form-group col-md-6">
+        <label for="user-required"><em>Email</em></label>
+        <input type="text" class="form-control" id="user-required"
+            placeholder="Example: email@unicef.org" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="password-required"><em>Password</em></label>
+        <input type="password" class="form-control" id="password-required"
+            placeholder="" required>
+      </div>
+    </div>
+     <div class="row col-md-12">    
+        <button class="btn btn-primary" disabled>Login</button>
+     </div>
+  </form>
+</div>
+
+If in a particular situation you need to display a disabled button, always add a short explanation text next to it.
+
+**References** 
+
+* [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/)
+* [Disabled buttons don't have to suck](https://medium.com/@DanielKoster/disabled-buttons-dont-have-to-suck-6dcd22b16b6)
+
 ## Modal windows (Popups)
 
 In general, the use of popups shall be rationalized as they are not friendly on mobile and tablet devices.
@@ -482,6 +561,8 @@ In general, the use of popups shall be rationalized as they are not friendly on 
 In case of using them, these shall not include flows within them. Popups shall be used either to display some additional information or to fill a short subform.
 
 Popups shall not be used to notify users about errors while filling a form or system errors. Use notifications, alerts and field errors for this purpose.
+
+
 
 ## Tables
 
@@ -518,6 +599,7 @@ In case selection of individual rows is provided, it should be displayed at the 
 
 -->
 
+
 ## Asynchronous communication
 
 Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
@@ -527,3 +609,33 @@ Whenever the system is performing an action in background the user interface sha
 `TODO expand this topic`
 
 -->
+
+
+## Progress bars
+
+Progress bars to visually indicate the current status of a process. 
+
+<div class="doc-example">
+<h6>Budget</h6>
+<p>Allocated funds: $87,500 (75%)</p>
+  <div class="progress" title="87500, (75%)">
+    <div class="progress-bar bg-success" style="width: 75%"
+      role="progressbar" aria-valuenow="87500.00" aria-valuemin="0.00" aria-valuemax="125000.00">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <span class="progress-min-max">$0.00</span>
+    <span class="progress-min-max">$125,000.00</span>
+  </div>
+</div>
+
+Values under the bar can be skipped if user only needs to have a rough understanding of the status.
+
+<div class="doc-example">
+<h6>Completed tasks</h6>
+  <div class="progress" title="75% of the tasks completed">
+    <div class="progress-bar bg-success" style="width: 75%"
+      role="progressbar" aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100">
+    </div>
+  </div>
+</div>  
