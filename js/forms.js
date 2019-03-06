@@ -36,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 }, false);
 
-
-
 /**
   * Textarea autoresize
   *
@@ -51,7 +49,6 @@ document.querySelectorAll('textarea[data-autoresize]').forEach( textarea => {
     event.target.style.height = 'auto';
     event.target.style.height = (event.target.scrollHeight) + 'px';}, false);
 });
-
 
 /**
  * Textarea counter
