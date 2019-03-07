@@ -12,14 +12,13 @@
   },
   "author": "UNICEF",
   "license": "GPL-3.0+",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
-    "gulp-babel": "^8.0.0"
-  },
-  "devDependencies": {
     "bootstrap": "^4.1.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
