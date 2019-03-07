@@ -1,5 +1,3 @@
-//Mandatory fields
-
 /**
  * Polyfill. 
  * IE and Edge do not support NodeList.forEach
@@ -9,6 +7,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
+// Mandatory fields -- 
 
 /**
  * Set background color for input, selects and textareas.
@@ -85,14 +84,3 @@ document.querySelectorAll('textarea[data-counter]').forEach(textarea => {
   }, false);
 });
 
-/**
- *  Navtabs menu
- */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
