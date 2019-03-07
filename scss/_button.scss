@@ -6,9 +6,8 @@
   -webkit-text-decoration-line: none;
 
   &.btn-link {
-
     &:focus {
-      margin-top:auto;
+      margin-top: auto;
       border: $link-focus-border;
       display: inline-block;
       text-decoration: underline;

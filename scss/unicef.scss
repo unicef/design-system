@@ -1,7 +1,4 @@
-﻿//Custom variables + Vendor customization
-
-
-
+﻿// Custom variables + Vendor customization
 
 // Bootstrap
 @import "../node_modules/bootstrap/scss/functions";
@@ -11,8 +8,8 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-//Remove some colors from theme to make the theme more lean
-$theme-colors: map-remove($theme-colors, 'secondary', 'info','light','dark');
+// Remove some colors from theme to make the theme more lean
+$theme-colors: map-remove($theme-colors, "secondary", "info", "light", "dark");
 
 // Optional Bootstrap
 @import "../node_modules/bootstrap/scss/root";
@@ -50,7 +47,6 @@ $theme-colors: map-remove($theme-colors, 'secondary', 'info','light','dark');
 @import "../node_modules/bootstrap/scss/print";
 @import "../node_modules/bootstrap/scss/dropdown";
 @import "../node_modules/bootstrap/scss/nav";
-
 
 // UNICEF's OVERRIDES + Custom SCCSS class definitions
 // We follow the same structure that above for overrides.

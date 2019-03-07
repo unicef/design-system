@@ -2,8 +2,8 @@ label {
   em {
     font-style: normal;
     &:after {
-      content: ' *';
-        color: theme-color("danger");
+      content: " *";
+      color: theme-color("danger");
     }
   }
 }
@@ -12,32 +12,32 @@ textarea:required,
 select:required {
   background-color: color("empty-required-field-background");
 }
-.form-group{
-  label{  
+.form-group {
+  label {
     color: $label-color;
     font-size: $label-font-size;
     line-height: $label-line-height;
     margin-bottom: 0rem;
-    }
+  }
 
   select {
     &.form-control:not([size]):not([multiple]) {
       height: $input-height;
     }
   }
-  .form-control{
+  .form-control {
     padding: $input-padding-y $input-padding-x-sm;
-    &.input-disabled{
+    &.input-disabled {
       border: $input-form-element-disabled-border;
       background-color: $input-disabled-bg;
       cursor: auto;
     }
-    &.is-invalid{
+    &.is-invalid {
       background-color: $form-error-background-color;
       border: 1px solid $input-border-color;
       border-bottom: $form-error-border-bottom;
     }
-    &.readonly{
+    &.readonly {
       border: none;
       border-bottom: 2px dashed $input-border-color;
       background-color: $white;

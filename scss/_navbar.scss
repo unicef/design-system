@@ -50,10 +50,8 @@ nav {
   }
 }
 
-
 // Desktop Only
 @media only screen and (min-width: 992px) {
-
   .navbar-line {
     border-right: 1px solid $white;
     padding-right: 1rem;
@@ -71,7 +69,6 @@ nav {
     margin-bottom: 0.5rem;
   }
   .navbar-nav {
-
     background-color: $white;
     display: block;
     .nav-item {
@@ -82,13 +79,13 @@ nav {
       padding: 0.5rem 0.5rem 0.5rem 1rem;
       border: 1px solid transparent;
       .badge {
-        color:$white;
+        color: $white;
         background-color: $black;
       }
 
       .fa {
-        color:$white;
-        background-color:$black;
+        color: $white;
+        background-color: $black;
       }
     }
     a {
@@ -114,15 +111,15 @@ nav {
   margin-top: -40px;
   padding: 0.5rem 1rem;
 
-  &:focus{
-    margin-top:auto;
+  &:focus {
+    margin-top: auto;
     margin-bottom: 5px;
     border: $link-focus-border;
     display: inline-block;
     text-decoration: underline;
   }
 
-  &:active{
+  &:active {
     display: inline;
   }
 }

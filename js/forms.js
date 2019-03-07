@@ -4,7 +4,7 @@
  * Polyfill. 
  * IE and Edge do not support NodeList.forEach
  * This fixes it.
- */ 
+ */
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
@@ -25,14 +25,14 @@ if (window.NodeList && !NodeList.prototype.forEach) {
  * If the field is empty sets the empty
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   function setRequiredFieldBackgroundColor(field) {
     //console.log(getComputedStyle(document.body).getPropertyValue('--empty-required-field-background'));
     color = getComputedStyle(document.body).getPropertyValue('--filled-required-field-background');
     if (field.value == "") {
       color = getComputedStyle(document.body).getPropertyValue('--empty-required-field-background');
     }
-    field.style.backgroundColor= color;
+    field.style.backgroundColor = color;
   }
   document.querySelectorAll('[required]').forEach(field => {
     //initialize color.
@@ -53,21 +53,22 @@ document.addEventListener('DOMContentLoaded', function() {
   * user enters text.
   *
 **/
-document.querySelectorAll('textarea[data-autoresize]').forEach( textarea => {
+document.querySelectorAll('textarea[data-autoresize]').forEach(textarea => {
   textarea.setAttribute('style', 'height:' + (textarea.scrollHeight) + 'px;overflow-y:hidden;');
   textarea.addEventListener("input", (event) => {
     event.target.style.height = 'auto';
-    event.target.style.height = (event.target.scrollHeight) + 'px';}, false);
+    event.target.style.height = (event.target.scrollHeight) + 'px';
+  }, false);
 });
 
 /**
  * Textarea counter
  */
-HTMLTextAreaElement.prototype.counter = function() {
+HTMLTextAreaElement.prototype.counter = function () {
   return this.maxLength - this.value.length;
 }
 
-document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
+document.querySelectorAll('textarea[data-counter]').forEach(textarea => {
   if (textarea.id == "") {
     throw "In order to use data-counter on a textarea you need to set a unique id to the textarea";
   }
@@ -90,8 +91,8 @@ document.querySelectorAll('textarea[data-counter]').forEach( textarea => {
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
-      x.className += " responsive";
+    x.className += " responsive";
   } else {
-      x.className = "topnav";
+    x.className = "topnav";
   }
 }

@@ -6,7 +6,7 @@
   list-style-type: none;
 
   .nav-item {
-    color: $black ;
+    color: $black;
     margin-bottom: -2px;
   }
 
@@ -17,7 +17,7 @@
     border-bottom: 0.25rem solid transparent;
 
     &.active {
-      border:none;
+      border: none;
       background-color: transparent;
       color: $black;
       border-bottom: 0.25rem solid $unicef-blue;
@@ -29,7 +29,6 @@
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
   }
-
 }
 // for tablet and desktop
 @include media-breakpoint-up(sm) {
