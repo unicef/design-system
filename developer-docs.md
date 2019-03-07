@@ -575,7 +575,7 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
     <div class="row">
       <div class="form-group col-md-6">
         <label for="input-placeholder-required"><em>Input with placeholder</em></label>
-        <input type="email" class="form-control" id="input-placeholder-required"
+        <input type="text" class="form-control" id="input-placeholder-required"
             placeholder="This is the placeholder" required>
       </div>
       <div class="form-group col-md-6">
@@ -599,7 +599,6 @@ For required fields we mark `<label>` contents with an `<em>` and the form field
         </select>
         </div>
       </div>
-
     </div>
   </form>
 {% endcapture %}
