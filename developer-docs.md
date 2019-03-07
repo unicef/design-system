@@ -235,7 +235,7 @@ Also, it is possible to group an input with a button:
 {% include example.html content=example %}
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
-  <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
+  <a class="navbar-brand ml-3" href="/">Application name</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -283,7 +283,7 @@ Also, it is possible to group an input with a button:
 {% include example.html content=example %}
 {% capture example %}
 <nav class="navbar navbar-expand-md flex-md-row bd-navbar p-0">
-  <a class="navbar-brand ml-3" href="/">UNICEF Design System</a>
+  <a class="navbar-brand ml-3" href="/">Application name</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
     aria-expanded="false" aria-label="Toggle navigation">
