@@ -94,7 +94,7 @@ $ bundle install
 
 To run the local server
 ```
-$ bundle exec jekyll serve --livereload --config config.dev.yml
+$ bundle exec jekyll serve --livereload
 ```
 Then browse to `http://localhost:4000/`
 
