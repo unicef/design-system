@@ -13,6 +13,8 @@ $theme-colors: map-remove($theme-colors, "secondary", "info", "light", "dark");
 
 
 // Optional Bootstrap
+// This list comes from https://github.com/twbs/bootstrap/blob/master/scss/bootstrap.scss
+
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
@@ -68,6 +70,7 @@ $theme-colors: map-remove($theme-colors, "secondary", "info", "light", "dark");
 @import "tab";
 @import "type";
 //@import "notifications";
+@import "spinners";
 @import "navbar";
 @import "dropdown";
 @import "nav";

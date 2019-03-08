@@ -761,6 +761,45 @@ List group with a button:
 {% endcapture %}
 {% include example.html content=example %}
 
+## Loading status
+
+Everytime a asynchronous request is done in the client side, the app should display that status.
+We use `.spinner-border`.
+
+For accessibility, notice you need to include `role=status`
+{% capture example %}
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div> 
+{% endcapture %}
+{% include example.html content=example %}
+
+To specify the action that is being performed:
+{% capture example %}
+<div class="d-flex align-items-center">
+  <div class="spinner-border" role="status" aria-hidden="true"></div>
+  <strong class='ml-2'>Loading...</strong>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+When the action is performed within a button
+
+{% capture example %}
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border text-white spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+
+<button class="btn btn-outline-primary" type="button" disabled>
+  <span class="spinner-border text-white spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+{% endcapture %}
+{% include example.html content=example %}
+
+ More info in [bootstrap spinners documentation](https://getbootstrap.com/docs/4.2/components/spinners/).
+
 ## Progress Bar
 
 Indicates the status of completeness of a process.

@@ -1,0 +1,5 @@
+//Overwrite the default color from black to unicef blue
+.spinner-border {
+    border: $spinner-border-width solid $unicef-blue;
+    //border-right-color: transparent;
+}
