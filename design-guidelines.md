@@ -600,15 +600,37 @@ In case selection of individual rows is provided, it should be displayed at the 
 -->
 
 
-## Asynchronous communication
+## Loading - Asynchronous communication
 
-Whenever the system is performing an action in background the user interface shall provide any kind of visual feedback to indicate the user this status.
+Whenever the system is performing an action in background the user interface shall provide visual feedback to indicate the user this status.
 
-<!--
+In general, a message indicating the action being performed shall be provided
 
-`TODO expand this topic`
+{% capture example %}
+<div class="d-flex align-items-center">
+  <div class="spinner-border" role="status" aria-hidden="true"></div>
+  <strong class='ml-2'>Loading user profile...</strong>
+</div>
+{% endcapture %}
+{% include example.html content=example hide_markup=true %}
 
--->
+
+If the action is performed after using a button, the feedback can should be contextualized within the button.
+
+{% capture example %}
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" 
+    role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+
+<button class="btn btn-outline-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" 
+    role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+{% endcapture %}
+{% include example.html content=example hide_markup=true %}
 
 
 ## Progress bars

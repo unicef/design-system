@@ -764,13 +764,16 @@ List group with a button:
 ## Loading status
 
 Everytime a asynchronous request is done in the client side, the app should display that status.
-We use `.spinner-border`.
+We use `.spinner-border` or `.spinner-border.spinner-border-sm` (small one).
 
 For accessibility, notice you need to include `role=status`
 {% capture example %}
 <div class="spinner-border" role="status">
   <span class="sr-only">Loading...</span>
-</div> 
+</div>
+<div class="spinner-border spinner-border-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -787,12 +790,14 @@ When the action is performed within a button
 
 {% capture example %}
 <button class="btn btn-primary" type="button" disabled>
-  <span class="spinner-border text-white spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span class="spinner-border spinner-border-sm" 
+    role="status" aria-hidden="true"></span>
   Loading...
 </button>
 
 <button class="btn btn-outline-primary" type="button" disabled>
-  <span class="spinner-border text-white spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span class="spinner-border spinner-border-sm" 
+    role="status" aria-hidden="true"></span>
   Loading...
 </button>
 {% endcapture %}
@@ -813,7 +818,8 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
   <h6>Empty</h6>
   <div class="progress">
     <div class="progress-bar bg-success" style="width: 0%"
-      role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      role="progressbar" aria-valuenow="0" 
+      aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
   <div class="d-flex justify-content-between">
@@ -824,7 +830,8 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
    <h6>Without numbers</h6>
   <div class="progress mb-3">
     <div class="progress-bar bg-success" style="width: 50%"
-      role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      role="progressbar" aria-valuenow="75" 
+      aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
   
@@ -832,7 +839,8 @@ Please, notice the accessibility attributes `role`, `aria-valuenow`,
   <p>Allocated funds: $87,500 (75%)</p>
   <div class="progress" title="87500, (75%)">
     <div class="progress-bar bg-success" style="width: 75%"
-      role="progressbar" aria-valuenow="87500.00" aria-valuemin="0.00" aria-valuemax="125000.00">
+      role="progressbar" aria-valuenow="87500.00" 
+      aria-valuemin="0.00" aria-valuemax="125000.00">
     </div>
   </div>
   <div class="d-flex justify-content-between">
