@@ -119,22 +119,40 @@
 <article id="contents" class="container-fluid p-3">
   <!-- Form -->
   <h2>Form</h2>
-  <form class="form-row p-2">
-    <div class="col-md-4 p-2">
-      <label for="input-placeholder">Input with placeholder</label>
-      <input type="email" class="form-control" id="input-placeholder"
-      placeholder="Placeholder">
+  <form class="pt-2 pb-4">
+    <div class="row">
+      <div class="col-md-4 form-group">
+        <label for="input-placeholder">Input with placeholder</label>
+        <input type="email" class="form-control" id="input-placeholder"
+          placeholder="Placeholder">
+      </div>
+      <div class="col-md-4 form-group">
+          <label for="select"><em>Mandatory field</em></label>
+          <select id="select" rows="3" class="form-control" required>
+            <option value="">Select</option>
+            <option value="value1">Value 1</option>
+            <option value="value 1">Value 2</option>
+          </select>
+        </div>
+
     </div>
-    <div class="col-md-4 p-2">
-      <label for="select"><em>Mandatory field</em></label>
-      <select id="select" rows="3" class="form-control" required>
-        <option value="">Select</option>
-        <option value="value1">Value 1</option>
-        <option value="value 1">Value 2</option>
-      </select>
-    </div>
-    <div class="col-md-4 p-2 pt-4">
+    <div class="row">
+              <div class="form-group col-md-4">
+          <label for="textarea-counter">Textarea with counter</label>
+          <textarea id="textarea-counter"
+            rows="2"
+            class="form-control"
+            placeholder="Counter should decrease while typing"
+            data-counter="true"
+            data-autoresize="true"
+            maxlength="100"></textarea>
+        </div>      
+
+   </div> 
+   <div class="row">
+    <div class="col-md-4">
       <button type="submit" class="btn btn-primary my-3">Submit</button>
+    </div>
     </div>
   </form>
 
@@ -160,8 +178,9 @@
 
   <div class="card-deck d-block d-md-flex">
     <div class="card">
+        <h5 class="card-header">Card title</h5>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        
         <p class="card-text">This is a longer card with supporting text below
           as a natural lead-in to additional content. This content is a little
           bit longer.</p>
@@ -169,8 +188,8 @@
         </div>
       </div>
       <div class="card">
+        <h5 class="card-header">Card with a table</h5>
         <div class="card-body">
-          <h5 class="card-title">Card with a table</h5>
           <div class="card-text">
             <table class="table">
               <thead>
@@ -205,7 +224,7 @@
       </div>
 
       <!-- Tabs -->
-      <h2 class="mt-4">Card with a tab</h2>
+      <h2 class="mt-4">Card with tabs</h2>
 
       <div class="card">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -261,27 +280,9 @@
   </div>
 </div>
 
-    <h2>Textarea</h2>
-    <div class="card">
-      <div class="card-body">
-        <div class="form-group col-4">
-          <label for="textarea-counter">Textarea with counter</label>
-          <textarea id="textarea-counter"
-            rows="2"
-            class="form-control"
-            placeholder="Counter should decrease while typing"
-            data-counter="true"
-            data-autoresize="true"
-            maxlength="100"></textarea>
-        </div>      
-      </div>
-    </div>
-  </article>
-
 <!-- _layout/page -->
 <!-- _includes/footer -->
-<footer>
-
+<footer class="p-5">
 </footer>
 <script src="./dist/js/unicef-bundle.js"></script>
 </body>
