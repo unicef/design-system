@@ -652,7 +652,7 @@ Example the HTML and classes to display errors (no actual validation is performe
 
 ## Cards
 
-<div class="doc-example">
+{% capture example %}
 <div class="card-deck">
   <div class="card">
     <div class="card-body">
@@ -684,12 +684,48 @@ Example the HTML and classes to display errors (no actual validation is performe
         as a natural lead-in to additional content. This card has even longer
         content than the first to show that equal height action.</p>
       <p class="card-text">
-        small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Last updated 3 mins ago</small>
       </p>
     </div>
   </div>
 </div>
 </div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Card with actions menu:
+
+{% capture example %}
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header d-flex">
+      <h5>Title</h5>
+      <div class="ml-auto">
+        <a class="dropdown-toggle" id="cardDropdown"  
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          Actions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="cardDropdown">
+          <a class="dropdown-item" href>Edit</a>
+          <a class="dropdown-item" href>Share</a>
+           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href>Remove card</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="card-text">This is a longer card with supporting text below
+        as a natural lead-in to additional content.
+        This content is a little bit longer.
+      </p>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
 
 ## List groups
 

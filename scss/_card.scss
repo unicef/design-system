@@ -2,16 +2,24 @@
   padding: 0.5 * $spacer 0 * $spacer;
 }
 
+.card-header {
+  background-color: white;
+  
+  h5 {
+    margin: 0rem
+  }
+}
+
 .card-title {
   font-size: $font-size-base;
   line-height: $card-title-line-height;
   border-bottom: $card-border;
-  padding: 0 1 * $spacer 0.5 * $spacer 1 * $spacer;
+  padding: 0 1*$spacer 0.5*$spacer 1*$spacer;
 }
 
 .card-text {
   font-size: $font-size-base;
   line-height: $card-text-line-height;
-  padding: 0.75 * $spacer 1 * $spacer 0.5 * $spacer 1 * $spacer;
+  padding: 0.75*$spacer 1*$spacer 0.5*$spacer 1*$spacer;
   margin-bottom: 0;
 }
