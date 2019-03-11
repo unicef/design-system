@@ -1,6 +1,8 @@
 //
 // Documentation SCSS
 //
+// These styles only apply to the design system site.
+// They are not available for creating sites.
 
 //
 // Docs vars
@@ -28,7 +30,6 @@ footer {
 }
 
 .container {
-  max-width: 800px;
 }
 
 .container > h1,
