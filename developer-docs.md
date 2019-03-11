@@ -267,8 +267,7 @@ Also, it is possible to group an input with a button:
           data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
           aria-expanded="false">
           <img class="img-fluid" alt="unicef-logo" title="Profile"
-            src="assets/images/avatar.png">
-        </a>
+            src="assets/images/avatar.png"></a>
         <div class="dropdown-menu dropdown-menu-right"
           aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Menu Item</a>
@@ -319,8 +318,7 @@ Also, it is possible to group an input with a button:
           data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
           aria-expanded="false">
           <img class="img-fluid" alt="unicef-logo" title="Profile"
-            src="assets/images/avatar.png">
-        </a>
+            src="assets/images/avatar.png"></a>
         <div class="dropdown-menu dropdown-menu-right"
           aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Menu Item</a>
