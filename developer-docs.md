@@ -474,30 +474,30 @@ Form fields have different status:
    <!-- on inputs/selects/textareas use the class .form-control -->
     <div class="form-group col-md-6">
       <label for="input-placeholder">Input with placeholder</label>
-      <input type="email" class="form-control" id="input-placeholder"
-        placeholder="This is the placeholder">
+      <input type="text" class="form-control" id="input-placeholder"
+        placeholder="Placeholder">
     </div>
     <div class="form-group col-md-6">
       <label for="input-value">Input with value</label>
-      <input type="email" class="form-control" id="input-value"
-        placeholder="This is the placeholder"
-        value="This is the value">
+      <input type="text" class="form-control" id="input-value"
+        placeholder="Placeholder"
+        value="Value">
     </div>
     <!-- mark with the attribute disabled, disabled fields -->
     <div class="form-group col-md-6">
       <label for="input-disabled">Input disabled</label>
-      <input type="email" class="form-control input-disabled" id="input-disabled"
-        placeholder="This is the placeholder"
-        value="This is the value of the disabled field"
+      <input type="text" class="form-control" id="input-disabled"
+        placeholder="Placeholder"
+        value="Value of the disabled field"
         disabled>
     </div>
     <!-- mark with the attribute readonly, fields that
     are read only -->
     <div class="form-group col-md-6">
       <label for="input-readonly">Input readonly</label>
-      <input type="email" class="form-control readonly" id="input-readonly"
-        placeholder="This is the placeholder"
-        value="This is the value of the readonly field"
+      <input type="text" class="form-control" id="input-readonly"
+        placeholder="Placeholder"
+        value="Value of the readonly field"
         readonly>
     </div>
   </form>

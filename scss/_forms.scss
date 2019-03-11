@@ -12,35 +12,37 @@ textarea:required,
 select:required {
   background-color: color("empty-required-field-background");
 }
+
+select {
+  &.form-control:not([size]):not([multiple]) {
+    height: $input-height;
+  }
+}
+.form-control {
+  padding: $input-padding-y $input-padding-x-sm;
+  &.disabled, &[disabled] {
+    border: $input-form-element-disabled-border;
+    background-color: $input-disabled-bg;
+    cursor: auto;
+  }
+  &.is-invalid {
+    background-color: $form-error-background-color;
+    border: 1px solid $input-border-color;
+    border-bottom: $form-error-border-bottom;
+  }
+  &.readonly, &[readonly] {
+    border: none;
+    border-bottom: 2px dashed $input-border-color;
+    background-color: transparent;
+    padding-left: 0rem;
+  }
+}
+
 .form-group {
   label {
     color: $label-color;
     font-size: $label-font-size;
     line-height: $label-line-height;
     margin-bottom: 0rem;
-  }
-
-  select {
-    &.form-control:not([size]):not([multiple]) {
-      height: $input-height;
-    }
-  }
-  .form-control {
-    padding: $input-padding-y $input-padding-x-sm;
-    &.input-disabled {
-      border: $input-form-element-disabled-border;
-      background-color: $input-disabled-bg;
-      cursor: auto;
-    }
-    &.is-invalid {
-      background-color: $form-error-background-color;
-      border: 1px solid $input-border-color;
-      border-bottom: $form-error-border-bottom;
-    }
-    &.readonly {
-      border: none;
-      border-bottom: 2px dashed $input-border-color;
-      background-color: $white;
-    }
   }
 }
