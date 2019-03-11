@@ -652,11 +652,13 @@ Example the HTML and classes to display errors (no actual validation is performe
 
 ## Cards
 
+Use `.card-deck` to have same all cards of a row with the sam length.
+
 {% capture example %}
 <div class="card-deck">
   <div class="card">
+    <h5 class="card-header">Card title</h5>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a longer card with supporting text below
         as a natural lead-in to additional content.
         This content is a little bit longer.
@@ -667,8 +669,8 @@ Example the HTML and classes to display errors (no actual validation is performe
     </div>
   </div>
   <div class="card">
+    <h5 class="card-header">Card title</h5>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below
         as a natural lead-in to additional content.
       </p>
@@ -678,8 +680,8 @@ Example the HTML and classes to display errors (no actual validation is performe
     </div>
   </div>
   <div class="card">
+    <h5 class="card-header">Card title</h5>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below
         as a natural lead-in to additional content. This card has even longer
         content than the first to show that equal height action.</p>
@@ -689,17 +691,16 @@ Example the HTML and classes to display errors (no actual validation is performe
     </div>
   </div>
 </div>
-</div>
 {% endcapture %}
 {% include example.html content=example %}
 
-Card with actions menu:
+### Card with actions menu
 
 {% capture example %}
 <div class="card-deck">
   <div class="card">
     <div class="card-header d-flex">
-      <h5>Title</h5>
+      <h5>This card has action menu</h5>
       <div class="ml-auto">
         <a class="dropdown-toggle" id="cardDropdown"  
           data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -725,7 +726,41 @@ Card with actions menu:
 {% endcapture %}
 {% include example.html content=example %}
 
+### Cards with navigation tabs
 
+<div class="card">
+  <ul class="nav nav-tabs" id="card-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab"
+        href="#home" role="tab" aria-controls="home"
+        aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab"
+        href="#profile" role="tab" aria-controls="profile"
+        aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  <div class="card-body">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel"
+        aria-labelledby="home-tab">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. 
+        </p>
+      </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel"
+      aria-labelledby="profile-tab">
+      <p class="card-text">Morbi elit justo, finibus consequat facilisis eget,
+        dictum in justo. 
+      </p>
+    </div>
+  </div>
+</div>
+</div>
 
 ## List groups
 
