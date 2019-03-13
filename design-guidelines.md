@@ -92,7 +92,7 @@ file as [library for your designs](https://sketchapp.com/docs/libraries/).
 In UNICEF brand book defines the following colors:
 
 <div class="row">
-  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue</div>
+  <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-blue)">$unicef-blue </div>
   <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-dark-blue)">$unicef-dark-blue</div>
   <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-purple)">$unicef-purple</div>
   <div class="col-sm-3 p-3 mb-2 text-white" style="background-color: var(--unicef-red)">$unicef-red</div>
@@ -133,13 +133,23 @@ user forgot to fill a mandatory field.
     In general, because of the negative implications of the red color, we should try
 to avoid using it in excess.
 
-<p class="alert alert-warning">
+### Use of color and accessibility
+
 Note that we never use color as the unique cue in the interface to indicate the
-status/result, as there may be colorblind users.
+status/result, as there may be colorblind users. We use the color to reinforce the message, but the message itself should have complete meaning without any color.
 
-<br><br>We use the color to reinforce the message, but the message itself should have complete meaning without any color.
-</p>
+The minimum contrast ratio between the foreground and background shall be compliant with [WCAG 2 level AA](https://www.w3.org/TR/WCAG20/#visual-audio-contrast). It requires a contrast ratio of at least:
 
+*  **4.5:1 for normal text** 
+*  **3:1 for large text** 
+*  **3:1 for graphics and user interface components** (such as form input borders). 
+
+Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger. 
+
+You can use the following tools get the contrast ratio:
+
+* [Color contrast checker](https://webaim.org/resources/contrastchecker/)
+* [Contrast of UNICEF brand colors combination](https://abc.useallfive.com/?colors[]=000000,FFFFFFF,1CABE2,80BD41,FFC20E,E2231A,374EA2,00833D,F26A21,961A49,6A3674,F4F4F4)
 
 
 ## Typography
@@ -193,20 +203,20 @@ The following rules are recommended.
 
 6. We do not use two dots after labels. Example:
 
-  <div class="doc-example">
-    <div class="form-group col-4">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <div class="doc-example">
+      <div class="form-group col-4">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
     </div>
-  </div>
 
-7. Buttons perform actions, therefore, labels contained in buttons shall include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
+7. Buttons perform actions, therefore, labels contained in buttons should include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
 
     These are the standard labels any interface should use:
 
     | Label         | Action                      | Do not use              |
     | ------------- |:----------------------------|:------------------------|
-    | Add           | Create a new item           | Create, Build,          
+    | Add           | Create a new item           | Create, Build, New         
     | Cancel        | Abandon current action      | Dismiss, Abandon        
     | Continue      | Go to next step             | Next, Following         
     | Delete        | Delete an existing item     | Remove, Eliminate, Suprime
@@ -216,9 +226,6 @@ The following rules are recommended.
     | Download      | Save to a local computer    | Export                     
     | Print         | Print current page or section | Export                     
 
-
-    However there may be some exceptions as "New post"
-
 <div class="alert alert-success">
 <strong><i class="fas fa-recycle"></i> Sustainability guideline:</strong>, in order to minimize paper usage, whenever
 possible define a <strong>download</strong> action instead of a print action.
@@ -226,15 +233,15 @@ possible define a <strong>download</strong> action instead of a print action.
 
 ## Alerts
 
-Sometimes you need to recall user attention. Use alerts for that.
+1. Sometimes you need to recall user attention. Use alerts for that.
 
-Alerts shall be used ONLY to display information that is extremely important for the user to to be aware of. 
+2. Alerts shall be used ONLY to display information that is extremely important for the user to to be aware of. 
 
-Alerts are designed to stand out in the interface, don't overuse them. If everything stands out, nothing stands out.
+3. Alerts are designed to stand out in the interface, don't overuse them. If everything stands out, nothing stands out.
 
-Regular information text shall not be displayed within an alert.
+4. Regular information text shall not be displayed within an alert.
 
-We have the following classes of alerts. They follow the Traffic light principle.
+5. We have the following classes of alerts. They follow the Traffic light principle.
 
 * __Success alerts__. Use these alerts to indicate a positive, successfull outcome.
     For example, after adding or updating an item. 
@@ -243,7 +250,7 @@ We have the following classes of alerts. They follow the Traffic light principle
       Personal information successfully updated.
     </div>
 
-* ___Warning alerts__. use them to notify the user about situations that is not blocking but that may affect the outcome or he needs to be aware of. Use these one for informational purposes.
+* __Warning alerts__. use them to notify the user about situations that is not blocking but that may affect the outcome or he needs to be aware of. Use these one for informational purposes.
 
     <div class="alert alert-warning">
     This personal information is only accessible by emergency crisis personnel (OPSCEN). 
@@ -291,24 +298,55 @@ The following icons are not recommended to be used
 
 | <i class="fas fa-save"></i>         | Save                        |  A floppy disks are something from the past                       |
 
-## Images
-
-Images should weight the least amount possible. We work on environments on which the Internet is still not reliable.
-So, minimizing the use and size of images is a must.
-
-1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
-
-2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
-
-3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image. For decorative images, use an empty string `alt` attribute (`alt=""`).
-
-
 ### Date format
 
-Recommended date format is `dd-MMM-YYYY`. For instance: `01-Feb-2018` or `10-Mar-2020`.
+In UNICEF Style Guidelines (internal document) the recommended format is `3 February 2019`. We also recommend this format if space is necessary `dd-MMM-YYYY`. For instance: `01-Feb-2018` or `10-Mar-2020`.
 
 **Never use the format `dd/mm/yyyy` or `mm/dd/yyyy** as it is confusing. For instance,
 `02/01/2020`, depending on the country it can be interpreted either as `01-Feb-2020` or `02-Jan-2020`.
+
+This recommendation may seem not important, but imagine that 03/08/2019 is the due date of a contract or the date a payment must be done. It can be catastrophic! We are in a heterogeneous organization that works with people from many nationalities. You should use this format in your emails, documents, spread sheets, presentations and, of course, user interfaces.
+
+Alternatively you can display a date with a reference of current time. For example, 5 minutes ago. 
+
+|    Full           |   Short
+|-------------------|-------------
+| in N years        |  in Ny
+| in N months       |  in Nm 
+| in N days         |  in Nd
+| in N hours        |  in Nh
+| in N minutes      |  in Nm
+| in N seconds      |  in Ns
+| N seconds ago     |  Ns ago
+| N minutes ago     |  Nm ago
+| N hours ago       |  Nh ago
+| N days ago        |  Nd ago
+| N months ago      |  Nm ago
+| N years ago       |  Ny ago
+
+Whenever you use this date format, add the `title` attribute with the full date. Example:
+
+{% capture example %}
+<a  href="" id="timeExample1" class="" data-toggle="tooltip" data-placement="top" title="3 years ago">
+  3 years ago
+</a>
+<script>
+  function formatDate(date) {
+    var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+    ];
+    var day = date.getDate();
+    var monthIndex = date.getMonth();
+    var year = date.getFullYear();
+    return day + ' ' + monthNames[monthIndex] + ' ' + (year-3);
+  }
+  document.getElementById('timeExample1').title = formatDate(new Date()) + ', 22:30' 
+</script>
+{% endcapture %}
+{% include example.html content=example hide_markup=true %}
 
 
 ### Numbers and currencies format
@@ -328,6 +366,19 @@ You can skip decimals if they are not relevant (`$1,200`), but if you include th
 **References**
 
   * [UI Text for Web parts - Sharepoint Documentation](https://docs.microsoft.com/en-us/sharepoint/dev/design/ui-text-for-web-parts)
+
+
+## Images
+
+Images should weight the least amount possible. We work on environments on which the Internet is still not reliable.
+So, minimizing the use and size of images is a must.
+
+1. Use the format that weights for the size and quality you require. Typically, it is recommended to use JPG format for pictures and SVG for graphics and icons.
+
+2. Use size optimizers such as [svgo](https://github.com/svg/svgo) or [jpeg optim]( https://github.com/tjko/jpegoptim).
+
+3. It is necessary to set the `alt` description on all images. Keep this description brief, describe what you see and do not interpret the contents of the image. For decorative images, use an empty string `alt` attribute (`alt=""`).
+
 
 
 ## Forms
@@ -403,10 +454,10 @@ Forms shall be designed the following way:
     1. Shall not allow the user to introduce more than 2 decimals.
     2. Shall not allow the user to introduce any character not permitted.
 
-8. Use readonly and disabled fields properly. A field that just displays information and user can never change it is a read only field (html attribute `readonly`). A field that the user cannot modify because of the current status of the form are `disabled`. Example:
+8. Read only fields are those that just displays information user can never change (html attribute `readonly`). A field that the user cannot modify because of the current status of the form are `disabled`. Example:
 
 <div class="doc-example">
-  <p class="text-danger">You need admin permissions to edit the birthday. Please, request access to the admin.
+  <p>You need admin permissions to edit the birthday. Please, request access to the admin.
   </p>
   <div class="row">
     <div class="col-sm-4 col-xs-6">
