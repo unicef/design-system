@@ -183,7 +183,7 @@ Define a good labeling is one of the most difficult tasks when designing a good 
 
 The following rules are recommended.
 
-1. Labels shall be univocal, that is, they must convey one single meaning to all users.
+1. Labels shall be univocal, that is, they must convey one single meaning to all users. 
 
 2. Labels shall be short, the sorter, the better. For example, between the labels "Do you need help?", or a simply "Help", we would chose the latter. It conveys exactly the same meaning but in less words. The same with the following examples:
 
@@ -206,11 +206,26 @@ The following rules are recommended.
     <div class="doc-example">
       <div class="form-group col-4">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
       </div>
     </div>
 
-7. Buttons perform actions, therefore, labels contained in buttons should include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
+7. In general, we prefer avoid acronyms in labels. Use an application is generally harder for people that are new, if we add the of acronyms, we worsen the situation. If an acronym is widely used, add the expanded version in parenthesis. For example:
+
+    <div class="doc-example">
+      <p><span class="alert alert-danger">Don't</span></p> 
+      <div class="form-group col-4">
+        <label for="acronym">EFP</label>
+        <input type="text" class="form-control" id="acronym" placeholder="John Doe">
+      </div>
+      <p class="pt-4"><span class="alert alert-success">Do</span></p>
+      <div class="form-group col-4">
+        <label for="acronym">EFP (Emergency Focal Point)</label>
+        <input type="text" class="form-control" id="acronym" placeholder="John Doe">
+      </div>
+    </div>
+
+8. Buttons perform actions, therefore, labels contained in buttons should include a verb. For example a button with the label _Edit_ is ok, but _Edition_ is wrong.
 
     These are the standard labels any interface should use:
 
@@ -226,10 +241,13 @@ The following rules are recommended.
     | Download      | Save to a local computer    | Export                     
     | Print         | Print current page or section | Export                     
 
+
 <div class="alert alert-success">
 <strong><i class="fas fa-recycle"></i> Sustainability guideline:</strong>, in order to minimize paper usage, whenever
 possible define a <strong>download</strong> action instead of a print action.
 </div>
+
+
 
 ## Alerts
 
