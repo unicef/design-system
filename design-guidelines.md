@@ -247,7 +247,46 @@ The following rules are recommended.
 possible define a <strong>download</strong> action instead of a print action.
 </div>
 
+### Documentation and contents
 
+When creating contents for the web follow these rules to improve the readability: 
+
+1. **Use short paragraphs (no more than 3 to 5 lines)** and start with the conclusion or most important piece of information. 
+
+2. **Use bullet or numbered lists whenever possible**. Instead of a listing items in a coma separated list use bullet points.
+
+3. **Never use the text [click here]() for a link**. Instead, the text should inform the user what is behind the link. Example:
+
+    <div class="doc-example">
+      <p><span class="alert alert-danger">Don't</span></p>
+      <p>In order to remove this folder <a href="">click here<a></p>
+      <p>To read more about how to write for the web. Follow this link 
+        <a href="https://www.usability.gov/how-to-and-tools/methods/writing-for-the-web.html">link</a>
+      </p>
+      <p class="pt-5"><span class="alert alert-success">Do</span></p>
+      <p><a href="">Remove folder</a></p>
+      <p>Read more about <a href="https://www.usability.gov/how-to-and-tools/methods/writing-for-the-web.html">how to write for the web</a>    
+      </p>
+    </div>
+
+4. Highlight in **bold key words or phrases** of paragraphs.  
+
+5. **Do not use underline**. In the web underline is reserved to links.
+
+6. **Use headlines and titles to structure the content**.
+
+The main reason to apply these rules is because [people don't read on the web, they scan](https://www.nngroup.com/articles/how-little-do-users-read/).
+
+You can use these guidelines in any content produced to be consumed on a screen:
+* Documentation
+* Blog or news articles
+* Word documents
+* Emails...
+
+
+**References**
+
+* [Writing for the web (usability.gov)](https://www.usability.gov/how-to-and-tools/methods/writing-for-the-web.html)
 
 ## Alerts
 
