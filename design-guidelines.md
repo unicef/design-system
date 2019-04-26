@@ -364,22 +364,37 @@ In UNICEF Style Guidelines (internal document) the recommended format is `3 Febr
 
 This recommendation may seem not important, but imagine that 03/08/2019 is the due date of a contract or the date a payment must be done. It can be catastrophic! We are in a heterogeneous organization that works with people from many nationalities. You should use this format in your emails, documents, spread sheets, presentations and, of course, user interfaces.
 
-Alternatively you can display a date with a reference of current time. For example, 5 minutes ago. 
+### Time formats
+Time shall be displayed in current user timezone and in 12-hour format. Example:
+Add the `title` attribute with the 24-hour time.
 
-|    Full           |   Short
-|-------------------|-------------
-| in N years        |  in Ny
-| in N months       |  in Nm 
-| in N days         |  in Nd
-| in N hours        |  in Nh
-| in N minutes      |  in Nm
-| in N seconds      |  in Ns
-| N seconds ago     |  Ns ago
-| N minutes ago     |  Nm ago
-| N hours ago       |  Nh ago
-| N days ago        |  Nd ago
-| N months ago      |  Nm ago
-| N years ago       |  Ny ago
+{% capture example %}
+<a  href="" id="" class="" data-toggle="tooltip" data-placement="top" title="22:30">
+  10:30 PM
+</a>
+{% endcapture %}
+{% include example.html content=example hide_markup=true %}
+
+We selected this format because most English-speaking countries use the 12-hour clock as the dominant written and spoken system of time. Other countries use the 12-hour clock in spoken time and 24-hour clock in written notation. But [most people in 24-hour countries are so used to both systems](https://en.wikipedia.org/wiki/Date_and_time_representation_by_country) that they have no problem switching between the two. 
+
+
+### Relative timestamps
+Alternatively you can display a date with a relative reference of current time. For example, 5 minutes ago. 
+
+|    Full text  | Example Full  |  Shortened text | Example Short
+|---------------|---------------|-----------------|----------
+| in N years    | in 3 years    |  in Ny          | in 3y
+| in N months   | in 2 months   |  in Nmo         | in 1mo
+| in N days     | in 2 days     |  in Nd          | in 3d
+| in N hour     | in 2 hours    |  in Nh          | in 1h
+| in N minutes  | in 3 minutes  |  in Nm          | in 3m
+| in N seconds  | in 3 seconds  |  in Ns          | in 2s
+| N seconds ago | 1 seconds ago |  Ns ago         | 3s ago
+| N minutes ago | 3 minutes ago |  Nm ago         | 3m ago
+| N hours ago   | 5 hours ago   |  Nh ago         | 3h ago
+| N days ago    | 6 days ago    |  Nd ago         | 3d ago
+| N months ago  | 7 months ago  |  Nmo ago        | 3mo ago
+| N years ago   | 8 years ago   |  Ny ago         | 3y ago
 
 Whenever you use this date format, add the `title` attribute with the full date. Example:
 
@@ -400,7 +415,7 @@ Whenever you use this date format, add the `title` attribute with the full date.
     var year = date.getFullYear();
     return day + ' ' + monthNames[monthIndex] + ' ' + (year-3);
   }
-  document.getElementById('timeExample1').title = formatDate(new Date()) + ', 22:30' 
+  document.getElementById('timeExample1').title = formatDate(new Date()) + ', 10:30 AM' 
 </script>
 {% endcapture %}
 {% include example.html content=example hide_markup=true %}
@@ -409,7 +424,6 @@ Whenever you use this date format, add the `title` attribute with the full date.
 ### Numbers and currencies format
 
 By default, we stick to English numbers. Separate thousands, millions, etc. with `,` and decimals with `.`. Example: `3.14159`, `1,200,000`.
-
 For currencies prepend the currency symbol to the number and use always two decimals. Example: `$123,456,789.00`, `€1,200.00`.
 
 You can skip decimals if they are not relevant (`$1,200`), but if you include them, always use two (~~`$1,200.3`~~).
@@ -423,6 +437,7 @@ You can skip decimals if they are not relevant (`$1,200`), but if you include th
 **References**
 
   * [UI Text for Web parts - Sharepoint Documentation](https://docs.microsoft.com/en-us/sharepoint/dev/design/ui-text-for-web-parts)
+  * [How to chose between absolute and relative timestamps](https://uxmovement.com/content/absolute-vs-relative-timestamps-when-to-use-which/)
 
 
 ## Images
