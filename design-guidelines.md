@@ -321,7 +321,7 @@ You can use these guidelines in any content produced to be consumed on a screen:
     If you are part of the emergency crisis personnel. Please, contact your local focal point. 
   </div>
 
-Alerts can be dismissable. Use them when user needs to interact with the current page, and once read, they no longer have relevance. For example, after successfully updating an item.
+Alerts can be dismissible. Use them when user needs to interact with the current page, and once read, they no longer have relevance. For example, after successfully updating an item.
 
 <div class="alert alert-success alert-dismissible fade show" role="alert">
   Your profile was successfully updated.
@@ -335,7 +335,7 @@ Alerts can be dismissable. Use them when user needs to interact with the current
 ## Icons
 
 In general, icons shall always be accompanied with a label. Exceptionally, a tooltip is allowed.
-
+ 
 A recommended icon set is **[FontAwesome 5.x free](https://fontawesome.com/)**.
 
 In order to keep consistency on the meaning of most common actions, the icon shall be
@@ -359,7 +359,7 @@ The following icons are not recommended to be used
 
 In UNICEF Style Guidelines (internal document) the recommended format is `3 February 2019`. We also recommend this format if space is necessary `dd-MMM-YYYY`. For instance: `01-Feb-2018` or `10-Mar-2020`.
 
-**Never use the format `dd/mm/yyyy` or `mm/dd/yyyy** as it is confusing. For instance,
+Never use the format `dd/mm/yyyy` or `mm/dd/yyyy as it is confusing. For instance,
 `02/01/2020`, depending on the country it can be interpreted either as `01-Feb-2020` or `02-Jan-2020`.
 
 This recommendation may seem not important, but imagine that 03/08/2019 is the due date of a contract or the date a payment must be done. It can be catastrophic! We are in a heterogeneous organization that works with people from many nationalities. You should use this format in your emails, documents, spread sheets, presentations and, of course, user interfaces.
@@ -376,7 +376,7 @@ Add the `title` attribute with the 24-hour time.
 {% include example.html content=example hide_markup=true %}
 
 We selected this format because most English-speaking countries use the 12-hour clock as the dominant written and spoken system of time. Other countries use the 12-hour clock in spoken time and 24-hour clock in written notation. But [most people in 24-hour countries are so used to both systems](https://en.wikipedia.org/wiki/Date_and_time_representation_by_country) that they have no problem switching between the two. 
-
+  
 
 ### Relative timestamps
 Alternatively you can display a date with a relative reference of current time. For example, 5 minutes ago. 
