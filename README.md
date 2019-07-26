@@ -17,7 +17,7 @@ of a web application we provide the following
 For developers, we provide a reference implementation.
 [Documentation for developers can be found here](https;//unicef.github.io/design-system/developer-docs.html)
 
-This reference implementation is based on  based on [Bootstrap 4.1](http://getbootstrap.com).
+This reference implementation is based on  based on [Bootstrap 4.3](http://getbootstrap.com).
 
 
 
