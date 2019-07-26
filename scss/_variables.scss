@@ -698,10 +698,10 @@ $nav-link-disabled-color: $gray-600 !default;
 
 $nav-tabs-border-color: $gray-300 !default;
 $nav-tabs-border-width: $border-width !default;
-$nav-tabs-border-radius: $border-radius !default;
+$nav-tabs-border-radius: 0rem !default; //$border-radius !default;
 $nav-tabs-link-hover-border-color: $unicef-blue !default;
 $nav-tabs-link-active-color: $gray-700 !default;
-$nav-tabs-link-active-bg: lightblue !default;
+$nav-tabs-link-active-bg: rgba($unicef-blue, 0.2) !default;
 $nav-tabs-link-active-border-color: $unicef-blue !default;
 
 $nav-pills-border-radius: $border-radius !default;
@@ -712,7 +712,7 @@ $nav-divider-color: $gray-200 !default;
 $nav-divider-margin-y: ($spacer / 2) !default;
 
 // Navbar
-
+ 
 $navbar-padding-y: ($spacer / 2) !default;
 $navbar-padding-x: $spacer !default;
 
