@@ -70,7 +70,7 @@ function scss() {
     .pipe(plumber()) //By default task ends if there is an error. This avoids it.
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(minifyCss())
+   // .pipe(minifyCss())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("./dist/css"))
 }
